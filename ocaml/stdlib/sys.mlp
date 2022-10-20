@@ -141,7 +141,7 @@ let ocaml_version = "%%VERSION%%"
 
 (* Optimization *)
 
-external opaque_identity : 'a -> 'a = "%opaque"
+external opaque_identity : ('a[@local_opt]) -> ('a[@local_opt]) = "%opaque"
 
 module Immediate64 = struct
   module type Non_immediate = sig
