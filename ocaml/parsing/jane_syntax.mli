@@ -94,6 +94,58 @@ module Immutable_arrays : sig
     loc:Location.t -> pattern -> Parsetree.pattern_desc With_attributes.t
 end
 
+module N_ary_function : sig
+  type function_body =
+    | Pfunction_body of Parsetree.expression
+    | Pfunction_cases of Parsetree.case list * Location.t * Parsetree.attributes
+
+  type function_param =
+    | Pparam_val of
+        Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern
+    (** [Pparam_val (lbl, exp0, P)] represents the parameter:
+        - [P]
+          when [lbl] is {{!Asttypes.arg_label.Nolabel}[Nolabel]}
+          and [exp0] is [None]
+        - [~l:P]
+          when [lbl] is {{!Asttypes.arg_label.Labelled}[Labelled l]}
+          and [exp0] is [None]
+        - [?l:P]
+          when [lbl] is {{!Asttypes.arg_label.Optional}[Optional l]}
+          and [exp0] is [None]
+        - [?l:(P = E0)]
+          when [lbl] is {{!Asttypes.arg_label.Optional}[Optional l]}
+          and [exp0] is [Some E0]
+
+        Note: If [E0] is provided, only
+        {{!Asttypes.arg_label.Optional}[Optional]} is allowed.
+    *)
+    | Pparam_newtype of string Asttypes.loc * Location.t
+    (** [Pparam_newtype (x, loc)] represents the parameter [(type x)].
+        [x] carries the location of the identifier, whereas [loc] is
+        the location of the [(type x)] as a whole.
+
+        Multiple parameters [(type a b c)] are represented as multiple
+        [Pparam_newtype] nodes.
+    *)
+
+  type type_constraint =
+    | Pconstraint of Parsetree.core_type
+    | Pcoerce of Parsetree.core_type option * Parsetree.core_type
+
+  type alloc_mode = Local | Global
+
+  type function_constraint =
+    { alloc_mode: alloc_mode;
+      type_constraint: type_constraint;
+    }
+
+  type expression =
+    function_param list * function_constraint option * function_body
+
+  val expr_of :
+    loc:Location.t -> expression -> Parsetree.expression_desc With_attributes.t
+end
+
 (** The ASTs for [include functor].  When we merge this upstream, we'll merge
     these into the existing [P{sig,str}_include] constructors (similar to what
     we did with [T{sig,str}_include], but without depending on typechecking). *)
@@ -221,10 +273,14 @@ module Expression : sig
   type t =
     | Jexp_comprehension   of Comprehensions.expression
     | Jexp_immutable_array of Immutable_arrays.expression
+    | Jexp_n_ary_function  of N_ary_function.expression
 
   include AST
     with type t := t * Parsetree.attributes
      and type ast := Parsetree.expression
+
+  val expr_of :
+    loc:Location.t -> t -> Parsetree.expression_desc With_attributes.t
 end
 
 (** Novel syntax in patterns *)

@@ -135,9 +135,16 @@ module Exp:
     val constant: ?loc:loc -> ?attrs:attrs -> constant -> expression
     val let_: ?loc:loc -> ?attrs:attrs -> rec_flag -> value_binding list
               -> expression -> expression
+
+    (** We deprecate [fun_] and [function_] to respect the syntactic function
+        arity extension when it's active.
+    *)
+
     val fun_: ?loc:loc -> ?attrs:attrs -> arg_label -> expression option
               -> pattern -> expression -> expression
+          [@@deprecated "Use Extensions_ast_helper.Exp.unary_fun instead."]
     val function_: ?loc:loc -> ?attrs:attrs -> case list -> expression
+          [@@deprecated "Use Extensions_ast_helper.Exp.unary_function instead."]
     val apply: ?loc:loc -> ?attrs:attrs -> expression
                -> (arg_label * expression) list -> expression
     val match_: ?loc:loc -> ?attrs:attrs -> expression -> case list
