@@ -63,8 +63,8 @@ type error =
   | Multiple_native_repr_attributes
   | Cannot_unbox_or_untag_type of native_repr_kind
   | Deep_unbox_or_untag_attribute of native_repr_kind
-  | Layout_coherence_check of type_expr * Layout.Violation.t
-  | Layout_update_check of Path.t * Layout.Violation.t
+  | Layout_of_type of type_expr * Layout.Violation.t
+  | Layout_of_path of Path.t * Layout.Violation.t
   | Layout_sort of
       { lloc : layout_sort_loc
       ; typ : type_expr
@@ -445,7 +445,8 @@ let transl_constructor_arguments env univars closed = function
    type declaration to compute accurate layouts in the presence of recursively
    defined types. It is updated later by [update_constructor_arguments_layouts]
 *)
-let make_constructor env loc type_path type_params svars sargs sret_type =
+let make_constructor
+      env loc ~cstr_path ~type_path type_params svars slays sargs sret_type =
   match sret_type with
   | None ->
       let args, targs =
@@ -461,7 +462,9 @@ let make_constructor env loc type_path type_params svars sargs sret_type =
         | [] -> None, false
         | vs ->
            Ctype.begin_def();
-           Some (TyVarEnv.make_poly_univars (List.map (fun v -> v.txt) vs)), true
+           Some (TyVarEnv.make_poly_univars
+                   ~reason:(fun v -> Constructor_type_parameter (cstr_path, v))
+                   vs slays), true
       in
       let args, targs =
         transl_constructor_arguments env univars closed sargs
@@ -682,13 +685,15 @@ let transl_declaration env sdecl (id, uid) =
         let make_cstr scstr =
           let name = Ident.create_local scstr.pcd_name.txt in
           let targs, tret_type, args, ret_type =
-            make_constructor env scstr.pcd_loc (Path.Pident id) params
-                             scstr.pcd_vars scstr.pcd_args scstr.pcd_res
+            make_constructor env scstr.pcd_loc
+              ~cstr_path:(Path.Pident name) ~type_path:(Path.Pident id) params
+              scstr.pcd_vars scstr.pcd_layouts scstr.pcd_args scstr.pcd_res
           in
+          let mk_var_layout sv sl = sv.txt, Option.map Location.get_txt sl in
           let tcstr =
             { cd_id = name;
               cd_name = scstr.pcd_name;
-              cd_vars = scstr.pcd_vars;
+              cd_vars = List.map2 mk_var_layout scstr.pcd_vars scstr.pcd_layouts;
               cd_args = targs;
               cd_res = tret_type;
               cd_loc = scstr.pcd_loc;
@@ -843,9 +848,14 @@ let rec check_constraints_rec env loc visited ty =
            *already* violate the constraints -- we need to report a problem with
            the unexpanded types, or we get errors that talk about the same type
            twice.  This is generally true for constraint errors. *)
-        try Ctype.matches ~expand_error_trace:false env ty ty'
-        with Ctype.Matches_failure (env, err) ->
+        match Ctype.matches ~expand_error_trace:false env ty ty' with
+        | Unification_failure err ->
           raise (Error(loc, Constraint_failed (env, err)))
+        | Layout_mismatch { original_layout; inferred_layout } ->
+          raise (Error(loc, Layout_of_type (ty,
+                              (Layout.Violation.of_ (Not_a_sublayout
+                                 (original_layout, inferred_layout))))))
+        | All_good -> ()
       end;
       List.iter (check_constraints_rec env loc visited) args
   | Tpoly (ty, tl) ->
@@ -995,7 +1005,7 @@ let check_coherence env loc dpath decl =
     begin match Layout.sub_with_history layout' decl.type_layout with
     | Ok layout' -> { decl with type_layout = layout' }
     | Error v ->
-      raise (Error (loc, Layout_coherence_check (ty,v)))
+      raise (Error (loc, Layout_of_type (ty,v)))
     end
   | { type_manifest = None } -> decl
 
@@ -1162,7 +1172,7 @@ let update_decl_layout env dpath decl =
   if new_layout != decl.type_layout then
     begin match Layout.sub new_layout decl.type_layout with
     | Ok () -> ()
-    | Error err -> raise(Error(decl.type_loc, Layout_update_check (dpath,err)))
+    | Error err -> raise(Error(decl.type_loc, Layout_of_path (dpath,err)))
     end;
   new_decl
 
@@ -1548,10 +1558,11 @@ let transl_extension_constructor ~scope env type_path type_params
   let id = Ident.create_scoped ~scope sext.pext_name.txt in
   let args, arg_layouts, constant, ret_type, kind =
     match sext.pext_kind with
-      Pext_decl(svars, sargs, sret_type) ->
+      Pext_decl(svars, sargs, sret_type, slays) ->
         let targs, tret_type, args, ret_type =
-          make_constructor env sext.pext_loc type_path typext_params
-            svars sargs sret_type
+          make_constructor env sext.pext_loc
+            ~cstr_path:(Pident id) ~type_path typext_params
+            svars slays sargs sret_type
         in
         let num_args =
           match targs with
@@ -1562,7 +1573,10 @@ let transl_extension_constructor ~scope env type_path type_params
         let args, constant =
           update_constructor_arguments_layouts env sext.pext_loc args layouts
         in
-          args, layouts, constant, ret_type, Text_decl(svars, targs, tret_type)
+        let strip_locs sv sl = sv.txt, Option.map Location.get_txt sl in
+        let vars = List.map2 strip_locs svars slays in
+          args, layouts, constant, ret_type,
+          Text_decl(vars, targs, tret_type)
     | Pext_rebind lid ->
         let usage : Env.constructor_usage =
           if priv = Public then Env.Exported else Env.Exported_private
@@ -1916,7 +1930,7 @@ let rec parse_native_repr_attributes env core_type ty rmode ~global_repr =
       parse_native_repr_attributes env ct2 t2 (prim_const_mode mret) ~global_repr
     in
     ((mode,repr_arg) :: repr_args, repr_res)
-  | (Ptyp_poly (_, t) | Ptyp_alias (t, _)), _, _ ->
+  | (Ptyp_poly (_, t, _) | Ptyp_alias (t, _)), _, _ ->
      parse_native_repr_attributes env t ty rmode ~global_repr
   | _ ->
      let rmode =
@@ -2278,11 +2292,6 @@ let explain_unbound_single ppf tv ty =
         "case" (fun (lab,_) -> "`" ^ lab ^ " of ")
   | _ -> trivial ty
 
-
-let tys_of_constr_args = function
-  | Types.Cstr_tuple tl -> List.map fst tl
-  | Types.Cstr_record lbls -> List.map (fun l -> l.Types.ld_type) lbls
-
 let report_error ppf = function
   | Repeated_parameter ->
       fprintf ppf "A type parameter occurs several times"
@@ -2482,12 +2491,12 @@ let report_error ppf = function
          a direct argument or result of the primitive,@ \
          it should not occur deeply into its type.@]"
         (match kind with Unboxed -> "@unboxed" | Untagged -> "@untagged")
-  | Layout_update_check (dpath,v) ->
+  | Layout_of_path (dpath,v) ->
     (* the type is always printed just above, so print out just the head of the
        path instead of something like [t/3] *)
     let offender ppf = fprintf ppf "Type %s" (Ident.name (Path.head dpath)) in
     Layout.Violation.report_with_offender ~offender ppf v
-  | Layout_coherence_check (ty,v) ->
+  | Layout_of_type (ty,v) ->
     let offender ppf = fprintf ppf "Type %a" Printtyp.type_expr ty in
     Layout.Violation.report_with_offender ~offender ppf v
   | Layout_sort {lloc; typ; err} ->
