@@ -349,8 +349,14 @@ and core_type ctxt f x =
     | Ptyp_arrow (l, ct1, ct2) ->
         pp f "@[<2>%a@;->@;%a@]" (* FIXME remove parens later *)
           (type_with_label ctxt) (l,ct1) (return_type ctxt) ct2
-    | Ptyp_alias (ct, s) ->
-        pp f "@[<2>%a@;as@;%a@]" (core_type1 ctxt) ct tyvar s
+    | Ptyp_alias (ct, s, None) ->
+        pp f "@[<2>%a@;as@;%a@]" (core_type1 ctxt) ct tyvar (Option.get s)
+    | Ptyp_alias (ct, s, Some lay) ->
+        pp f "@[<2>%a@;as@;(%t :@ %a)@]"
+          (core_type1 ctxt) ct
+          (fun ppf ->
+             match s with None -> fprintf ppf "_" | Some s -> tyvar ppf s)
+          const_layout lay.txt
     | Ptyp_poly ([], ct, []) ->
         core_type ctxt f ct
     | Ptyp_poly (sl, ct, lays) ->
@@ -372,7 +378,9 @@ and core_type1 ctxt f x =
   else
     match x.ptyp_desc with
     | Ptyp_any -> pp f "_";
-    | Ptyp_var s -> tyvar f  s;
+    | Ptyp_var (s, None) -> tyvar f  s;
+    | Ptyp_var (s, Some layout) ->
+        pp f "(%a@;:@;%a)" tyvar s const_layout layout.txt
     | Ptyp_tuple l ->  pp f "(%a)" (list (core_type1 ctxt) ~sep:"@;*@;") l
     | Ptyp_constr (li, l) ->
         pp f (* "%a%a@;" *) "%a%a"

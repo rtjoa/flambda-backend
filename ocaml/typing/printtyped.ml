@@ -208,13 +208,18 @@ let attributes i ppf l =
     Printast.payload (i + 1) ppf a.Parsetree.attr_payload
   ) l
 
+let layout_annotation i ppf layout =
+  line i ppf "%s" (Layouts.Layout.string_of_const layout)
+
 let rec core_type i ppf x =
   line i ppf "core_type %a\n" fmt_location x.ctyp_loc;
   attributes i ppf x.ctyp_attributes;
   let i = i+1 in
   match x.ctyp_desc with
   | Ttyp_any -> line i ppf "Ttyp_any\n";
-  | Ttyp_var (s) -> line i ppf "Ttyp_var %s\n" s;
+  | Ttyp_var (s, layout) ->
+      line i ppf "Ttyp_var %s\n" s;
+      option i layout_annotation ppf layout
   | Ttyp_arrow (l, ct1, ct2) ->
       line i ppf "Ttyp_arrow\n";
       arg_label i ppf l;
@@ -246,9 +251,10 @@ let rec core_type i ppf x =
   | Ttyp_class (li, _, l) ->
       line i ppf "Ttyp_class %a\n" fmt_path li;
       list i core_type ppf l;
-  | Ttyp_alias (ct, s) ->
-      line i ppf "Ttyp_alias \"%s\"\n" s;
+  | Ttyp_alias (ct, s, layout) ->
+      line i ppf "Ttyp_alias \"%s\"\n" (Option.value s ~default:"_");
       core_type i ppf ct;
+      option i layout_annotation ppf layout
   | Ttyp_poly (sl, ct) ->
       line i ppf "Ttyp_poly%a\n"
         (fun ppf -> List.iter (typevar_layout ~print_quote:true ppf)) sl;
@@ -256,9 +262,6 @@ let rec core_type i ppf x =
   | Ttyp_package { pack_path = s; pack_fields = l } ->
       line i ppf "Ttyp_package %a\n" fmt_path s;
       list i package_with ppf l;
-  | Ttyp_layout (inner_ty, layout) ->
-      line i ppf "Ttyp_layout %s\n" (Pprintast.const_layout_to_string layout);
-      core_type i ppf inner_ty;
 
 and package_with i ppf (s, t) =
   line i ppf "with type %a\n" fmt_longident s;

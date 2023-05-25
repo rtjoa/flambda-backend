@@ -56,5 +56,4 @@ val tyvar: Format.formatter -> string -> unit
 
 val const_layout: Format.formatter -> Asttypes.const_layout -> unit
 
-(* CR layouts RAE: where should this go? *)
 val const_layout_to_string : Asttypes.const_layout -> string

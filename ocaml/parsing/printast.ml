@@ -147,6 +147,9 @@ let arg_label i ppf = function
   | Labelled s -> line i ppf "Labelled \"%s\"\n" s
 ;;
 
+let layout_annotation i ppf layout =
+  line i ppf "%s" (Pprintast.const_layout_to_string layout.txt)
+
 let var_layout ~print_quote ppf (v, l) =
   let pptv ppf =
     if print_quote
@@ -168,7 +171,9 @@ let rec core_type i ppf x =
   let i = i+1 in
   match x.ptyp_desc with
   | Ptyp_any -> line i ppf "Ptyp_any\n";
-  | Ptyp_var (s) -> line i ppf "Ptyp_var %s\n" s;
+  | Ptyp_var (s, layout) ->
+      line i ppf "Ptyp_var %s\n" s;
+      option i layout_annotation ppf layout
   | Ptyp_arrow (l, ct1, ct2) ->
       line i ppf "Ptyp_arrow\n";
       arg_label i ppf l;
@@ -200,9 +205,10 @@ let rec core_type i ppf x =
   | Ptyp_class (li, l) ->
       line i ppf "Ptyp_class %a\n" fmt_longident_loc li;
       list i core_type ppf l
-  | Ptyp_alias (ct, s) ->
-      line i ppf "Ptyp_alias \"%s\"\n" s;
+  | Ptyp_alias (ct, s, lay_opt) ->
+      line i ppf "Ptyp_alias \"%s\"\n" (Option.value s ~default:"_");
       core_type i ppf ct;
+      option i layout_annotation ppf lay_opt
   | Ptyp_poly (sl, ct, lays) ->
       line i ppf "Ptyp_poly%a\n" typevars (sl, lays);
       core_type i ppf ct;
@@ -212,10 +218,6 @@ let rec core_type i ppf x =
   | Ptyp_extension (s, arg) ->
       line i ppf "Ptyp_extension \"%s\"\n" s.txt;
       payload i ppf arg
-  | Ptyp_layout (t, layout) ->
-      line i ppf "Ptyp_layout %a"
-        Pprintast.const_layout layout.txt;
-      core_type i ppf t
 
 and package_with i ppf (s, t) =
   line i ppf "with type %a\n" fmt_longident_loc s;
