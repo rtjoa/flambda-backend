@@ -148,7 +148,7 @@ let arg_label i ppf = function
 ;;
 
 let layout_annotation i ppf layout =
-  line i ppf "%s" (Pprintast.const_layout_to_string layout.txt)
+  line i ppf "%a" Pprintast.layout_annotation layout
 
 let var_layout ~print_quote ppf (v, l) =
   let pptv ppf =
@@ -160,7 +160,7 @@ let var_layout ~print_quote ppf (v, l) =
   | None -> fprintf ppf " %a" pptv v.txt
   | Some lay -> fprintf ppf " (%a : %a)"
                   pptv v.txt
-                  Pprintast.const_layout lay.txt
+                  Pprintast.layout_annotation lay
 
 let typevars ppf (vs, ls) =
   List.iter2 (fun v l -> var_layout ~print_quote:true ppf (v, l)) vs ls
@@ -205,10 +205,9 @@ let rec core_type i ppf x =
   | Ptyp_class (li, l) ->
       line i ppf "Ptyp_class %a\n" fmt_longident_loc li;
       list i core_type ppf l
-  | Ptyp_alias (ct, s, lay_opt) ->
-      line i ppf "Ptyp_alias \"%s\"\n" (Option.value s ~default:"_");
+  | Ptyp_alias (ct, s) ->
+      line i ppf "Ptyp_alias \"%s\"\n" s;
       core_type i ppf ct;
-      option i layout_annotation ppf lay_opt
   | Ptyp_poly (sl, ct, lays) ->
       line i ppf "Ptyp_poly%a\n" typevars (sl, lays);
       core_type i ppf ct;

@@ -144,9 +144,12 @@ module T = struct
   let type_vars_layouts sub (tvls : type_vars_layouts) =
     List.map (map_opt (map_loc_txt sub sub.layout_annotation)) tvls
 
-  let map_jst _sub : Jane_syntax.Core_type.t -> Jane_syntax.Core_type.t =
+  let map_jst sub : Jane_syntax.Core_type.t -> Jane_syntax.Core_type.t =
     function
-    | _ -> .
+    | Jtyp_layout (Ltyp_alias { aliased_type; name; layout }) ->
+      let aliased_type = sub.typ sub aliased_type in
+      let layout = map_loc_txt sub sub.layout_annotation layout in
+      Jtyp_layout (Ltyp_alias { aliased_type; name; layout })
 
   let map sub ({ptyp_desc = desc; ptyp_loc = loc; ptyp_attributes = attrs}
                  as typ) =
@@ -157,7 +160,7 @@ module T = struct
         let attrs = sub.attributes sub attrs in
         Jane_syntax_parsing.AST.wrap_desc Core_type ~loc ~attrs @@
         match sub.typ_jane_syntax sub jtyp with
-        | _ -> .
+        | Jtyp_layout l -> Jane_syntax.Layouts.type_of ~loc l
     end
     | None ->
     let attrs = sub.attributes sub attrs in
@@ -175,9 +178,7 @@ module T = struct
         object_ ~loc ~attrs (List.map (object_field sub) l) o
     | Ptyp_class (lid, tl) ->
         class_ ~loc ~attrs (map_loc sub lid) (List.map (sub.typ sub) tl)
-    | Ptyp_alias (t, s, layout) ->
-      alias ~loc ~attrs (sub.typ sub t) s
-        (map_opt (map_loc_txt sub sub.layout_annotation) layout)
+    | Ptyp_alias (t, s) -> alias ~loc ~attrs (sub.typ sub t) s
     | Ptyp_variant (rl, b, ll) ->
         variant ~loc ~attrs (List.map (row_field sub) rl) b ll
     | Ptyp_poly (sl, t, lays) ->

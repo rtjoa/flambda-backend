@@ -559,6 +559,8 @@ let wrap_type_annotation ~loc newtypes core_type body =
   let vars, layouts = List.split newtypes in
   (exp, ghtyp(Ptyp_poly(vars, Typ.varify_constructors vars core_type, layouts)))
 
+
+
 let wrap_exp_attrs ~loc body (ext, attrs) =
   let ghexp = ghexp ~loc in
   (* todo: keep exact location for the entire attribute *)
@@ -583,6 +585,9 @@ let wrap_pat_attrs ~loc pat (ext, attrs) =
   match ext with
   | None -> pat
   | Some id -> ghpat ~loc (Ppat_extension (id, PPat (pat, None)))
+
+let mktyp_attrs ~loc d attrs =
+  wrap_typ_attrs ~loc (mktyp ~loc d) attrs
 
 let mkpat_attrs ~loc d attrs =
   wrap_pat_attrs ~loc (mkpat ~loc d) attrs
@@ -825,6 +830,12 @@ let mkpat_jane_syntax
       { Jane_syntax_parsing.With_attributes.jane_syntax_attributes; desc }
   =
   mkpat_attrs ~loc desc (None, jane_syntax_attributes)
+
+let mktyp_jane_syntax
+      ~loc
+      { Jane_syntax_parsing.With_attributes.jane_syntax_attributes; desc }
+  =
+  mktyp_attrs ~loc desc (None, jane_syntax_attributes)
 
 %}
 
@@ -1157,6 +1168,9 @@ The precedences must be listed from low to high.
 
 %inline mk_directive_arg(symb): symb
     { mk_directive_arg ~loc:$sloc $1 }
+
+%inline mktyp_jane_syntax(symb): symb
+    { mktyp_jane_syntax ~loc:$sloc $1 }
 
 /* Generic definitions */
 
@@ -3772,13 +3786,18 @@ alias_type:
       { $1 }
   | mktyp(
       ty = alias_type AS QUOTE tyvar = ident
-        { Ptyp_alias(ty, Some tyvar, None) }
-    | ty = alias_type AS
+        { Ptyp_alias(ty, tyvar) }
+   )
+   { $1 }
+  | mktyp_jane_syntax(
+      aliased_type = alias_type AS
              LPAREN QUOTE tyvar = ident COLON layout = layout_annotation RPAREN
-        { Ptyp_alias(ty, Some tyvar, Some layout) }
-    | ty = alias_type AS
+        { (Jane_syntax.Layouts.type_of ~loc:(make_loc $sloc)
+               (Ltyp_alias { aliased_type; name = Some tyvar; layout })) }
+    | aliased_type = alias_type AS
              LPAREN UNDERSCORE COLON layout = layout_annotation RPAREN
-        { Ptyp_alias(ty, None, Some layout) }
+        { (Jane_syntax.Layouts.type_of ~loc:(make_loc $sloc)
+               (Ltyp_alias { aliased_type; name = None; layout })) }
     )
     { $1 }
 ;
