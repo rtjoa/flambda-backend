@@ -58,7 +58,7 @@ let of_string extn = match String.lowercase_ascii extn with
   | "include_functor" -> Some Include_functor
   | "polymorphic_parameters" -> Some Polymorphic_parameters
   | "immutable_arrays" -> Some Immutable_arrays
-  | "strengthening" -> Some Module_strengthening
+  | "module_strengthening" -> Some Module_strengthening
   | "layouts_alpha" -> Some (Layouts Alpha)
   | "layouts_beta" -> Some (Layouts Beta)
   | "layouts" -> Some (Layouts Stable)

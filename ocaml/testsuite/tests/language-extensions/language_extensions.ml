@@ -214,4 +214,16 @@ report
   ~text:("\"" ^ extension_name ^ "\" is " ^
          if Language_extension.is_enabled extension
          then "INCORRECTLY enabled"
-         else "correctly disabled")
+         else "correctly disabled");
+
+(* Test that language extensions round-trip via string *)
+List.iter
+  (fun x ->
+     let str = Language_extension.to_string x in
+     let x' =
+       match Language_extension.of_string str with
+       | None -> failwith str
+       | Some x' -> x'
+     in
+     if not (Language_extension.equal x x') then failwith str)
+  Language_extension.all;
