@@ -147,9 +147,6 @@ let arg_label i ppf = function
   | Labelled s -> line i ppf "Labelled \"%s\"\n" s
 ;;
 
-let layout_annotation i ppf layout =
-  line i ppf "%a" Pprintast.layout_annotation layout
-
 let var_layout ~print_quote ppf (v, l) =
   let pptv ppf =
     if print_quote
@@ -171,9 +168,7 @@ let rec core_type i ppf x =
   let i = i+1 in
   match x.ptyp_desc with
   | Ptyp_any -> line i ppf "Ptyp_any\n";
-  | Ptyp_var (s, layout) ->
-      line i ppf "Ptyp_var %s\n" s;
-      option i layout_annotation ppf layout
+  | Ptyp_var (s) -> line i ppf "Ptyp_var %s\n" s;
   | Ptyp_arrow (l, ct1, ct2) ->
       line i ppf "Ptyp_arrow\n";
       arg_label i ppf l;

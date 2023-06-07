@@ -458,9 +458,13 @@ module Layouts = struct
   include Ext
 
   type nonrec core_type =
+    | Ltyp_var of { name : string; layout : Asttypes.layout_annotation }
     | Ltyp_alias of { aliased_type : core_type
                     ; name : string option
                     ; layout : Asttypes.layout_annotation }
+
+  (*******************************************************)
+  (* Encoding *)
 
   let encode_layout_as_type layout =
     (* CR layouts v1.5: revise when moving layout recognition away from parser*)
@@ -478,6 +482,11 @@ module Layouts = struct
     (* See Note [Wrapping with make_entire_jane_syntax] *)
     AST.make_entire_jane_syntax Core_type ~loc feature begin fun () ->
       match typ with
+      | Ltyp_var { name; layout } ->
+        let layout = encode_layout_as_type layout in
+        Ast_of.wrap_jane_syntax Core_type ["var"]
+          ~loc ~payload:(PTyp layout) @@
+          Ast_helper.Typ.var ~loc name
       | Ltyp_alias { aliased_type; name; layout } ->
         let layout = encode_layout_as_type layout in
         let has_name, inner_typ = match name with
@@ -553,6 +562,12 @@ module Layouts = struct
       | _ -> Desugaring_error.raise ~loc (Unexpected_layout_payload payload)
     in
     let lty = match names with
+      | [ "var" ] ->
+         begin match typ.ptyp_desc with
+         | Ptyp_var name ->
+           Ltyp_var { name; layout }
+         | _ -> Desugaring_error.raise ~loc (Unexpected_wrapped_type typ)
+         end
       | [ "alias"; "anon" ] ->
         Ltyp_alias { aliased_type = { typ with ptyp_attributes = attributes }
                    ; name = None
@@ -565,7 +580,7 @@ module Layouts = struct
                      ; name = Some name
                      ; layout }
 
-      | _ -> Desugaring_error.raise ~loc (Unexpected_wrapped_type typ)
+        | _ -> Desugaring_error.raise ~loc (Unexpected_wrapped_type typ)
         end
       | _ ->
         Desugaring_error.raise ~loc (Unexpected_attribute names)
