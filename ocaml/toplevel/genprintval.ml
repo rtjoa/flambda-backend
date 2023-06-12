@@ -267,7 +267,7 @@ module Make(O : OBJ)(EVP : EVALPATH with type valu = O.t) = struct
           | Tarrow _ ->
               Oval_stuff "<fun>"
           | Ttuple(ty_list) ->
-              let ty_list = List.map (fun t -> (t,false)) ty_list in
+              let ty_list = List.map (fun t -> (t,false)) (List.map snd ty_list) in
               Oval_tuple (tree_of_val_list 0 depth obj ty_list)
           | Tconstr(path, [ty_arg], _)
             when Path.same path Predef.path_list ->

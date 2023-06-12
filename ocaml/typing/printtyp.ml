@@ -521,7 +521,14 @@ let rec raw_type ppf ty =
     fprintf ppf "@[<1>{id=%d;level=%d;scope=%d;desc=@,%a}@]" ty.id ty.level
       ty.scope raw_type_desc ty.desc
   end
+and labeled_type ppf (label, ty) =
+  match label with
+  | Some s -> fprintf ppf "%s: " s
+  | None -> ();
+  raw_type ppf ty
+
 and raw_type_list tl = raw_list raw_type tl
+and labeled_type_list tl = raw_list labeled_type tl
 and raw_type_desc ppf = function
     Tvar { name; layout } ->
       fprintf ppf "Tvar (@,%a,@,%s)" print_name name
@@ -532,7 +539,8 @@ and raw_type_desc ppf = function
         raw_type t1 raw_type t2
         (if is_commu_ok c then "Cok" else "Cunknown")
   | Ttuple tl ->
-      fprintf ppf "@[<1>Ttuple@,%a@]" raw_type_list tl
+    (* CR labeled tuples print labels in type info *)
+      fprintf ppf "@[<1>Ttuple@,%a@]" labeled_type_list tl
   | Tconstr (p, tl, abbrev) ->
       fprintf ppf "@[<hov1>Tconstr(@,%a,@,%a,@,%a)@]" path p
         raw_type_list tl
@@ -1144,7 +1152,7 @@ let rec tree_of_typexp mode ty =
         in
         Otyp_arrow (lab, am, t1, rm, t2)
     | Ttuple tyl ->
-        Otyp_tuple (tree_of_typlist mode tyl)
+        Otyp_tuple (tree_of_typlist mode (List.map snd tyl))
     | Tconstr(p, tyl, _abbrev) ->
         let p', s = best_type_path p in
         let tyl' = apply_subst s tyl in
@@ -1351,7 +1359,7 @@ let filter_params tyl =
     List.fold_left
       (fun tyl ty ->
         if List.exists (eq_type ty) tyl
-        then newty2 ~level:generic_level (Ttuple [ty]) :: tyl
+        then newty2 ~level:generic_level (Ttuple [None, ty]) :: tyl
         else ty :: tyl)
       (* Two parameters might be identical due to a constraint but we need to
          print them differently in order to make the output syntactically valid.

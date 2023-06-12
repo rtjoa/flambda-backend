@@ -255,7 +255,7 @@ and expression_desc =
          *)
   | Texp_try of expression * value case list
         (** try E with P1 -> E1 | ... | PN -> EN *)
-  | Texp_tuple of expression list * Types.alloc_mode
+  | Texp_tuple of (string option * expression) list * Types.alloc_mode
         (** (E1, ..., EN) *)
   | Texp_construct of
       Longident.t loc * Types.constructor_description * expression list * Types.alloc_mode option

@@ -408,7 +408,8 @@ and expression i ppf x =
   | Texp_tuple (l, am) ->
       line i ppf "Texp_tuple\n";
       alloc_mode i ppf am;
-      list i expression ppf l;
+      (* TODO_CRIT *)
+      list i expression ppf (List.map snd l);
   | Texp_construct (li, _, eo, am) ->
       line i ppf "Texp_construct %a\n" fmt_longident li;
       alloc_mode_option i ppf am;
