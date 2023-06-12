@@ -766,7 +766,7 @@ let rec generalize_spine ty =
       generalize_spine ty'
   | Ttuple tyl ->
       set_level ty generic_level;
-      List.iter generalize_spine tyl
+      List.iter generalize_spine (List.map snd tyl)
   | Tpackage (_, fl) ->
       set_level ty generic_level;
       List.iter (fun (_n, ty) -> generalize_spine ty) fl
@@ -2697,7 +2697,7 @@ let rec mcomp type_pairs env t1 t2 =
             mcomp type_pairs env t1 t2;
             mcomp type_pairs env u1 u2;
         | (Ttuple tl1, Ttuple tl2) ->
-            mcomp_list type_pairs env tl1 tl2
+            mcomp_labeled_list type_pairs env tl1 tl2
         | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _)) ->
             mcomp_type_decl type_pairs env p1 p2 tl1 tl2
         | (Tconstr (_, [], _), _) when has_injective_univars env t2' ->
@@ -2740,6 +2740,15 @@ let rec mcomp type_pairs env t1 t2 =
 
 and mcomp_list type_pairs env tl1 tl2 =
   if List.length tl1 <> List.length tl2 then
+    raise Incompatible;
+  List.iter2 (mcomp type_pairs env) tl1 tl2
+
+and mcomp_labeled_list type_pairs env labeled_tl1 labeled_tl2 =
+  if List.length labeled_tl1 <> List.length labeled_tl2 then
+    raise Incompatible;
+  let labels1, tl1 = List.split labeled_tl1 in
+  let labels2, tl2 = List.split labeled_tl2 in
+  if not (List.equal (Option.equal String.equal) labels1 labels2) then
     raise Incompatible;
   List.iter2 (mcomp type_pairs env) tl1 tl2
 
@@ -3265,7 +3274,8 @@ and unify3 env t1 t1' t2 t2' =
           | true, true -> ()
           end
       | (Ttuple tl1, Ttuple tl2) ->
-          unify_list env tl1 tl2
+        (* CR labeled tuples: safe to discard labels? *)
+          unify_list env (List.map snd tl1) (List.map snd tl2)
       | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _)) when Path.same p1 p2 ->
           if not (can_generate_equations ()) then
             unify_list env tl1 tl2
@@ -4325,7 +4335,7 @@ let rec moregen inst_nongen variance type_pairs env t1 t2 =
               moregen_alloc_mode (neg_variance variance) a1 a2;
               moregen_alloc_mode variance r1 r2
           | (Ttuple tl1, Ttuple tl2) ->
-              moregen_list inst_nongen variance type_pairs env tl1 tl2
+              moregen_labeled_list inst_nongen variance type_pairs env tl1 tl2
           | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _))
                 when Path.same p1 p2 -> begin
               match variance with
@@ -4372,6 +4382,15 @@ let rec moregen inst_nongen variance type_pairs env t1 t2 =
 
 and moregen_list inst_nongen variance type_pairs env tl1 tl2 =
   if List.length tl1 <> List.length tl2 then
+    raise_unexplained_for Moregen;
+  List.iter2 (moregen inst_nongen variance type_pairs env) tl1 tl2
+
+and moregen_labeled_list inst_nongen variance type_pairs env labeled_tl1 labeled_tl2 =
+  if List.length labeled_tl1 <> List.length labeled_tl2 then
+    raise_unexplained_for Moregen;
+  let labels1, tl1 = List.split labeled_tl1 in
+  let labels2, tl2 = List.split labeled_tl2 in
+  if not (List.equal (Option.equal String.equal) labels1 labels2) then
     raise_unexplained_for Moregen;
   List.iter2 (moregen inst_nongen variance type_pairs env) tl1 tl2
 
@@ -4696,7 +4715,7 @@ let rec eqtype rename type_pairs subst env t1 t2 =
               eqtype_alloc_mode a1 a2;
               eqtype_alloc_mode r1 r2
           | (Ttuple tl1, Ttuple tl2) ->
-              eqtype_list rename type_pairs subst env tl1 tl2
+              eqtype_list rename type_pairs subst env (List.map snd tl1) (List.map snd tl2)
           | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _))
                 when Path.same p1 p2 ->
               eqtype_list rename type_pairs subst env tl1 tl2
@@ -5253,10 +5272,10 @@ let rec build_subtype env (visited : transient_expr list)
       if memq_warn tt visited then (t, Unchanged) else
       let visited = tt :: visited in
       let tlist' =
-        List.map (build_subtype env visited loops posi level) tlist
+        List.map (build_subtype env visited loops posi level) (List.map snd tlist)
       in
       let c = collect tlist' in
-      if c > Unchanged then (newty (Ttuple (List.map fst tlist')), c)
+      if c > Unchanged then (newty (Ttuple (List.combine (List.map fst tlist) (List.map fst tlist'))), c)
       else (t, Unchanged)
   | Tconstr(p, tl, abbrev)
     when level > 0 && generic_abbrev env p && safe_abbrev env t
@@ -5463,7 +5482,7 @@ let rec subtype_rec env trace t1 t2 cstrs =
           u1 u2
           cstrs
     | (Ttuple tl1, Ttuple tl2) ->
-        subtype_list env trace tl1 tl2 cstrs
+        subtype_list env trace (List.map snd tl1) (List.map snd tl2) cstrs
     | (Tconstr(p1, [], _), Tconstr(p2, [], _)) when Path.same p1 p2 ->
         cstrs
     | (Tconstr(p1, _tl1, _abbrev1), _)
@@ -5480,8 +5499,8 @@ let rec subtype_rec env trace t1 t2 cstrs =
               let (co, cn) = Variance.get_upper v in
               if co then
                 if cn then
-                  (trace, newty2 ~level:(get_level t1) (Ttuple[t1]),
-                   newty2 ~level:(get_level t2) (Ttuple[t2]), !univar_pairs)
+                  (trace, newty2 ~level:(get_level t1) (Ttuple[None, t1]),
+                   newty2 ~level:(get_level t2) (Ttuple[None, t2]), !univar_pairs)
                   :: cstrs
                 else
                   subtype_rec
@@ -5838,7 +5857,7 @@ let rec normalize_type_rec visited ty =
         begin match !nm with
         | None -> ()
         | Some (n, v :: l) ->
-            if deep_occur ty (newgenty (Ttuple l)) then
+            if deep_occur ty (newgenty (Ttuple (List.map (fun t -> None, t) l))) then
               (* The abbreviation may be hiding something, so remove it *)
               set_name nm None
             else
