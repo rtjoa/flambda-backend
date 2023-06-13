@@ -444,7 +444,7 @@ let rec copy_type_desc ?(keep_names=false) f = function
     Tvar { layout; _ } as tv ->
      if keep_names then tv else Tvar { name=None; layout }
   | Tarrow (p, ty1, ty2, c)-> Tarrow (p, f ty1, f ty2, copy_commu c)
-  | Ttuple l            -> Ttuple (List.map (fun (label, e) -> label, f e) l)
+  | Ttuple l            -> Ttuple (List.map (fun (label, t) -> label, f t) l)
   | Tconstr (p, l, _)   -> Tconstr (p, List.map f l, ref Mnil)
   | Tobject(ty, {contents = Some (p, tl)})
                         -> Tobject (f ty, ref (Some(p, List.map f tl)))
