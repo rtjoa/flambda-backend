@@ -460,6 +460,8 @@ and transl_exp0 ~in_new_scope ~scopes e =
                  (transl_cases_try ~scopes pat_expr_list),
                layout)
   | Texp_tuple (el, alloc_mode) ->
+      (* CR labeled tuples: check that it's ok to erase - (check all "List.map snd" in
+         this file) *)
       let ll, shape = transl_list_with_shape ~scopes (List.map snd el) in
       begin try
         Lconst(Const_block(0, List.map extract_constant ll))
