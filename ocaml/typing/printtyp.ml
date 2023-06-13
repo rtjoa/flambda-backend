@@ -1152,8 +1152,8 @@ let rec tree_of_typexp mode ty =
           | None -> Oam_unknown
         in
         Otyp_arrow (lab, am, t1, rm, t2)
-    | Ttuple tyl ->
-        Otyp_tuple (tree_of_typlist mode (List.map snd tyl))
+    | Ttuple labeled_tyl ->
+        Otyp_tuple (tree_of_labeled_typlist mode labeled_tyl)
     | Tconstr(p, tyl, _abbrev) ->
         let p', s = best_type_path p in
         let tyl' = apply_subst s tyl in
@@ -1254,6 +1254,9 @@ and tree_of_row_field mode (l, f) =
 
 and tree_of_typlist mode tyl =
   List.map (tree_of_typexp mode) tyl
+
+and tree_of_labeled_typlist mode tyl =
+  List.map (fun (label, ty) -> label, tree_of_typexp mode ty) tyl
 
 and tree_of_typ_gf (ty, gf) =
   let gf =
