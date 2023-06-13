@@ -523,6 +523,7 @@ let rec raw_type ppf ty =
   end
 and labeled_type ppf (label, ty) =
   match label with
+  (* TODO_CRIT *)
   | Some s -> fprintf ppf "%s: " s
   | None -> ();
   raw_type ppf ty
