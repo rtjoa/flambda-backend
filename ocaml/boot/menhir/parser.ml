@@ -16,7 +16,13 @@ module MenhirBasics = struct
     | VAL
     | UNDERSCORE
     | UIDENT of (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22 "parsing/parser.ml"
   )
@@ -29,7 +35,13 @@ module MenhirBasics = struct
     | THEN
     | STRUCT
     | STRING of (
+<<<<<<< HEAD
 # 972 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 952 "parsing/parser.mly"
+=======
+# 959 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string option)
 # 35 "parsing/parser.ml"
   )
@@ -42,12 +54,24 @@ module MenhirBasics = struct
     | RBRACKET
     | RBRACE
     | QUOTED_STRING_ITEM of (
+<<<<<<< HEAD
 # 976 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 956 "parsing/parser.mly"
+=======
+# 963 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string * Location.t * string option)
 # 48 "parsing/parser.ml"
   )
     | QUOTED_STRING_EXPR of (
+<<<<<<< HEAD
 # 974 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 954 "parsing/parser.mly"
+=======
+# 961 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string * Location.t * string option)
 # 53 "parsing/parser.ml"
   )
@@ -55,7 +79,13 @@ module MenhirBasics = struct
     | QUESTION
     | PRIVATE
     | PREFIXOP of (
+<<<<<<< HEAD
 # 958 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 938 "parsing/parser.mly"
+=======
+# 945 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 61 "parsing/parser.ml"
   )
@@ -65,7 +95,13 @@ module MenhirBasics = struct
     | PERCENT
     | OR
     | OPTLABEL of (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 71 "parsing/parser.ml"
   )
@@ -85,12 +121,24 @@ module MenhirBasics = struct
     | LPAREN
     | LOCAL
     | LIDENT of (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 91 "parsing/parser.ml"
   )
     | LETOP of (
+<<<<<<< HEAD
 # 913 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 893 "parsing/parser.mly"
+=======
+# 900 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 96 "parsing/parser.ml"
   )
@@ -111,39 +159,81 @@ module MenhirBasics = struct
     | LBRACE
     | LAZY
     | LABEL of (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 117 "parsing/parser.ml"
   )
     | INT of (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 122 "parsing/parser.ml"
   )
     | INITIALIZER
     | INHERIT
     | INFIXOP4 of (
+<<<<<<< HEAD
 # 911 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 891 "parsing/parser.mly"
+=======
+# 898 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 129 "parsing/parser.ml"
   )
     | INFIXOP3 of (
+<<<<<<< HEAD
 # 910 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 890 "parsing/parser.mly"
+=======
+# 897 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 134 "parsing/parser.ml"
   )
     | INFIXOP2 of (
+<<<<<<< HEAD
 # 909 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 889 "parsing/parser.mly"
+=======
+# 896 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 139 "parsing/parser.ml"
   )
     | INFIXOP1 of (
+<<<<<<< HEAD
 # 908 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 888 "parsing/parser.mly"
+=======
+# 895 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 144 "parsing/parser.ml"
   )
     | INFIXOP0 of (
+<<<<<<< HEAD
 # 907 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 887 "parsing/parser.mly"
+=======
+# 894 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 149 "parsing/parser.ml"
   )
@@ -151,7 +241,13 @@ module MenhirBasics = struct
     | IN
     | IF
     | HASHOP of (
+<<<<<<< HEAD
 # 969 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 949 "parsing/parser.mly"
+=======
+# 956 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 157 "parsing/parser.ml"
   )
@@ -165,7 +261,13 @@ module MenhirBasics = struct
     | FUN
     | FOR
     | FLOAT of (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 171 "parsing/parser.ml"
   )
@@ -180,7 +282,13 @@ module MenhirBasics = struct
     | ELSE
     | DOWNTO
     | DOTOP of (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 186 "parsing/parser.ml"
   )
@@ -188,14 +296,26 @@ module MenhirBasics = struct
     | DOT
     | DONE
     | DOCSTRING of (
+<<<<<<< HEAD
 # 993 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 973 "parsing/parser.mly"
+=======
+# 980 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (Docstrings.docstring)
 # 194 "parsing/parser.ml"
   )
     | DO
     | CONSTRAINT
     | COMMENT of (
+<<<<<<< HEAD
 # 992 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 972 "parsing/parser.mly"
+=======
+# 979 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t)
 # 201 "parsing/parser.ml"
   )
@@ -207,7 +327,13 @@ module MenhirBasics = struct
     | COLON
     | CLASS
     | CHAR of (
+<<<<<<< HEAD
 # 873 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 853 "parsing/parser.mly"
+=======
+# 860 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (char)
 # 213 "parsing/parser.ml"
   )
@@ -220,7 +346,13 @@ module MenhirBasics = struct
     | ASSERT
     | AS
     | ANDOP of (
+<<<<<<< HEAD
 # 914 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 894 "parsing/parser.mly"
+=======
+# 901 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 226 "parsing/parser.ml"
   )
@@ -1060,7 +1192,13 @@ let mkpat_jane_syntax
   mkpat_attrs ~loc desc (None, jane_syntax_attributes)
 
 
+<<<<<<< HEAD
 # 1064 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1044 "parsing/parser.ml"
+=======
+# 1051 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
 
 module Tables = struct
   
@@ -1633,7 +1771,13 @@ module Tables = struct
         let _v : (string) = 
 # 4264 "parsing/parser.mly"
                                                 ( "+" )
+<<<<<<< HEAD
 # 1637 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1613 "parsing/parser.ml"
+=======
+# 1624 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1658,7 +1802,13 @@ module Tables = struct
         let _v : (string) = 
 # 4265 "parsing/parser.mly"
                                                 ( "+." )
+<<<<<<< HEAD
 # 1662 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1638 "parsing/parser.ml"
+=======
+# 1649 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1683,7 +1833,13 @@ module Tables = struct
         let _v : (Parsetree.core_type) = 
 # 3763 "parsing/parser.mly"
       ( _1 )
+<<<<<<< HEAD
 # 1687 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1663 "parsing/parser.ml"
+=======
+# 1674 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1730,22 +1886,46 @@ module Tables = struct
           let _1 = 
 # 3766 "parsing/parser.mly"
         ( Ptyp_alias(ty, tyvar) )
+<<<<<<< HEAD
 # 1734 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1710 "parsing/parser.ml"
+=======
+# 1721 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let (_endpos__1_, _startpos__1_) = (_endpos_tyvar_, _startpos_ty_) in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 1743 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1719 "parsing/parser.ml"
+=======
+# 1730 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3768 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 1749 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1725 "parsing/parser.ml"
+=======
+# 1736 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1793,7 +1973,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 1797 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1773 "parsing/parser.ml"
+=======
+# 1784 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos_attrs2_ = _endpos__1_inlined2_ in
@@ -1802,7 +1988,13 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 1806 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1782 "parsing/parser.ml"
+=======
+# 1793 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos_attrs2_ in
@@ -1814,7 +2006,13 @@ module Tables = struct
       let attrs = attrs1 @ attrs2 in
       mklb ~loc:_sloc false body attrs
     )
+<<<<<<< HEAD
 # 1818 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1794 "parsing/parser.ml"
+=======
+# 1805 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1839,7 +2037,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4137 "parsing/parser.mly"
       ( _1 )
+<<<<<<< HEAD
 # 1843 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1819 "parsing/parser.ml"
+=======
+# 1830 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1864,7 +2068,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4138 "parsing/parser.mly"
                                  ( Lident _1 )
+<<<<<<< HEAD
 # 1868 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1844 "parsing/parser.ml"
+=======
+# 1855 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1903,7 +2113,13 @@ module Tables = struct
         let _v : (Parsetree.core_type) = 
 # 3859 "parsing/parser.mly"
       ( _2 )
+<<<<<<< HEAD
 # 1907 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1883 "parsing/parser.ml"
+=======
+# 1894 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -1970,7 +2186,13 @@ module Tables = struct
       ( let (lid, cstrs, attrs) = package_type_of_module_type _1 in
         let descr = Ptyp_package (lid, cstrs) in
         mktyp ~loc:_sloc ~attrs descr )
+<<<<<<< HEAD
 # 1974 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1950 "parsing/parser.ml"
+=======
+# 1961 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _3 =
@@ -1980,13 +2202,25 @@ module Tables = struct
             
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 1984 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1960 "parsing/parser.ml"
+=======
+# 1971 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 1990 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1966 "parsing/parser.ml"
+=======
+# 1977 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__5_ in
@@ -1995,7 +2229,13 @@ module Tables = struct
         
 # 3861 "parsing/parser.mly"
       ( wrap_typ_attrs ~loc:_sloc (reloc_typ ~loc:_sloc _4) _3 )
+<<<<<<< HEAD
 # 1999 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1975 "parsing/parser.ml"
+=======
+# 1986 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2028,22 +2268,46 @@ module Tables = struct
           let _1 = 
 # 3864 "parsing/parser.mly"
         ( Ptyp_var _2 )
+<<<<<<< HEAD
 # 2032 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2008 "parsing/parser.ml"
+=======
+# 2019 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__2_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2041 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2017 "parsing/parser.ml"
+=======
+# 2028 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2047 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2023 "parsing/parser.ml"
+=======
+# 2034 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2069,21 +2333,45 @@ module Tables = struct
           let _1 = 
 # 3866 "parsing/parser.mly"
         ( Ptyp_any )
+<<<<<<< HEAD
 # 2073 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2049 "parsing/parser.ml"
+=======
+# 2060 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2081 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2057 "parsing/parser.ml"
+=======
+# 2068 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2087 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2063 "parsing/parser.ml"
+=======
+# 2074 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2112,35 +2400,77 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2118 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2094 "parsing/parser.ml"
+=======
+# 2105 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys = 
 # 3911 "parsing/parser.mly"
       ( [] )
+<<<<<<< HEAD
 # 2124 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2100 "parsing/parser.ml"
+=======
+# 2111 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
 # 3869 "parsing/parser.mly"
         ( Ptyp_constr(tid, tys) )
+<<<<<<< HEAD
 # 2129 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2105 "parsing/parser.ml"
+=======
+# 2116 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2138 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2114 "parsing/parser.ml"
+=======
+# 2125 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2144 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2120 "parsing/parser.ml"
+=======
+# 2131 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2176,20 +2506,44 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2182 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2158 "parsing/parser.ml"
+=======
+# 2169 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys = 
 # 3913 "parsing/parser.mly"
       ( [ty] )
+<<<<<<< HEAD
 # 2188 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2164 "parsing/parser.ml"
+=======
+# 2175 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
 # 3869 "parsing/parser.mly"
         ( Ptyp_constr(tid, tys) )
+<<<<<<< HEAD
 # 2193 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2169 "parsing/parser.ml"
+=======
+# 2180 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _startpos__1_ = _startpos_ty_ in
@@ -2197,15 +2551,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2203 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2179 "parsing/parser.ml"
+=======
+# 2190 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2209 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2185 "parsing/parser.ml"
+=======
+# 2196 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2256,9 +2628,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2262 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2238 "parsing/parser.ml"
+=======
+# 2249 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
@@ -2266,24 +2650,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 2270 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2246 "parsing/parser.ml"
+=======
+# 2257 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1280 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1260 "parsing/parser.mly"
+=======
+# 1267 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 2275 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2251 "parsing/parser.ml"
+=======
+# 2262 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3915 "parsing/parser.mly"
       ( tys )
+<<<<<<< HEAD
 # 2281 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2257 "parsing/parser.ml"
+=======
+# 2268 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3869 "parsing/parser.mly"
         ( Ptyp_constr(tid, tys) )
+<<<<<<< HEAD
 # 2287 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2263 "parsing/parser.ml"
+=======
+# 2274 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__1_inlined1_ in
@@ -2291,15 +2705,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2297 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2273 "parsing/parser.ml"
+=======
+# 2284 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2303 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2279 "parsing/parser.ml"
+=======
+# 2290 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2339,22 +2771,46 @@ module Tables = struct
           let _1 = 
 # 3871 "parsing/parser.mly"
         ( let (f, c) = _2 in Ptyp_object (f, c) )
+<<<<<<< HEAD
 # 2343 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2319 "parsing/parser.ml"
+=======
+# 2330 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__3_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2352 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2328 "parsing/parser.ml"
+=======
+# 2339 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2358 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2334 "parsing/parser.ml"
+=======
+# 2345 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2387,22 +2843,46 @@ module Tables = struct
           let _1 = 
 # 3873 "parsing/parser.mly"
         ( Ptyp_object ([], Closed) )
+<<<<<<< HEAD
 # 2391 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2367 "parsing/parser.ml"
+=======
+# 2378 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__2_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2400 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2376 "parsing/parser.ml"
+=======
+# 2387 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2406 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2382 "parsing/parser.ml"
+=======
+# 2393 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2438,20 +2918,44 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2444 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2420 "parsing/parser.ml"
+=======
+# 2431 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys = 
 # 3911 "parsing/parser.mly"
       ( [] )
+<<<<<<< HEAD
 # 2450 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2426 "parsing/parser.ml"
+=======
+# 2437 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
 # 3877 "parsing/parser.mly"
         ( Ptyp_class(cid, tys) )
+<<<<<<< HEAD
 # 2455 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2431 "parsing/parser.ml"
+=======
+# 2442 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _startpos__1_ = _startpos__2_ in
@@ -2459,15 +2963,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2465 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2441 "parsing/parser.ml"
+=======
+# 2452 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2471 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2447 "parsing/parser.ml"
+=======
+# 2458 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2510,20 +3032,44 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2516 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2492 "parsing/parser.ml"
+=======
+# 2503 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys = 
 # 3913 "parsing/parser.mly"
       ( [ty] )
+<<<<<<< HEAD
 # 2522 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2498 "parsing/parser.ml"
+=======
+# 2509 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
 # 3877 "parsing/parser.mly"
         ( Ptyp_class(cid, tys) )
+<<<<<<< HEAD
 # 2527 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.ml"
+=======
+# 2514 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _startpos__1_ = _startpos_ty_ in
@@ -2531,15 +3077,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2537 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2513 "parsing/parser.ml"
+=======
+# 2524 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2543 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2519 "parsing/parser.ml"
+=======
+# 2530 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2597,9 +3161,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 2603 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2579 "parsing/parser.ml"
+=======
+# 2590 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
@@ -2607,24 +3183,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 2611 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2587 "parsing/parser.ml"
+=======
+# 2598 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1280 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1260 "parsing/parser.mly"
+=======
+# 1267 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 2616 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2592 "parsing/parser.ml"
+=======
+# 2603 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3915 "parsing/parser.mly"
       ( tys )
+<<<<<<< HEAD
 # 2622 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2598 "parsing/parser.ml"
+=======
+# 2609 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3877 "parsing/parser.mly"
         ( Ptyp_class(cid, tys) )
+<<<<<<< HEAD
 # 2628 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2604 "parsing/parser.ml"
+=======
+# 2615 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__1_inlined1_ in
@@ -2632,15 +3238,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2638 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2614 "parsing/parser.ml"
+=======
+# 2625 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2644 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2620 "parsing/parser.ml"
+=======
+# 2631 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2680,22 +3304,46 @@ module Tables = struct
           let _1 = 
 # 3880 "parsing/parser.mly"
         ( Ptyp_variant([_2], Closed, None) )
+<<<<<<< HEAD
 # 2684 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2660 "parsing/parser.ml"
+=======
+# 2671 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__3_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2693 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2669 "parsing/parser.ml"
+=======
+# 2680 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2699 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2675 "parsing/parser.ml"
+=======
+# 2686 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2745,24 +3393,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 2749 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2725 "parsing/parser.ml"
+=======
+# 2736 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 2754 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2730 "parsing/parser.ml"
+=======
+# 2741 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3925 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 2760 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2736 "parsing/parser.ml"
+=======
+# 2747 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3882 "parsing/parser.mly"
         ( Ptyp_variant(_3, Closed, None) )
+<<<<<<< HEAD
 # 2766 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2742 "parsing/parser.ml"
+=======
+# 2753 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__4_ in
@@ -2770,15 +3448,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2776 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2752 "parsing/parser.ml"
+=======
+# 2763 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2782 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2758 "parsing/parser.ml"
+=======
+# 2769 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2835,24 +3531,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 2839 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2815 "parsing/parser.ml"
+=======
+# 2826 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 2844 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2820 "parsing/parser.ml"
+=======
+# 2831 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3925 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 2850 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2826 "parsing/parser.ml"
+=======
+# 2837 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3884 "parsing/parser.mly"
         ( Ptyp_variant(_2 :: _4, Closed, None) )
+<<<<<<< HEAD
 # 2856 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2832 "parsing/parser.ml"
+=======
+# 2843 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__5_ in
@@ -2860,15 +3586,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2866 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2842 "parsing/parser.ml"
+=======
+# 2853 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2872 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2848 "parsing/parser.ml"
+=======
+# 2859 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2918,24 +3662,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 2922 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2898 "parsing/parser.ml"
+=======
+# 2909 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 2927 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2903 "parsing/parser.ml"
+=======
+# 2914 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3925 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 2933 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2909 "parsing/parser.ml"
+=======
+# 2920 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3886 "parsing/parser.mly"
         ( Ptyp_variant(_3, Open, None) )
+<<<<<<< HEAD
 # 2939 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2915 "parsing/parser.ml"
+=======
+# 2926 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__4_ in
@@ -2943,15 +3717,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2949 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2925 "parsing/parser.ml"
+=======
+# 2936 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 2955 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2931 "parsing/parser.ml"
+=======
+# 2942 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -2984,22 +3776,46 @@ module Tables = struct
           let _1 = 
 # 3888 "parsing/parser.mly"
         ( Ptyp_variant([], Open, None) )
+<<<<<<< HEAD
 # 2988 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2964 "parsing/parser.ml"
+=======
+# 2975 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__2_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 2997 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2973 "parsing/parser.ml"
+=======
+# 2984 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 3003 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2979 "parsing/parser.ml"
+=======
+# 2990 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3049,24 +3865,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 3053 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3029 "parsing/parser.ml"
+=======
+# 3040 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 3058 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3034 "parsing/parser.ml"
+=======
+# 3045 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3925 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3064 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3040 "parsing/parser.ml"
+=======
+# 3051 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3890 "parsing/parser.mly"
         ( Ptyp_variant(_3, Closed, Some []) )
+<<<<<<< HEAD
 # 3070 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3046 "parsing/parser.ml"
+=======
+# 3057 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__4_ in
@@ -3074,15 +3920,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 3080 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3056 "parsing/parser.ml"
+=======
+# 3067 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 3086 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3062 "parsing/parser.ml"
+=======
+# 3073 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3147,18 +4011,42 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 3151 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3127 "parsing/parser.ml"
+=======
+# 3138 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 3156 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3132 "parsing/parser.ml"
+=======
+# 3143 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3953 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3162 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3138 "parsing/parser.ml"
+=======
+# 3149 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _3 =
@@ -3166,24 +4054,54 @@ module Tables = struct
                 let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 3170 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3146 "parsing/parser.ml"
+=======
+# 3157 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 3175 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3151 "parsing/parser.ml"
+=======
+# 3162 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
 # 3925 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3181 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3157 "parsing/parser.ml"
+=======
+# 3168 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3892 "parsing/parser.mly"
         ( Ptyp_variant(_3, Closed, Some _5) )
+<<<<<<< HEAD
 # 3187 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3163 "parsing/parser.ml"
+=======
+# 3174 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__6_ in
@@ -3191,15 +4109,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 3197 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3173 "parsing/parser.ml"
+=======
+# 3184 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 3203 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3179 "parsing/parser.ml"
+=======
+# 3190 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3225,21 +4161,45 @@ module Tables = struct
           let _1 = 
 # 3894 "parsing/parser.mly"
         ( Ptyp_extension _1 )
+<<<<<<< HEAD
 # 3229 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3205 "parsing/parser.ml"
+=======
+# 3216 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 3237 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3213 "parsing/parser.ml"
+=======
+# 3224 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3896 "parsing/parser.mly"
   ( _1 )
+<<<<<<< HEAD
 # 3243 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3219 "parsing/parser.ml"
+=======
+# 3230 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3265,21 +4225,45 @@ module Tables = struct
           let _1 = 
 # 4333 "parsing/parser.mly"
                      ( _1 )
+<<<<<<< HEAD
 # 3269 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3245 "parsing/parser.ml"
+=======
+# 3256 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1148 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1128 "parsing/parser.mly"
+=======
+# 1135 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkloc _1 (make_loc _sloc) )
+<<<<<<< HEAD
 # 3277 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3253 "parsing/parser.ml"
+=======
+# 3264 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 4335 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3283 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3259 "parsing/parser.ml"
+=======
+# 3270 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3319,22 +4303,46 @@ module Tables = struct
           let _1 = 
 # 4334 "parsing/parser.mly"
                                  ( _1 ^ "." ^ _3.txt )
+<<<<<<< HEAD
 # 3323 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3299 "parsing/parser.ml"
+=======
+# 3310 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__3_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1148 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1128 "parsing/parser.mly"
+=======
+# 1135 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkloc _1 (make_loc _sloc) )
+<<<<<<< HEAD
 # 3332 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3308 "parsing/parser.ml"
+=======
+# 3319 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 4335 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3338 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3314 "parsing/parser.ml"
+=======
+# 3325 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3361,7 +4369,13 @@ module Tables = struct
     ( Builtin_attributes.mark_payload_attrs_used _1;
       _1
     )
+<<<<<<< HEAD
 # 3365 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3341 "parsing/parser.ml"
+=======
+# 3352 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3410,7 +4424,13 @@ module Tables = struct
         
 # 4339 "parsing/parser.mly"
     ( mk_attr ~loc:(make_loc _sloc) _2 _3 )
+<<<<<<< HEAD
 # 3414 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3390 "parsing/parser.ml"
+=======
+# 3401 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3433,9 +4453,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_expr) = 
+<<<<<<< HEAD
 # 2121 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2101 "parsing/parser.mly"
+=======
+# 2108 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 3439 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3415 "parsing/parser.ml"
+=======
+# 3426 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3476,16 +4508,34 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3480 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3456 "parsing/parser.ml"
+=======
+# 3467 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__3_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2123 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2103 "parsing/parser.mly"
+=======
+# 2110 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( wrap_class_attrs ~loc:_sloc _3 _2 )
+<<<<<<< HEAD
 # 3489 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3465 "parsing/parser.ml"
+=======
+# 3476 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3525,9 +4575,21 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2125 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2105 "parsing/parser.mly"
+=======
+# 2112 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( class_of_let_bindings ~loc:_sloc _1 _3 )
+<<<<<<< HEAD
 # 3531 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3507 "parsing/parser.ml"
+=======
+# 3518 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3590,9 +4652,21 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 3596 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3572 "parsing/parser.ml"
+=======
+# 3583 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__5_ = _endpos__1_inlined2_ in
@@ -3601,23 +4675,47 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3605 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3581 "parsing/parser.ml"
+=======
+# 3592 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _3 = 
 # 4256 "parsing/parser.mly"
                                                 ( Fresh )
+<<<<<<< HEAD
 # 3611 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3587 "parsing/parser.ml"
+=======
+# 3598 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__7_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2127 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2107 "parsing/parser.mly"
+=======
+# 2114 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let loc = (_startpos__2_, _endpos__5_) in
         let od = Opn.mk ~override:_3 ~loc:(make_loc loc) _5 in
         mkclass ~loc:_sloc ~attrs:_4 (Pcl_open(od, _7)) )
+<<<<<<< HEAD
 # 3621 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3597 "parsing/parser.ml"
+=======
+# 3608 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3687,9 +4785,21 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 3693 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3669 "parsing/parser.ml"
+=======
+# 3680 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__5_ = _endpos__1_inlined3_ in
@@ -3698,23 +4808,47 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3702 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3678 "parsing/parser.ml"
+=======
+# 3689 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _3 = 
 # 4257 "parsing/parser.mly"
                                                 ( Override )
+<<<<<<< HEAD
 # 3708 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3684 "parsing/parser.ml"
+=======
+# 3695 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__7_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2127 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2107 "parsing/parser.mly"
+=======
+# 2114 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let loc = (_startpos__2_, _endpos__5_) in
         let od = Opn.mk ~override:_3 ~loc:(make_loc loc) _5 in
         mkclass ~loc:_sloc ~attrs:_4 (Pcl_open(od, _7)) )
+<<<<<<< HEAD
 # 3718 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3694 "parsing/parser.ml"
+=======
+# 3705 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3744,9 +4878,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.class_expr) = 
+<<<<<<< HEAD
 # 2131 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2111 "parsing/parser.mly"
+=======
+# 2118 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Cl.attr _1 _2 )
+<<<<<<< HEAD
 # 3750 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3726 "parsing/parser.ml"
+=======
+# 3737 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3781,18 +4927,48 @@ module Tables = struct
               let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 3785 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3761 "parsing/parser.ml"
+=======
+# 3772 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 3790 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3766 "parsing/parser.ml"
+=======
+# 3777 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2134 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2114 "parsing/parser.mly"
+=======
+# 2121 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_apply(_1, _2) )
+<<<<<<< HEAD
 # 3796 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3772 "parsing/parser.ml"
+=======
+# 3783 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos_xs_ in
@@ -3800,15 +4976,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 3806 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3782 "parsing/parser.ml"
+=======
+# 3793 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2137 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2117 "parsing/parser.mly"
+=======
+# 2124 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 3812 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3788 "parsing/parser.ml"
+=======
+# 3799 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3832,23 +5032,59 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2136 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2116 "parsing/parser.mly"
+=======
+# 2123 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_extension _1 )
+<<<<<<< HEAD
 # 3838 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3814 "parsing/parser.ml"
+=======
+# 3825 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 3846 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3822 "parsing/parser.ml"
+=======
+# 3833 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2137 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2117 "parsing/parser.mly"
+=======
+# 2124 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 3852 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3828 "parsing/parser.ml"
+=======
+# 3839 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3903,7 +5139,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3907 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3883 "parsing/parser.ml"
+=======
+# 3894 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__6_ = _endpos__1_inlined2_ in
@@ -3912,22 +5154,46 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3916 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3892 "parsing/parser.ml"
+=======
+# 3903 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 = 
 # 4256 "parsing/parser.mly"
                                                 ( Fresh )
+<<<<<<< HEAD
 # 3922 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3898 "parsing/parser.ml"
+=======
+# 3909 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__6_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2186 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2166 "parsing/parser.mly"
+=======
+# 2173 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_inherit (_2, _4, self)) ~attrs:(_3@_6) ~docs )
+<<<<<<< HEAD
 # 3931 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3907 "parsing/parser.ml"
+=======
+# 3918 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -3989,7 +5255,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 3993 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3969 "parsing/parser.ml"
+=======
+# 3980 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__6_ = _endpos__1_inlined3_ in
@@ -3998,22 +5270,46 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4002 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3978 "parsing/parser.ml"
+=======
+# 3989 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 = 
 # 4257 "parsing/parser.mly"
                                                 ( Override )
+<<<<<<< HEAD
 # 4008 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3984 "parsing/parser.ml"
+=======
+# 3995 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__6_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2186 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2166 "parsing/parser.mly"
+=======
+# 2173 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_inherit (_2, _4, self)) ~attrs:(_3@_6) ~docs )
+<<<<<<< HEAD
 # 4017 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3993 "parsing/parser.ml"
+=======
+# 4004 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4056,7 +5352,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4060 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4036 "parsing/parser.ml"
+=======
+# 4047 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__3_ = _endpos__1_inlined1_ in
@@ -4064,11 +5366,23 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2189 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2169 "parsing/parser.mly"
+=======
+# 2176 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let v, attrs = _2 in
         let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_val v) ~attrs:(attrs@_3) ~docs )
+<<<<<<< HEAD
 # 4072 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4048 "parsing/parser.ml"
+=======
+# 4059 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4111,7 +5425,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4115 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4091 "parsing/parser.ml"
+=======
+# 4102 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__3_ = _endpos__1_inlined1_ in
@@ -4119,11 +5439,23 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2193 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2173 "parsing/parser.mly"
+=======
+# 2180 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let meth, attrs = _2 in
         let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_method meth) ~attrs:(attrs@_3) ~docs )
+<<<<<<< HEAD
 # 4127 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4103 "parsing/parser.ml"
+=======
+# 4114 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4171,7 +5503,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4175 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4151 "parsing/parser.ml"
+=======
+# 4162 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__4_ = _endpos__1_inlined2_ in
@@ -4180,17 +5518,35 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4184 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4160 "parsing/parser.ml"
+=======
+# 4171 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2197 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2177 "parsing/parser.mly"
+=======
+# 2184 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_constraint _3) ~attrs:(_2@_4) ~docs )
+<<<<<<< HEAD
 # 4194 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4170 "parsing/parser.ml"
+=======
+# 4181 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4238,7 +5594,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4242 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4218 "parsing/parser.ml"
+=======
+# 4229 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__4_ = _endpos__1_inlined2_ in
@@ -4247,17 +5609,35 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4251 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4227 "parsing/parser.ml"
+=======
+# 4238 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2200 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2180 "parsing/parser.mly"
+=======
+# 2187 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_initializer _3) ~attrs:(_2@_4) ~docs )
+<<<<<<< HEAD
 # 4261 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4237 "parsing/parser.ml"
+=======
+# 4248 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4291,7 +5671,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4295 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4271 "parsing/parser.ml"
+=======
+# 4282 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__2_ = _endpos__1_inlined1_ in
@@ -4299,10 +5685,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2203 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2183 "parsing/parser.mly"
+=======
+# 2190 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkcf ~loc:_sloc (Pcf_extension _1) ~attrs:_2 ~docs )
+<<<<<<< HEAD
 # 4306 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4282 "parsing/parser.ml"
+=======
+# 4293 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4326,23 +5724,59 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_field) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2206 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2186 "parsing/parser.mly"
+=======
+# 2193 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pcf_attribute _1 )
+<<<<<<< HEAD
 # 4332 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4308 "parsing/parser.ml"
+=======
+# 4319 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1169 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1149 "parsing/parser.mly"
+=======
+# 1156 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcf ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4340 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4316 "parsing/parser.ml"
+=======
+# 4327 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2207 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2187 "parsing/parser.mly"
+=======
+# 2194 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 4346 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4322 "parsing/parser.ml"
+=======
+# 4333 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4372,9 +5806,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.class_expr) = 
+<<<<<<< HEAD
 # 2101 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2081 "parsing/parser.mly"
+=======
+# 2088 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _2 )
+<<<<<<< HEAD
 # 4378 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4354 "parsing/parser.ml"
+=======
+# 4365 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4419,24 +5865,60 @@ module Tables = struct
         let _endpos = _endpos__4_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2104 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2084 "parsing/parser.mly"
+=======
+# 2091 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_constraint(_4, _2) )
+<<<<<<< HEAD
 # 4425 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4401 "parsing/parser.ml"
+=======
+# 4412 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__4_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4434 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4410 "parsing/parser.ml"
+=======
+# 4421 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2107 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2087 "parsing/parser.mly"
+=======
+# 2094 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 4440 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4416 "parsing/parser.ml"
+=======
+# 4427 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4467,24 +5949,60 @@ module Tables = struct
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2106 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2086 "parsing/parser.mly"
+=======
+# 2093 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (l,o,p) = _1 in Pcl_fun(l, o, p, _2) )
+<<<<<<< HEAD
 # 4473 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4449 "parsing/parser.ml"
+=======
+# 4460 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__2_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4482 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4458 "parsing/parser.ml"
+=======
+# 4469 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2107 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2087 "parsing/parser.mly"
+=======
+# 2094 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 4488 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4464 "parsing/parser.ml"
+=======
+# 4475 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4522,24 +6040,60 @@ module Tables = struct
         let _endpos = _endpos_e_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2162 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2142 "parsing/parser.mly"
+=======
+# 2149 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (l,o,p) = _1 in Pcl_fun(l, o, p, e) )
+<<<<<<< HEAD
 # 4528 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4504 "parsing/parser.ml"
+=======
+# 4515 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos_e_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4537 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4513 "parsing/parser.ml"
+=======
+# 4524 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2143 "parsing/parser.mly"
+=======
+# 2150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 4543 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4519 "parsing/parser.ml"
+=======
+# 4530 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4570,24 +6124,60 @@ module Tables = struct
         let _endpos = _endpos_e_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2162 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2142 "parsing/parser.mly"
+=======
+# 2149 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (l,o,p) = _1 in Pcl_fun(l, o, p, e) )
+<<<<<<< HEAD
 # 4576 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4552 "parsing/parser.ml"
+=======
+# 4563 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos_e_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4585 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4561 "parsing/parser.ml"
+=======
+# 4572 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2143 "parsing/parser.mly"
+=======
+# 2150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 4591 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4567 "parsing/parser.ml"
+=======
+# 4578 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4612,7 +6202,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4127 "parsing/parser.mly"
                                       ( _1 )
+<<<<<<< HEAD
 # 4616 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4592 "parsing/parser.ml"
+=======
+# 4603 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4652,9 +6248,21 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2151 "parsing/parser.mly"
+=======
+# 2158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( reloc_pat ~loc:_sloc _2 )
+<<<<<<< HEAD
 # 4658 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4634 "parsing/parser.ml"
+=======
+# 4645 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4706,24 +6314,60 @@ module Tables = struct
         let _endpos = _endpos__5_ in
         let _v : (Parsetree.pattern) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2173 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2153 "parsing/parser.mly"
+=======
+# 2160 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Ppat_constraint(_2, _4) )
+<<<<<<< HEAD
 # 4712 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4688 "parsing/parser.ml"
+=======
+# 4699 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__5_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4721 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4697 "parsing/parser.ml"
+=======
+# 4708 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2154 "parsing/parser.mly"
+=======
+# 2161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 4727 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4703 "parsing/parser.ml"
+=======
+# 4714 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4742,9 +6386,21 @@ module Tables = struct
         let _symbolstartpos = _endpos in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2156 "parsing/parser.mly"
+=======
+# 2163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( ghpat ~loc:_sloc Ppat_any )
+<<<<<<< HEAD
 # 4748 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4724 "parsing/parser.ml"
+=======
+# 4735 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4781,9 +6437,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.core_type) = 
+<<<<<<< HEAD
 # 2301 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2281 "parsing/parser.mly"
+=======
+# 2288 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _2 )
+<<<<<<< HEAD
 # 4787 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4763 "parsing/parser.ml"
+=======
+# 4774 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4800,24 +6468,60 @@ module Tables = struct
         let _endpos = _startpos in
         let _v : (Parsetree.core_type) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2302 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2282 "parsing/parser.mly"
+=======
+# 2289 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                       ( Ptyp_any )
+<<<<<<< HEAD
 # 4806 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4782 "parsing/parser.ml"
+=======
+# 4793 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__0_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _endpos in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 4815 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4791 "parsing/parser.ml"
+=======
+# 4802 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2303 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2283 "parsing/parser.mly"
+=======
+# 2290 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 4821 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4797 "parsing/parser.ml"
+=======
+# 4808 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4865,7 +6569,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4869 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4845 "parsing/parser.ml"
+=======
+# 4856 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__4_ = _endpos__1_inlined2_ in
@@ -4874,17 +6584,35 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4878 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4854 "parsing/parser.ml"
+=======
+# 4865 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2311 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2291 "parsing/parser.mly"
+=======
+# 2298 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkctf ~loc:_sloc (Pctf_inherit _3) ~attrs:(_2@_4) ~docs )
+<<<<<<< HEAD
 # 4888 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4864 "parsing/parser.ml"
+=======
+# 4875 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -4942,9 +6670,21 @@ module Tables = struct
         let ty : (Parsetree.core_type) = Obj.magic ty in
         let _3 : unit = Obj.magic _3 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
+<<<<<<< HEAD
 # 4948 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4924 "parsing/parser.ml"
+=======
+# 4935 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1_inlined2 in
         let flags : (Asttypes.mutable_flag * Asttypes.virtual_flag) = Obj.magic flags in
         let _1_inlined1 : (Parsetree.attributes) = Obj.magic _1_inlined1 in
@@ -4957,7 +6697,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4961 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4937 "parsing/parser.ml"
+=======
+# 4948 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__4_ = _endpos__1_inlined3_ in
@@ -4967,24 +6713,54 @@ module Tables = struct
             let _1 = 
 # 3993 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 4971 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4947 "parsing/parser.ml"
+=======
+# 4958 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             let _endpos = _endpos__1_ in
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 4979 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4955 "parsing/parser.ml"
+=======
+# 4966 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2336 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2316 "parsing/parser.mly"
+=======
+# 2323 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let mut, virt = flags in
     label, mut, virt, ty
   )
+<<<<<<< HEAD
 # 4988 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4964 "parsing/parser.ml"
+=======
+# 4975 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 =
@@ -4992,17 +6768,35 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 4996 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4972 "parsing/parser.ml"
+=======
+# 4983 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2314 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2294 "parsing/parser.mly"
+=======
+# 2301 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkctf ~loc:_sloc (Pctf_val _3) ~attrs:(_2@_4) ~docs )
+<<<<<<< HEAD
 # 5006 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4982 "parsing/parser.ml"
+=======
+# 4993 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5060,9 +6854,21 @@ module Tables = struct
         let _1_inlined3 : (Parsetree.core_type) = Obj.magic _1_inlined3 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
+<<<<<<< HEAD
 # 5066 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5042 "parsing/parser.ml"
+=======
+# 5053 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1_inlined2 in
         let _3 : (Asttypes.private_flag * Asttypes.virtual_flag) = Obj.magic _3 in
         let _1_inlined1 : (Parsetree.attributes) = Obj.magic _1_inlined1 in
@@ -5075,7 +6881,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5079 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5055 "parsing/parser.ml"
+=======
+# 5066 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__7_ = _endpos__1_inlined4_ in
@@ -5084,7 +6896,13 @@ module Tables = struct
           
 # 3729 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5088 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5064 "parsing/parser.ml"
+=======
+# 5075 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _4 =
@@ -5092,15 +6910,33 @@ module Tables = struct
           let _1 = 
 # 3993 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 5096 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5072 "parsing/parser.ml"
+=======
+# 5083 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5104 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5080 "parsing/parser.ml"
+=======
+# 5091 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 =
@@ -5108,18 +6944,36 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5112 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5088 "parsing/parser.ml"
+=======
+# 5099 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__7_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2318 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2298 "parsing/parser.mly"
+=======
+# 2305 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (p, v) = _3 in
         let docs = symbol_docs _sloc in
         mkctf ~loc:_sloc (Pctf_method (_4, p, v, _6)) ~attrs:(_2@_7) ~docs )
+<<<<<<< HEAD
 # 5123 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5099 "parsing/parser.ml"
+=======
+# 5110 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5167,7 +7021,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5171 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5147 "parsing/parser.ml"
+=======
+# 5158 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__4_ = _endpos__1_inlined2_ in
@@ -5176,17 +7036,35 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5180 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5156 "parsing/parser.ml"
+=======
+# 5167 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2322 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2302 "parsing/parser.mly"
+=======
+# 2309 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkctf ~loc:_sloc (Pctf_constraint _3) ~attrs:(_2@_4) ~docs )
+<<<<<<< HEAD
 # 5190 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5166 "parsing/parser.ml"
+=======
+# 5177 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5220,7 +7098,13 @@ module Tables = struct
           
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5224 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5200 "parsing/parser.ml"
+=======
+# 5211 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__2_ = _endpos__1_inlined1_ in
@@ -5228,10 +7112,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2325 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2305 "parsing/parser.mly"
+=======
+# 2312 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mkctf ~loc:_sloc (Pctf_extension _1) ~attrs:_2 ~docs )
+<<<<<<< HEAD
 # 5235 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5211 "parsing/parser.ml"
+=======
+# 5222 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5255,23 +7151,59 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_type_field) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2328 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2308 "parsing/parser.mly"
+=======
+# 2315 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pctf_attribute _1 )
+<<<<<<< HEAD
 # 5261 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5237 "parsing/parser.ml"
+=======
+# 5248 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1167 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1147 "parsing/parser.mly"
+=======
+# 1154 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkctf ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 5269 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5245 "parsing/parser.ml"
+=======
+# 5256 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2329 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2309 "parsing/parser.mly"
+=======
+# 2316 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 5275 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5251 "parsing/parser.ml"
+=======
+# 5262 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5300,42 +7232,114 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5306 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5282 "parsing/parser.ml"
+=======
+# 5293 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
               let tys = 
+<<<<<<< HEAD
 # 2287 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2267 "parsing/parser.mly"
+=======
+# 2274 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [] )
+<<<<<<< HEAD
 # 5313 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5289 "parsing/parser.ml"
+=======
+# 5300 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 2293 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2273 "parsing/parser.mly"
+=======
+# 2280 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( tys )
+<<<<<<< HEAD
 # 5318 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5294 "parsing/parser.ml"
+=======
+# 5305 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2270 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2250 "parsing/parser.mly"
+=======
+# 2257 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_constr (cid, tys) )
+<<<<<<< HEAD
 # 5324 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5300 "parsing/parser.ml"
+=======
+# 5311 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 5333 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5309 "parsing/parser.ml"
+=======
+# 5320 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2273 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2253 "parsing/parser.mly"
+=======
+# 2260 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 5339 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5315 "parsing/parser.ml"
+=======
+# 5326 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5386,9 +7390,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5392 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5368 "parsing/parser.ml"
+=======
+# 5379 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
@@ -5397,30 +7413,84 @@ module Tables = struct
                   let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 5401 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5377 "parsing/parser.ml"
+=======
+# 5388 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                    in
                   
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 5406 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5382 "parsing/parser.ml"
+=======
+# 5393 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                   
                 in
                 
+<<<<<<< HEAD
 # 2289 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2269 "parsing/parser.mly"
+=======
+# 2276 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( params )
+<<<<<<< HEAD
 # 5412 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5388 "parsing/parser.ml"
+=======
+# 5399 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 2293 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2273 "parsing/parser.mly"
+=======
+# 2280 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( tys )
+<<<<<<< HEAD
 # 5418 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5394 "parsing/parser.ml"
+=======
+# 5405 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2270 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2250 "parsing/parser.mly"
+=======
+# 2257 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_constr (cid, tys) )
+<<<<<<< HEAD
 # 5424 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5400 "parsing/parser.ml"
+=======
+# 5411 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__1_inlined1_ in
@@ -5428,15 +7498,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 5434 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5410 "parsing/parser.ml"
+=======
+# 5421 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2273 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2253 "parsing/parser.mly"
+=======
+# 2260 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 5440 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5416 "parsing/parser.ml"
+=======
+# 5427 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5460,23 +7554,59 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_type) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2272 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2252 "parsing/parser.mly"
+=======
+# 2259 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_extension _1 )
+<<<<<<< HEAD
 # 5466 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5442 "parsing/parser.ml"
+=======
+# 5453 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 5474 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5450 "parsing/parser.ml"
+=======
+# 5461 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2273 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2253 "parsing/parser.mly"
+=======
+# 2260 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 5480 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5456 "parsing/parser.ml"
+=======
+# 5467 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5533,27 +7663,69 @@ module Tables = struct
               let _1 = 
 # 260 "<standard.mly>"
     ( List.flatten xss )
+<<<<<<< HEAD
 # 5537 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5513 "parsing/parser.ml"
+=======
+# 5524 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 2307 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2287 "parsing/parser.mly"
+=======
+# 2294 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 5542 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5518 "parsing/parser.ml"
+=======
+# 5529 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let (_endpos__1_, _startpos__1_) = (_endpos_xss_, _startpos_xss_) in
             let _endpos = _endpos__1_ in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1113 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1093 "parsing/parser.mly"
+=======
+# 1100 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_csig _startpos _endpos _1 )
+<<<<<<< HEAD
 # 5551 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5527 "parsing/parser.ml"
+=======
+# 5538 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2297 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2277 "parsing/parser.mly"
+=======
+# 2284 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Csig.mk _1 _2 )
+<<<<<<< HEAD
 # 5557 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5533 "parsing/parser.ml"
+=======
+# 5544 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 =
@@ -5561,16 +7733,34 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5565 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5541 "parsing/parser.ml"
+=======
+# 5552 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2275 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2255 "parsing/parser.mly"
+=======
+# 2262 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkcty ~loc:_sloc ~attrs:_2 (Pcty_signature _3) )
+<<<<<<< HEAD
 # 5574 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5550 "parsing/parser.ml"
+=======
+# 5561 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5627,27 +7817,69 @@ module Tables = struct
               let _1 = 
 # 260 "<standard.mly>"
     ( List.flatten xss )
+<<<<<<< HEAD
 # 5631 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5607 "parsing/parser.ml"
+=======
+# 5618 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 2307 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2287 "parsing/parser.mly"
+=======
+# 2294 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 5636 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5612 "parsing/parser.ml"
+=======
+# 5623 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let (_endpos__1_, _startpos__1_) = (_endpos_xss_, _startpos_xss_) in
             let _endpos = _endpos__1_ in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1113 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1093 "parsing/parser.mly"
+=======
+# 1100 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_csig _startpos _endpos _1 )
+<<<<<<< HEAD
 # 5645 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5621 "parsing/parser.ml"
+=======
+# 5632 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2297 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2277 "parsing/parser.mly"
+=======
+# 2284 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Csig.mk _1 _2 )
+<<<<<<< HEAD
 # 5651 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5627 "parsing/parser.ml"
+=======
+# 5638 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 =
@@ -5655,15 +7887,33 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5659 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5635 "parsing/parser.ml"
+=======
+# 5646 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _loc__4_ = (_startpos__4_, _endpos__4_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 2277 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2257 "parsing/parser.mly"
+=======
+# 2264 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "object" _loc__1_ "end" _loc__4_ )
+<<<<<<< HEAD
 # 5667 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5643 "parsing/parser.ml"
+=======
+# 5654 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5693,9 +7943,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.class_type) = 
+<<<<<<< HEAD
 # 2279 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2259 "parsing/parser.mly"
+=======
+# 2266 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Cty.attr _1 _2 )
+<<<<<<< HEAD
 # 5699 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5675 "parsing/parser.ml"
+=======
+# 5686 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5758,9 +8020,21 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5764 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5740 "parsing/parser.ml"
+=======
+# 5751 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__5_ = _endpos__1_inlined2_ in
@@ -5769,23 +8043,47 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5773 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5749 "parsing/parser.ml"
+=======
+# 5760 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _3 = 
 # 4256 "parsing/parser.mly"
                                                 ( Fresh )
+<<<<<<< HEAD
 # 5779 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5755 "parsing/parser.ml"
+=======
+# 5766 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__7_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2281 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2261 "parsing/parser.mly"
+=======
+# 2268 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let loc = (_startpos__2_, _endpos__5_) in
         let od = Opn.mk ~override:_3 ~loc:(make_loc loc) _5 in
         mkcty ~loc:_sloc ~attrs:_4 (Pcty_open(od, _7)) )
+<<<<<<< HEAD
 # 5789 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5765 "parsing/parser.ml"
+=======
+# 5776 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5855,9 +8153,21 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5861 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5837 "parsing/parser.ml"
+=======
+# 5848 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__5_ = _endpos__1_inlined3_ in
@@ -5866,23 +8176,47 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 5870 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5846 "parsing/parser.ml"
+=======
+# 5857 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _3 = 
 # 4257 "parsing/parser.mly"
                                                 ( Override )
+<<<<<<< HEAD
 # 5876 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5852 "parsing/parser.ml"
+=======
+# 5863 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__7_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2281 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2261 "parsing/parser.mly"
+=======
+# 2268 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let loc = (_startpos__2_, _endpos__5_) in
         let od = Opn.mk ~override:_3 ~loc:(make_loc loc) _5 in
         mkcty ~loc:_sloc ~attrs:_4 (Pcty_open(od, _7)) )
+<<<<<<< HEAD
 # 5886 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5862 "parsing/parser.ml"
+=======
+# 5873 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5919,9 +8253,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.class_expr) = 
+<<<<<<< HEAD
 # 2141 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2121 "parsing/parser.mly"
+=======
+# 2128 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _2 )
+<<<<<<< HEAD
 # 5925 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5901 "parsing/parser.ml"
+=======
+# 5912 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5960,9 +8306,21 @@ module Tables = struct
         let _v : (Parsetree.class_expr) = let _loc__3_ = (_startpos__3_, _endpos__3_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 2143 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2123 "parsing/parser.mly"
+=======
+# 2130 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__3_ )
+<<<<<<< HEAD
 # 5966 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5942 "parsing/parser.ml"
+=======
+# 5953 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -5991,42 +8349,114 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 5997 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5973 "parsing/parser.ml"
+=======
+# 5984 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
               let tys = 
+<<<<<<< HEAD
 # 2287 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2267 "parsing/parser.mly"
+=======
+# 2274 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [] )
+<<<<<<< HEAD
 # 6004 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5980 "parsing/parser.ml"
+=======
+# 5991 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 2293 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2273 "parsing/parser.mly"
+=======
+# 2280 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( tys )
+<<<<<<< HEAD
 # 6009 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5985 "parsing/parser.ml"
+=======
+# 5996 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2146 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2126 "parsing/parser.mly"
+=======
+# 2133 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_constr(cid, tys) )
+<<<<<<< HEAD
 # 6015 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 5991 "parsing/parser.ml"
+=======
+# 6002 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6024 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6000 "parsing/parser.ml"
+=======
+# 6011 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2133 "parsing/parser.mly"
+=======
+# 2140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6030 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6006 "parsing/parser.ml"
+=======
+# 6017 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6077,9 +8507,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 6083 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6059 "parsing/parser.ml"
+=======
+# 6070 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let tys =
@@ -6088,30 +8530,84 @@ module Tables = struct
                   let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 6092 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6068 "parsing/parser.ml"
+=======
+# 6079 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                    in
                   
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 6097 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6073 "parsing/parser.ml"
+=======
+# 6084 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                   
                 in
                 
+<<<<<<< HEAD
 # 2289 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2269 "parsing/parser.mly"
+=======
+# 2276 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( params )
+<<<<<<< HEAD
 # 6103 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6079 "parsing/parser.ml"
+=======
+# 6090 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 2293 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2273 "parsing/parser.mly"
+=======
+# 2280 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( tys )
+<<<<<<< HEAD
 # 6109 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6085 "parsing/parser.ml"
+=======
+# 6096 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2146 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2126 "parsing/parser.mly"
+=======
+# 2133 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_constr(cid, tys) )
+<<<<<<< HEAD
 # 6115 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6091 "parsing/parser.ml"
+=======
+# 6102 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__1_inlined1_ in
@@ -6119,15 +8615,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6125 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6101 "parsing/parser.ml"
+=======
+# 6112 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2133 "parsing/parser.mly"
+=======
+# 2140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6131 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6107 "parsing/parser.ml"
+=======
+# 6118 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6186,27 +8706,69 @@ module Tables = struct
                   let _1 = 
 # 260 "<standard.mly>"
     ( List.flatten xss )
+<<<<<<< HEAD
 # 6190 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6166 "parsing/parser.ml"
+=======
+# 6177 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                    in
                   
+<<<<<<< HEAD
 # 2180 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2160 "parsing/parser.mly"
+=======
+# 2167 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 6195 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6171 "parsing/parser.ml"
+=======
+# 6182 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                   
                 in
                 let (_endpos__1_, _startpos__1_) = (_endpos_xss_, _startpos_xss_) in
                 let _endpos = _endpos__1_ in
                 let _startpos = _startpos__1_ in
                 
+<<<<<<< HEAD
 # 1112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1092 "parsing/parser.mly"
+=======
+# 1099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_cstr _startpos _endpos _1 )
+<<<<<<< HEAD
 # 6204 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6180 "parsing/parser.ml"
+=======
+# 6191 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 2167 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2147 "parsing/parser.mly"
+=======
+# 2154 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        ( Cstr.mk _1 _2 )
+<<<<<<< HEAD
 # 6210 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6186 "parsing/parser.ml"
+=======
+# 6197 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _2 =
@@ -6214,15 +8776,33 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 6218 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6194 "parsing/parser.ml"
+=======
+# 6205 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _loc__4_ = (_startpos__4_, _endpos__4_) in
             let _loc__1_ = (_startpos__1_, _endpos__1_) in
             
+<<<<<<< HEAD
 # 2148 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2128 "parsing/parser.mly"
+=======
+# 2135 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( unclosed "object" _loc__1_ "end" _loc__4_ )
+<<<<<<< HEAD
 # 6226 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6202 "parsing/parser.ml"
+=======
+# 6213 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__4_ in
@@ -6230,15 +8810,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6236 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6212 "parsing/parser.ml"
+=======
+# 6223 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2133 "parsing/parser.mly"
+=======
+# 2140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6242 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6218 "parsing/parser.ml"
+=======
+# 6229 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6290,24 +8894,60 @@ module Tables = struct
         let _endpos = _endpos__5_ in
         let _v : (Parsetree.class_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2150 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2130 "parsing/parser.mly"
+=======
+# 2137 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcl_constraint(_2, _4) )
+<<<<<<< HEAD
 # 6296 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6272 "parsing/parser.ml"
+=======
+# 6283 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _endpos__1_ = _endpos__5_ in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6305 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6281 "parsing/parser.ml"
+=======
+# 6292 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2133 "parsing/parser.mly"
+=======
+# 2140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6311 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6287 "parsing/parser.ml"
+=======
+# 6298 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6362,9 +9002,21 @@ module Tables = struct
             let _loc__5_ = (_startpos__5_, _endpos__5_) in
             let _loc__1_ = (_startpos__1_, _endpos__1_) in
             
+<<<<<<< HEAD
 # 2152 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2132 "parsing/parser.mly"
+=======
+# 2139 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( unclosed "(" _loc__1_ ")" _loc__5_ )
+<<<<<<< HEAD
 # 6368 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6344 "parsing/parser.ml"
+=======
+# 6355 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos__5_ in
@@ -6372,15 +9024,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1171 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1151 "parsing/parser.mly"
+=======
+# 1158 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6378 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6354 "parsing/parser.ml"
+=======
+# 6365 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2133 "parsing/parser.mly"
+=======
+# 2140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6384 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6360 "parsing/parser.ml"
+=======
+# 6371 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6437,27 +9113,69 @@ module Tables = struct
               let _1 = 
 # 260 "<standard.mly>"
     ( List.flatten xss )
+<<<<<<< HEAD
 # 6441 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6417 "parsing/parser.ml"
+=======
+# 6428 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 2180 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2160 "parsing/parser.mly"
+=======
+# 2167 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 6446 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6422 "parsing/parser.ml"
+=======
+# 6433 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let (_endpos__1_, _startpos__1_) = (_endpos_xss_, _startpos_xss_) in
             let _endpos = _endpos__1_ in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1092 "parsing/parser.mly"
+=======
+# 1099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_cstr _startpos _endpos _1 )
+<<<<<<< HEAD
 # 6455 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6431 "parsing/parser.ml"
+=======
+# 6442 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2167 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2147 "parsing/parser.mly"
+=======
+# 2154 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        ( Cstr.mk _1 _2 )
+<<<<<<< HEAD
 # 6461 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6437 "parsing/parser.ml"
+=======
+# 6448 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _2 =
@@ -6465,16 +9183,34 @@ module Tables = struct
           
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 6469 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6445 "parsing/parser.ml"
+=======
+# 6456 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos = _endpos__4_ in
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2135 "parsing/parser.mly"
+=======
+# 2142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkclass ~loc:_sloc ~attrs:_2 (Pcl_structure _3) )
+<<<<<<< HEAD
 # 6478 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6454 "parsing/parser.ml"
+=======
+# 6465 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6497,9 +9233,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.class_type) = 
+<<<<<<< HEAD
 # 2258 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2238 "parsing/parser.mly"
+=======
+# 2245 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6503 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6479 "parsing/parser.ml"
+=======
+# 6490 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6547,12 +9295,30 @@ module Tables = struct
             let label = 
 # 3812 "parsing/parser.mly"
       ( Optional label )
+<<<<<<< HEAD
 # 6551 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6527 "parsing/parser.ml"
+=======
+# 6538 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
+<<<<<<< HEAD
 # 2264 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2244 "parsing/parser.mly"
+=======
+# 2251 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_arrow(label, domain, codomain) )
+<<<<<<< HEAD
 # 6556 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6532 "parsing/parser.ml"
+=======
+# 6543 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_codomain_, _startpos_label_) in
@@ -6560,15 +9326,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6566 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6542 "parsing/parser.ml"
+=======
+# 6553 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2265 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2245 "parsing/parser.mly"
+=======
+# 2252 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6572 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6548 "parsing/parser.ml"
+=======
+# 6559 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6615,9 +9405,21 @@ module Tables = struct
         let domain : (Parsetree.core_type) = Obj.magic domain in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
+<<<<<<< HEAD
 # 6621 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6597 "parsing/parser.ml"
+=======
+# 6608 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic label in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos_label_ in
@@ -6627,12 +9429,30 @@ module Tables = struct
             let label = 
 # 3814 "parsing/parser.mly"
       ( Labelled label )
+<<<<<<< HEAD
 # 6631 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6607 "parsing/parser.ml"
+=======
+# 6618 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
+<<<<<<< HEAD
 # 2264 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2244 "parsing/parser.mly"
+=======
+# 2251 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_arrow(label, domain, codomain) )
+<<<<<<< HEAD
 # 6636 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6612 "parsing/parser.ml"
+=======
+# 6623 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_codomain_, _startpos_label_) in
@@ -6640,15 +9460,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6646 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6622 "parsing/parser.ml"
+=======
+# 6633 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2265 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2245 "parsing/parser.mly"
+=======
+# 2252 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6652 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6628 "parsing/parser.ml"
+=======
+# 6639 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6689,12 +9533,30 @@ module Tables = struct
             let label = 
 # 3816 "parsing/parser.mly"
       ( Nolabel )
+<<<<<<< HEAD
 # 6693 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6669 "parsing/parser.ml"
+=======
+# 6680 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
              in
             
+<<<<<<< HEAD
 # 2264 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2244 "parsing/parser.mly"
+=======
+# 2251 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pcty_arrow(label, domain, codomain) )
+<<<<<<< HEAD
 # 6698 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6674 "parsing/parser.ml"
+=======
+# 6685 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_codomain_, _startpos_domain_) in
@@ -6702,15 +9564,39 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1165 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1145 "parsing/parser.mly"
+=======
+# 1152 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkcty ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 6708 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6684 "parsing/parser.ml"
+=======
+# 6695 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2265 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2245 "parsing/parser.mly"
+=======
+# 2252 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 6714 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6690 "parsing/parser.ml"
+=======
+# 6701 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6793,9 +9679,21 @@ module Tables = struct
         let csig : (Parsetree.class_type) = Obj.magic csig in
         let _8 : unit = Obj.magic _8 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
+<<<<<<< HEAD
 # 6799 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6775 "parsing/parser.ml"
+=======
+# 6786 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1_inlined2 in
         let params : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = Obj.magic params in
         let virt : (Asttypes.virtual_flag) = Obj.magic virt in
@@ -6813,7 +9711,13 @@ module Tables = struct
               
 # 4352 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 6817 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6793 "parsing/parser.ml"
+=======
+# 6804 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _endpos_attrs2_ = _endpos__1_inlined3_ in
@@ -6823,9 +9727,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 6829 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6805 "parsing/parser.ml"
+=======
+# 6816 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let attrs1 =
@@ -6833,14 +9749,26 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 6837 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6813 "parsing/parser.ml"
+=======
+# 6824 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _endpos = _endpos_attrs2_ in
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 2403 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2383 "parsing/parser.mly"
+=======
+# 2390 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     (
       let attrs = attrs1 @ attrs2 in
       let loc = make_loc _sloc in
@@ -6848,19 +9776,49 @@ module Tables = struct
       ext,
       Ci.mk id csig ~virt ~params ~attrs ~loc ~docs
     )
+<<<<<<< HEAD
 # 6852 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6828 "parsing/parser.ml"
+=======
+# 6839 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
+<<<<<<< HEAD
 # 6858 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6834 "parsing/parser.ml"
+=======
+# 6845 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2391 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2371 "parsing/parser.mly"
+=======
+# 2378 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 6864 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6840 "parsing/parser.ml"
+=======
+# 6851 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6885,7 +9843,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4124 "parsing/parser.mly"
                                            ( _1 )
+<<<<<<< HEAD
 # 6889 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6865 "parsing/parser.ml"
+=======
+# 6876 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6918,18 +9882,42 @@ module Tables = struct
           let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 6922 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6898 "parsing/parser.ml"
+=======
+# 6909 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 6927 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6903 "parsing/parser.ml"
+=======
+# 6914 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 2717 "parsing/parser.mly"
       ( Jane_syntax.Comprehensions.For _2 )
+<<<<<<< HEAD
 # 6933 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6909 "parsing/parser.ml"
+=======
+# 6920 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -6961,7 +9949,13 @@ module Tables = struct
         let _v : (Jane_syntax.Comprehensions.clause) = 
 # 2719 "parsing/parser.mly"
       ( Jane_syntax.Comprehensions.When _2 )
+<<<<<<< HEAD
 # 6965 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6941 "parsing/parser.ml"
+=======
+# 6952 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7000,12 +9994,24 @@ module Tables = struct
         let _v : (Jane_syntax.Comprehensions.clause_binding) = let _1 = 
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 7004 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6980 "parsing/parser.ml"
+=======
+# 6991 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 2700 "parsing/parser.mly"
       ( Jane_syntax.Comprehensions.{ pattern = _2 ; iterator = _3 ; attributes = _1 } )
+<<<<<<< HEAD
 # 7009 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 6985 "parsing/parser.ml"
+=======
+# 6996 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7058,7 +10064,13 @@ module Tables = struct
         let _v : (Jane_syntax.Comprehensions.clause_binding) = let _1 = 
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 7062 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7038 "parsing/parser.ml"
+=======
+# 7049 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         let _endpos = _endpos__5_ in
         let _symbolstartpos = if _startpos__1_ != _endpos__1_ then
@@ -7075,7 +10087,13 @@ module Tables = struct
           ; attributes = _1
           }
       )
+<<<<<<< HEAD
 # 7079 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7055 "parsing/parser.ml"
+=======
+# 7066 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7121,7 +10139,13 @@ module Tables = struct
         let _v : (Jane_syntax.Comprehensions.iterator) = 
 # 2693 "parsing/parser.mly"
       ( Jane_syntax.Comprehensions.Range { start = _2 ; stop = _4 ; direction = _3 } )
+<<<<<<< HEAD
 # 7125 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7101 "parsing/parser.ml"
+=======
+# 7112 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7153,7 +10177,13 @@ module Tables = struct
         let _v : (Jane_syntax.Comprehensions.iterator) = 
 # 2695 "parsing/parser.mly"
       ( Jane_syntax.Comprehensions.In _2 )
+<<<<<<< HEAD
 # 7157 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7133 "parsing/parser.ml"
+=======
+# 7144 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7172,9 +10202,21 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
+<<<<<<< HEAD
 # 7178 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7154 "parsing/parser.ml"
+=======
+# 7165 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
@@ -7182,7 +10224,13 @@ module Tables = struct
         let _v : (Parsetree.constant) = 
 # 3999 "parsing/parser.mly"
                       ( let (n, m) = _1 in Pconst_integer (n, m) )
+<<<<<<< HEAD
 # 7186 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7162 "parsing/parser.ml"
+=======
+# 7173 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7201,9 +10249,21 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 873 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 853 "parsing/parser.mly"
+=======
+# 860 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (char)
+<<<<<<< HEAD
 # 7207 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7183 "parsing/parser.ml"
+=======
+# 7194 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
@@ -7211,7 +10271,13 @@ module Tables = struct
         let _v : (Parsetree.constant) = 
 # 4000 "parsing/parser.mly"
                       ( Pconst_char _1 )
+<<<<<<< HEAD
 # 7215 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7191 "parsing/parser.ml"
+=======
+# 7202 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7230,9 +10296,21 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 972 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 952 "parsing/parser.mly"
+=======
+# 959 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string option)
+<<<<<<< HEAD
 # 7236 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7212 "parsing/parser.ml"
+=======
+# 7223 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
@@ -7240,7 +10318,13 @@ module Tables = struct
         let _v : (Parsetree.constant) = 
 # 4001 "parsing/parser.mly"
                       ( let (s, strloc, d) = _1 in Pconst_string (s, strloc, d) )
+<<<<<<< HEAD
 # 7244 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7220 "parsing/parser.ml"
+=======
+# 7231 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7259,9 +10343,21 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
+<<<<<<< HEAD
 # 7265 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7241 "parsing/parser.ml"
+=======
+# 7252 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
@@ -7269,7 +10365,13 @@ module Tables = struct
         let _v : (Parsetree.constant) = 
 # 4002 "parsing/parser.mly"
                       ( let (f, m) = _1 in Pconst_float (f, m) )
+<<<<<<< HEAD
 # 7273 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7249 "parsing/parser.ml"
+=======
+# 7260 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7294,9 +10396,21 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
+<<<<<<< HEAD
 # 7300 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7276 "parsing/parser.ml"
+=======
+# 7287 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _2 in
         let _1 : unit = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
@@ -7309,7 +10423,13 @@ module Tables = struct
         
 # 4005 "parsing/parser.mly"
                       ( unboxed_int _sloc _loc__2_ Positive _2 )
+<<<<<<< HEAD
 # 7313 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7289 "parsing/parser.ml"
+=======
+# 7300 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7334,9 +10454,21 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
+<<<<<<< HEAD
 # 7340 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7316 "parsing/parser.ml"
+=======
+# 7327 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _2 in
         let _1 : unit = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
@@ -7348,7 +10480,13 @@ module Tables = struct
         
 # 4006 "parsing/parser.mly"
                       ( unboxed_float _sloc Positive _2 )
+<<<<<<< HEAD
 # 7352 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7328 "parsing/parser.ml"
+=======
+# 7339 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7380,7 +10518,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4081 "parsing/parser.mly"
                                                 ( "[]" )
+<<<<<<< HEAD
 # 7384 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7360 "parsing/parser.ml"
+=======
+# 7371 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7412,7 +10556,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4082 "parsing/parser.mly"
                                                 ( "()" )
+<<<<<<< HEAD
 # 7416 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7392 "parsing/parser.ml"
+=======
+# 7403 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7437,7 +10587,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4083 "parsing/parser.mly"
                                                 ( "false" )
+<<<<<<< HEAD
 # 7441 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7417 "parsing/parser.ml"
+=======
+# 7428 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7462,7 +10618,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4084 "parsing/parser.mly"
                                                 ( "true" )
+<<<<<<< HEAD
 # 7466 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7442 "parsing/parser.ml"
+=======
+# 7453 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7481,9 +10643,21 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
+<<<<<<< HEAD
 # 7487 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7463 "parsing/parser.ml"
+=======
+# 7474 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ) = Obj.magic _1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
@@ -7491,7 +10665,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4087 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 7495 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7471 "parsing/parser.ml"
+=======
+# 7482 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7530,12 +10710,24 @@ module Tables = struct
         let _v : (Asttypes.label) = let _1 = 
 # 4078 "parsing/parser.mly"
                                                 ( "::" )
+<<<<<<< HEAD
 # 7534 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7510 "parsing/parser.ml"
+=======
+# 7521 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 4088 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 7539 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7515 "parsing/parser.ml"
+=======
+# 7526 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7560,7 +10752,13 @@ module Tables = struct
         let _v : (Asttypes.label) = 
 # 4089 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 7564 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7540 "parsing/parser.ml"
+=======
+# 7551 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7585,7 +10783,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4092 "parsing/parser.mly"
                                          ( _1 )
+<<<<<<< HEAD
 # 7589 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7565 "parsing/parser.ml"
+=======
+# 7576 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7638,12 +10842,24 @@ module Tables = struct
         let _v : (Longident.t) = let _3 = 
 # 4078 "parsing/parser.mly"
                                                 ( "::" )
+<<<<<<< HEAD
 # 7642 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7618 "parsing/parser.ml"
+=======
+# 7629 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 4093 "parsing/parser.mly"
                                          ( Ldot(_1,_3) )
+<<<<<<< HEAD
 # 7647 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7623 "parsing/parser.ml"
+=======
+# 7634 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7682,12 +10898,24 @@ module Tables = struct
         let _v : (Longident.t) = let _1 = 
 # 4078 "parsing/parser.mly"
                                                 ( "::" )
+<<<<<<< HEAD
 # 7686 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7662 "parsing/parser.ml"
+=======
+# 7673 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 4094 "parsing/parser.mly"
                                          ( Lident _1 )
+<<<<<<< HEAD
 # 7691 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7667 "parsing/parser.ml"
+=======
+# 7678 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7712,7 +10940,13 @@ module Tables = struct
         let _v : (Longident.t) = 
 # 4095 "parsing/parser.mly"
                                          ( Lident _1 )
+<<<<<<< HEAD
 # 7716 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7692 "parsing/parser.ml"
+=======
+# 7703 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7749,9 +10983,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.core_type * Parsetree.core_type) = 
+<<<<<<< HEAD
 # 2347 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2327 "parsing/parser.mly"
+=======
+# 2334 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1, _3 )
+<<<<<<< HEAD
 # 7755 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7731 "parsing/parser.ml"
+=======
+# 7742 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7780,7 +11026,13 @@ module Tables = struct
                 let gbl = 
 # 4212 "parsing/parser.mly"
           ( Nothing )
+<<<<<<< HEAD
 # 7784 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7760 "parsing/parser.ml"
+=======
+# 7771 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__0_, _endpos__0_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -7789,6 +11041,7 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 7793 "parsing/parser.ml"
                 
               in
@@ -7814,6 +11067,59 @@ module Tables = struct
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
 # 7817 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7769 "parsing/parser.ml"
+                
+              in
+              
+# 1216 "parsing/parser.mly"
+    ( [ x ] )
+# 7775 "parsing/parser.ml"
+              
+            in
+            
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 7781 "parsing/parser.ml"
+            
+          in
+          
+# 1236 "parsing/parser.mly"
+    ( xs )
+# 7787 "parsing/parser.ml"
+          
+        in
+        
+# 3558 "parsing/parser.mly"
+      ( Pcstr_tuple tys )
+# 7793 "parsing/parser.ml"
+=======
+# 7780 "parsing/parser.ml"
+                
+              in
+              
+# 1223 "parsing/parser.mly"
+    ( [ x ] )
+# 7786 "parsing/parser.ml"
+              
+            in
+            
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 7792 "parsing/parser.ml"
+            
+          in
+          
+# 1243 "parsing/parser.mly"
+    ( xs )
+# 7798 "parsing/parser.ml"
+          
+        in
+        
+# 3588 "parsing/parser.mly"
+      ( Pcstr_tuple tys )
+# 7804 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7849,7 +11155,13 @@ module Tables = struct
                 let gbl = 
 # 4213 "parsing/parser.mly"
            ( Global )
+<<<<<<< HEAD
 # 7853 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7829 "parsing/parser.ml"
+=======
+# 7840 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -7858,31 +11170,73 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 7862 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7838 "parsing/parser.ml"
+=======
+# 7849 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
+<<<<<<< HEAD
 # 7868 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7844 "parsing/parser.ml"
+=======
+# 7855 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 7874 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7850 "parsing/parser.ml"
+=======
+# 7861 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 1256 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1236 "parsing/parser.mly"
+=======
+# 1243 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 7880 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7856 "parsing/parser.ml"
+=======
+# 7867 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
+<<<<<<< HEAD
 # 7886 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7862 "parsing/parser.ml"
+=======
+# 7873 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7918,7 +11272,13 @@ module Tables = struct
                 let gbl = 
 # 4214 "parsing/parser.mly"
              ( Nonlocal )
+<<<<<<< HEAD
 # 7922 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7898 "parsing/parser.ml"
+=======
+# 7909 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -7927,31 +11287,73 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 7931 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7907 "parsing/parser.ml"
+=======
+# 7918 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
+<<<<<<< HEAD
 # 7937 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7913 "parsing/parser.ml"
+=======
+# 7924 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 7943 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7919 "parsing/parser.ml"
+=======
+# 7930 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 1256 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1236 "parsing/parser.mly"
+=======
+# 1243 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 7949 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7925 "parsing/parser.ml"
+=======
+# 7936 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
+<<<<<<< HEAD
 # 7955 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7931 "parsing/parser.ml"
+=======
+# 7942 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -7995,7 +11397,13 @@ module Tables = struct
                 let gbl = 
 # 4212 "parsing/parser.mly"
           ( Nothing )
+<<<<<<< HEAD
 # 7999 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7975 "parsing/parser.ml"
+=======
+# 7986 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__0_, _endpos__0_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -8004,6 +11412,7 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 8008 "parsing/parser.ml"
                 
               in
@@ -8029,6 +11438,59 @@ module Tables = struct
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
 # 8032 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 7984 "parsing/parser.ml"
+                
+              in
+              
+# 1220 "parsing/parser.mly"
+    ( x :: xs )
+# 7990 "parsing/parser.ml"
+              
+            in
+            
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 7996 "parsing/parser.ml"
+            
+          in
+          
+# 1236 "parsing/parser.mly"
+    ( xs )
+# 8002 "parsing/parser.ml"
+          
+        in
+        
+# 3558 "parsing/parser.mly"
+      ( Pcstr_tuple tys )
+# 8008 "parsing/parser.ml"
+=======
+# 7995 "parsing/parser.ml"
+                
+              in
+              
+# 1227 "parsing/parser.mly"
+    ( x :: xs )
+# 8001 "parsing/parser.ml"
+              
+            in
+            
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 8007 "parsing/parser.ml"
+            
+          in
+          
+# 1243 "parsing/parser.mly"
+    ( xs )
+# 8013 "parsing/parser.ml"
+          
+        in
+        
+# 3588 "parsing/parser.mly"
+      ( Pcstr_tuple tys )
+# 8019 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8078,7 +11540,13 @@ module Tables = struct
                 let gbl = 
 # 4213 "parsing/parser.mly"
            ( Global )
+<<<<<<< HEAD
 # 8082 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8058 "parsing/parser.ml"
+=======
+# 8069 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -8087,31 +11555,73 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 8091 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8067 "parsing/parser.ml"
+=======
+# 8078 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
+<<<<<<< HEAD
 # 8097 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8073 "parsing/parser.ml"
+=======
+# 8084 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 8103 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8079 "parsing/parser.ml"
+=======
+# 8090 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 1256 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1236 "parsing/parser.mly"
+=======
+# 1243 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 8109 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8085 "parsing/parser.ml"
+=======
+# 8096 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
+<<<<<<< HEAD
 # 8115 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8091 "parsing/parser.ml"
+=======
+# 8102 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8161,7 +11671,13 @@ module Tables = struct
                 let gbl = 
 # 4214 "parsing/parser.mly"
              ( Nonlocal )
+<<<<<<< HEAD
 # 8165 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8141 "parsing/parser.ml"
+=======
+# 8152 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                  in
                 let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
                 let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
@@ -8170,31 +11686,73 @@ module Tables = struct
                                       (
   mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
 )
+<<<<<<< HEAD
 # 8174 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8150 "parsing/parser.ml"
+=======
+# 8161 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                 
               in
               
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
+<<<<<<< HEAD
 # 8180 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8156 "parsing/parser.ml"
+=======
+# 8167 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 8186 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8162 "parsing/parser.ml"
+=======
+# 8173 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 1256 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1236 "parsing/parser.mly"
+=======
+# 1243 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 8192 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8168 "parsing/parser.ml"
+=======
+# 8179 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 3588 "parsing/parser.mly"
       ( Pcstr_tuple tys )
+<<<<<<< HEAD
 # 8198 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8174 "parsing/parser.ml"
+=======
+# 8185 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8233,7 +11791,13 @@ module Tables = struct
         let _v : (Parsetree.constructor_arguments) = 
 # 3590 "parsing/parser.mly"
       ( Pcstr_record _2 )
+<<<<<<< HEAD
 # 8237 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8213 "parsing/parser.ml"
+=======
+# 8224 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8258,7 +11822,13 @@ module Tables = struct
         let _v : (Parsetree.constructor_declaration list) = 
 # 3498 "parsing/parser.mly"
       ( [] )
+<<<<<<< HEAD
 # 8262 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8238 "parsing/parser.ml"
+=======
+# 8249 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8281,14 +11851,32 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_xs_ in
         let _v : (Parsetree.constructor_declaration list) = let cs = 
+<<<<<<< HEAD
 # 1341 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1321 "parsing/parser.mly"
+=======
+# 1328 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( List.rev xs )
+<<<<<<< HEAD
 # 8287 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8263 "parsing/parser.ml"
+=======
+# 8274 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 3500 "parsing/parser.mly"
       ( cs )
+<<<<<<< HEAD
 # 8292 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8268 "parsing/parser.ml"
+=======
+# 8279 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8313,12 +11901,24 @@ module Tables = struct
         let _v : (Parsetree.core_type) = let _1 = 
 # 3754 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8317 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8293 "parsing/parser.ml"
+=======
+# 8304 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 3744 "parsing/parser.mly"
       ( _1 )
+<<<<<<< HEAD
 # 8322 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8298 "parsing/parser.ml"
+=======
+# 8309 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8350,7 +11950,13 @@ module Tables = struct
         let _v : (Parsetree.core_type) = 
 # 3746 "parsing/parser.mly"
       ( Typ.attr _1 _2 )
+<<<<<<< HEAD
 # 8354 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8330 "parsing/parser.ml"
+=======
+# 8341 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8375,7 +11981,13 @@ module Tables = struct
         let _v : (Asttypes.direction_flag) = 
 # 4190 "parsing/parser.mly"
                                                 ( Upto )
+<<<<<<< HEAD
 # 8379 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8355 "parsing/parser.ml"
+=======
+# 8366 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8400,7 +12012,13 @@ module Tables = struct
         let _v : (Asttypes.direction_flag) = 
 # 4191 "parsing/parser.mly"
                                                 ( Downto )
+<<<<<<< HEAD
 # 8404 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8380 "parsing/parser.ml"
+=======
+# 8391 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8423,9 +12041,21 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.expression) = 
+<<<<<<< HEAD
 # 2541 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2521 "parsing/parser.mly"
+=======
+# 2528 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 8429 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8405 "parsing/parser.ml"
+=======
+# 8416 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8503,9 +12133,21 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 8509 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8485 "parsing/parser.ml"
+=======
+# 8496 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _3 =
@@ -8515,19 +12157,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8519 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8495 "parsing/parser.ml"
+=======
+# 8506 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 8525 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8501 "parsing/parser.ml"
+=======
+# 8512 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2578 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2558 "parsing/parser.mly"
+=======
+# 2565 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_letmodule(_4, _5, _7), _3 )
+<<<<<<< HEAD
 # 8531 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8507 "parsing/parser.ml"
+=======
+# 8518 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__7_ in
@@ -8535,10 +12201,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 8542 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8518 "parsing/parser.ml"
+=======
+# 8529 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8625,7 +12303,13 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8629 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8605 "parsing/parser.ml"
+=======
+# 8616 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _endpos__3_ = _endpos__1_inlined1_ in
@@ -8634,9 +12318,21 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
+<<<<<<< HEAD
 # 8640 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8616 "parsing/parser.ml"
+=======
+# 8627 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             let _endpos = _endpos__3_ in
@@ -8646,7 +12342,13 @@ module Tables = struct
 # 3562 "parsing/parser.mly"
       ( let vars, args, res = _2 in
         Te.decl _1 ~vars ~args ?res ~attrs:_3 ~loc:(make_loc _sloc) )
+<<<<<<< HEAD
 # 8650 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8626 "parsing/parser.ml"
+=======
+# 8637 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _3 =
@@ -8656,19 +12358,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8660 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8636 "parsing/parser.ml"
+=======
+# 8647 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 8666 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8642 "parsing/parser.ml"
+=======
+# 8653 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2580 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2560 "parsing/parser.mly"
+=======
+# 2567 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_letexception(_4, _6), _3 )
+<<<<<<< HEAD
 # 8672 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8648 "parsing/parser.ml"
+=======
+# 8659 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__6_ in
@@ -8676,10 +12402,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 8683 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8659 "parsing/parser.ml"
+=======
+# 8670 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8751,26 +12489,56 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8755 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8731 "parsing/parser.ml"
+=======
+# 8742 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 8761 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8737 "parsing/parser.ml"
+=======
+# 8748 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _3 = 
 # 4256 "parsing/parser.mly"
                                                 ( Fresh )
+<<<<<<< HEAD
 # 8767 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8743 "parsing/parser.ml"
+=======
+# 8754 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           
+<<<<<<< HEAD
 # 2582 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2562 "parsing/parser.mly"
+=======
+# 2569 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let open_loc = make_loc (_startpos__2_, _endpos__5_) in
         let od = Opn.mk _5 ~override:_3 ~loc:open_loc in
         Pexp_open(od, _7), _4 )
+<<<<<<< HEAD
 # 8774 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8750 "parsing/parser.ml"
+=======
+# 8761 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__7_ in
@@ -8778,10 +12546,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 8785 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8761 "parsing/parser.ml"
+=======
+# 8772 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8860,26 +12640,56 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8864 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8840 "parsing/parser.ml"
+=======
+# 8851 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 8870 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8846 "parsing/parser.ml"
+=======
+# 8857 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _3 = 
 # 4257 "parsing/parser.mly"
                                                 ( Override )
+<<<<<<< HEAD
 # 8876 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8852 "parsing/parser.ml"
+=======
+# 8863 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           
+<<<<<<< HEAD
 # 2582 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2562 "parsing/parser.mly"
+=======
+# 2569 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let open_loc = make_loc (_startpos__2_, _endpos__5_) in
         let od = Opn.mk _5 ~override:_3 ~loc:open_loc in
         Pexp_open(od, _7), _4 )
+<<<<<<< HEAD
 # 8883 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8859 "parsing/parser.ml"
+=======
+# 8870 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__7_ in
@@ -8887,10 +12697,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 8894 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8870 "parsing/parser.ml"
+=======
+# 8881 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -8939,18 +12761,42 @@ module Tables = struct
               let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 8943 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8919 "parsing/parser.ml"
+=======
+# 8930 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 1313 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1293 "parsing/parser.mly"
+=======
+# 1300 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 8948 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8924 "parsing/parser.ml"
+=======
+# 8935 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3018 "parsing/parser.mly"
     ( xs )
+<<<<<<< HEAD
 # 8954 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8930 "parsing/parser.ml"
+=======
+# 8941 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _2 =
@@ -8960,19 +12806,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 8964 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8940 "parsing/parser.ml"
+=======
+# 8951 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 8970 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8946 "parsing/parser.ml"
+=======
+# 8957 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2586 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2566 "parsing/parser.mly"
+=======
+# 2573 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_function _3, _2 )
+<<<<<<< HEAD
 # 8976 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8952 "parsing/parser.ml"
+=======
+# 8963 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos_xs_ in
@@ -8980,10 +12850,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 8987 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 8963 "parsing/parser.ml"
+=======
+# 8974 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9041,20 +12923,44 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9045 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9021 "parsing/parser.ml"
+=======
+# 9032 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9051 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9027 "parsing/parser.ml"
+=======
+# 9038 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2588 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2568 "parsing/parser.mly"
+=======
+# 2575 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (l,o,p) = _3 in
         Pexp_fun(l, o, p, _4), _2 )
+<<<<<<< HEAD
 # 9058 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9034 "parsing/parser.ml"
+=======
+# 9045 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__4_ in
@@ -9062,10 +12968,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9069 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9045 "parsing/parser.ml"
+=======
+# 9056 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9140,7 +13058,13 @@ module Tables = struct
           let _5 = 
 # 2872 "parsing/parser.mly"
     ( xs )
+<<<<<<< HEAD
 # 9144 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9120 "parsing/parser.ml"
+=======
+# 9131 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
            in
           let _2 =
             let (_1_inlined1, _1) = (_1_inlined2, _1_inlined1) in
@@ -9149,22 +13073,46 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9153 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9129 "parsing/parser.ml"
+=======
+# 9140 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9159 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9135 "parsing/parser.ml"
+=======
+# 9146 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos = _endpos__7_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2591 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2571 "parsing/parser.mly"
+=======
+# 2578 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (mk_newtypes ~loc:_sloc _5 _7).pexp_desc, _2 )
+<<<<<<< HEAD
 # 9168 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9144 "parsing/parser.ml"
+=======
+# 9155 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__7_ in
@@ -9172,10 +13120,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9179 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9155 "parsing/parser.ml"
+=======
+# 9166 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9238,6 +13198,7 @@ module Tables = struct
               let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 9242 "parsing/parser.ml"
                in
               
@@ -9250,6 +13211,33 @@ module Tables = struct
 # 3018 "parsing/parser.mly"
     ( xs )
 # 9253 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9218 "parsing/parser.ml"
+               in
+              
+# 1293 "parsing/parser.mly"
+    ( xs )
+# 9223 "parsing/parser.ml"
+              
+            in
+            
+# 2993 "parsing/parser.mly"
+    ( xs )
+# 9229 "parsing/parser.ml"
+=======
+# 9229 "parsing/parser.ml"
+               in
+              
+# 1300 "parsing/parser.mly"
+    ( xs )
+# 9234 "parsing/parser.ml"
+              
+            in
+            
+# 3018 "parsing/parser.mly"
+    ( xs )
+# 9240 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _2 =
@@ -9259,19 +13247,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9263 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9239 "parsing/parser.ml"
+=======
+# 9250 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9269 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9245 "parsing/parser.ml"
+=======
+# 9256 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2593 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2573 "parsing/parser.mly"
+=======
+# 2580 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_match(_3, _5), _2 )
+<<<<<<< HEAD
 # 9275 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9251 "parsing/parser.ml"
+=======
+# 9262 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos_xs_ in
@@ -9279,10 +13291,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9286 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9262 "parsing/parser.ml"
+=======
+# 9273 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9345,18 +13369,42 @@ module Tables = struct
               let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 9349 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9325 "parsing/parser.ml"
+=======
+# 9336 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 1313 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1293 "parsing/parser.mly"
+=======
+# 1300 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 9354 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9330 "parsing/parser.ml"
+=======
+# 9341 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 3018 "parsing/parser.mly"
     ( xs )
+<<<<<<< HEAD
 # 9360 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9336 "parsing/parser.ml"
+=======
+# 9347 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _2 =
@@ -9366,19 +13414,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9370 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9346 "parsing/parser.ml"
+=======
+# 9357 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9376 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9352 "parsing/parser.ml"
+=======
+# 9363 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2595 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2575 "parsing/parser.mly"
+=======
+# 2582 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_try(_3, _5), _2 )
+<<<<<<< HEAD
 # 9382 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9358 "parsing/parser.ml"
+=======
+# 9369 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos_xs_ in
@@ -9386,10 +13458,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9393 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9369 "parsing/parser.ml"
+=======
+# 9380 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9454,19 +13538,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9458 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9434 "parsing/parser.ml"
+=======
+# 9445 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9464 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9440 "parsing/parser.ml"
+=======
+# 9451 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2597 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2577 "parsing/parser.mly"
+=======
+# 2584 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( syntax_error() )
+<<<<<<< HEAD
 # 9470 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9446 "parsing/parser.ml"
+=======
+# 9457 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__5_ in
@@ -9474,10 +13582,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9481 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9457 "parsing/parser.ml"
+=======
+# 9468 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9556,19 +13676,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9560 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9536 "parsing/parser.ml"
+=======
+# 9547 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9566 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9542 "parsing/parser.ml"
+=======
+# 9553 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2599 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2579 "parsing/parser.mly"
+=======
+# 2586 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_ifthenelse(_3, _5, Some _7), _2 )
+<<<<<<< HEAD
 # 9572 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9548 "parsing/parser.ml"
+=======
+# 9559 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__7_ in
@@ -9576,10 +13720,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9583 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9559 "parsing/parser.ml"
+=======
+# 9570 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9644,19 +13800,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9648 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9624 "parsing/parser.ml"
+=======
+# 9635 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9654 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9630 "parsing/parser.ml"
+=======
+# 9641 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2601 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2581 "parsing/parser.mly"
+=======
+# 2588 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_ifthenelse(_3, _5, None), _2 )
+<<<<<<< HEAD
 # 9660 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9636 "parsing/parser.ml"
+=======
+# 9647 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__5_ in
@@ -9664,10 +13844,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9671 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9647 "parsing/parser.ml"
+=======
+# 9658 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9739,19 +13931,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9743 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9719 "parsing/parser.ml"
+=======
+# 9730 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9749 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9725 "parsing/parser.ml"
+=======
+# 9736 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2603 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2583 "parsing/parser.mly"
+=======
+# 2590 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_while(_3, _5), _2 )
+<<<<<<< HEAD
 # 9755 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9731 "parsing/parser.ml"
+=======
+# 9742 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__6_ in
@@ -9759,10 +13975,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9766 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9742 "parsing/parser.ml"
+=======
+# 9753 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9862,19 +14090,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9866 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9842 "parsing/parser.ml"
+=======
+# 9853 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9872 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9848 "parsing/parser.ml"
+=======
+# 9859 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2606 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2586 "parsing/parser.mly"
+=======
+# 2593 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_for(_3, _5, _7, _6, _9), _2 )
+<<<<<<< HEAD
 # 9878 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9854 "parsing/parser.ml"
+=======
+# 9865 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__10_ in
@@ -9882,10 +14134,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9889 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9865 "parsing/parser.ml"
+=======
+# 9876 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -9936,19 +14200,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 9940 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9916 "parsing/parser.ml"
+=======
+# 9927 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 9946 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9922 "parsing/parser.ml"
+=======
+# 9933 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2608 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2588 "parsing/parser.mly"
+=======
+# 2595 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_assert _3, _2 )
+<<<<<<< HEAD
 # 9952 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9928 "parsing/parser.ml"
+=======
+# 9939 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__3_ in
@@ -9956,10 +14244,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 9963 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9939 "parsing/parser.ml"
+=======
+# 9950 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -10010,19 +14310,43 @@ module Tables = struct
               
 # 4356 "parsing/parser.mly"
     ( _1 )
+<<<<<<< HEAD
 # 10014 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9990 "parsing/parser.ml"
+=======
+# 10001 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
 # 4369 "parsing/parser.mly"
                     ( _1, _2 )
+<<<<<<< HEAD
 # 10020 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 9996 "parsing/parser.ml"
+=======
+# 10007 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           
+<<<<<<< HEAD
 # 2610 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2590 "parsing/parser.mly"
+=======
+# 2597 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_lazy _3, _2 )
+<<<<<<< HEAD
 # 10026 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10002 "parsing/parser.ml"
+=======
+# 10013 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let _endpos__1_ = _endpos__3_ in
@@ -10030,10 +14354,22 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2543 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2523 "parsing/parser.mly"
+=======
+# 2530 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let desc, attrs = _1 in
         mkexp_attrs ~loc:_sloc desc attrs )
+<<<<<<< HEAD
 # 10037 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10013 "parsing/parser.ml"
+=======
+# 10024 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -10068,18 +14404,48 @@ module Tables = struct
               let xs = 
 # 253 "<standard.mly>"
     ( List.rev xs )
+<<<<<<< HEAD
 # 10072 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10048 "parsing/parser.ml"
+=======
+# 10059 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                in
               
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 10077 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10053 "parsing/parser.ml"
+=======
+# 10064 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
+<<<<<<< HEAD
 # 2614 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2594 "parsing/parser.mly"
+=======
+# 2601 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Pexp_apply(_1, _2) )
+<<<<<<< HEAD
 # 10083 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10059 "parsing/parser.ml"
+=======
+# 10070 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let _endpos__1_ = _endpos_xs_ in
@@ -10087,14 +14453,33 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 10093 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10069 "parsing/parser.ml"
+=======
+# 10080 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 10099 "parsing/parser.ml"
          in
         {
@@ -10176,6 +14561,104 @@ module Tables = struct
 # 2546 "parsing/parser.mly"
       ( _1 )
 # 10179 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10075 "parsing/parser.ml"
+=======
+# 10086 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _3;
+          MenhirLib.EngineTypes.startp = _startpos__3_;
+          MenhirLib.EngineTypes.endp = _endpos__3_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = xs;
+            MenhirLib.EngineTypes.startp = _startpos_xs_;
+            MenhirLib.EngineTypes.endp = _endpos_xs_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _menhir_s;
+              MenhirLib.EngineTypes.semv = _1;
+              MenhirLib.EngineTypes.startp = _startpos__1_;
+              MenhirLib.EngineTypes.endp = _endpos__1_;
+              MenhirLib.EngineTypes.next = _menhir_stack;
+            };
+          };
+        } = _menhir_stack in
+        let _3 : unit = Obj.magic _3 in
+        let xs : ((Asttypes.arg_label * Parsetree.expression) list) = Obj.magic xs in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__3_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let args =
+              let es =
+                let xs = 
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 10129 "parsing/parser.ml"
+                 in
+                
+# 1267 "parsing/parser.mly"
+    ( xs )
+# 10134 "parsing/parser.ml"
+                
+              in
+              
+# 3049 "parsing/parser.mly"
+    ( es )
+# 10140 "parsing/parser.ml"
+              
+            in
+            let (_endpos_args_, _startpos_args_) = (_endpos_xs_, _startpos_xs_) in
+            let _loc_args_ = (_startpos_args_, _endpos_args_) in
+            
+# 2604 "parsing/parser.mly"
+      ( 
+        let el =
+          List.map
+          (fun (arg_label, body) ->
+            let label =
+              match arg_label with
+              | Nolabel -> None
+              | Optional _ ->
+                  raise Syntaxerr.(Error(Optional_tuple_component(make_loc _loc_args_)))
+              | Labelled s -> Some s
+            in
+            label, body)
+          args
+        in
+        Pexp_tuple(el)
+      )
+# 10163 "parsing/parser.ml"
+            
+          in
+          let _endpos__1_ = _endpos__3_ in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 1138 "parsing/parser.mly"
+    ( mkexp ~loc:_sloc _1 )
+# 10173 "parsing/parser.ml"
+          
+        in
+        
+# 2533 "parsing/parser.mly"
+      ( _1 )
+# 10179 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -10207,7 +14690,13 @@ module Tables = struct
 # 10208 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 1280 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1260 "parsing/parser.mly"
+=======
+# 1267 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 10213 "parsing/parser.ml"
                 
@@ -10229,13 +14718,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10235 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10241 "parsing/parser.ml"
          in
@@ -10273,7 +14774,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 10279 "parsing/parser.ml"
               
@@ -10289,13 +14796,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10295 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10301 "parsing/parser.ml"
          in
@@ -10337,13 +14856,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10343 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10349 "parsing/parser.ml"
          in
@@ -10377,9 +14908,16 @@ module Tables = struct
         } = _menhir_stack in
         let e2 : (Parsetree.expression) = Obj.magic e2 in
         let op : (
+<<<<<<< HEAD
 # 907 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 887 "parsing/parser.mly"
+=======
+# 894 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 10383 "parsing/parser.ml"
+<<<<<<< HEAD
         ) = Obj.magic op in
         let e1 : (Parsetree.expression) = Obj.magic e1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
@@ -10407,6 +14945,36 @@ module Tables = struct
 # 2627 "parsing/parser.mly"
       ( mkinfix e1 op e2 )
 # 10410 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+        ) = Obj.magic op in
+        let e1 : (Parsetree.expression) = Obj.magic e1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_e1_ in
+        let _endpos = _endpos_e2_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let op =
+              let _1 = 
+# 4051 "parsing/parser.mly"
+                  ( op )
+# 10395 "parsing/parser.ml"
+               in
+              let (_endpos__1_, _startpos__1_) = (_endpos_op_, _startpos_op_) in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 1132 "parsing/parser.mly"
+   ( mkoperator ~loc:_sloc _1 )
+# 10404 "parsing/parser.ml"
+              
+            in
+            
+# 2627 "parsing/parser.mly"
+      ( mkinfix e1 op e2 )
+# 10410 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_e2_, _startpos_e1_) in
@@ -10414,13 +14982,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10420 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10426 "parsing/parser.ml"
          in
@@ -10454,9 +15034,16 @@ module Tables = struct
         } = _menhir_stack in
         let e2 : (Parsetree.expression) = Obj.magic e2 in
         let op : (
+<<<<<<< HEAD
 # 908 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 889 "parsing/parser.mly"
+=======
+# 895 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 10460 "parsing/parser.ml"
+<<<<<<< HEAD
         ) = Obj.magic op in
         let e1 : (Parsetree.expression) = Obj.magic e1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
@@ -10484,6 +15071,36 @@ module Tables = struct
 # 2627 "parsing/parser.mly"
       ( mkinfix e1 op e2 )
 # 10487 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+        ) = Obj.magic op in
+        let e1 : (Parsetree.expression) = Obj.magic e1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_e1_ in
+        let _endpos = _endpos_e2_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let op =
+              let _1 = 
+# 4052 "parsing/parser.mly"
+                  ( op )
+# 10472 "parsing/parser.ml"
+               in
+              let (_endpos__1_, _startpos__1_) = (_endpos_op_, _startpos_op_) in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 1132 "parsing/parser.mly"
+   ( mkoperator ~loc:_sloc _1 )
+# 10481 "parsing/parser.ml"
+              
+            in
+            
+# 2627 "parsing/parser.mly"
+      ( mkinfix e1 op e2 )
+# 10487 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_e2_, _startpos_e1_) in
@@ -10491,13 +15108,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10497 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10503 "parsing/parser.ml"
          in
@@ -10531,9 +15160,16 @@ module Tables = struct
         } = _menhir_stack in
         let e2 : (Parsetree.expression) = Obj.magic e2 in
         let op : (
+<<<<<<< HEAD
 # 909 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 890 "parsing/parser.mly"
+=======
+# 896 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 10537 "parsing/parser.ml"
+<<<<<<< HEAD
         ) = Obj.magic op in
         let e1 : (Parsetree.expression) = Obj.magic e1 in
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
@@ -10561,6 +15197,36 @@ module Tables = struct
 # 2627 "parsing/parser.mly"
       ( mkinfix e1 op e2 )
 # 10564 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+        ) = Obj.magic op in
+        let e1 : (Parsetree.expression) = Obj.magic e1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_e1_ in
+        let _endpos = _endpos_e2_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let op =
+              let _1 = 
+# 4053 "parsing/parser.mly"
+                  ( op )
+# 10549 "parsing/parser.ml"
+               in
+              let (_endpos__1_, _startpos__1_) = (_endpos_op_, _startpos_op_) in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 1132 "parsing/parser.mly"
+   ( mkoperator ~loc:_sloc _1 )
+# 10558 "parsing/parser.ml"
+              
+            in
+            
+# 2627 "parsing/parser.mly"
+      ( mkinfix e1 op e2 )
+# 10564 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_e2_, _startpos_e1_) in
@@ -10568,13 +15234,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10574 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10580 "parsing/parser.ml"
          in
@@ -10608,7 +15286,13 @@ module Tables = struct
         } = _menhir_stack in
         let e2 : (Parsetree.expression) = Obj.magic e2 in
         let op : (
+<<<<<<< HEAD
 # 910 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 891 "parsing/parser.mly"
+=======
+# 897 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 10614 "parsing/parser.ml"
         ) = Obj.magic op in
@@ -10629,7 +15313,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 10635 "parsing/parser.ml"
               
@@ -10645,14 +15335,27 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10651 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
+<<<<<<< HEAD
 # 10657 "parsing/parser.ml"
          in
         {
@@ -10731,6 +15434,88 @@ module Tables = struct
 # 2546 "parsing/parser.mly"
       ( _1 )
 # 10734 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 10630 "parsing/parser.ml"
+=======
+# 10657 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = e2;
+          MenhirLib.EngineTypes.startp = _startpos_e2_;
+          MenhirLib.EngineTypes.endp = _endpos_e2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = op;
+            MenhirLib.EngineTypes.startp = _startpos_op_;
+            MenhirLib.EngineTypes.endp = _endpos_op_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _menhir_s;
+              MenhirLib.EngineTypes.semv = e1;
+              MenhirLib.EngineTypes.startp = _startpos_e1_;
+              MenhirLib.EngineTypes.endp = _endpos_e1_;
+              MenhirLib.EngineTypes.next = _menhir_stack;
+            };
+          };
+        } = _menhir_stack in
+        let e2 : (Parsetree.expression) = Obj.magic e2 in
+        let op : (
+# 898 "parsing/parser.mly"
+       (string)
+# 10691 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let e1 : (Parsetree.expression) = Obj.magic e1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_e1_ in
+        let _endpos = _endpos_e2_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let op =
+              let _1 = 
+# 4055 "parsing/parser.mly"
+                  ( op )
+# 10703 "parsing/parser.ml"
+               in
+              let (_endpos__1_, _startpos__1_) = (_endpos_op_, _startpos_op_) in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 1132 "parsing/parser.mly"
+   ( mkoperator ~loc:_sloc _1 )
+# 10712 "parsing/parser.ml"
+              
+            in
+            
+# 2627 "parsing/parser.mly"
+      ( mkinfix e1 op e2 )
+# 10718 "parsing/parser.ml"
+            
+          in
+          let (_endpos__1_, _startpos__1_) = (_endpos_e2_, _startpos_e1_) in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 1138 "parsing/parser.mly"
+    ( mkexp ~loc:_sloc _1 )
+# 10728 "parsing/parser.ml"
+          
+        in
+        
+# 2533 "parsing/parser.mly"
+      ( _1 )
+# 10734 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -10778,7 +15563,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 10784 "parsing/parser.ml"
               
@@ -10794,13 +15585,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10800 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10806 "parsing/parser.ml"
          in
@@ -10850,7 +15653,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 10856 "parsing/parser.ml"
               
@@ -10866,13 +15675,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10872 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10878 "parsing/parser.ml"
          in
@@ -10922,7 +15743,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 10928 "parsing/parser.ml"
               
@@ -10938,13 +15765,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 10944 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 10950 "parsing/parser.ml"
          in
@@ -10994,7 +15833,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11000 "parsing/parser.ml"
               
@@ -11010,13 +15855,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11016 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11022 "parsing/parser.ml"
          in
@@ -11066,7 +15923,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11072 "parsing/parser.ml"
               
@@ -11082,13 +15945,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11088 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11094 "parsing/parser.ml"
          in
@@ -11138,7 +16013,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11144 "parsing/parser.ml"
               
@@ -11154,13 +16035,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11160 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11166 "parsing/parser.ml"
          in
@@ -11210,7 +16103,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11216 "parsing/parser.ml"
               
@@ -11226,13 +16125,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11232 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11238 "parsing/parser.ml"
          in
@@ -11282,7 +16193,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11288 "parsing/parser.ml"
               
@@ -11298,13 +16215,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11304 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11310 "parsing/parser.ml"
          in
@@ -11354,7 +16283,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11360 "parsing/parser.ml"
               
@@ -11370,13 +16305,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11376 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11382 "parsing/parser.ml"
          in
@@ -11426,7 +16373,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11432 "parsing/parser.ml"
               
@@ -11442,13 +16395,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11448 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11454 "parsing/parser.ml"
          in
@@ -11498,7 +16463,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11504 "parsing/parser.ml"
               
@@ -11514,13 +16485,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11520 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11526 "parsing/parser.ml"
          in
@@ -11570,7 +16553,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11576 "parsing/parser.ml"
               
@@ -11586,13 +16575,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11592 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11598 "parsing/parser.ml"
          in
@@ -11642,7 +16643,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11648 "parsing/parser.ml"
               
@@ -11658,13 +16665,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11664 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11670 "parsing/parser.ml"
          in
@@ -11714,7 +16733,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11720 "parsing/parser.ml"
               
@@ -11730,13 +16755,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11736 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11742 "parsing/parser.ml"
          in
@@ -11786,7 +16823,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 11792 "parsing/parser.ml"
               
@@ -11802,13 +16845,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11808 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11814 "parsing/parser.ml"
          in
@@ -11853,13 +16908,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11859 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11865 "parsing/parser.ml"
          in
@@ -11904,13 +16971,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 11910 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2546 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2526 "parsing/parser.mly"
+=======
+# 2533 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 11916 "parsing/parser.ml"
          in
@@ -11952,7 +17031,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2548 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2528 "parsing/parser.mly"
+=======
+# 2535 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( expr_of_let_bindings ~loc:_sloc _1 _3 )
 # 11958 "parsing/parser.ml"
          in
@@ -11994,7 +17079,13 @@ module Tables = struct
         let _3 : unit = Obj.magic _3 in
         let bindings : (Parsetree.pattern * Parsetree.expression * Parsetree.binding_op list) = Obj.magic bindings in
         let _1 : (
+<<<<<<< HEAD
 # 913 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 893 "parsing/parser.mly"
+=======
+# 900 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12000 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -12006,7 +17097,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 12012 "parsing/parser.ml"
           
@@ -12016,7 +17113,13 @@ module Tables = struct
         let _symbolstartpos = _startpos_pbop_op_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2550 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2530 "parsing/parser.mly"
+=======
+# 2537 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let (pbop_pat, pbop_exp, rev_ands) = bindings in
         let ands = List.rev rev_ands in
         let pbop_loc = make_loc _sloc in
@@ -12063,9 +17166,19 @@ module Tables = struct
         let _loc__2_ = (_startpos__2_, _endpos__2_) in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2556 "parsing/parser.mly"
       ( mkexp_cons ~loc:_sloc _loc__2_ (ghexp ~loc:_sloc (Pexp_tuple([None,_1;None,_3]))) )
 # 12069 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2536 "parsing/parser.mly"
+      ( mkexp_cons ~loc:_sloc _loc__2_ (ghexp ~loc:_sloc (Pexp_tuple[_1;_3])) )
+# 11965 "parsing/parser.ml"
+=======
+# 2543 "parsing/parser.mly"
+      ( mkexp_cons ~loc:_sloc _loc__2_ (ghexp ~loc:_sloc (Pexp_tuple([None,_1;None,_3]))) )
+# 12069 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -12098,7 +17211,13 @@ module Tables = struct
         let _3 : (Parsetree.expression) = Obj.magic _3 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12104 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -12115,7 +17234,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 12121 "parsing/parser.ml"
           
@@ -12124,7 +17249,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2558 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2538 "parsing/parser.mly"
+=======
+# 2545 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkexp ~loc:_sloc (Pexp_setinstvar(_1, _3)) )
 # 12130 "parsing/parser.ml"
          in
@@ -12182,7 +17313,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 12188 "parsing/parser.ml"
           
@@ -12191,7 +17328,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2560 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2540 "parsing/parser.mly"
+=======
+# 2547 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkexp ~loc:_sloc (Pexp_setfield(_1, _3, _5)) )
 # 12197 "parsing/parser.ml"
          in
@@ -12259,12 +17402,24 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2561 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2541 "parsing/parser.mly"
+=======
+# 2548 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                  (Some v)
 # 12265 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2501 "parsing/parser.mly"
+=======
+# 2508 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Paren,   i, r )
 # 12270 "parsing/parser.ml"
           
@@ -12274,7 +17429,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2562 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2542 "parsing/parser.mly"
+=======
+# 2549 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr builtin_indexing_operators ~loc:_sloc _1 )
 # 12280 "parsing/parser.ml"
          in
@@ -12342,12 +17503,24 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2561 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2541 "parsing/parser.mly"
+=======
+# 2548 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                  (Some v)
 # 12348 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 2523 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.mly"
+=======
+# 2510 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Brace,   i, r )
 # 12353 "parsing/parser.ml"
           
@@ -12357,7 +17530,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2562 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2542 "parsing/parser.mly"
+=======
+# 2549 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr builtin_indexing_operators ~loc:_sloc _1 )
 # 12363 "parsing/parser.ml"
          in
@@ -12425,12 +17604,24 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2561 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2541 "parsing/parser.mly"
+=======
+# 2548 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                  (Some v)
 # 12431 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 2525 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2505 "parsing/parser.mly"
+=======
+# 2512 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Bracket, i, r )
 # 12436 "parsing/parser.ml"
           
@@ -12440,7 +17631,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2562 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2542 "parsing/parser.mly"
+=======
+# 2549 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr builtin_indexing_operators ~loc:_sloc _1 )
 # 12446 "parsing/parser.ml"
          in
@@ -12502,7 +17699,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12508 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -12512,7 +17715,13 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2563 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2543 "parsing/parser.mly"
+=======
+# 2550 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                    (Some v)
 # 12518 "parsing/parser.ml"
            in
@@ -12528,13 +17737,25 @@ module Tables = struct
 # 12529 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 12534 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2501 "parsing/parser.mly"
+=======
+# 2508 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Paren,   i, r )
 # 12540 "parsing/parser.ml"
           
@@ -12544,7 +17765,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2564 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2544 "parsing/parser.mly"
+=======
+# 2551 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
 # 12550 "parsing/parser.ml"
          in
@@ -12618,7 +17845,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12624 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -12630,7 +17863,13 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2563 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2543 "parsing/parser.mly"
+=======
+# 2550 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                    (Some v)
 # 12636 "parsing/parser.ml"
            in
@@ -12643,7 +17882,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 12649 "parsing/parser.ml"
                in
@@ -12654,14 +17899,132 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 12556 "parsing/parser.ml"
+            
+          in
+          
+# 2501 "parsing/parser.mly"
+    ( array, d, Paren,   i, r )
+# 12562 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos_v_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2544 "parsing/parser.mly"
+    ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 12572 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = v;
+          MenhirLib.EngineTypes.startp = _startpos_v_;
+          MenhirLib.EngineTypes.endp = _endpos_v_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _5;
+              MenhirLib.EngineTypes.startp = _startpos__5_;
+              MenhirLib.EngineTypes.endp = _endpos__5_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = es;
+                MenhirLib.EngineTypes.startp = _startpos_es_;
+                MenhirLib.EngineTypes.endp = _endpos_es_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _3;
+                  MenhirLib.EngineTypes.startp = _startpos__3_;
+                  MenhirLib.EngineTypes.endp = _endpos__3_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _2;
+                    MenhirLib.EngineTypes.startp = _startpos__2_;
+                    MenhirLib.EngineTypes.endp = _endpos__2_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = array;
+                      MenhirLib.EngineTypes.startp = _startpos_array_;
+                      MenhirLib.EngineTypes.endp = _endpos_array_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let v : (Parsetree.expression) = Obj.magic v in
+        let _1 : unit = Obj.magic _1 in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 12634 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos_v_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2543 "parsing/parser.mly"
+                                                                   (Some v)
+# 12644 "parsing/parser.ml"
+           in
+          let i = 
+# 3060 "parsing/parser.mly"
+    ( es )
+# 12649 "parsing/parser.ml"
+           in
+          let d =
+            let _1 = 
+# 124 "<standard.mly>"
+    ( None )
+# 12655 "parsing/parser.ml"
+             in
+            
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 12660 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
     ( array, d, Paren,   i, r )
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.mly"
+    ( array, d, Brace,   i, r )
+=======
+# 2508 "parsing/parser.mly"
+    ( array, d, Paren,   i, r )
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
 # 12666 "parsing/parser.ml"
           
         in
@@ -12670,7 +18033,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2564 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2544 "parsing/parser.mly"
+=======
+# 2551 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
 # 12676 "parsing/parser.ml"
          in
@@ -12690,6 +18059,7 @@ module Tables = struct
           MenhirLib.EngineTypes.endp = _endpos_v_;
           MenhirLib.EngineTypes.next = {
             MenhirLib.EngineTypes.state = _;
+<<<<<<< HEAD
             MenhirLib.EngineTypes.semv = _1;
             MenhirLib.EngineTypes.startp = _startpos__1_;
             MenhirLib.EngineTypes.endp = _endpos__1_;
@@ -12794,6 +18164,113 @@ module Tables = struct
           MenhirLib.EngineTypes.endp = _endpos_v_;
           MenhirLib.EngineTypes.next = {
             MenhirLib.EngineTypes.state = _;
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _5;
+              MenhirLib.EngineTypes.startp = _startpos__5_;
+              MenhirLib.EngineTypes.endp = _endpos__5_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = es;
+                MenhirLib.EngineTypes.startp = _startpos_es_;
+                MenhirLib.EngineTypes.endp = _endpos_es_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _3;
+                  MenhirLib.EngineTypes.startp = _startpos__3_;
+                  MenhirLib.EngineTypes.endp = _endpos__3_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _2;
+                    MenhirLib.EngineTypes.startp = _startpos__2_;
+                    MenhirLib.EngineTypes.endp = _endpos__2_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = array;
+                      MenhirLib.EngineTypes.startp = _startpos_array_;
+                      MenhirLib.EngineTypes.endp = _endpos_array_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let v : (Parsetree.expression) = Obj.magic v in
+        let _1 : unit = Obj.magic _1 in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 12738 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos_v_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2550 "parsing/parser.mly"
+                                                                   (Some v)
+# 12748 "parsing/parser.ml"
+           in
+          let i = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 12753 "parsing/parser.ml"
+           in
+          let d =
+            let _1 = 
+# 124 "<standard.mly>"
+    ( None )
+# 12759 "parsing/parser.ml"
+             in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 12764 "parsing/parser.ml"
+            
+          in
+          
+# 2510 "parsing/parser.mly"
+    ( array, d, Brace,   i, r )
+# 12770 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos_v_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2551 "parsing/parser.mly"
+    ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 12780 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = v;
+          MenhirLib.EngineTypes.startp = _startpos_v_;
+          MenhirLib.EngineTypes.endp = _endpos_v_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
             MenhirLib.EngineTypes.semv = _1_inlined1;
             MenhirLib.EngineTypes.startp = _startpos__1_inlined1_;
             MenhirLib.EngineTypes.endp = _endpos__1_inlined1_;
@@ -12848,7 +18325,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12854 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -12860,7 +18343,13 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2563 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2543 "parsing/parser.mly"
+=======
+# 2550 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                    (Some v)
 # 12866 "parsing/parser.ml"
            in
@@ -12873,7 +18362,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 12879 "parsing/parser.ml"
                in
@@ -12884,13 +18379,25 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 12890 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2523 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.mly"
+=======
+# 2510 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Brace,   i, r )
 # 12896 "parsing/parser.ml"
           
@@ -12900,7 +18407,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2564 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2544 "parsing/parser.mly"
+=======
+# 2551 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
 # 12906 "parsing/parser.ml"
          in
@@ -12962,7 +18475,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 12968 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -12972,7 +18491,13 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2563 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2543 "parsing/parser.mly"
+=======
+# 2550 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                    (Some v)
 # 12978 "parsing/parser.ml"
            in
@@ -12988,13 +18513,25 @@ module Tables = struct
 # 12989 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 12994 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2525 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2505 "parsing/parser.mly"
+=======
+# 2512 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Bracket, i, r )
 # 13000 "parsing/parser.ml"
           
@@ -13004,7 +18541,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2564 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2544 "parsing/parser.mly"
+=======
+# 2551 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
 # 13010 "parsing/parser.ml"
          in
@@ -13078,7 +18621,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 13084 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -13090,7 +18639,13 @@ module Tables = struct
         let _endpos = _endpos_v_ in
         let _v : (Parsetree.expression) = let _1 =
           let r = 
+<<<<<<< HEAD
 # 2563 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2543 "parsing/parser.mly"
+=======
+# 2550 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                    (Some v)
 # 13096 "parsing/parser.ml"
            in
@@ -13103,7 +18658,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 13109 "parsing/parser.ml"
                in
@@ -13114,13 +18675,25 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 13120 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2525 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2505 "parsing/parser.mly"
+=======
+# 2512 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Bracket, i, r )
 # 13126 "parsing/parser.ml"
           
@@ -13130,7 +18703,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2564 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2544 "parsing/parser.mly"
+=======
+# 2551 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
 # 13136 "parsing/parser.ml"
          in
@@ -13162,7 +18741,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.expression) = 
+<<<<<<< HEAD
 # 2566 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2546 "parsing/parser.mly"
+=======
+# 2553 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Exp.attr _1 _2 )
 # 13168 "parsing/parser.ml"
          in
@@ -13188,7 +18773,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.expression) = let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 2569 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2549 "parsing/parser.mly"
+=======
+# 2556 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
      ( not_expecting _loc__1_ "wildcard \"_\"" )
 # 13194 "parsing/parser.ml"
          in
@@ -13224,7 +18815,13 @@ module Tables = struct
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2572 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2552 "parsing/parser.mly"
+=======
+# 2559 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
      ( mkexp_stack ~loc:_sloc ~kwd_loc:(_loc__1_) _2 )
 # 13230 "parsing/parser.ml"
          in
@@ -13260,7 +18857,13 @@ module Tables = struct
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2574 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2554 "parsing/parser.mly"
+=======
+# 2561 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
      ( mkexp_exclave ~loc:_sloc ~kwd_loc:(_loc__1_) _2 )
 # 13266 "parsing/parser.ml"
          in
@@ -13377,7 +18980,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 974 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 954 "parsing/parser.mly"
+=======
+# 961 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string * Location.t * string option)
 # 13383 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -13455,7 +19064,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 13461 "parsing/parser.ml"
           
@@ -13466,7 +19081,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 13472 "parsing/parser.ml"
           
@@ -13536,7 +19157,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 13542 "parsing/parser.ml"
           
@@ -13546,7 +19173,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 13552 "parsing/parser.ml"
           
@@ -13630,12 +19263,24 @@ module Tables = struct
         let _startpos = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _endpos = _startpos in
         let _v : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = let params = 
+<<<<<<< HEAD
 # 2287 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2267 "parsing/parser.mly"
+=======
+# 2274 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [] )
 # 13636 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2092 "parsing/parser.mly"
+=======
+# 2099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( params )
 # 13641 "parsing/parser.ml"
          in
@@ -13681,19 +19326,37 @@ module Tables = struct
 # 13682 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 13687 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2289 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2269 "parsing/parser.mly"
+=======
+# 2276 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( params )
 # 13693 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2092 "parsing/parser.mly"
+=======
+# 2099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( params )
 # 13699 "parsing/parser.ml"
          in
@@ -13848,7 +19511,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 13854 "parsing/parser.ml"
           
@@ -14036,7 +19705,13 @@ module Tables = struct
         let _endpos = _endpos__2_ in
         let _v : (Lexing.position * Parsetree.functor_parameter) = let _startpos = _startpos__1_ in
         
+<<<<<<< HEAD
 # 1506 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1486 "parsing/parser.mly"
+=======
+# 1493 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _startpos, Unit )
 # 14042 "parsing/parser.ml"
          in
@@ -14094,14 +19769,26 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14100 "parsing/parser.ml"
           
         in
         let _startpos = _startpos__1_ in
         
+<<<<<<< HEAD
 # 1509 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1489 "parsing/parser.mly"
+=======
+# 1496 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _startpos, Named (x, mty) )
 # 14107 "parsing/parser.ml"
          in
@@ -14268,7 +19955,13 @@ module Tables = struct
 # 14269 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 14274 "parsing/parser.ml"
             
@@ -14367,7 +20060,13 @@ module Tables = struct
 # 14368 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 14373 "parsing/parser.ml"
             
@@ -14442,7 +20141,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14448 "parsing/parser.ml"
           
@@ -14511,7 +20216,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14517 "parsing/parser.ml"
           
@@ -14604,7 +20315,13 @@ module Tables = struct
         let _2 : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic _2 in
         let _1_inlined3 : unit = Obj.magic _1_inlined3 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 14610 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -14633,7 +20350,13 @@ module Tables = struct
 # 14634 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 14639 "parsing/parser.ml"
             
@@ -14655,7 +20378,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14661 "parsing/parser.ml"
           
@@ -14763,7 +20492,13 @@ module Tables = struct
         let _2 : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic _2 in
         let _1_inlined4 : unit = Obj.magic _1_inlined4 in
         let _1_inlined3 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 14769 "parsing/parser.ml"
         ) = Obj.magic _1_inlined3 in
@@ -14793,7 +20528,13 @@ module Tables = struct
 # 14794 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 14799 "parsing/parser.ml"
             
@@ -14815,7 +20556,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14821 "parsing/parser.ml"
           
@@ -14916,7 +20663,13 @@ module Tables = struct
         let xs : ((Parsetree.core_type * Parsetree.core_type * Ast_helper.loc) list) = Obj.magic xs in
         let kind_priv_manifest : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic kind_priv_manifest in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 14922 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -14945,7 +20698,13 @@ module Tables = struct
 # 14946 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 14951 "parsing/parser.ml"
             
@@ -14962,7 +20721,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 14968 "parsing/parser.ml"
           
@@ -15063,7 +20828,13 @@ module Tables = struct
         let xs : ((Parsetree.core_type * Parsetree.core_type * Ast_helper.loc) list) = Obj.magic xs in
         let kind_priv_manifest : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic kind_priv_manifest in
         let _1_inlined3 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15069 "parsing/parser.ml"
         ) = Obj.magic _1_inlined3 in
@@ -15093,7 +20864,13 @@ module Tables = struct
 # 15094 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 15099 "parsing/parser.ml"
             
@@ -15110,7 +20887,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15116 "parsing/parser.ml"
           
@@ -15160,7 +20943,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15166 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15189,7 +20978,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15195 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15229,7 +21024,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.structure) = 
+<<<<<<< HEAD
 # 1373 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1353 "parsing/parser.mly"
+=======
+# 1360 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 15235 "parsing/parser.ml"
          in
@@ -15254,7 +21055,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (bool) = 
+<<<<<<< HEAD
 # 1752 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1732 "parsing/parser.mly"
+=======
+# 1739 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( false )
 # 15260 "parsing/parser.ml"
          in
@@ -15286,7 +21093,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (bool) = 
+<<<<<<< HEAD
 # 1754 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1734 "parsing/parser.mly"
+=======
+# 1741 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( true )
 # 15292 "parsing/parser.ml"
          in
@@ -15368,7 +21181,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.signature) = 
+<<<<<<< HEAD
 # 1380 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1360 "parsing/parser.mly"
+=======
+# 1367 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 15374 "parsing/parser.ml"
          in
@@ -15435,7 +21254,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 976 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 956 "parsing/parser.mly"
+=======
+# 963 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string * Location.t * string option)
 # 15441 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15494,7 +21319,13 @@ module Tables = struct
         let _1_inlined2 : (Parsetree.core_type) = Obj.magic _1_inlined2 in
         let _3 : unit = Obj.magic _3 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15500 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -15530,7 +21361,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15536 "parsing/parser.ml"
           
@@ -15610,7 +21447,13 @@ module Tables = struct
         let _1_inlined2 : (Parsetree.core_type) = Obj.magic _1_inlined2 in
         let _3 : unit = Obj.magic _3 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15616 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -15655,7 +21498,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15661 "parsing/parser.ml"
           
@@ -15780,7 +21629,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15786 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15793,7 +21648,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15799 "parsing/parser.ml"
             
@@ -15802,13 +21663,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2478 "parsing/parser.mly"
+=======
+# 2485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_1.Location.txt, mkpat ~loc:_sloc (Ppat_var _1)) )
 # 15808 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2485 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2465 "parsing/parser.mly"
+=======
+# 2472 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( x )
 # 15814 "parsing/parser.ml"
          in
@@ -15843,7 +21716,13 @@ module Tables = struct
         let cty : (Parsetree.core_type) = Obj.magic cty in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15849 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15856,7 +21735,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15862 "parsing/parser.ml"
             
@@ -15865,7 +21750,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2478 "parsing/parser.mly"
+=======
+# 2485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_1.Location.txt, mkpat ~loc:_sloc (Ppat_var _1)) )
 # 15871 "parsing/parser.ml"
           
@@ -15875,7 +21766,13 @@ module Tables = struct
         let _symbolstartpos = _startpos_x_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2487 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2467 "parsing/parser.mly"
+=======
+# 2474 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let lab, pat = x in
         lab,
         mkpat ~loc:_sloc (Ppat_constraint (pat, cty)) )
@@ -15926,7 +21823,13 @@ module Tables = struct
         let xs : (Asttypes.label Asttypes.loc list) = Obj.magic xs in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 15932 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -15943,7 +21846,13 @@ module Tables = struct
 # 15944 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 15949 "parsing/parser.ml"
                 
@@ -15955,7 +21864,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2491 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2471 "parsing/parser.mly"
+=======
+# 2478 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                               ( Ptyp_poly(vars, ty) )
 # 15961 "parsing/parser.ml"
             
@@ -15965,7 +21880,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 15971 "parsing/parser.ml"
           
@@ -15977,7 +21898,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 15983 "parsing/parser.ml"
             
@@ -15986,7 +21913,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2478 "parsing/parser.mly"
+=======
+# 2485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_1.Location.txt, mkpat ~loc:_sloc (Ppat_var _1)) )
 # 15992 "parsing/parser.ml"
           
@@ -15996,7 +21929,13 @@ module Tables = struct
         let _symbolstartpos = _startpos_x_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2492 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2472 "parsing/parser.mly"
+=======
+# 2479 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let lab, pat = x in
         lab,
         mkpat ~loc:_sloc (Ppat_constraint (pat, cty)) )
@@ -16076,7 +22015,13 @@ module Tables = struct
         } = _menhir_stack in
         let _2 : (Parsetree.expression) = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16082 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16111,7 +22056,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16117 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -16169,7 +22120,13 @@ module Tables = struct
         let _5 : unit = Obj.magic _5 in
         let ty : (Parsetree.core_type option * Parsetree.core_type option) = Obj.magic ty in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16175 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -16209,7 +22166,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16215 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -16248,7 +22211,13 @@ module Tables = struct
         } = _menhir_stack in
         let _2 : (Parsetree.expression) = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16254 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16311,7 +22280,13 @@ module Tables = struct
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _5 =
           let _1 = _1_inlined1 in
           
+<<<<<<< HEAD
 # 2481 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2461 "parsing/parser.mly"
+=======
+# 2468 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 16317 "parsing/parser.ml"
           
@@ -16324,7 +22299,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__2_, _endpos__2_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2444 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2424 "parsing/parser.mly"
+=======
+# 2431 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional (fst _4), _5, mkpat_local_if _3 (snd _4) _loc__3_) )
 # 16330 "parsing/parser.ml"
          in
@@ -16386,7 +22367,13 @@ module Tables = struct
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _5 =
           let _1 = _1_inlined2 in
           
+<<<<<<< HEAD
 # 2481 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2461 "parsing/parser.mly"
+=======
+# 2468 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 16392 "parsing/parser.ml"
           
@@ -16399,7 +22386,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__1_inlined1_, _startpos__1_inlined1_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2444 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2424 "parsing/parser.mly"
+=======
+# 2431 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional (fst _4), _5, mkpat_local_if _3 (snd _4) _loc__3_) )
 # 16405 "parsing/parser.ml"
          in
@@ -16426,7 +22419,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16432 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -16441,7 +22440,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 16447 "parsing/parser.ml"
             
@@ -16450,13 +22455,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2478 "parsing/parser.mly"
+=======
+# 2485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_1.Location.txt, mkpat ~loc:_sloc (Ppat_var _1)) )
 # 16456 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2446 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2426 "parsing/parser.mly"
+=======
+# 2433 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional (fst _2), None, snd _2) )
 # 16462 "parsing/parser.ml"
          in
@@ -16505,7 +22522,13 @@ module Tables = struct
         let _4 : (Parsetree.pattern) = Obj.magic _4 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16511 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16515,7 +22538,13 @@ module Tables = struct
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _5 =
           let _1 = _1_inlined1 in
           
+<<<<<<< HEAD
 # 2481 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2461 "parsing/parser.mly"
+=======
+# 2468 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 16521 "parsing/parser.ml"
           
@@ -16528,7 +22557,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__2_, _endpos__2_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2448 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2428 "parsing/parser.mly"
+=======
+# 2435 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional _1, _5, mkpat_local_if _3 _4 _loc__3_) )
 # 16534 "parsing/parser.ml"
          in
@@ -16584,7 +22619,13 @@ module Tables = struct
         let _1_inlined1 : unit = Obj.magic _1_inlined1 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16590 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16594,7 +22635,13 @@ module Tables = struct
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _5 =
           let _1 = _1_inlined2 in
           
+<<<<<<< HEAD
 # 2481 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2461 "parsing/parser.mly"
+=======
+# 2468 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 16600 "parsing/parser.ml"
           
@@ -16607,7 +22654,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__1_inlined1_, _startpos__1_inlined1_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2448 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2428 "parsing/parser.mly"
+=======
+# 2435 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional _1, _5, mkpat_local_if _3 _4 _loc__3_) )
 # 16613 "parsing/parser.ml"
          in
@@ -16635,7 +22688,13 @@ module Tables = struct
         } = _menhir_stack in
         let _2 : (Parsetree.pattern) = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16641 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16643,7 +22702,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = 
+<<<<<<< HEAD
 # 2450 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2430 "parsing/parser.mly"
+=======
+# 2437 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Optional _1, None, _2) )
 # 16649 "parsing/parser.ml"
          in
@@ -16696,7 +22761,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__2_, _endpos__2_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2452 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2432 "parsing/parser.mly"
+=======
+# 2439 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled (fst _4), None,
          mkpat_local_if _3 (snd _4) _loc__3_) )
 # 16703 "parsing/parser.ml"
@@ -16757,7 +22828,13 @@ module Tables = struct
         let (_endpos__3_, _startpos__3_) = (_endpos__1_inlined1_, _startpos__1_inlined1_) in
         let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2452 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2432 "parsing/parser.mly"
+=======
+# 2439 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled (fst _4), None,
          mkpat_local_if _3 (snd _4) _loc__3_) )
 # 16764 "parsing/parser.ml"
@@ -16785,7 +22862,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16791 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -16800,7 +22883,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 16806 "parsing/parser.ml"
             
@@ -16809,13 +22898,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2478 "parsing/parser.mly"
+=======
+# 2485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_1.Location.txt, mkpat ~loc:_sloc (Ppat_var _1)) )
 # 16815 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2455 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2435 "parsing/parser.mly"
+=======
+# 2442 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled (fst _2), None, snd _2) )
 # 16821 "parsing/parser.ml"
          in
@@ -16843,7 +22944,13 @@ module Tables = struct
         } = _menhir_stack in
         let _2 : (Parsetree.pattern) = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16849 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16851,7 +22958,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = 
+<<<<<<< HEAD
 # 2457 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2437 "parsing/parser.mly"
+=======
+# 2444 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled _1, None, _2) )
 # 16857 "parsing/parser.ml"
          in
@@ -16900,7 +23013,13 @@ module Tables = struct
         let _3 : unit = Obj.magic _3 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 16906 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -16909,7 +23028,13 @@ module Tables = struct
         let _endpos = _endpos__5_ in
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _loc__3_ = (_startpos__3_, _endpos__3_) in
         
+<<<<<<< HEAD
 # 2459 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2439 "parsing/parser.mly"
+=======
+# 2446 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled _1, None, mkpat_stack _4 (make_loc _loc__3_)) )
 # 16915 "parsing/parser.ml"
          in
@@ -16934,7 +23059,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = 
+<<<<<<< HEAD
 # 2461 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2441 "parsing/parser.mly"
+=======
+# 2448 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Nolabel, None, _1) )
 # 16940 "parsing/parser.ml"
          in
@@ -16981,7 +23112,13 @@ module Tables = struct
         let _endpos = _endpos__4_ in
         let _v : (Asttypes.arg_label * Parsetree.expression option * Parsetree.pattern) = let _loc__2_ = (_startpos__2_, _endpos__2_) in
         
+<<<<<<< HEAD
 # 2463 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2443 "parsing/parser.mly"
+=======
+# 2450 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Nolabel, None, mkpat_stack _3 (make_loc _loc__2_)) )
 # 16987 "parsing/parser.ml"
          in
@@ -17051,7 +23188,13 @@ module Tables = struct
         let pat : (Parsetree.pattern) = Obj.magic pat in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 17057 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -17071,7 +23214,13 @@ module Tables = struct
 # 17072 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 17077 "parsing/parser.ml"
                       
@@ -17083,7 +23232,13 @@ module Tables = struct
                     
                   in
                   
+<<<<<<< HEAD
 # 2514 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2494 "parsing/parser.mly"
+=======
+# 2501 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               ( Ptyp_poly(vars, ty) )
 # 17089 "parsing/parser.ml"
                   
@@ -17093,13 +23248,25 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 17099 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2515 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2495 "parsing/parser.mly"
+=======
+# 2502 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Ppat_constraint(pat, cty) )
 # 17105 "parsing/parser.ml"
               
@@ -17109,19 +23276,37 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 17115 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2516 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2496 "parsing/parser.mly"
+=======
+# 2503 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 17121 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2465 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2445 "parsing/parser.mly"
+=======
+# 2452 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled _1, None, _3) )
 # 17127 "parsing/parser.ml"
          in
@@ -17198,7 +23383,13 @@ module Tables = struct
         let _3 : unit = Obj.magic _3 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 898 "parsing/parser.mly"
+=======
+# 905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 17204 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -17218,7 +23409,13 @@ module Tables = struct
 # 17219 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 17224 "parsing/parser.ml"
                       
@@ -17230,7 +23427,13 @@ module Tables = struct
                     
                   in
                   
+<<<<<<< HEAD
 # 2514 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2494 "parsing/parser.mly"
+=======
+# 2501 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               ( Ptyp_poly(vars, ty) )
 # 17236 "parsing/parser.ml"
                   
@@ -17240,13 +23443,25 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 17246 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2515 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2495 "parsing/parser.mly"
+=======
+# 2502 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Ppat_constraint(pat, cty) )
 # 17252 "parsing/parser.ml"
               
@@ -17256,20 +23471,38 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 17262 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2516 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2496 "parsing/parser.mly"
+=======
+# 2503 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 17268 "parsing/parser.ml"
           
         in
         let _loc__2_ = (_startpos__2_, _endpos__2_) in
         
+<<<<<<< HEAD
 # 2467 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2447 "parsing/parser.mly"
+=======
+# 2454 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Labelled _1, None, mkpat_stack _4 (make_loc _loc__2_)) )
 # 17275 "parsing/parser.ml"
          in
@@ -17348,7 +23581,13 @@ module Tables = struct
 # 17349 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 17354 "parsing/parser.ml"
                       
@@ -17360,7 +23599,13 @@ module Tables = struct
                     
                   in
                   
+<<<<<<< HEAD
 # 2514 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2494 "parsing/parser.mly"
+=======
+# 2501 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               ( Ptyp_poly(vars, ty) )
 # 17366 "parsing/parser.ml"
                   
@@ -17370,13 +23615,25 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 17376 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2515 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2495 "parsing/parser.mly"
+=======
+# 2502 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Ppat_constraint(pat, cty) )
 # 17382 "parsing/parser.ml"
               
@@ -17386,19 +23643,37 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 17392 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2516 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2496 "parsing/parser.mly"
+=======
+# 2503 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 17398 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2469 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2449 "parsing/parser.mly"
+=======
+# 2456 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (Nolabel, None, _2) )
 # 17404 "parsing/parser.ml"
          in
@@ -17782,7 +24057,13 @@ module Tables = struct
 # 17783 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 17788 "parsing/parser.ml"
               
@@ -17917,7 +24198,13 @@ module Tables = struct
 # 17918 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 17923 "parsing/parser.ml"
               
@@ -18586,7 +24873,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.pattern) = 
+<<<<<<< HEAD
 # 2502 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2482 "parsing/parser.mly"
+=======
+# 2489 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 18592 "parsing/parser.ml"
          in
@@ -18626,7 +24919,13 @@ module Tables = struct
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.pattern) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2504 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2484 "parsing/parser.mly"
+=======
+# 2491 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Ppat_constraint(_1, _3) )
 # 18632 "parsing/parser.ml"
            in
@@ -18635,13 +24934,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 18641 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2505 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2485 "parsing/parser.mly"
+=======
+# 2492 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 18647 "parsing/parser.ml"
          in
@@ -18706,7 +25017,13 @@ module Tables = struct
 # 18707 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 18712 "parsing/parser.ml"
                       
@@ -18718,7 +25035,13 @@ module Tables = struct
                     
                   in
                   
+<<<<<<< HEAD
 # 2514 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2494 "parsing/parser.mly"
+=======
+# 2501 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               ( Ptyp_poly(vars, ty) )
 # 18724 "parsing/parser.ml"
                   
@@ -18728,13 +25051,25 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 18734 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2515 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2495 "parsing/parser.mly"
+=======
+# 2502 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Ppat_constraint(pat, cty) )
 # 18740 "parsing/parser.ml"
               
@@ -18744,19 +25079,37 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 18750 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2516 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2496 "parsing/parser.mly"
+=======
+# 2503 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 18756 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2507 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2487 "parsing/parser.mly"
+=======
+# 2494 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 18762 "parsing/parser.ml"
          in
@@ -18979,7 +25332,13 @@ module Tables = struct
         } = _menhir_stack in
         let body : (Parsetree.pattern * Parsetree.expression) = Obj.magic body in
         let _1 : (
+<<<<<<< HEAD
 # 914 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 894 "parsing/parser.mly"
+=======
+# 901 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 18985 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -18992,7 +25351,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 18998 "parsing/parser.ml"
           
@@ -19089,7 +25454,13 @@ module Tables = struct
         let _1_inlined3 : (Parsetree.attributes) = Obj.magic _1_inlined3 in
         let body : (Parsetree.class_expr) = Obj.magic body in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 19095 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -19116,7 +25487,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19122 "parsing/parser.ml"
             
@@ -19133,7 +25510,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2090 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2070 "parsing/parser.mly"
+=======
+# 2077 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -19236,7 +25619,13 @@ module Tables = struct
         let cty : (Parsetree.class_type) = Obj.magic cty in
         let _6 : unit = Obj.magic _6 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 19242 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -19263,7 +25652,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19269 "parsing/parser.ml"
             
@@ -19280,7 +25675,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2381 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2361 "parsing/parser.mly"
+=======
+# 2368 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     (
       let attrs = attrs1 @ attrs2 in
       let loc = make_loc _sloc in
@@ -19383,7 +25784,13 @@ module Tables = struct
         let csig : (Parsetree.class_type) = Obj.magic csig in
         let _6 : unit = Obj.magic _6 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 19389 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -19410,7 +25817,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19416 "parsing/parser.ml"
             
@@ -19427,7 +25840,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2420 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2400 "parsing/parser.mly"
+=======
+# 2407 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     (
       let attrs = attrs1 @ attrs2 in
       let loc = make_loc _sloc in
@@ -19532,7 +25951,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19538 "parsing/parser.ml"
             
@@ -19549,7 +25974,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1737 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1717 "parsing/parser.mly"
+=======
+# 1724 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let loc = make_loc _sloc in
     let attrs = attrs1 @ attrs2 in
@@ -19661,7 +26092,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19667 "parsing/parser.ml"
             
@@ -19678,7 +26115,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 2031 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2011 "parsing/parser.mly"
+=======
+# 2018 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let docs = symbol_docs _sloc in
@@ -19825,7 +26268,13 @@ module Tables = struct
         let xs_inlined1 : ((Parsetree.core_type * Parsetree.core_type * Ast_helper.loc) list) = Obj.magic xs_inlined1 in
         let kind_priv_manifest : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic kind_priv_manifest in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 19831 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -19854,7 +26303,13 @@ module Tables = struct
 # 19855 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 19860 "parsing/parser.ml"
               
@@ -19871,7 +26326,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 19877 "parsing/parser.ml"
             
@@ -19993,7 +26454,13 @@ module Tables = struct
         let _2 : (Parsetree.type_kind * Asttypes.private_flag * Parsetree.core_type option) = Obj.magic _2 in
         let _1_inlined3 : unit = Obj.magic _1_inlined3 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 19999 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -20022,7 +26489,13 @@ module Tables = struct
 # 20023 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 20028 "parsing/parser.ml"
               
@@ -20044,7 +26517,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 20050 "parsing/parser.ml"
             
@@ -20177,13 +26656,25 @@ module Tables = struct
           let _1 =
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1128 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1108 "parsing/parser.mly"
+=======
+# 1115 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_sig _startpos )
 # 20183 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 1887 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1867 "parsing/parser.mly"
+=======
+# 1874 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20189 "parsing/parser.ml"
           
@@ -20224,13 +26715,25 @@ module Tables = struct
           let _1 =
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1126 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1106 "parsing/parser.mly"
+=======
+# 1113 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_sig _startpos @ [_1] )
 # 20230 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 1887 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1867 "parsing/parser.mly"
+=======
+# 1874 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20236 "parsing/parser.ml"
           
@@ -20289,12 +26792,24 @@ module Tables = struct
           let _1 =
             let ys =
               let items = 
+<<<<<<< HEAD
 # 1188 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1168 "parsing/parser.mly"
+=======
+# 1175 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [] )
 # 20295 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1617 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1597 "parsing/parser.mly"
+=======
+# 1604 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( items )
 # 20300 "parsing/parser.ml"
               
@@ -20302,7 +26817,13 @@ module Tables = struct
             let xs =
               let _startpos = _startpos__1_ in
               
+<<<<<<< HEAD
 # 1124 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1104 "parsing/parser.mly"
+=======
+# 1111 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos )
 # 20308 "parsing/parser.ml"
               
@@ -20314,7 +26835,13 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1633 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1613 "parsing/parser.mly"
+=======
+# 1620 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20320 "parsing/parser.ml"
           
@@ -20379,7 +26906,13 @@ module Tables = struct
 # 20380 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1624 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1604 "parsing/parser.mly"
+=======
+# 1611 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstrexp e attrs )
 # 20385 "parsing/parser.ml"
                       
@@ -20387,7 +26920,13 @@ module Tables = struct
                     let _startpos__1_ = _startpos_e_ in
                     let _startpos = _startpos__1_ in
                     
+<<<<<<< HEAD
 # 1122 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1102 "parsing/parser.mly"
+=======
+# 1109 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos @ [_1] )
 # 20393 "parsing/parser.ml"
                     
@@ -20396,20 +26935,38 @@ module Tables = struct
                   let _endpos = _endpos__1_ in
                   let _startpos = _startpos__1_ in
                   
+<<<<<<< HEAD
 # 1141 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1121 "parsing/parser.mly"
+=======
+# 1128 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( mark_rhs_docs _startpos _endpos;
     _1 )
 # 20403 "parsing/parser.ml"
                   
                 in
                 
+<<<<<<< HEAD
 # 1190 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1170 "parsing/parser.mly"
+=======
+# 1177 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x )
 # 20409 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 1617 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1597 "parsing/parser.mly"
+=======
+# 1604 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( items )
 # 20415 "parsing/parser.ml"
               
@@ -20417,7 +26974,13 @@ module Tables = struct
             let xs =
               let _startpos = _startpos__1_ in
               
+<<<<<<< HEAD
 # 1124 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1104 "parsing/parser.mly"
+=======
+# 1111 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos )
 # 20423 "parsing/parser.ml"
               
@@ -20429,7 +26992,13 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1633 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1613 "parsing/parser.mly"
+=======
+# 1620 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20435 "parsing/parser.ml"
           
@@ -20470,13 +27039,25 @@ module Tables = struct
           let _1 =
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1122 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1102 "parsing/parser.mly"
+=======
+# 1109 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos @ [_1] )
 # 20476 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 1633 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1613 "parsing/parser.mly"
+=======
+# 1620 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20482 "parsing/parser.ml"
           
@@ -20534,7 +27115,13 @@ module Tables = struct
         let _v : (Parsetree.class_type_field list list) = let x =
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1136 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1116 "parsing/parser.mly"
+=======
+# 1123 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_csig _startpos @ [_1] )
 # 20540 "parsing/parser.ml"
           
@@ -20592,7 +27179,13 @@ module Tables = struct
         let _v : (Parsetree.class_field list list) = let x =
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1134 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1114 "parsing/parser.mly"
+=======
+# 1121 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_cstr _startpos @ [_1] )
 # 20598 "parsing/parser.ml"
           
@@ -20650,7 +27243,13 @@ module Tables = struct
         let _v : (Parsetree.structure_item list list) = let x =
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1122 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1102 "parsing/parser.mly"
+=======
+# 1109 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos @ [_1] )
 # 20656 "parsing/parser.ml"
           
@@ -20709,12 +27308,24 @@ module Tables = struct
           let _1 =
             let x =
               let _1 = 
+<<<<<<< HEAD
 # 1188 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1168 "parsing/parser.mly"
+=======
+# 1175 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [] )
 # 20715 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1420 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1400 "parsing/parser.mly"
+=======
+# 1407 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 20720 "parsing/parser.ml"
               
@@ -20726,7 +27337,13 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1432 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1412 "parsing/parser.mly"
+=======
+# 1419 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20732 "parsing/parser.ml"
           
@@ -20791,13 +27408,25 @@ module Tables = struct
 # 20792 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1624 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1604 "parsing/parser.mly"
+=======
+# 1611 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstrexp e attrs )
 # 20797 "parsing/parser.ml"
                       
                     in
                     
+<<<<<<< HEAD
 # 1132 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1112 "parsing/parser.mly"
+=======
+# 1119 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( Ptop_def [_1] )
 # 20803 "parsing/parser.ml"
                     
@@ -20805,19 +27434,37 @@ module Tables = struct
                   let _startpos__1_ = _startpos_e_ in
                   let _startpos = _startpos__1_ in
                   
+<<<<<<< HEAD
 # 1130 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1110 "parsing/parser.mly"
+=======
+# 1117 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_def _startpos @ [_1] )
 # 20811 "parsing/parser.ml"
                   
                 in
                 
+<<<<<<< HEAD
 # 1190 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1170 "parsing/parser.mly"
+=======
+# 1177 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x )
 # 20817 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 1420 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1400 "parsing/parser.mly"
+=======
+# 1407 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 20823 "parsing/parser.ml"
               
@@ -20829,7 +27476,13 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1432 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1412 "parsing/parser.mly"
+=======
+# 1419 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20835 "parsing/parser.ml"
           
@@ -20869,19 +27522,37 @@ module Tables = struct
         let _v : (Parsetree.toplevel_phrase list list) = let x =
           let _1 =
             let _1 = 
+<<<<<<< HEAD
 # 1132 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1112 "parsing/parser.mly"
+=======
+# 1119 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( Ptop_def [_1] )
 # 20875 "parsing/parser.ml"
              in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1130 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1110 "parsing/parser.mly"
+=======
+# 1117 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_def _startpos @ [_1] )
 # 20881 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 1432 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1412 "parsing/parser.mly"
+=======
+# 1419 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20887 "parsing/parser.ml"
           
@@ -20924,7 +27595,13 @@ module Tables = struct
               let _endpos = _endpos__1_ in
               let _startpos = _startpos__1_ in
               
+<<<<<<< HEAD
 # 1141 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1121 "parsing/parser.mly"
+=======
+# 1128 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( mark_rhs_docs _startpos _endpos;
     _1 )
 # 20931 "parsing/parser.ml"
@@ -20932,13 +27609,25 @@ module Tables = struct
             in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1130 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1110 "parsing/parser.mly"
+=======
+# 1117 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_def _startpos @ [_1] )
 # 20938 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 1432 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1412 "parsing/parser.mly"
+=======
+# 1419 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _1 )
 # 20944 "parsing/parser.ml"
           
@@ -20993,7 +27682,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 20999 "parsing/parser.ml"
             
@@ -21021,7 +27716,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1357 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1337 "parsing/parser.mly"
+=======
+# 1344 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x], None )
 # 21027 "parsing/parser.ml"
          in
@@ -21077,7 +27778,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 21083 "parsing/parser.ml"
             
@@ -21105,7 +27812,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1357 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1337 "parsing/parser.mly"
+=======
+# 1344 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x], None )
 # 21111 "parsing/parser.ml"
          in
@@ -21170,7 +27883,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 21176 "parsing/parser.ml"
             
@@ -21198,7 +27917,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1359 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1339 "parsing/parser.mly"
+=======
+# 1346 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x], Some y )
 # 21204 "parsing/parser.ml"
          in
@@ -21256,7 +27981,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 21262 "parsing/parser.ml"
             
@@ -21284,7 +28015,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1363 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1343 "parsing/parser.mly"
+=======
+# 1350 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let xs, y = tail in
       x :: xs, y )
 # 21291 "parsing/parser.ml"
@@ -21675,7 +28412,13 @@ module Tables = struct
         let _1_inlined1 : (Parsetree.core_type) = Obj.magic _1_inlined1 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 21681 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -21719,7 +28462,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 21725 "parsing/parser.ml"
             
@@ -21845,7 +28594,13 @@ module Tables = struct
         let _1_inlined1 : (Parsetree.core_type) = Obj.magic _1_inlined1 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 21851 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -21889,7 +28644,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 21895 "parsing/parser.ml"
             
@@ -21994,7 +28755,13 @@ module Tables = struct
         let _1_inlined1 : (Parsetree.core_type) = Obj.magic _1_inlined1 in
         let _2 : unit = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22000 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -22029,7 +28796,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22035 "parsing/parser.ml"
             
@@ -22153,7 +28926,13 @@ module Tables = struct
         let _1_inlined2 : (Parsetree.core_type) = Obj.magic _1_inlined2 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22159 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -22183,7 +28962,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22189 "parsing/parser.ml"
           
@@ -22199,7 +28984,13 @@ module Tables = struct
 # 22200 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2228 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2208 "parsing/parser.mly"
+=======
+# 2215 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (label, private_, Cfk_virtual ty), attrs )
 # 22205 "parsing/parser.ml"
          in
@@ -22239,7 +29030,13 @@ module Tables = struct
         } = _menhir_stack in
         let _5 : (Parsetree.expression) = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22245 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -22261,7 +29058,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22267 "parsing/parser.ml"
           
@@ -22277,7 +29080,13 @@ module Tables = struct
 # 22278 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2230 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2210 "parsing/parser.mly"
+=======
+# 2217 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let e = _5 in
         let loc = Location.(e.pexp_loc.loc_start, e.pexp_loc.loc_end) in
         (_4, _3,
@@ -22326,7 +29135,13 @@ module Tables = struct
         } = _menhir_stack in
         let _5 : (Parsetree.expression) = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22332 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -22349,7 +29164,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22355 "parsing/parser.ml"
           
@@ -22368,7 +29189,13 @@ module Tables = struct
 # 22369 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2230 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2210 "parsing/parser.mly"
+=======
+# 2217 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let e = _5 in
         let loc = Location.(e.pexp_loc.loc_start, e.pexp_loc.loc_end) in
         (_4, _3,
@@ -22432,7 +29259,13 @@ module Tables = struct
         let _1_inlined2 : (Parsetree.core_type) = Obj.magic _1_inlined2 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22438 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -22463,7 +29296,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22469 "parsing/parser.ml"
           
@@ -22479,7 +29318,13 @@ module Tables = struct
 # 22480 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2216 "parsing/parser.mly"
+=======
+# 2223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let poly_exp =
           let loc = (_startpos__6_, _endpos__8_) in
           ghexp ~loc (Pexp_poly(_8, Some _6)) in
@@ -22549,7 +29394,13 @@ module Tables = struct
         let _1_inlined3 : (Parsetree.core_type) = Obj.magic _1_inlined3 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22555 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -22581,7 +29432,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22587 "parsing/parser.ml"
           
@@ -22600,7 +29457,13 @@ module Tables = struct
 # 22601 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2216 "parsing/parser.mly"
+=======
+# 2223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let poly_exp =
           let loc = (_startpos__6_, _endpos__8_) in
           ghexp ~loc (Pexp_poly(_8, Some _6)) in
@@ -22685,7 +29548,13 @@ module Tables = struct
         let _6 : unit = Obj.magic _6 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22691 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -22713,7 +29582,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22719 "parsing/parser.ml"
           
@@ -22744,7 +29619,13 @@ module Tables = struct
               _startpos__4_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2242 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2222 "parsing/parser.mly"
+=======
+# 2229 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let poly_exp_loc = (_startpos__7_, _endpos__11_) in
         let poly_exp =
           let exp, poly =
@@ -22841,7 +29722,13 @@ module Tables = struct
         let _6 : unit = Obj.magic _6 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22847 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -22870,7 +29757,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 22876 "parsing/parser.ml"
           
@@ -22903,7 +29796,13 @@ module Tables = struct
               _startpos__4_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2242 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2222 "parsing/parser.mly"
+=======
+# 2229 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let poly_exp_loc = (_startpos__7_, _endpos__11_) in
         let poly_exp =
           let exp, poly =
@@ -22933,7 +29832,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22939 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -22974,7 +29879,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 22980 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -23005,7 +29916,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23011 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -23046,7 +29963,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23052 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -23411,7 +30334,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23417 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -23452,7 +30381,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23458 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -23483,7 +30418,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23489 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -23524,7 +30465,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 23530 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -23769,7 +30716,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos_me_ in
         let _v : (Parsetree.module_expr) = 
+<<<<<<< HEAD
 # 1696 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1676 "parsing/parser.mly"
+=======
+# 1683 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( me )
 # 23775 "parsing/parser.ml"
          in
@@ -23816,7 +30769,13 @@ module Tables = struct
         let _endpos = _endpos_me_ in
         let _v : (Parsetree.module_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1699 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1679 "parsing/parser.mly"
+=======
+# 1686 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmod_constraint(me, mty) )
 # 23822 "parsing/parser.ml"
            in
@@ -23825,13 +30784,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 23831 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1703 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1683 "parsing/parser.mly"
+=======
+# 1690 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 23837 "parsing/parser.ml"
          in
@@ -23864,7 +30835,13 @@ module Tables = struct
         let _endpos = _endpos_body_ in
         let _v : (Parsetree.module_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1701 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1681 "parsing/parser.mly"
+=======
+# 1688 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (_, arg) = arg_and_pos in
           Pmod_functor(arg, body) )
 # 23871 "parsing/parser.ml"
@@ -23874,13 +30851,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 23880 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1703 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1683 "parsing/parser.mly"
+=======
+# 1690 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 23886 "parsing/parser.ml"
          in
@@ -23912,7 +30901,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos_mty_ in
         let _v : (Parsetree.module_type) = 
+<<<<<<< HEAD
 # 1957 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1937 "parsing/parser.mly"
+=======
+# 1944 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mty )
 # 23918 "parsing/parser.ml"
          in
@@ -23945,7 +30940,13 @@ module Tables = struct
         let _endpos = _endpos_body_ in
         let _v : (Parsetree.module_type) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1960 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1940 "parsing/parser.mly"
+=======
+# 1947 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (_, arg) = arg_and_pos in
           Pmty_functor(arg, body) )
 # 23952 "parsing/parser.ml"
@@ -23955,13 +30956,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1143 "parsing/parser.mly"
+=======
+# 1150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmty ~loc:_sloc _1 )
 # 23961 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1963 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1943 "parsing/parser.mly"
+=======
+# 1950 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 23967 "parsing/parser.ml"
          in
@@ -24018,7 +31031,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1532 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1512 "parsing/parser.mly"
+=======
+# 1519 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc ~attrs (Pmod_structure s) )
 # 24024 "parsing/parser.ml"
          in
@@ -24074,7 +31093,13 @@ module Tables = struct
         let _loc__4_ = (_startpos__4_, _endpos__4_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1534 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1514 "parsing/parser.mly"
+=======
+# 1521 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "struct" _loc__1_ "end" _loc__4_ )
 # 24080 "parsing/parser.ml"
          in
@@ -24129,7 +31154,13 @@ module Tables = struct
         let _v : (Parsetree.module_expr) = let args =
           let _1 = _1_inlined2 in
           
+<<<<<<< HEAD
 # 1498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1478 "parsing/parser.mly"
+=======
+# 1485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24135 "parsing/parser.ml"
           
@@ -24146,7 +31177,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1536 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1516 "parsing/parser.mly"
+=======
+# 1523 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( wrap_mod_attrs ~loc:_sloc attrs (
           List.fold_left (fun acc (startpos, arg) ->
             mkmod ~loc:(startpos, _endpos) (Pmod_functor (arg, acc))
@@ -24175,7 +31212,13 @@ module Tables = struct
         let _startpos = _startpos_me_ in
         let _endpos = _endpos_me_ in
         let _v : (Parsetree.module_expr) = 
+<<<<<<< HEAD
 # 1542 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1522 "parsing/parser.mly"
+=======
+# 1529 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( me )
 # 24181 "parsing/parser.ml"
          in
@@ -24207,7 +31250,13 @@ module Tables = struct
         let _startpos = _startpos_me_ in
         let _endpos = _endpos_attr_ in
         let _v : (Parsetree.module_expr) = 
+<<<<<<< HEAD
 # 1544 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1524 "parsing/parser.mly"
+=======
+# 1531 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Mod.attr me attr )
 # 24213 "parsing/parser.ml"
          in
@@ -24238,13 +31287,25 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 24244 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1548 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1528 "parsing/parser.mly"
+=======
+# 1535 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmod_ident x )
 # 24250 "parsing/parser.ml"
             
@@ -24253,13 +31314,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 24259 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1560 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1540 "parsing/parser.mly"
+=======
+# 1547 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24265 "parsing/parser.ml"
          in
@@ -24292,7 +31365,13 @@ module Tables = struct
         let _endpos = _endpos_me2_ in
         let _v : (Parsetree.module_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1551 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1531 "parsing/parser.mly"
+=======
+# 1538 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmod_apply(me1, me2) )
 # 24298 "parsing/parser.ml"
            in
@@ -24301,13 +31380,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 24307 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1560 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1540 "parsing/parser.mly"
+=======
+# 1547 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24313 "parsing/parser.ml"
          in
@@ -24351,7 +31442,13 @@ module Tables = struct
             let _symbolstartpos = _startpos_me1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1554 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1534 "parsing/parser.mly"
+=======
+# 1541 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( (* TODO review mkmod location *)
           Pmod_apply(me1, mkmod ~loc:_sloc (Pmod_structure [])) )
 # 24358 "parsing/parser.ml"
@@ -24362,13 +31459,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 24368 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1560 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1540 "parsing/parser.mly"
+=======
+# 1547 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24374 "parsing/parser.ml"
          in
@@ -24394,7 +31503,13 @@ module Tables = struct
         let _endpos = _endpos_ex_ in
         let _v : (Parsetree.module_expr) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1558 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1538 "parsing/parser.mly"
+=======
+# 1545 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmod_extension ex )
 # 24400 "parsing/parser.ml"
            in
@@ -24403,13 +31518,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1161 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1141 "parsing/parser.mly"
+=======
+# 1148 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmod ~loc:_sloc _1 )
 # 24409 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1560 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1540 "parsing/parser.mly"
+=======
+# 1547 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24415 "parsing/parser.ml"
          in
@@ -24430,7 +31557,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let x : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 24436 "parsing/parser.ml"
         ) = Obj.magic x in
@@ -24438,7 +31571,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (string option) = 
+<<<<<<< HEAD
 # 1515 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1495 "parsing/parser.mly"
+=======
+# 1502 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Some x )
 # 24444 "parsing/parser.ml"
          in
@@ -24463,7 +31602,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (string option) = 
+<<<<<<< HEAD
 # 1518 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1498 "parsing/parser.mly"
+=======
+# 1505 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( None )
 # 24469 "parsing/parser.ml"
          in
@@ -24523,7 +31668,13 @@ module Tables = struct
         let _1_inlined3 : (Longident.t) = Obj.magic _1_inlined3 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 24529 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -24548,7 +31699,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 24554 "parsing/parser.ml"
           
@@ -24559,7 +31716,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 24565 "parsing/parser.ml"
           
@@ -24576,7 +31739,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1993 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1973 "parsing/parser.mly"
+=======
+# 1980 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -24634,7 +31803,13 @@ module Tables = struct
         let _6 : unit = Obj.magic _6 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 985 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 965 "parsing/parser.mly"
+=======
+# 972 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 24640 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -24650,7 +31825,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 24656 "parsing/parser.ml"
           
@@ -24665,7 +31846,13 @@ module Tables = struct
         in
         let _loc__6_ = (_startpos__6_, _endpos__6_) in
         
+<<<<<<< HEAD
 # 2000 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1980 "parsing/parser.mly"
+=======
+# 1987 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( expecting _loc__6_ "module path" )
 # 24671 "parsing/parser.ml"
          in
@@ -24722,7 +31909,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1840 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1820 "parsing/parser.mly"
+=======
+# 1827 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmty ~loc:_sloc ~attrs (Pmty_signature s) )
 # 24728 "parsing/parser.ml"
          in
@@ -24778,7 +31971,13 @@ module Tables = struct
         let _loc__4_ = (_startpos__4_, _endpos__4_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1842 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1822 "parsing/parser.mly"
+=======
+# 1829 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "sig" _loc__1_ "end" _loc__4_ )
 # 24784 "parsing/parser.ml"
          in
@@ -24833,7 +32032,13 @@ module Tables = struct
         let _v : (Parsetree.module_type) = let args =
           let _1 = _1_inlined2 in
           
+<<<<<<< HEAD
 # 1498 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1478 "parsing/parser.mly"
+=======
+# 1485 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 24839 "parsing/parser.ml"
           
@@ -24850,7 +32055,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1846 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1826 "parsing/parser.mly"
+=======
+# 1833 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( wrap_mty_attrs ~loc:_sloc attrs (
           List.fold_left (fun acc (startpos, arg) ->
             mkmty ~loc:(startpos, _endpos) (Pmty_functor (arg, acc))
@@ -24918,7 +32129,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1852 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1832 "parsing/parser.mly"
+=======
+# 1839 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmty ~loc:_sloc ~attrs:_4 (Pmty_typeof _5) )
 # 24924 "parsing/parser.ml"
          in
@@ -24957,7 +32174,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.module_type) = 
+<<<<<<< HEAD
 # 1854 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1834 "parsing/parser.mly"
+=======
+# 1841 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( _2 )
 # 24963 "parsing/parser.ml"
          in
@@ -24998,7 +32221,13 @@ module Tables = struct
         let _v : (Parsetree.module_type) = let _loc__3_ = (_startpos__3_, _endpos__3_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1856 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1836 "parsing/parser.mly"
+=======
+# 1843 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__3_ )
 # 25004 "parsing/parser.ml"
          in
@@ -25030,7 +32259,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.module_type) = 
+<<<<<<< HEAD
 # 1858 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1838 "parsing/parser.mly"
+=======
+# 1845 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( Mty.attr _1 _2 )
 # 25036 "parsing/parser.ml"
          in
@@ -25061,13 +32296,25 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 25067 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1861 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1841 "parsing/parser.mly"
+=======
+# 1848 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmty_ident _1 )
 # 25073 "parsing/parser.ml"
             
@@ -25076,13 +32323,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1143 "parsing/parser.mly"
+=======
+# 1150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmty ~loc:_sloc _1 )
 # 25082 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1872 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1852 "parsing/parser.mly"
+=======
+# 1859 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 25088 "parsing/parser.ml"
          in
@@ -25122,7 +32381,13 @@ module Tables = struct
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.module_type) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1864 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1844 "parsing/parser.mly"
+=======
+# 1851 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmty_functor(Named (mknoloc None, _1), _3) )
 # 25128 "parsing/parser.ml"
            in
@@ -25131,13 +32396,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1143 "parsing/parser.mly"
+=======
+# 1150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmty ~loc:_sloc _1 )
 # 25137 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1872 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1852 "parsing/parser.mly"
+=======
+# 1859 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 25143 "parsing/parser.ml"
          in
@@ -25184,13 +32461,25 @@ module Tables = struct
 # 25185 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 25190 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1866 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1846 "parsing/parser.mly"
+=======
+# 1853 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmty_with(_1, _3) )
 # 25196 "parsing/parser.ml"
             
@@ -25200,13 +32489,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1143 "parsing/parser.mly"
+=======
+# 1150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmty ~loc:_sloc _1 )
 # 25206 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1872 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1852 "parsing/parser.mly"
+=======
+# 1859 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 25212 "parsing/parser.ml"
          in
@@ -25232,7 +32533,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.module_type) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1870 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1850 "parsing/parser.mly"
+=======
+# 1857 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pmty_extension _1 )
 # 25238 "parsing/parser.ml"
            in
@@ -25240,13 +32547,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1163 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1143 "parsing/parser.mly"
+=======
+# 1150 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkmty ~loc:_sloc _1 )
 # 25246 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1872 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1852 "parsing/parser.mly"
+=======
+# 1859 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 25252 "parsing/parser.ml"
          in
@@ -25327,7 +32646,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 25333 "parsing/parser.ml"
           
@@ -25344,7 +32669,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1786 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1766 "parsing/parser.mly"
+=======
+# 1773 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -25437,7 +32768,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 25443 "parsing/parser.ml"
           
@@ -25454,7 +32791,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2049 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2029 "parsing/parser.mly"
+=======
+# 2036 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -25805,7 +33148,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 25811 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -25817,7 +33166,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 25823 "parsing/parser.ml"
           
@@ -25851,7 +33206,13 @@ module Tables = struct
         } = _menhir_stack in
         let xs : (string Asttypes.loc list) = Obj.magic xs in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 25857 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -25863,7 +33224,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 25869 "parsing/parser.ml"
           
@@ -25890,7 +33257,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let s : (
+<<<<<<< HEAD
 # 972 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 952 "parsing/parser.mly"
+=======
+# 959 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string option)
 # 25896 "parsing/parser.ml"
         ) = Obj.magic s in
@@ -25931,7 +33304,13 @@ module Tables = struct
         } = _menhir_stack in
         let xs : (string list) = Obj.magic xs in
         let s : (
+<<<<<<< HEAD
 # 972 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 952 "parsing/parser.mly"
+=======
+# 959 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string option)
 # 25937 "parsing/parser.ml"
         ) = Obj.magic s in
@@ -26817,7 +34196,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1805 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1785 "parsing/parser.mly"
+=======
+# 1792 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -26907,7 +34292,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1805 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1785 "parsing/parser.mly"
+=======
+# 1792 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -26979,7 +34370,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 26985 "parsing/parser.ml"
           
@@ -27001,7 +34398,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1820 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1800 "parsing/parser.mly"
+=======
+# 1807 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -27080,7 +34483,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 27086 "parsing/parser.ml"
           
@@ -27102,7 +34511,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1820 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1800 "parsing/parser.mly"
+=======
+# 1807 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -27128,7 +34543,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 958 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 938 "parsing/parser.mly"
+=======
+# 945 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 27134 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -27136,6 +34557,974 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Asttypes.label) = 
+<<<<<<< HEAD
+# 4037 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4007 "parsing/parser.mly"
+                                                ( _1 )
+# 27038 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
+# 893 "parsing/parser.mly"
+       (string)
+# 27059 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4008 "parsing/parser.mly"
+                                                ( _1 )
+# 27067 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
+# 894 "parsing/parser.mly"
+       (string)
+# 27088 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4009 "parsing/parser.mly"
+                                                ( _1 )
+# 27096 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27138 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4010 "parsing/parser.mly"
+                                                ( "."^ _1 ^"(" ^ _3 ^ ")" )
+# 27146 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27195 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4011 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "(" ^ _3 ^ ")<-" )
+# 27203 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27245 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4012 "parsing/parser.mly"
+                                                ( "."^ _1 ^"[" ^ _3 ^ "]" )
+# 27253 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27302 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4013 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "[" ^ _3 ^ "]<-" )
+# 27310 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27352 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4014 "parsing/parser.mly"
+                                                ( "."^ _1 ^"{" ^ _3 ^ "}" )
+# 27360 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 27409 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4015 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "{" ^ _3 ^ "}<-" )
+# 27417 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
+# 949 "parsing/parser.mly"
+       (string)
+# 27438 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4016 "parsing/parser.mly"
+                                                ( _1 )
+# 27446 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4017 "parsing/parser.mly"
+                                                ( "!" )
+# 27471 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 887 "parsing/parser.mly"
+       (string)
+# 27492 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4021 "parsing/parser.mly"
+                  ( op )
+# 27500 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27505 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 888 "parsing/parser.mly"
+       (string)
+# 27526 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4022 "parsing/parser.mly"
+                  ( op )
+# 27534 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27539 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 889 "parsing/parser.mly"
+       (string)
+# 27560 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4023 "parsing/parser.mly"
+                  ( op )
+# 27568 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27573 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 890 "parsing/parser.mly"
+       (string)
+# 27594 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4024 "parsing/parser.mly"
+                  ( op )
+# 27602 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27607 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 891 "parsing/parser.mly"
+       (string)
+# 27628 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4025 "parsing/parser.mly"
+                  ( op )
+# 27636 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27641 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4026 "parsing/parser.mly"
+                   ("+")
+# 27666 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27671 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4027 "parsing/parser.mly"
+                  ("+.")
+# 27696 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27701 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4028 "parsing/parser.mly"
+                  ("+=")
+# 27726 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27731 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4029 "parsing/parser.mly"
+                   ("-")
+# 27756 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27761 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4030 "parsing/parser.mly"
+                  ("-.")
+# 27786 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27791 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4031 "parsing/parser.mly"
+                   ("*")
+# 27816 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27821 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4032 "parsing/parser.mly"
+                   ("%")
+# 27846 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27851 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4033 "parsing/parser.mly"
+                   ("=")
+# 27876 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27881 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4034 "parsing/parser.mly"
+                   ("<")
+# 27906 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27911 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4035 "parsing/parser.mly"
+                   (">")
+# 27936 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27941 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4036 "parsing/parser.mly"
+                  ("or")
+# 27966 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+                                                ( _1 )
+# 27971 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4037 "parsing/parser.mly"
+                  ("||")
+# 27996 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+=======
 # 4037 "parsing/parser.mly"
                                                 ( _1 )
 # 27142 "parsing/parser.ml"
@@ -27157,7 +35546,7 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
-# 913 "parsing/parser.mly"
+# 900 "parsing/parser.mly"
        (string)
 # 27163 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -27186,6 +35575,1000 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+# 901 "parsing/parser.mly"
+       (string)
+# 27192 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4039 "parsing/parser.mly"
+                                                ( _1 )
+# 27200 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27242 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4040 "parsing/parser.mly"
+                                                ( "."^ _1 ^"(" ^ _3 ^ ")" )
+# 27250 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27299 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4041 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "(" ^ _3 ^ ")<-" )
+# 27307 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27349 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4042 "parsing/parser.mly"
+                                                ( "."^ _1 ^"[" ^ _3 ^ "]" )
+# 27357 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27406 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4043 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "[" ^ _3 ^ "]<-" )
+# 27414 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _3;
+            MenhirLib.EngineTypes.startp = _startpos__3_;
+            MenhirLib.EngineTypes.endp = _endpos__3_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27456 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Asttypes.label) = 
+# 4044 "parsing/parser.mly"
+                                                ( "."^ _1 ^"{" ^ _3 ^ "}" )
+# 27464 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let _4 : unit = Obj.magic _4 in
+        let _3 : (string) = Obj.magic _3 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 27513 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Asttypes.label) = 
+# 4045 "parsing/parser.mly"
+                                                ( "."^ _1 ^ "{" ^ _3 ^ "}<-" )
+# 27521 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
+# 956 "parsing/parser.mly"
+       (string)
+# 27542 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4046 "parsing/parser.mly"
+                                                ( _1 )
+# 27550 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = 
+# 4047 "parsing/parser.mly"
+                                                ( "!" )
+# 27575 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 894 "parsing/parser.mly"
+       (string)
+# 27596 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4051 "parsing/parser.mly"
+                  ( op )
+# 27604 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27609 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 895 "parsing/parser.mly"
+       (string)
+# 27630 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4052 "parsing/parser.mly"
+                  ( op )
+# 27638 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27643 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 896 "parsing/parser.mly"
+       (string)
+# 27664 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4053 "parsing/parser.mly"
+                  ( op )
+# 27672 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27677 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 897 "parsing/parser.mly"
+       (string)
+# 27698 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4054 "parsing/parser.mly"
+                  ( op )
+# 27706 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27711 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = op;
+          MenhirLib.EngineTypes.startp = _startpos_op_;
+          MenhirLib.EngineTypes.endp = _endpos_op_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let op : (
+# 898 "parsing/parser.mly"
+       (string)
+# 27732 "parsing/parser.ml"
+        ) = Obj.magic op in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_op_ in
+        let _endpos = _endpos_op_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4055 "parsing/parser.mly"
+                  ( op )
+# 27740 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27745 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4056 "parsing/parser.mly"
+                   ("+")
+# 27770 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27775 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4057 "parsing/parser.mly"
+                  ("+.")
+# 27800 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27805 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4058 "parsing/parser.mly"
+                  ("+=")
+# 27830 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27835 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4059 "parsing/parser.mly"
+                   ("-")
+# 27860 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27865 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4060 "parsing/parser.mly"
+                  ("-.")
+# 27890 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27895 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4061 "parsing/parser.mly"
+                   ("*")
+# 27920 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27925 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4062 "parsing/parser.mly"
+                   ("%")
+# 27950 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27955 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4063 "parsing/parser.mly"
+                   ("=")
+# 27980 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 27985 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4064 "parsing/parser.mly"
+                   ("<")
+# 28010 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 28015 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4065 "parsing/parser.mly"
+                   (">")
+# 28040 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 28045 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4066 "parsing/parser.mly"
+                  ("or")
+# 28070 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+                                                ( _1 )
+# 28075 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Asttypes.label) = let _1 = 
+# 4067 "parsing/parser.mly"
+                  ("||")
+# 28100 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+                                                ( _1 )
+<<<<<<< HEAD
+# 27142 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 28001 "parsing/parser.ml"
+=======
+# 28105 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
+# 913 "parsing/parser.mly"
+       (string)
+# 27163 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+<<<<<<< HEAD
+        let _v : (Asttypes.label) = 
+# 4038 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+        let _v : (Asttypes.label) = let _1 = 
+# 4038 "parsing/parser.mly"
+                   ("&")
+# 28026 "parsing/parser.ml"
+         in
+        
+# 4018 "parsing/parser.mly"
+=======
+        let _v : (Asttypes.label) = let _1 = 
+# 4068 "parsing/parser.mly"
+                   ("&")
+# 28130 "parsing/parser.ml"
+         in
+        
+# 4048 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+                                                ( _1 )
+<<<<<<< HEAD
+# 27171 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 28031 "parsing/parser.ml"
+=======
+# 28135 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (
 # 914 "parsing/parser.mly"
        (string)
 # 27192 "parsing/parser.ml"
@@ -27193,6 +36576,7 @@ module Tables = struct
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
+<<<<<<< HEAD
         let _v : (Asttypes.label) = 
 # 4039 "parsing/parser.mly"
                                                 ( _1 )
@@ -27601,10 +36985,22 @@ module Tables = struct
 # 4051 "parsing/parser.mly"
                   ( op )
 # 27604 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+        let _v : (Asttypes.label) = let _1 = 
+# 4039 "parsing/parser.mly"
+                  ("&&")
+# 28056 "parsing/parser.ml"
+=======
+        let _v : (Asttypes.label) = let _1 = 
+# 4069 "parsing/parser.mly"
+                  ("&&")
+# 28160 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 4048 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 27609 "parsing/parser.ml"
          in
         {
@@ -27742,6 +37138,11 @@ module Tables = struct
 # 4048 "parsing/parser.mly"
                                                 ( _1 )
 # 27745 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 28061 "parsing/parser.ml"
+=======
+# 28165 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -27764,13 +37165,24 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Asttypes.label) = let _1 = 
+<<<<<<< HEAD
 # 4056 "parsing/parser.mly"
                    ("+")
 # 27770 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 4040 "parsing/parser.mly"
+                  (":=")
+# 28086 "parsing/parser.ml"
+=======
+# 4070 "parsing/parser.mly"
+                  (":=")
+# 28190 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
 # 4048 "parsing/parser.mly"
                                                 ( _1 )
+<<<<<<< HEAD
 # 27775 "parsing/parser.ml"
          in
         {
@@ -28191,6 +37603,113 @@ module Tables = struct
         
 # 4048 "parsing/parser.mly"
                                                 ( _1 )
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 28091 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (bool) = 
+# 3914 "parsing/parser.mly"
+                                                ( true )
+# 28116 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let _menhir_s = _menhir_env.MenhirLib.EngineTypes.current in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _endpos = _startpos in
+        let _v : (bool) = 
+# 3915 "parsing/parser.mly"
+                                                ( false )
+# 28134 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let _menhir_s = _menhir_env.MenhirLib.EngineTypes.current in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _endpos = _startpos in
+        let _v : (unit option) = 
+# 114 "<standard.mly>"
+    ( None )
+# 28152 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = x;
+          MenhirLib.EngineTypes.startp = _startpos_x_;
+          MenhirLib.EngineTypes.endp = _endpos_x_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let x : unit = Obj.magic x in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_x_ in
+        let _endpos = _endpos_x_ in
+        let _v : (unit option) = 
+# 116 "<standard.mly>"
+    ( Some x )
+# 28177 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let _menhir_s = _menhir_env.MenhirLib.EngineTypes.current in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _endpos = _startpos in
+        let _v : (unit option) = 
+# 114 "<standard.mly>"
+    ( None )
+=======
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
 # 28195 "parsing/parser.ml"
          in
         {
@@ -28363,7 +37882,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 28369 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -28378,7 +37903,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 28384 "parsing/parser.ml"
             
@@ -28729,7 +38260,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 951 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 931 "parsing/parser.mly"
+=======
+# 938 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 28735 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -28771,7 +38308,13 @@ module Tables = struct
         } = _menhir_stack in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 28777 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -28836,7 +38379,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1569 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1549 "parsing/parser.mly"
+=======
+# 1556 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc (Pmod_constraint(me, mty)) )
 # 28842 "parsing/parser.ml"
          in
@@ -28891,7 +38440,13 @@ module Tables = struct
         let _v : (Parsetree.module_expr) = let _loc__5_ = (_startpos__5_, _endpos__5_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1571 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1551 "parsing/parser.mly"
+=======
+# 1558 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__5_ )
 # 28897 "parsing/parser.ml"
          in
@@ -28930,7 +38485,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.module_expr) = 
+<<<<<<< HEAD
 # 1574 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1554 "parsing/parser.mly"
+=======
+# 1561 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( me (* TODO consider reloc *) )
 # 28936 "parsing/parser.ml"
          in
@@ -28971,7 +38532,13 @@ module Tables = struct
         let _v : (Parsetree.module_expr) = let _loc__3_ = (_startpos__3_, _endpos__3_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1576 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1556 "parsing/parser.mly"
+=======
+# 1563 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__3_ )
 # 28977 "parsing/parser.ml"
          in
@@ -29024,7 +38591,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__5_ in
         let _v : (Parsetree.module_expr) = let e = 
+<<<<<<< HEAD
 # 1593 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1573 "parsing/parser.mly"
+=======
+# 1580 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( e )
 # 29030 "parsing/parser.ml"
          in
@@ -29040,7 +38613,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1580 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1560 "parsing/parser.mly"
+=======
+# 1567 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc ~attrs (Pmod_unpack e) )
 # 29046 "parsing/parser.ml"
          in
@@ -29125,7 +38704,13 @@ module Tables = struct
           let _startpos = _startpos_e_ in
           let _loc = (_startpos, _endpos) in
           
+<<<<<<< HEAD
 # 1595 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1575 "parsing/parser.mly"
+=======
+# 1582 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( ghexp ~loc:_loc (Pexp_constraint (e, ty)) )
 # 29131 "parsing/parser.ml"
           
@@ -29142,7 +38727,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1580 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1560 "parsing/parser.mly"
+=======
+# 1567 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc ~attrs (Pmod_unpack e) )
 # 29148 "parsing/parser.ml"
          in
@@ -29254,7 +38845,13 @@ module Tables = struct
           let _startpos = _startpos_e_ in
           let _loc = (_startpos, _endpos) in
           
+<<<<<<< HEAD
 # 1597 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1577 "parsing/parser.mly"
+=======
+# 1584 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( ghexp ~loc:_loc (Pexp_coerce (e, Some ty1, ty2)) )
 # 29260 "parsing/parser.ml"
           
@@ -29271,7 +38868,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1580 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1560 "parsing/parser.mly"
+=======
+# 1567 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc ~attrs (Pmod_unpack e) )
 # 29277 "parsing/parser.ml"
          in
@@ -29356,7 +38959,13 @@ module Tables = struct
           let _startpos = _startpos_e_ in
           let _loc = (_startpos, _endpos) in
           
+<<<<<<< HEAD
 # 1599 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1579 "parsing/parser.mly"
+=======
+# 1586 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( ghexp ~loc:_loc (Pexp_coerce (e, None, ty2)) )
 # 29362 "parsing/parser.ml"
           
@@ -29373,7 +38982,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1580 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1560 "parsing/parser.mly"
+=======
+# 1567 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( mkmod ~loc:_sloc ~attrs (Pmod_unpack e) )
 # 29379 "parsing/parser.ml"
          in
@@ -29443,7 +39058,13 @@ module Tables = struct
         let _loc__6_ = (_startpos__6_, _endpos__6_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1582 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1562 "parsing/parser.mly"
+=======
+# 1569 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__6_ )
 # 29449 "parsing/parser.ml"
          in
@@ -29513,7 +39134,13 @@ module Tables = struct
         let _loc__6_ = (_startpos__6_, _endpos__6_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1584 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1564 "parsing/parser.mly"
+=======
+# 1571 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__6_ )
 # 29519 "parsing/parser.ml"
          in
@@ -29576,7 +39203,13 @@ module Tables = struct
         let _loc__5_ = (_startpos__5_, _endpos__5_) in
         let _loc__1_ = (_startpos__1_, _endpos__1_) in
         
+<<<<<<< HEAD
 # 1586 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1566 "parsing/parser.mly"
+=======
+# 1573 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( unclosed "(" _loc__1_ ")" _loc__5_ )
 # 29582 "parsing/parser.ml"
          in
@@ -29679,7 +39312,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Longident.t) = 
+<<<<<<< HEAD
 # 1488 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1468 "parsing/parser.mly"
+=======
+# 1475 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 29685 "parsing/parser.ml"
          in
@@ -29711,7 +39350,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Longident.t) = 
+<<<<<<< HEAD
 # 1473 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1453 "parsing/parser.mly"
+=======
+# 1460 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 29717 "parsing/parser.ml"
          in
@@ -29743,7 +39388,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.core_type) = 
+<<<<<<< HEAD
 # 1448 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1428 "parsing/parser.mly"
+=======
+# 1435 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 29749 "parsing/parser.ml"
          in
@@ -29775,7 +39426,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.expression) = 
+<<<<<<< HEAD
 # 1453 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1433 "parsing/parser.mly"
+=======
+# 1440 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 29781 "parsing/parser.ml"
          in
@@ -29807,8 +39464,15 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Longident.t) = 
+<<<<<<< HEAD
 # 1478 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1458 "parsing/parser.mly"
+=======
+# 1465 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
 # 29813 "parsing/parser.ml"
          in
         {
@@ -29906,6 +39570,11 @@ module Tables = struct
 # 1438 "parsing/parser.mly"
     ( _1 )
 # 29909 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 29709 "parsing/parser.ml"
+=======
+# 29813 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -29935,9 +39604,207 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Longident.t) = 
-# 1463 "parsing/parser.mly"
+# 1470 "parsing/parser.mly"
+    ( _1 )
+<<<<<<< HEAD
+# 29941 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 29741 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.module_expr) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Parsetree.module_expr) = 
+# 1423 "parsing/parser.mly"
+    ( _1 )
+# 29773 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.module_type) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Parsetree.module_type) = 
+# 1418 "parsing/parser.mly"
+    ( _1 )
+# 29805 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Longident.t) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Longident.t) = 
+# 1443 "parsing/parser.mly"
+    ( _1 )
+# 29837 "parsing/parser.ml"
+=======
+# 29845 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.module_expr) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Parsetree.module_expr) = 
+# 1430 "parsing/parser.mly"
+    ( _1 )
+# 29877 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.module_type) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Parsetree.module_type) = 
+# 1425 "parsing/parser.mly"
+    ( _1 )
+# 29909 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _2;
+          MenhirLib.EngineTypes.startp = _startpos__2_;
+          MenhirLib.EngineTypes.endp = _endpos__2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Longident.t) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__2_ in
+        let _v : (Longident.t) = 
+# 1450 "parsing/parser.mly"
     ( _1 )
 # 29941 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -29967,7 +39834,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.pattern) = 
+<<<<<<< HEAD
 # 1458 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1438 "parsing/parser.mly"
+=======
+# 1445 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 29973 "parsing/parser.ml"
          in
@@ -29999,7 +39872,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Longident.t) = 
+<<<<<<< HEAD
 # 1468 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1448 "parsing/parser.mly"
+=======
+# 1455 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 30005 "parsing/parser.ml"
          in
@@ -30163,7 +40042,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 30169 "parsing/parser.ml"
                 
@@ -30179,7 +40064,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30185 "parsing/parser.ml"
             
@@ -30244,7 +40135,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30250 "parsing/parser.ml"
             
@@ -30291,7 +40188,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30297 "parsing/parser.ml"
             
@@ -30356,7 +40259,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30362 "parsing/parser.ml"
             
@@ -30418,7 +40327,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30424 "parsing/parser.ml"
             
@@ -30483,7 +40398,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30489 "parsing/parser.ml"
             
@@ -30859,7 +40780,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 30865 "parsing/parser.ml"
               
@@ -30875,7 +40802,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30881 "parsing/parser.ml"
           
@@ -30952,7 +40885,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 30958 "parsing/parser.ml"
               
@@ -30968,7 +40907,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 30974 "parsing/parser.ml"
           
@@ -31016,7 +40961,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31022 "parsing/parser.ml"
           
@@ -31251,7 +41202,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 31257 "parsing/parser.ml"
                 
@@ -31267,7 +41224,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31273 "parsing/parser.ml"
             
@@ -31332,7 +41295,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31338 "parsing/parser.ml"
             
@@ -31379,7 +41348,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31385 "parsing/parser.ml"
             
@@ -31444,7 +41419,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31450 "parsing/parser.ml"
             
@@ -31506,7 +41487,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31512 "parsing/parser.ml"
             
@@ -31571,7 +41558,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31577 "parsing/parser.ml"
             
@@ -31604,7 +41597,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 31610 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -31618,13 +41617,25 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 31624 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 2474 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2454 "parsing/parser.mly"
+=======
+# 2461 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                         ( Ppat_var _1 )
 # 31630 "parsing/parser.ml"
             
@@ -31633,13 +41644,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31639 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2476 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2456 "parsing/parser.mly"
+=======
+# 2463 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 31645 "parsing/parser.ml"
          in
@@ -31665,7 +41688,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.pattern) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2475 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2455 "parsing/parser.mly"
+=======
+# 2462 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                         ( Ppat_any )
 # 31671 "parsing/parser.ml"
            in
@@ -31673,13 +41702,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 31679 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2476 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2456 "parsing/parser.mly"
+=======
+# 2463 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 31685 "parsing/parser.ml"
          in
@@ -31919,7 +41960,13 @@ module Tables = struct
 # 31920 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 31925 "parsing/parser.ml"
                 
@@ -31941,7 +41988,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 31947 "parsing/parser.ml"
           
@@ -32030,7 +42083,13 @@ module Tables = struct
 # 32031 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 32036 "parsing/parser.ml"
                 
@@ -32052,7 +42111,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 32058 "parsing/parser.ml"
           
@@ -32202,7 +42267,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 32208 "parsing/parser.ml"
           
@@ -32569,7 +42640,13 @@ module Tables = struct
 # 32570 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1330 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1310 "parsing/parser.mly"
+=======
+# 1317 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32575 "parsing/parser.ml"
          in
@@ -32604,7 +42681,13 @@ module Tables = struct
 # 32605 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1333 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1313 "parsing/parser.mly"
+=======
+# 1320 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32610 "parsing/parser.ml"
          in
@@ -32646,7 +42729,13 @@ module Tables = struct
 # 32647 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1337 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1317 "parsing/parser.mly"
+=======
+# 1324 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( x :: xs )
 # 32652 "parsing/parser.ml"
          in
@@ -32688,7 +42777,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1330 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1310 "parsing/parser.mly"
+=======
+# 1317 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32694 "parsing/parser.ml"
          in
@@ -32718,7 +42813,13 @@ module Tables = struct
 # 32719 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1330 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1310 "parsing/parser.mly"
+=======
+# 1317 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32724 "parsing/parser.ml"
          in
@@ -32760,7 +42861,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1333 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1313 "parsing/parser.mly"
+=======
+# 1320 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32766 "parsing/parser.ml"
          in
@@ -32790,7 +42897,13 @@ module Tables = struct
 # 32791 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1333 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1313 "parsing/parser.mly"
+=======
+# 1320 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( [x] )
 # 32796 "parsing/parser.ml"
          in
@@ -32839,7 +42952,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1337 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1317 "parsing/parser.mly"
+=======
+# 1324 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( x :: xs )
 # 32845 "parsing/parser.ml"
          in
@@ -32873,10 +42992,15 @@ module Tables = struct
         let _v : (Parsetree.extension_constructor list) = let x = 
 # 3649 "parsing/parser.mly"
       ( _1 )
+<<<<<<< HEAD
+# 32877 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 32773 "parsing/parser.ml"
+=======
 # 32877 "parsing/parser.ml"
          in
         
-# 1337 "parsing/parser.mly"
+# 1324 "parsing/parser.mly"
       ( x :: xs )
 # 32882 "parsing/parser.ml"
          in
@@ -32909,10 +43033,69 @@ module Tables = struct
       Te.decl cid ~vars ~args ?res ~attrs ~loc ~info
     )
 # 32912 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         
-# 1330 "parsing/parser.mly"
+<<<<<<< HEAD
+# 1337 "parsing/parser.mly"
+      ( x :: xs )
+# 32882 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1317 "parsing/parser.mly"
+      ( x :: xs )
+# 32778 "parsing/parser.ml"
+=======
+# 1317 "parsing/parser.mly"
       ( [x] )
+# 32917 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = d;
+          MenhirLib.EngineTypes.startp = _startpos_d_;
+          MenhirLib.EngineTypes.endp = _endpos_d_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let d : (Ast_helper.str * string Asttypes.loc list *
+  Parsetree.constructor_arguments * Parsetree.core_type option *
+  Parsetree.attributes * Location.t * Docstrings.info) = Obj.magic d in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_d_ in
+        let _endpos = _endpos_d_ in
+        let _v : (Parsetree.extension_constructor list) = let x = 
+# 3653 "parsing/parser.mly"
+    (
+      let cid, vars, args, res, attrs, loc, info = d in
+      Te.decl cid ~vars ~args ?res ~attrs ~loc ~info
+    )
+<<<<<<< HEAD
+# 32912 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 32808 "parsing/parser.ml"
+=======
+# 32947 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+         in
+        
+<<<<<<< HEAD
+# 1330 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1310 "parsing/parser.mly"
+=======
+# 1320 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+      ( [x] )
+<<<<<<< HEAD
 # 32917 "parsing/parser.ml"
          in
         {
@@ -32949,6 +43132,46 @@ module Tables = struct
 # 1333 "parsing/parser.mly"
       ( [x] )
 # 32952 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 32813 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = d;
+          MenhirLib.EngineTypes.startp = _startpos_d_;
+          MenhirLib.EngineTypes.endp = _endpos_d_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let d : (Ast_helper.str * string Asttypes.loc list *
+  Parsetree.constructor_arguments * Parsetree.core_type option *
+  Parsetree.attributes * Location.t * Docstrings.info) = Obj.magic d in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_d_ in
+        let _endpos = _endpos_d_ in
+        let _v : (Parsetree.extension_constructor list) = let x = 
+# 3623 "parsing/parser.mly"
+    (
+      let cid, vars, args, res, attrs, loc, info = d in
+      Te.decl cid ~vars ~args ?res ~attrs ~loc ~info
+    )
+# 32843 "parsing/parser.ml"
+         in
+        
+# 1313 "parsing/parser.mly"
+      ( [x] )
+# 32848 "parsing/parser.ml"
+=======
+# 32952 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -32988,7 +43211,13 @@ module Tables = struct
 # 32989 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1337 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1317 "parsing/parser.mly"
+=======
+# 1324 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( x :: xs )
 # 32994 "parsing/parser.ml"
          in
@@ -33006,7 +43235,13 @@ module Tables = struct
         let _startpos = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _endpos = _startpos in
         let _v : ((Parsetree.core_type * Parsetree.core_type * Ast_helper.loc) list) = 
+<<<<<<< HEAD
 # 1196 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1176 "parsing/parser.mly"
+=======
+# 1183 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [] )
 # 33012 "parsing/parser.ml"
          in
@@ -33065,7 +43300,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 2343 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2323 "parsing/parser.mly"
+=======
+# 2330 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1, _3, make_loc _sloc )
 # 33071 "parsing/parser.ml"
             
@@ -33077,7 +43318,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1198 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1178 "parsing/parser.mly"
+=======
+# 1185 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33083 "parsing/parser.ml"
          in
@@ -33102,7 +43349,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Jane_syntax.Comprehensions.clause list) = 
+<<<<<<< HEAD
 # 1210 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1190 "parsing/parser.mly"
+=======
+# 1197 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33108 "parsing/parser.ml"
          in
@@ -33134,7 +43387,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Jane_syntax.Comprehensions.clause list) = 
+<<<<<<< HEAD
 # 1212 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1192 "parsing/parser.mly"
+=======
+# 1199 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33140 "parsing/parser.ml"
          in
@@ -33159,7 +43418,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : ((Lexing.position * Parsetree.functor_parameter) list) = 
+<<<<<<< HEAD
 # 1210 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1190 "parsing/parser.mly"
+=======
+# 1197 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33165 "parsing/parser.ml"
          in
@@ -33191,7 +43456,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : ((Lexing.position * Parsetree.functor_parameter) list) = 
+<<<<<<< HEAD
 # 1212 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1192 "parsing/parser.mly"
+=======
+# 1199 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33197 "parsing/parser.ml"
          in
@@ -33216,7 +43487,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : ((Asttypes.arg_label * Parsetree.expression) list) = 
+<<<<<<< HEAD
 # 1210 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1190 "parsing/parser.mly"
+=======
+# 1197 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33222 "parsing/parser.ml"
          in
@@ -33248,7 +43525,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : ((Asttypes.arg_label * Parsetree.expression) list) = 
+<<<<<<< HEAD
 # 1212 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1192 "parsing/parser.mly"
+=======
+# 1199 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33254 "parsing/parser.ml"
          in
@@ -33273,7 +43556,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Asttypes.label list) = 
+<<<<<<< HEAD
 # 1210 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1190 "parsing/parser.mly"
+=======
+# 1197 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33279 "parsing/parser.ml"
          in
@@ -33305,7 +43594,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Asttypes.label list) = 
+<<<<<<< HEAD
 # 1212 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1192 "parsing/parser.mly"
+=======
+# 1199 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33311 "parsing/parser.ml"
          in
@@ -33343,7 +43638,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 33349 "parsing/parser.ml"
             
@@ -33355,7 +43656,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1210 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1190 "parsing/parser.mly"
+=======
+# 1197 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33361 "parsing/parser.ml"
          in
@@ -33400,7 +43707,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 33406 "parsing/parser.ml"
             
@@ -33412,7 +43725,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1212 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1192 "parsing/parser.mly"
+=======
+# 1199 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33418 "parsing/parser.ml"
          in
@@ -33442,7 +43761,13 @@ module Tables = struct
 # 33443 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1301 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1281 "parsing/parser.mly"
+=======
+# 1288 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 33448 "parsing/parser.ml"
          in
@@ -33482,7 +43807,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1301 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1281 "parsing/parser.mly"
+=======
+# 1288 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 33488 "parsing/parser.ml"
          in
@@ -33521,7 +43852,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.case list) = 
+<<<<<<< HEAD
 # 1305 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1285 "parsing/parser.mly"
+=======
+# 1292 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33527 "parsing/parser.ml"
          in
@@ -33552,13 +43889,25 @@ module Tables = struct
 # 33553 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33558 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33564 "parsing/parser.ml"
          in
@@ -33603,13 +43952,25 @@ module Tables = struct
 # 33604 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33609 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33615 "parsing/parser.ml"
          in
@@ -33634,12 +43995,24 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Jane_syntax.Comprehensions.clause_binding list) = let xs = 
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33640 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33645 "parsing/parser.ml"
          in
@@ -33678,12 +44051,24 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Jane_syntax.Comprehensions.clause_binding list) = let xs = 
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33684 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33689 "parsing/parser.ml"
          in
@@ -33708,12 +44093,24 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.with_constraint list) = let xs = 
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33714 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33719 "parsing/parser.ml"
          in
@@ -33752,12 +44149,24 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.with_constraint list) = let xs = 
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33758 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33763 "parsing/parser.ml"
          in
@@ -33782,12 +44191,24 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.row_field list) = let xs = 
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33788 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33793 "parsing/parser.ml"
          in
@@ -33826,12 +44247,24 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.row_field list) = let xs = 
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33832 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33837 "parsing/parser.ml"
          in
@@ -33856,12 +44289,24 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.core_type list) = let xs = 
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 33862 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33867 "parsing/parser.ml"
          in
@@ -33900,12 +44345,24 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.core_type list) = let xs = 
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33906 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 33911 "parsing/parser.ml"
          in
@@ -33919,6 +44376,7 @@ module Tables = struct
       (fun _menhir_env ->
         let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
         let {
+<<<<<<< HEAD
           MenhirLib.EngineTypes.state = _menhir_s;
           MenhirLib.EngineTypes.semv = x;
           MenhirLib.EngineTypes.startp = _startpos_x_;
@@ -33949,6 +44407,39 @@ module Tables = struct
       (fun _menhir_env ->
         let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
         let {
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = x;
+          MenhirLib.EngineTypes.startp = _startpos_x_;
+          MenhirLib.EngineTypes.endp = _endpos_x_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let x : (Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) = Obj.magic x in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_x_ in
+        let _endpos = _endpos_x_ in
+        let _v : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = let xs = 
+# 1223 "parsing/parser.mly"
+    ( [ x ] )
+# 33936 "parsing/parser.ml"
+         in
+        
+# 1231 "parsing/parser.mly"
+    ( xs )
+# 33941 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           MenhirLib.EngineTypes.state = _;
           MenhirLib.EngineTypes.semv = x;
           MenhirLib.EngineTypes.startp = _startpos_x_;
@@ -33974,13 +44465,26 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = let xs = 
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 33980 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 33985 "parsing/parser.ml"
          in
         {
@@ -34056,6 +44560,85 @@ module Tables = struct
 # 1244 "parsing/parser.mly"
     ( xs )
 # 34059 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 33955 "parsing/parser.ml"
+=======
+# 33985 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = x;
+          MenhirLib.EngineTypes.startp = _startpos_x_;
+          MenhirLib.EngineTypes.endp = _endpos_x_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let x : (Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) = Obj.magic x in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_x_ in
+        let _endpos = _endpos_x_ in
+        let _v : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = let xs = 
+# 1223 "parsing/parser.mly"
+    ( [ x ] )
+# 34010 "parsing/parser.ml"
+         in
+        
+# 1231 "parsing/parser.mly"
+    ( xs )
+# 34015 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = x;
+          MenhirLib.EngineTypes.startp = _startpos_x_;
+          MenhirLib.EngineTypes.endp = _endpos_x_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _2;
+            MenhirLib.EngineTypes.startp = _startpos__2_;
+            MenhirLib.EngineTypes.endp = _endpos__2_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _menhir_s;
+              MenhirLib.EngineTypes.semv = xs;
+              MenhirLib.EngineTypes.startp = _startpos_xs_;
+              MenhirLib.EngineTypes.endp = _endpos_xs_;
+              MenhirLib.EngineTypes.next = _menhir_stack;
+            };
+          };
+        } = _menhir_stack in
+        let x : (Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) = Obj.magic x in
+        let _2 : unit = Obj.magic _2 in
+        let xs : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = Obj.magic xs in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_xs_ in
+        let _endpos = _endpos_x_ in
+        let _v : ((Parsetree.core_type * (Asttypes.variance * Asttypes.injectivity)) list) = let xs = 
+# 1227 "parsing/parser.mly"
+    ( x :: xs )
+# 34054 "parsing/parser.ml"
+         in
+        
+# 1231 "parsing/parser.mly"
+    ( xs )
+# 34059 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -34095,14 +44678,27 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1236 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1216 "parsing/parser.mly"
+=======
+# 1223 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x ] )
 # 34101 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
+<<<<<<< HEAD
 # 34107 "parsing/parser.ml"
          in
         {
@@ -34214,6 +44810,121 @@ module Tables = struct
 # 1244 "parsing/parser.mly"
     ( xs )
 # 34217 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 34113 "parsing/parser.ml"
+=======
+# 34107 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = cty;
+          MenhirLib.EngineTypes.startp = _startpos_cty_;
+          MenhirLib.EngineTypes.endp = _endpos_cty_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let cty : (Parsetree.core_type) = Obj.magic cty in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos_cty_ in
+        let _v : (Parsetree.core_type list) = let xs =
+          let x =
+            let gbl = 
+# 4213 "parsing/parser.mly"
+           ( Global )
+# 34141 "parsing/parser.ml"
+             in
+            let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
+            let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
+            
+# 3580 "parsing/parser.mly"
+                                      (
+  mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
+)
+# 34150 "parsing/parser.ml"
+            
+          in
+          
+# 1223 "parsing/parser.mly"
+    ( [ x ] )
+# 34156 "parsing/parser.ml"
+          
+        in
+        
+# 1231 "parsing/parser.mly"
+    ( xs )
+# 34162 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = cty;
+          MenhirLib.EngineTypes.startp = _startpos_cty_;
+          MenhirLib.EngineTypes.endp = _endpos_cty_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = _1;
+            MenhirLib.EngineTypes.startp = _startpos__1_;
+            MenhirLib.EngineTypes.endp = _endpos__1_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let cty : (Parsetree.core_type) = Obj.magic cty in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos_cty_ in
+        let _v : (Parsetree.core_type list) = let xs =
+          let x =
+            let gbl = 
+# 4214 "parsing/parser.mly"
+             ( Nonlocal )
+# 34196 "parsing/parser.ml"
+             in
+            let (_endpos_gbl_, _startpos_gbl_) = (_endpos__1_, _startpos__1_) in
+            let _loc_gbl_ = (_startpos_gbl_, _endpos_gbl_) in
+            
+# 3580 "parsing/parser.mly"
+                                      (
+  mkcty_global_maybe gbl cty (make_loc _loc_gbl_)
+)
+# 34205 "parsing/parser.ml"
+            
+          in
+          
+# 1223 "parsing/parser.mly"
+    ( [ x ] )
+# 34211 "parsing/parser.ml"
+          
+        in
+        
+# 1231 "parsing/parser.mly"
+    ( xs )
+# 34217 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -34268,13 +44979,25 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34274 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 34280 "parsing/parser.ml"
          in
@@ -34337,13 +45060,25 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34343 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 34349 "parsing/parser.ml"
          in
@@ -34406,13 +45141,25 @@ module Tables = struct
             
           in
           
+<<<<<<< HEAD
 # 1240 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1220 "parsing/parser.mly"
+=======
+# 1227 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34412 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1244 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1224 "parsing/parser.mly"
+=======
+# 1231 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 34418 "parsing/parser.ml"
          in
@@ -34451,7 +45198,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.core_type list) = 
+<<<<<<< HEAD
 # 1267 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1247 "parsing/parser.mly"
+=======
+# 1254 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34457 "parsing/parser.ml"
          in
@@ -34490,7 +45243,13 @@ module Tables = struct
         let _startpos = _startpos_x1_ in
         let _endpos = _endpos_x2_ in
         let _v : (Parsetree.core_type list) = 
+<<<<<<< HEAD
 # 1271 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1251 "parsing/parser.mly"
+=======
+# 1258 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x2; x1 ] )
 # 34496 "parsing/parser.ml"
          in
@@ -34529,7 +45288,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.expression list) = 
+<<<<<<< HEAD
 # 1267 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1247 "parsing/parser.mly"
+=======
+# 1254 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34535 "parsing/parser.ml"
          in
@@ -34568,8 +45333,15 @@ module Tables = struct
         let _startpos = _startpos_x1_ in
         let _endpos = _endpos_x2_ in
         let _v : (Parsetree.expression list) = 
+<<<<<<< HEAD
 # 1271 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1251 "parsing/parser.mly"
+=======
+# 1258 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x2; x1 ] )
+<<<<<<< HEAD
 # 34574 "parsing/parser.ml"
          in
         {
@@ -34649,6 +45421,89 @@ module Tables = struct
 # 1271 "parsing/parser.mly"
     ( [ x2; x1 ] )
 # 34652 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 34470 "parsing/parser.ml"
+=======
+# 34574 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = x;
+          MenhirLib.EngineTypes.startp = _startpos_x_;
+          MenhirLib.EngineTypes.endp = _endpos_x_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _2;
+            MenhirLib.EngineTypes.startp = _startpos__2_;
+            MenhirLib.EngineTypes.endp = _endpos__2_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _menhir_s;
+              MenhirLib.EngineTypes.semv = xs;
+              MenhirLib.EngineTypes.startp = _startpos_xs_;
+              MenhirLib.EngineTypes.endp = _endpos_xs_;
+              MenhirLib.EngineTypes.next = _menhir_stack;
+            };
+          };
+        } = _menhir_stack in
+        let x : (Asttypes.arg_label * Parsetree.expression) = Obj.magic x in
+        let _2 : unit = Obj.magic _2 in
+        let xs : ((Asttypes.arg_label * Parsetree.expression) list) = Obj.magic xs in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_xs_ in
+        let _endpos = _endpos_x_ in
+        let _v : ((Asttypes.arg_label * Parsetree.expression) list) = 
+# 1254 "parsing/parser.mly"
+    ( x :: xs )
+# 34613 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = x2;
+          MenhirLib.EngineTypes.startp = _startpos_x2_;
+          MenhirLib.EngineTypes.endp = _endpos_x2_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _2;
+            MenhirLib.EngineTypes.startp = _startpos__2_;
+            MenhirLib.EngineTypes.endp = _endpos__2_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _menhir_s;
+              MenhirLib.EngineTypes.semv = x1;
+              MenhirLib.EngineTypes.startp = _startpos_x1_;
+              MenhirLib.EngineTypes.endp = _endpos_x1_;
+              MenhirLib.EngineTypes.next = _menhir_stack;
+            };
+          };
+        } = _menhir_stack in
+        let x2 : (Asttypes.arg_label * Parsetree.expression) = Obj.magic x2 in
+        let _2 : unit = Obj.magic _2 in
+        let x1 : (Asttypes.arg_label * Parsetree.expression) = Obj.magic x1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_x1_ in
+        let _endpos = _endpos_x2_ in
+        let _v : ((Asttypes.arg_label * Parsetree.expression) list) = 
+# 1258 "parsing/parser.mly"
+    ( [ x2; x1 ] )
+# 34652 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -34685,7 +45540,13 @@ module Tables = struct
         let _startpos = _startpos_xs_ in
         let _endpos = _endpos_x_ in
         let _v : (Parsetree.core_type list) = 
+<<<<<<< HEAD
 # 1267 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1247 "parsing/parser.mly"
+=======
+# 1254 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34691 "parsing/parser.ml"
          in
@@ -34724,7 +45585,13 @@ module Tables = struct
         let _startpos = _startpos_x1_ in
         let _endpos = _endpos_x2_ in
         let _v : (Parsetree.core_type list) = 
+<<<<<<< HEAD
 # 1271 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1251 "parsing/parser.mly"
+=======
+# 1258 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [ x2; x1 ] )
 # 34730 "parsing/parser.ml"
          in
@@ -34807,7 +45674,13 @@ module Tables = struct
 # 34808 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 34813 "parsing/parser.ml"
          in
@@ -34847,7 +45720,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 34853 "parsing/parser.ml"
          in
@@ -34886,7 +45765,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_xs_ in
         let _v : (Parsetree.expression list) = 
+<<<<<<< HEAD
 # 1292 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1272 "parsing/parser.mly"
+=======
+# 1279 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 34892 "parsing/parser.ml"
          in
@@ -34914,7 +45799,13 @@ module Tables = struct
         } = _menhir_stack in
         let oe : (Parsetree.expression option) = Obj.magic oe in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 34920 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -34937,7 +45828,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 34943 "parsing/parser.ml"
             
@@ -34957,7 +45854,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 34963 "parsing/parser.ml"
          in
@@ -34992,7 +45895,13 @@ module Tables = struct
         let x : unit = Obj.magic x in
         let oe : (Parsetree.expression option) = Obj.magic oe in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 34998 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -35015,7 +45924,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35021 "parsing/parser.ml"
             
@@ -35035,7 +45950,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 35041 "parsing/parser.ml"
          in
@@ -35077,7 +45998,13 @@ module Tables = struct
         let _2 : unit = Obj.magic _2 in
         let oe : (Parsetree.expression option) = Obj.magic oe in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 35083 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -35095,7 +46022,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35101 "parsing/parser.ml"
             
@@ -35115,7 +46048,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1292 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1272 "parsing/parser.mly"
+=======
+# 1279 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 35121 "parsing/parser.ml"
          in
@@ -35145,7 +46084,13 @@ module Tables = struct
 # 35146 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 35151 "parsing/parser.ml"
          in
@@ -35185,7 +46130,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 35191 "parsing/parser.ml"
          in
@@ -35224,7 +46175,13 @@ module Tables = struct
         let _startpos = _startpos_x_ in
         let _endpos = _endpos_xs_ in
         let _v : (Parsetree.pattern list) = 
+<<<<<<< HEAD
 # 1292 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1272 "parsing/parser.mly"
+=======
+# 1279 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 35230 "parsing/parser.ml"
          in
@@ -35273,7 +46230,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35279 "parsing/parser.ml"
             
@@ -35297,7 +46260,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 35303 "parsing/parser.ml"
          in
@@ -35353,7 +46322,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35359 "parsing/parser.ml"
             
@@ -35377,7 +46352,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1288 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1268 "parsing/parser.mly"
+=======
+# 1275 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [x] )
 # 35383 "parsing/parser.ml"
          in
@@ -35435,7 +46416,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35441 "parsing/parser.ml"
             
@@ -35459,7 +46446,13 @@ module Tables = struct
           
         in
         
+<<<<<<< HEAD
 # 1292 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1272 "parsing/parser.mly"
+=======
+# 1279 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x :: xs )
 # 35465 "parsing/parser.ml"
          in
@@ -35484,7 +46477,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.expression) = 
+<<<<<<< HEAD
 # 2432 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2412 "parsing/parser.mly"
+=======
+# 2419 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                   ( _1 )
 # 35490 "parsing/parser.ml"
          in
@@ -35516,7 +46515,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.expression) = 
+<<<<<<< HEAD
 # 2433 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2413 "parsing/parser.mly"
+=======
+# 2420 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                   ( _1 )
 # 35522 "parsing/parser.ml"
          in
@@ -35556,7 +46561,13 @@ module Tables = struct
         let _endpos = _endpos__3_ in
         let _v : (Parsetree.expression) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 2435 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2415 "parsing/parser.mly"
+=======
+# 2422 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( Pexp_sequence(_1, _3) )
 # 35562 "parsing/parser.ml"
            in
@@ -35565,13 +46576,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 35571 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 2436 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2416 "parsing/parser.mly"
+=======
+# 2423 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 35577 "parsing/parser.ml"
          in
@@ -35627,7 +46650,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2438 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2418 "parsing/parser.mly"
+=======
+# 2425 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let seq = mkexp ~loc:_sloc (Pexp_sequence (_1, _5)) in
       let payload = PStr [mkstrexp seq []] in
       mkexp ~loc:_sloc (Pexp_extension (_4, payload)) )
@@ -35720,7 +46749,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 35726 "parsing/parser.ml"
           
@@ -35777,13 +46812,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1111 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1091 "parsing/parser.mly"
+=======
+# 1098 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_sig _startpos _endpos _1 )
 # 35783 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1878 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1858 "parsing/parser.mly"
+=======
+# 1865 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 35789 "parsing/parser.ml"
          in
@@ -35827,7 +46874,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1893 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1873 "parsing/parser.mly"
+=======
+# 1880 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let docs = symbol_docs _sloc in
         mksig ~loc:_sloc (Psig_extension (_1, (add_docs_attrs docs _2))) )
 # 35834 "parsing/parser.ml"
@@ -35854,6 +46907,7 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1897 "parsing/parser.mly"
         ( Psig_attribute _1 )
 # 35860 "parsing/parser.ml"
@@ -35937,17 +46991,117 @@ module Tables = struct
 # 1904 "parsing/parser.mly"
         ( psig_value _1 )
 # 35940 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1877 "parsing/parser.mly"
+        ( Psig_attribute _1 )
+# 35678 "parsing/parser.ml"
            in
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
-# 1176 "parsing/parser.mly"
-    ( wrap_mksig_ext ~loc:_sloc _1 )
-# 35948 "parsing/parser.ml"
+# 1139 "parsing/parser.mly"
+    ( mksig ~loc:_sloc _1 )
+# 35686 "parsing/parser.ml"
           
         in
         
+# 1879 "parsing/parser.mly"
+    ( _1 )
+# 35692 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (Parsetree.value_description * string Asttypes.loc option) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 = 
+# 1882 "parsing/parser.mly"
+        ( psig_value _1 )
+# 35718 "parsing/parser.ml"
+           in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 1156 "parsing/parser.mly"
+    ( wrap_mksig_ext ~loc:_sloc _1 )
+# 35726 "parsing/parser.ml"
+          
+        in
+        
+# 1917 "parsing/parser.mly"
+    ( _1 )
+# 35732 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (Parsetree.value_description * string Asttypes.loc option) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 = 
+# 1884 "parsing/parser.mly"
+        ( psig_value _1 )
+# 35758 "parsing/parser.ml"
+=======
+# 1884 "parsing/parser.mly"
+        ( Psig_attribute _1 )
+# 35860 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+           in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+<<<<<<< HEAD
+# 1176 "parsing/parser.mly"
+    ( wrap_mksig_ext ~loc:_sloc _1 )
+# 35948 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+    ( wrap_mksig_ext ~loc:_sloc _1 )
+# 35766 "parsing/parser.ml"
+=======
+# 1146 "parsing/parser.mly"
+    ( mksig ~loc:_sloc _1 )
+# 35868 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+          
+        in
+        
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
     ( _1 )
 # 35954 "parsing/parser.ml"
@@ -36008,18 +47162,308 @@ module Tables = struct
             
           in
           let (_endpos__1_, _startpos__1_) = (_endpos_bs_, _startpos_a_) in
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+    ( _1 )
+# 35772 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = bs;
+          MenhirLib.EngineTypes.startp = _startpos_bs_;
+          MenhirLib.EngineTypes.endp = _endpos_bs_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = a;
+            MenhirLib.EngineTypes.startp = _startpos_a_;
+            MenhirLib.EngineTypes.endp = _endpos_a_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let bs : (Parsetree.type_declaration list) = Obj.magic bs in
+        let a : ((Asttypes.rec_flag * string Asttypes.loc option) *
+  Parsetree.type_declaration) = Obj.magic a in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_a_ in
+        let _endpos = _endpos_bs_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 =
+            let _1 =
+              let _1 =
+                let _1 = 
+# 1329 "parsing/parser.mly"
+    ( let (x, b) = a in x, b :: bs )
+# 35809 "parsing/parser.ml"
+                 in
+                
+# 3329 "parsing/parser.mly"
+  ( _1 )
+# 35814 "parsing/parser.ml"
+                
+              in
+              
+# 3312 "parsing/parser.mly"
+    ( _1 )
+# 35820 "parsing/parser.ml"
+              
+            in
+            
+# 1886 "parsing/parser.mly"
+        ( psig_type _1 )
+# 35826 "parsing/parser.ml"
+            
+          in
+          let (_endpos__1_, _startpos__1_) = (_endpos_bs_, _startpos_a_) in
+=======
+# 1886 "parsing/parser.mly"
+    ( _1 )
+# 35874 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (Parsetree.value_description * string Asttypes.loc option) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 = 
+# 1889 "parsing/parser.mly"
+        ( psig_value _1 )
+# 35900 "parsing/parser.ml"
+           in
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           let _endpos = _endpos__1_ in
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
+<<<<<<< HEAD
 # 36018 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35836 "parsing/parser.ml"
+=======
+# 35908 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
+<<<<<<< HEAD
+# 36024 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35842 "parsing/parser.ml"
+=======
+# 35914 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = _1;
+          MenhirLib.EngineTypes.startp = _startpos__1_;
+          MenhirLib.EngineTypes.endp = _endpos__1_;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        } = _menhir_stack in
+        let _1 : (Parsetree.value_description * string Asttypes.loc option) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__1_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 = 
+# 1891 "parsing/parser.mly"
+        ( psig_value _1 )
+# 35940 "parsing/parser.ml"
+           in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 1163 "parsing/parser.mly"
+    ( wrap_mksig_ext ~loc:_sloc _1 )
+# 35948 "parsing/parser.ml"
+          
+        in
+        
+# 1924 "parsing/parser.mly"
+    ( _1 )
+# 35954 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = bs;
+          MenhirLib.EngineTypes.startp = _startpos_bs_;
+          MenhirLib.EngineTypes.endp = _endpos_bs_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _menhir_s;
+            MenhirLib.EngineTypes.semv = a;
+            MenhirLib.EngineTypes.startp = _startpos_a_;
+            MenhirLib.EngineTypes.endp = _endpos_a_;
+            MenhirLib.EngineTypes.next = _menhir_stack;
+          };
+        } = _menhir_stack in
+        let bs : (Parsetree.type_declaration list) = Obj.magic bs in
+        let a : ((Asttypes.rec_flag * string Asttypes.loc option) *
+  Parsetree.type_declaration) = Obj.magic a in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_a_ in
+        let _endpos = _endpos_bs_ in
+        let _v : (Parsetree.signature_item) = let _1 =
+          let _1 =
+            let _1 =
+              let _1 =
+                let _1 = 
+<<<<<<< HEAD
+# 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+    ( let (x, b) = a in x, b :: bs )
+<<<<<<< HEAD
+# 36061 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35879 "parsing/parser.ml"
+=======
+# 35991 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+                 in
+                
+# 3359 "parsing/parser.mly"
+  ( _1 )
+<<<<<<< HEAD
+# 36066 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35884 "parsing/parser.ml"
+=======
+# 35996 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+                
+              in
+              
+<<<<<<< HEAD
+# 3347 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 3317 "parsing/parser.mly"
+=======
+# 3342 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+    ( _1 )
+<<<<<<< HEAD
+# 36072 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35890 "parsing/parser.ml"
+=======
+# 36002 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+              
+            in
+            
+<<<<<<< HEAD
+# 1908 "parsing/parser.mly"
+        ( psig_typesubst _1 )
+# 36078 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1888 "parsing/parser.mly"
+        ( psig_typesubst _1 )
+# 35896 "parsing/parser.ml"
+=======
+# 1893 "parsing/parser.mly"
+        ( psig_type _1 )
+# 36008 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+            
+          in
+          let (_endpos__1_, _startpos__1_) = (_endpos_bs_, _startpos_a_) in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+<<<<<<< HEAD
+# 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+    ( wrap_mksig_ext ~loc:_sloc _1 )
+<<<<<<< HEAD
+# 36088 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35906 "parsing/parser.ml"
+=======
+# 36018 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+          
+        in
+        
+<<<<<<< HEAD
+# 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+    ( _1 )
+<<<<<<< HEAD
+# 36094 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 35912 "parsing/parser.ml"
+=======
 # 36024 "parsing/parser.ml"
          in
         {
@@ -36055,7 +47499,7 @@ module Tables = struct
             let _1 =
               let _1 =
                 let _1 = 
-# 1349 "parsing/parser.mly"
+# 1336 "parsing/parser.mly"
     ( let (x, b) = a in x, b :: bs )
 # 36061 "parsing/parser.ml"
                  in
@@ -36072,7 +47516,7 @@ module Tables = struct
               
             in
             
-# 1908 "parsing/parser.mly"
+# 1895 "parsing/parser.mly"
         ( psig_typesubst _1 )
 # 36078 "parsing/parser.ml"
             
@@ -36082,15 +47526,16 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
-# 1176 "parsing/parser.mly"
+# 1163 "parsing/parser.mly"
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36088 "parsing/parser.ml"
           
         in
         
-# 1937 "parsing/parser.mly"
+# 1924 "parsing/parser.mly"
     ( _1 )
 # 36094 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -36182,7 +47627,13 @@ module Tables = struct
                 in
                 let _endpos_attrs2_ = _endpos__1_inlined3_ in
                 let cs = 
+<<<<<<< HEAD
 # 1341 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1321 "parsing/parser.mly"
+=======
+# 1328 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( List.rev xs )
 # 36188 "parsing/parser.ml"
                  in
@@ -36192,7 +47643,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36198 "parsing/parser.ml"
                   
@@ -36229,7 +47686,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1910 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1890 "parsing/parser.mly"
+=======
+# 1897 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( psig_typext _1 )
 # 36235 "parsing/parser.ml"
             
@@ -36239,13 +47702,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36245 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36251 "parsing/parser.ml"
          in
@@ -36346,7 +47821,13 @@ module Tables = struct
                 in
                 let _endpos_attrs2_ = _endpos__1_inlined4_ in
                 let cs = 
+<<<<<<< HEAD
 # 1341 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1321 "parsing/parser.mly"
+=======
+# 1328 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( List.rev xs )
 # 36352 "parsing/parser.ml"
                  in
@@ -36356,7 +47837,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36362 "parsing/parser.ml"
                   
@@ -36399,7 +47886,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1910 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1890 "parsing/parser.mly"
+=======
+# 1897 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( psig_typext _1 )
 # 36405 "parsing/parser.ml"
             
@@ -36409,13 +47902,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36415 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36421 "parsing/parser.ml"
          in
@@ -36441,7 +47946,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1892 "parsing/parser.mly"
+=======
+# 1899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( psig_exception _1 )
 # 36447 "parsing/parser.ml"
            in
@@ -36449,13 +47960,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36455 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36461 "parsing/parser.ml"
          in
@@ -36532,7 +48055,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36538 "parsing/parser.ml"
                 
@@ -36549,7 +48078,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1946 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1926 "parsing/parser.mly"
+=======
+# 1933 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -36560,7 +48095,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1914 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1894 "parsing/parser.mly"
+=======
+# 1901 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_module body, ext) )
 # 36566 "parsing/parser.ml"
             
@@ -36570,13 +48111,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36576 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36582 "parsing/parser.ml"
          in
@@ -36661,7 +48214,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36667 "parsing/parser.ml"
                   
@@ -36671,7 +48230,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos_id_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1983 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1963 "parsing/parser.mly"
+=======
+# 1970 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( Mty.alias ~loc:(make_loc _sloc) id )
 # 36677 "parsing/parser.ml"
                 
@@ -36682,7 +48247,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36688 "parsing/parser.ml"
                 
@@ -36699,7 +48270,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1974 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1954 "parsing/parser.mly"
+=======
+# 1961 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -36710,7 +48287,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1916 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1896 "parsing/parser.mly"
+=======
+# 1903 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_module body, ext) )
 # 36716 "parsing/parser.ml"
             
@@ -36720,13 +48303,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36726 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36732 "parsing/parser.ml"
          in
@@ -36752,7 +48347,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1918 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1898 "parsing/parser.mly"
+=======
+# 1905 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_modsubst body, ext) )
 # 36758 "parsing/parser.ml"
            in
@@ -36760,13 +48361,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36766 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36772 "parsing/parser.ml"
          in
@@ -36866,7 +48479,13 @@ module Tables = struct
                     let _symbolstartpos = _startpos__1_ in
                     let _sloc = (_symbolstartpos, _endpos) in
                     
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 36872 "parsing/parser.ml"
                     
@@ -36883,7 +48502,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 2017 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1997 "parsing/parser.mly"
+=======
+# 2004 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -36894,19 +48519,37 @@ module Tables = struct
                   
                 in
                 
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
 # 36900 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2006 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1986 "parsing/parser.mly"
+=======
+# 1993 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36906 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1920 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1900 "parsing/parser.mly"
+=======
+# 1907 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (ext, l) = _1 in (Psig_recmodule l, ext) )
 # 36912 "parsing/parser.ml"
             
@@ -36916,13 +48559,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36922 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36928 "parsing/parser.ml"
          in
@@ -36948,7 +48603,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1922 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1902 "parsing/parser.mly"
+=======
+# 1909 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_modtype body, ext) )
 # 36954 "parsing/parser.ml"
            in
@@ -36956,13 +48617,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 36962 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 36968 "parsing/parser.ml"
          in
@@ -36988,7 +48661,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1924 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1904 "parsing/parser.mly"
+=======
+# 1911 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_modtypesubst body, ext) )
 # 36994 "parsing/parser.ml"
            in
@@ -36996,13 +48675,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 37002 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37008 "parsing/parser.ml"
          in
@@ -37028,7 +48719,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1926 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1906 "parsing/parser.mly"
+=======
+# 1913 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Psig_open body, ext) )
 # 37034 "parsing/parser.ml"
            in
@@ -37036,13 +48733,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 37042 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37048 "parsing/parser.ml"
          in
@@ -37115,7 +48824,13 @@ module Tables = struct
               let _symbolstartpos = _startpos_is_functor_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1765 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1745 "parsing/parser.mly"
+=======
+# 1752 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -37131,7 +48846,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1928 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1908 "parsing/parser.mly"
+=======
+# 1915 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( _1 psig_include
              (fun ~loc incl ->
                 Jane_syntax.Include_functor.sig_item_of ~loc
@@ -37144,13 +48865,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 37150 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37156 "parsing/parser.ml"
          in
@@ -37229,7 +48962,13 @@ module Tables = struct
         let cty : (Parsetree.class_type) = Obj.magic cty in
         let _7 : unit = Obj.magic _7 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 37235 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -37261,7 +49000,13 @@ module Tables = struct
                     let _symbolstartpos = _startpos__1_ in
                     let _sloc = (_symbolstartpos, _endpos) in
                     
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 37267 "parsing/parser.ml"
                     
@@ -37278,7 +49023,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 2364 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2344 "parsing/parser.mly"
+=======
+# 2351 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     (
       let attrs = attrs1 @ attrs2 in
       let loc = make_loc _sloc in
@@ -37290,19 +49041,37 @@ module Tables = struct
                   
                 in
                 
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
 # 37296 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2352 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2332 "parsing/parser.mly"
+=======
+# 2339 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37302 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1933 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1913 "parsing/parser.mly"
+=======
+# 1920 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (ext, l) = _1 in (Psig_class l, ext) )
 # 37308 "parsing/parser.ml"
             
@@ -37312,13 +49081,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 37318 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37324 "parsing/parser.ml"
          in
@@ -37344,7 +49125,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.signature_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1935 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1915 "parsing/parser.mly"
+=======
+# 1922 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (ext, l) = _1 in (Psig_class_type l, ext) )
 # 37350 "parsing/parser.ml"
            in
@@ -37352,13 +49139,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1176 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1156 "parsing/parser.mly"
+=======
+# 1163 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mksig_ext ~loc:_sloc _1 )
 # 37358 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1937 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1917 "parsing/parser.mly"
+=======
+# 1924 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 37364 "parsing/parser.ml"
          in
@@ -37410,7 +49209,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37416 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -37446,7 +49251,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37452 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -37488,7 +49299,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37494 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -37535,7 +49352,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37541 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -37575,7 +49398,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37581 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -37611,7 +49440,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _2 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37617 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -37653,7 +49488,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37659 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -37700,7 +49541,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _3 : (
+<<<<<<< HEAD
 # 895 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 875 "parsing/parser.mly"
+=======
+# 882 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 37706 "parsing/parser.ml"
         ) = Obj.magic _3 in
@@ -37775,7 +49622,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 37781 "parsing/parser.ml"
           
@@ -37844,7 +49697,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 37850 "parsing/parser.ml"
           
@@ -37907,7 +49766,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 37913 "parsing/parser.ml"
           
@@ -37971,7 +49836,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 37977 "parsing/parser.ml"
           
@@ -38051,7 +49922,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 38057 "parsing/parser.ml"
           
@@ -38133,7 +50010,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 38139 "parsing/parser.ml"
           
@@ -38199,7 +50082,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 38205 "parsing/parser.ml"
           
@@ -38585,7 +50474,13 @@ module Tables = struct
 # 38586 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2501 "parsing/parser.mly"
+=======
+# 2508 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Paren,   i, r )
 # 38591 "parsing/parser.ml"
           
@@ -38654,7 +50549,13 @@ module Tables = struct
 # 38655 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 2523 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.mly"
+=======
+# 2510 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Brace,   i, r )
 # 38660 "parsing/parser.ml"
           
@@ -38722,6 +50623,7 @@ module Tables = struct
                                 ( None )
 # 38724 "parsing/parser.ml"
            in
+<<<<<<< HEAD
           
 # 2525 "parsing/parser.mly"
     ( array, d, Bracket, i, r )
@@ -38800,6 +50702,87 @@ module Tables = struct
     ( es )
 # 38802 "parsing/parser.ml"
            in
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+          
+# 2512 "parsing/parser.mly"
+    ( array, d, Bracket, i, r )
+# 38729 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2642 "parsing/parser.mly"
+      ( mk_indexop_expr builtin_indexing_operators ~loc:_sloc _1 )
+# 38739 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = array;
+                  MenhirLib.EngineTypes.startp = _startpos_array_;
+                  MenhirLib.EngineTypes.endp = _endpos_array_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 38787 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2645 "parsing/parser.mly"
+                                                  ( None )
+# 38797 "parsing/parser.ml"
+           in
+          let i = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 38802 "parsing/parser.ml"
+           in
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           let d =
             let _1 = 
 # 124 "<standard.mly>"
@@ -38807,13 +50790,25 @@ module Tables = struct
 # 38808 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 38813 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2501 "parsing/parser.mly"
+=======
+# 2508 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( array, d, Paren,   i, r )
 # 38819 "parsing/parser.ml"
           
@@ -38883,7 +50878,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 38889 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -38908,7 +50909,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 38914 "parsing/parser.ml"
                in
@@ -38919,15 +50926,31 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 38925 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2521 "parsing/parser.mly"
     ( array, d, Paren,   i, r )
 # 38931 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2503 "parsing/parser.mly"
+    ( array, d, Brace,   i, r )
+# 38951 "parsing/parser.ml"
+=======
+# 2508 "parsing/parser.mly"
+    ( array, d, Paren,   i, r )
+# 38931 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
@@ -38983,7 +51006,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _3 : unit = Obj.magic _3 in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 38989 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -39009,12 +51038,19 @@ module Tables = struct
 # 39010 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 39015 "parsing/parser.ml"
             
           in
           
+<<<<<<< HEAD
 # 2523 "parsing/parser.mly"
     ( array, d, Brace,   i, r )
 # 39021 "parsing/parser.ml"
@@ -39398,11 +51434,768 @@ module Tables = struct
 # 2530 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
 # 39401 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2505 "parsing/parser.mly"
+    ( array, d, Bracket, i, r )
+# 39041 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2621 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39051 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _2_inlined1;
+                  MenhirLib.EngineTypes.startp = _startpos__2_inlined1_;
+                  MenhirLib.EngineTypes.endp = _endpos__2_inlined1_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _1;
+                    MenhirLib.EngineTypes.startp = _startpos__1_;
+                    MenhirLib.EngineTypes.endp = _endpos__1_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = array;
+                      MenhirLib.EngineTypes.startp = _startpos_array_;
+                      MenhirLib.EngineTypes.endp = _endpos_array_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 39111 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _2_inlined1 : (Longident.t) = Obj.magic _2_inlined1 in
+        let _1 : unit = Obj.magic _1 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2620 "parsing/parser.mly"
+                                                  ( None )
+# 39123 "parsing/parser.ml"
+           in
+          let i = 
+# 3060 "parsing/parser.mly"
+    ( es )
+# 39128 "parsing/parser.ml"
+           in
+          let d =
+            let _1 =
+              let _2 = _2_inlined1 in
+              let x = 
+# 2517 "parsing/parser.mly"
+                                                   (_2)
+# 39136 "parsing/parser.ml"
+               in
+              
+# 126 "<standard.mly>"
+    ( Some x )
+# 39141 "parsing/parser.ml"
+              
+            in
+            
+# 2517 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 39147 "parsing/parser.ml"
+            
+          in
+          
+# 2505 "parsing/parser.mly"
+    ( array, d, Bracket, i, r )
+# 39153 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2621 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39163 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let _4 : (Parsetree.expression) = Obj.magic _4 in
+        let _p : unit = Obj.magic _p in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2510 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
+# 39219 "parsing/parser.ml"
+=======
+# 2510 "parsing/parser.mly"
+    ( array, d, Brace,   i, r )
+# 39021 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+<<<<<<< HEAD
+# 2647 "parsing/parser.mly"
+                                  ( _1 )
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2622 "parsing/parser.mly"
+                                  ( _1 )
+# 39225 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let _4 : (Parsetree.expression) = Obj.magic _4 in
+        let _p : unit = Obj.magic _p in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2512 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39281 "parsing/parser.ml"
+          
+        in
+        
+# 2622 "parsing/parser.mly"
+                                  ( _1 )
+# 39287 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let _4 : (Parsetree.expression) = Obj.magic _4 in
+        let _p : unit = Obj.magic _p in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2514 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 39343 "parsing/parser.ml"
+          
+        in
+        
+# 2622 "parsing/parser.mly"
+                                  ( _1 )
+# 39349 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _p : unit = Obj.magic _p in
+        let _2 : (
+# 892 "parsing/parser.mly"
+       (string)
+# 39397 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _4 = 
+# 3060 "parsing/parser.mly"
+    ( es )
+=======
+# 2646 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39031 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _2_inlined1;
+                  MenhirLib.EngineTypes.startp = _startpos__2_inlined1_;
+                  MenhirLib.EngineTypes.endp = _endpos__2_inlined1_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _1;
+                    MenhirLib.EngineTypes.startp = _startpos__1_;
+                    MenhirLib.EngineTypes.endp = _endpos__1_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = array;
+                      MenhirLib.EngineTypes.startp = _startpos_array_;
+                      MenhirLib.EngineTypes.endp = _endpos_array_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 39091 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _2_inlined1 : (Longident.t) = Obj.magic _2_inlined1 in
+        let _1 : unit = Obj.magic _1 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2645 "parsing/parser.mly"
+                                                  ( None )
+# 39103 "parsing/parser.ml"
+           in
+          let i = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 39108 "parsing/parser.ml"
+           in
+          let d =
+            let _1 =
+              let _2 = _2_inlined1 in
+              let x = 
+# 2524 "parsing/parser.mly"
+                                                   (_2)
+# 39116 "parsing/parser.ml"
+               in
+              
+# 126 "<standard.mly>"
+    ( Some x )
+# 39121 "parsing/parser.ml"
+              
+            in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 39127 "parsing/parser.ml"
+            
+          in
+          
+# 2510 "parsing/parser.mly"
+    ( array, d, Brace,   i, r )
+# 39133 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2646 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39143 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = array;
+                  MenhirLib.EngineTypes.startp = _startpos_array_;
+                  MenhirLib.EngineTypes.endp = _endpos_array_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 39191 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2645 "parsing/parser.mly"
+                                                  ( None )
+# 39201 "parsing/parser.ml"
+           in
+          let i = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 39206 "parsing/parser.ml"
+           in
+          let d =
+            let _1 = 
+# 124 "<standard.mly>"
+    ( None )
+# 39212 "parsing/parser.ml"
+             in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 39217 "parsing/parser.ml"
+            
+          in
+          
+# 2512 "parsing/parser.mly"
+    ( array, d, Bracket, i, r )
+# 39223 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2646 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39233 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _5;
+          MenhirLib.EngineTypes.startp = _startpos__5_;
+          MenhirLib.EngineTypes.endp = _endpos__5_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _3;
+              MenhirLib.EngineTypes.startp = _startpos__3_;
+              MenhirLib.EngineTypes.endp = _endpos__3_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _2_inlined1;
+                  MenhirLib.EngineTypes.startp = _startpos__2_inlined1_;
+                  MenhirLib.EngineTypes.endp = _endpos__2_inlined1_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _1;
+                    MenhirLib.EngineTypes.startp = _startpos__1_;
+                    MenhirLib.EngineTypes.endp = _endpos__1_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = array;
+                      MenhirLib.EngineTypes.startp = _startpos_array_;
+                      MenhirLib.EngineTypes.endp = _endpos_array_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _5 : unit = Obj.magic _5 in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _3 : unit = Obj.magic _3 in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 39293 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _2_inlined1 : (Longident.t) = Obj.magic _2_inlined1 in
+        let _1 : unit = Obj.magic _1 in
+        let array : (Parsetree.expression) = Obj.magic array in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos_array_ in
+        let _endpos = _endpos__5_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let r = 
+# 2645 "parsing/parser.mly"
+                                                  ( None )
+# 39305 "parsing/parser.ml"
+           in
+          let i = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 39310 "parsing/parser.ml"
+           in
+          let d =
+            let _1 =
+              let _2 = _2_inlined1 in
+              let x = 
+# 2524 "parsing/parser.mly"
+                                                   (_2)
+# 39318 "parsing/parser.ml"
+               in
+              
+# 126 "<standard.mly>"
+    ( Some x )
+# 39323 "parsing/parser.ml"
+              
+            in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 39329 "parsing/parser.ml"
+            
+          in
+          
+# 2512 "parsing/parser.mly"
+    ( array, d, Bracket, i, r )
+# 39335 "parsing/parser.ml"
+          
+        in
+        let (_endpos__1_, _startpos__1_) = (_endpos__5_, _startpos_array_) in
+        let _endpos = _endpos__1_ in
+        let _symbolstartpos = _startpos__1_ in
+        let _sloc = (_symbolstartpos, _endpos) in
+        
+# 2646 "parsing/parser.mly"
+      ( mk_indexop_expr user_indexing_operators ~loc:_sloc _1 )
+# 39345 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let _4 : (Parsetree.expression) = Obj.magic _4 in
+        let _p : unit = Obj.magic _p in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2517 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
+# 39401 "parsing/parser.ml"
           
         in
         
 # 2647 "parsing/parser.mly"
                                   ( _1 )
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
 # 39407 "parsing/parser.ml"
          in
         {
@@ -39457,6 +52250,7 @@ module Tables = struct
           let _loc__p_ = (_startpos__p_, _endpos__p_) in
           let _loc__e_ = (_startpos__e_, _endpos__e_) in
           
+<<<<<<< HEAD
 # 2532 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
 # 39463 "parsing/parser.ml"
@@ -39527,6 +52321,81 @@ module Tables = struct
         
 # 2647 "parsing/parser.mly"
                                   ( _1 )
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2510 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
+=======
+# 2519 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39463 "parsing/parser.ml"
+          
+        in
+        
+# 2647 "parsing/parser.mly"
+                                  ( _1 )
+# 39469 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = _4;
+            MenhirLib.EngineTypes.startp = _startpos__4_;
+            MenhirLib.EngineTypes.endp = _endpos__4_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let _4 : (Parsetree.expression) = Obj.magic _4 in
+        let _p : unit = Obj.magic _p in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2521 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 39525 "parsing/parser.ml"
+          
+        in
+        
+# 2647 "parsing/parser.mly"
+                                  ( _1 )
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
 # 39531 "parsing/parser.ml"
          in
         {
@@ -39573,7 +52442,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _p : unit = Obj.magic _p in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 39579 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -39594,7 +52469,13 @@ module Tables = struct
 # 39595 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 39600 "parsing/parser.ml"
             
@@ -39602,9 +52483,19 @@ module Tables = struct
           let _loc__p_ = (_startpos__p_, _endpos__p_) in
           let _loc__e_ = (_startpos__e_, _endpos__e_) in
           
+<<<<<<< HEAD
 # 2530 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
 # 39608 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2512 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39614 "parsing/parser.ml"
+=======
+# 2517 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
+# 39608 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
@@ -39668,7 +52559,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _p : unit = Obj.magic _p in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 39674 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -39688,7 +52585,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 39694 "parsing/parser.ml"
                in
@@ -39699,7 +52602,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 39705 "parsing/parser.ml"
             
@@ -39707,9 +52616,19 @@ module Tables = struct
           let _loc__p_ = (_startpos__p_, _endpos__p_) in
           let _loc__e_ = (_startpos__e_, _endpos__e_) in
           
+<<<<<<< HEAD
 # 2530 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
 # 39713 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2512 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39719 "parsing/parser.ml"
+=======
+# 2517 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_  Paren _loc__e_ )
+# 39713 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
@@ -39761,7 +52680,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _p : unit = Obj.magic _p in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 39767 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -39782,7 +52707,13 @@ module Tables = struct
 # 39783 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 39788 "parsing/parser.ml"
             
@@ -39790,9 +52721,19 @@ module Tables = struct
           let _loc__p_ = (_startpos__p_, _endpos__p_) in
           let _loc__e_ = (_startpos__e_, _endpos__e_) in
           
+<<<<<<< HEAD
 # 2532 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
 # 39796 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2514 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 39802 "parsing/parser.ml"
+=======
+# 2519 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39796 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
@@ -39856,7 +52797,13 @@ module Tables = struct
         let es : (Parsetree.expression list) = Obj.magic es in
         let _p : unit = Obj.magic _p in
         let _2 : (
+<<<<<<< HEAD
 # 912 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 892 "parsing/parser.mly"
+=======
+# 899 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 39862 "parsing/parser.ml"
         ) = Obj.magic _2 in
@@ -39876,7 +52823,13 @@ module Tables = struct
             let _1 =
               let _2 = _2_inlined1 in
               let x = 
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                    (_2)
 # 39882 "parsing/parser.ml"
                in
@@ -39887,7 +52840,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 2537 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2517 "parsing/parser.mly"
+=======
+# 2524 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                                                ( _1, _2 )
 # 39893 "parsing/parser.ml"
             
@@ -39895,14 +52854,25 @@ module Tables = struct
           let _loc__p_ = (_startpos__p_, _endpos__p_) in
           let _loc__e_ = (_startpos__e_, _endpos__e_) in
           
+<<<<<<< HEAD
 # 2532 "parsing/parser.mly"
     ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
 # 39901 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2514 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 39907 "parsing/parser.ml"
+=======
+# 2519 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Brace _loc__e_ )
+# 39901 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
           
         in
         
 # 2648 "parsing/parser.mly"
                                                     ( _1 )
+<<<<<<< HEAD
 # 39907 "parsing/parser.ml"
          in
         {
@@ -40092,6 +53062,199 @@ module Tables = struct
 # 2648 "parsing/parser.mly"
                                                     ( _1 )
 # 40095 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 39913 "parsing/parser.ml"
+=======
+# 39907 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _menhir_s;
+                  MenhirLib.EngineTypes.semv = _1;
+                  MenhirLib.EngineTypes.startp = _startpos__1_;
+                  MenhirLib.EngineTypes.endp = _endpos__1_;
+                  MenhirLib.EngineTypes.next = _menhir_stack;
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _p : unit = Obj.magic _p in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 39955 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _4 = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 39965 "parsing/parser.ml"
+           in
+          let _2 =
+            let _1 = 
+# 124 "<standard.mly>"
+    ( None )
+# 39971 "parsing/parser.ml"
+             in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 39976 "parsing/parser.ml"
+            
+          in
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2521 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 39984 "parsing/parser.ml"
+          
+        in
+        
+# 2648 "parsing/parser.mly"
+                                                    ( _1 )
+# 39990 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _e;
+          MenhirLib.EngineTypes.startp = _startpos__e_;
+          MenhirLib.EngineTypes.endp = _endpos__e_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = es;
+            MenhirLib.EngineTypes.startp = _startpos_es_;
+            MenhirLib.EngineTypes.endp = _endpos_es_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _p;
+              MenhirLib.EngineTypes.startp = _startpos__p_;
+              MenhirLib.EngineTypes.endp = _endpos__p_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _2;
+                MenhirLib.EngineTypes.startp = _startpos__2_;
+                MenhirLib.EngineTypes.endp = _endpos__2_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _2_inlined1;
+                  MenhirLib.EngineTypes.startp = _startpos__2_inlined1_;
+                  MenhirLib.EngineTypes.endp = _endpos__2_inlined1_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _;
+                    MenhirLib.EngineTypes.semv = _1_inlined1;
+                    MenhirLib.EngineTypes.startp = _startpos__1_inlined1_;
+                    MenhirLib.EngineTypes.endp = _endpos__1_inlined1_;
+                    MenhirLib.EngineTypes.next = {
+                      MenhirLib.EngineTypes.state = _menhir_s;
+                      MenhirLib.EngineTypes.semv = _1;
+                      MenhirLib.EngineTypes.startp = _startpos__1_;
+                      MenhirLib.EngineTypes.endp = _endpos__1_;
+                      MenhirLib.EngineTypes.next = _menhir_stack;
+                    };
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _e : unit = Obj.magic _e in
+        let es : (Parsetree.expression list) = Obj.magic es in
+        let _p : unit = Obj.magic _p in
+        let _2 : (
+# 899 "parsing/parser.mly"
+       (string)
+# 40050 "parsing/parser.ml"
+        ) = Obj.magic _2 in
+        let _2_inlined1 : (Longident.t) = Obj.magic _2_inlined1 in
+        let _1_inlined1 : unit = Obj.magic _1_inlined1 in
+        let _1 : (Parsetree.expression) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__e_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _4 = 
+# 3090 "parsing/parser.mly"
+    ( es )
+# 40062 "parsing/parser.ml"
+           in
+          let _2 =
+            let _1 =
+              let _2 = _2_inlined1 in
+              let x = 
+# 2524 "parsing/parser.mly"
+                                                   (_2)
+# 40070 "parsing/parser.ml"
+               in
+              
+# 126 "<standard.mly>"
+    ( Some x )
+# 40075 "parsing/parser.ml"
+              
+            in
+            
+# 2524 "parsing/parser.mly"
+                                                               ( _1, _2 )
+# 40081 "parsing/parser.ml"
+            
+          in
+          let _loc__p_ = (_startpos__p_, _endpos__p_) in
+          let _loc__e_ = (_startpos__e_, _endpos__e_) in
+          
+# 2521 "parsing/parser.mly"
+    ( indexop_unclosed_error _loc__p_ Bracket _loc__e_ )
+# 40089 "parsing/parser.ml"
+          
+        in
+        
+# 2648 "parsing/parser.mly"
+                                                    ( _1 )
+# 40095 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -40374,7 +53537,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 40380 "parsing/parser.ml"
             
@@ -40780,7 +53949,13 @@ module Tables = struct
 # 40781 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 2180 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2160 "parsing/parser.mly"
+=======
+# 2167 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 40786 "parsing/parser.ml"
                 
@@ -40789,13 +53964,25 @@ module Tables = struct
               let _endpos = _endpos__1_ in
               let _startpos = _startpos__1_ in
               
+<<<<<<< HEAD
 # 1112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1092 "parsing/parser.mly"
+=======
+# 1099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_cstr _startpos _endpos _1 )
 # 40795 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 2167 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2147 "parsing/parser.mly"
+=======
+# 2154 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        ( Cstr.mk _1 _2 )
 # 40801 "parsing/parser.ml"
             
@@ -40898,7 +54085,13 @@ module Tables = struct
 # 40899 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 2180 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2160 "parsing/parser.mly"
+=======
+# 2167 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 40904 "parsing/parser.ml"
                 
@@ -40907,13 +54100,25 @@ module Tables = struct
               let _endpos = _endpos__1_ in
               let _startpos = _startpos__1_ in
               
+<<<<<<< HEAD
 # 1112 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1092 "parsing/parser.mly"
+=======
+# 1099 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                                ( extra_cstr _startpos _endpos _1 )
 # 40913 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 2167 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2147 "parsing/parser.mly"
+=======
+# 2154 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        ( Cstr.mk _1 _2 )
 # 40919 "parsing/parser.ml"
             
@@ -40979,7 +54184,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 40985 "parsing/parser.ml"
               
@@ -40994,7 +54205,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41000 "parsing/parser.ml"
           
@@ -41034,7 +54251,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41040 "parsing/parser.ml"
           
@@ -41071,7 +54294,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 41077 "parsing/parser.ml"
               
@@ -41086,7 +54315,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41092 "parsing/parser.ml"
           
@@ -41126,7 +54361,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41132 "parsing/parser.ml"
           
@@ -41160,7 +54401,13 @@ module Tables = struct
         } = _menhir_stack in
         let _2 : (Parsetree.expression) = Obj.magic _2 in
         let _1 : (
+<<<<<<< HEAD
 # 958 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 938 "parsing/parser.mly"
+=======
+# 945 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 41166 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -41174,7 +54421,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 41180 "parsing/parser.ml"
               
@@ -41190,7 +54443,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41196 "parsing/parser.ml"
           
@@ -41239,7 +54498,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 41245 "parsing/parser.ml"
               
@@ -41255,7 +54520,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41261 "parsing/parser.ml"
           
@@ -41317,7 +54588,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41323 "parsing/parser.ml"
           
@@ -41381,7 +54658,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41387 "parsing/parser.ml"
           
@@ -41429,7 +54712,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41435 "parsing/parser.ml"
           
@@ -41481,7 +54770,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 41487 "parsing/parser.ml"
               
@@ -41497,7 +54792,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41503 "parsing/parser.ml"
           
@@ -41563,14 +54864,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 41569 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -41588,7 +54901,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41594 "parsing/parser.ml"
           
@@ -41659,14 +54978,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 41665 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -41689,7 +55020,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41695 "parsing/parser.ml"
           
@@ -41767,7 +55104,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41773 "parsing/parser.ml"
           
@@ -41806,7 +55149,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 41812 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -41828,7 +55177,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 41834 "parsing/parser.ml"
               
@@ -41844,7 +55199,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41850 "parsing/parser.ml"
           
@@ -41884,7 +55245,13 @@ module Tables = struct
         } = _menhir_stack in
         let _3 : (Parsetree.expression) = Obj.magic _3 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 969 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 949 "parsing/parser.mly"
+=======
+# 956 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 41890 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -41900,7 +55267,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1145 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1125 "parsing/parser.mly"
+=======
+# 1132 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
    ( mkoperator ~loc:_sloc _1 )
 # 41906 "parsing/parser.ml"
               
@@ -41916,7 +55289,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41922 "parsing/parser.ml"
           
@@ -41956,7 +55335,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 41962 "parsing/parser.ml"
           
@@ -42021,7 +55406,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 42027 "parsing/parser.ml"
               
@@ -42033,14 +55424,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 42039 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -42059,7 +55462,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42065 "parsing/parser.ml"
           
@@ -42132,7 +55541,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42138 "parsing/parser.ml"
           
@@ -42189,7 +55604,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42195 "parsing/parser.ml"
           
@@ -42249,7 +55670,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42255 "parsing/parser.ml"
           
@@ -42316,14 +55743,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 42322 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -42344,7 +55783,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42350 "parsing/parser.ml"
           
@@ -42418,7 +55863,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42424 "parsing/parser.ml"
           
@@ -42498,7 +55949,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42504 "parsing/parser.ml"
           
@@ -42580,7 +56037,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42586 "parsing/parser.ml"
           
@@ -42646,7 +56109,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42652 "parsing/parser.ml"
           
@@ -42718,14 +56187,26 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 42724 "parsing/parser.ml"
                   
                 in
                 let _loc__1_ = (_startpos__1_, _endpos__1_) in
                 
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -42755,7 +56236,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42761 "parsing/parser.ml"
           
@@ -42815,14 +56302,26 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 42821 "parsing/parser.ml"
                   
                 in
                 let _loc__1_ = (_startpos__1_, _endpos__1_) in
                 
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -42853,7 +56352,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42859 "parsing/parser.ml"
           
@@ -42942,7 +56447,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 42948 "parsing/parser.ml"
           
@@ -43005,7 +56516,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43011 "parsing/parser.ml"
           
@@ -43069,7 +56586,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43075 "parsing/parser.ml"
           
@@ -43147,9 +56670,16 @@ module Tables = struct
 # 43148 "parsing/parser.ml"
                      in
                     
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 43153 "parsing/parser.ml"
+<<<<<<< HEAD
                     
                   in
                   
@@ -43194,6 +56724,53 @@ module Tables = struct
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
 # 43197 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+=======
+                    
+                  in
+                  
+# 2723 "parsing/parser.mly"
+    ( Jane_syntax.Comprehensions.{ body = _2; clauses = _3 } )
+# 43159 "parsing/parser.ml"
+                  
+                in
+                
+# 2728 "parsing/parser.mly"
+      ( Jane_syntax.Comprehensions.Cexp_list_comprehension  _1 )
+# 43165 "parsing/parser.ml"
+                
+              in
+              let _endpos__1_ = _endpos__4_ in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 2737 "parsing/parser.mly"
+    ( mkexp_jane_syntax ~loc:_sloc
+        (Jane_syntax.Comprehensions.expr_of ~loc:(make_loc _sloc) _1)
+    )
+# 43177 "parsing/parser.ml"
+              
+            in
+            let od =
+              let _1 =
+                let _endpos = _endpos__1_ in
+                let _symbolstartpos = _startpos__1_ in
+                let _sloc = (_symbolstartpos, _endpos) in
+                
+# 1105 "parsing/parser.mly"
+    ( mkrhs _1 _sloc )
+# 43188 "parsing/parser.ml"
+                
+              in
+              let _loc__1_ = (_startpos__1_, _endpos__1_) in
+              
+# 1816 "parsing/parser.mly"
+  ( let loc = make_loc _loc__1_ in
+    let me = Mod.ident ~loc _1 in
+    Opn.mk ~loc me )
+# 43197 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
               
             in
             
@@ -43207,7 +56784,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43213 "parsing/parser.ml"
           
@@ -43285,7 +56868,13 @@ module Tables = struct
 # 43286 "parsing/parser.ml"
                      in
                     
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 43291 "parsing/parser.ml"
                     
@@ -43320,14 +56909,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 43326 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -43345,7 +56946,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43351 "parsing/parser.ml"
           
@@ -43353,6 +56960,7 @@ module Tables = struct
         
 # 2653 "parsing/parser.mly"
       ( _1 )
+<<<<<<< HEAD
 # 43357 "parsing/parser.ml"
          in
         {
@@ -43492,6 +57100,149 @@ module Tables = struct
 # 2653 "parsing/parser.mly"
       ( _1 )
 # 43495 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 43313 "parsing/parser.ml"
+=======
+# 43357 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = xs;
+            MenhirLib.EngineTypes.startp = _startpos_xs_;
+            MenhirLib.EngineTypes.endp = _endpos_xs_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2_inlined1;
+              MenhirLib.EngineTypes.startp = _startpos__2_inlined1_;
+              MenhirLib.EngineTypes.endp = _endpos__2_inlined1_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _;
+                MenhirLib.EngineTypes.semv = _1_inlined1;
+                MenhirLib.EngineTypes.startp = _startpos__1_inlined1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_inlined1_;
+                MenhirLib.EngineTypes.next = {
+                  MenhirLib.EngineTypes.state = _;
+                  MenhirLib.EngineTypes.semv = _2;
+                  MenhirLib.EngineTypes.startp = _startpos__2_;
+                  MenhirLib.EngineTypes.endp = _endpos__2_;
+                  MenhirLib.EngineTypes.next = {
+                    MenhirLib.EngineTypes.state = _menhir_s;
+                    MenhirLib.EngineTypes.semv = _1;
+                    MenhirLib.EngineTypes.startp = _startpos__1_;
+                    MenhirLib.EngineTypes.endp = _endpos__1_;
+                    MenhirLib.EngineTypes.next = _menhir_stack;
+                  };
+                };
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let xs : (Jane_syntax.Comprehensions.clause list) = Obj.magic xs in
+        let _2_inlined1 : (Parsetree.expression) = Obj.magic _2_inlined1 in
+        let _1_inlined1 : unit = Obj.magic _1_inlined1 in
+        let _2 : unit = Obj.magic _2 in
+        let _1 : (Longident.t) = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let _3 =
+              let (_startpos__1_, _2) = (_startpos__1_inlined1_, _2_inlined1) in
+              let _1 =
+                let _1 =
+                  let _3 =
+                    let xs = 
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 43424 "parsing/parser.ml"
+                     in
+                    
+# 1207 "parsing/parser.mly"
+    ( xs )
+# 43429 "parsing/parser.ml"
+                    
+                  in
+                  
+# 2723 "parsing/parser.mly"
+    ( Jane_syntax.Comprehensions.{ body = _2; clauses = _3 } )
+# 43435 "parsing/parser.ml"
+                  
+                in
+                
+# 2732 "parsing/parser.mly"
+      ( Jane_syntax.Comprehensions.Cexp_array_comprehension (Immutable, _1) )
+# 43441 "parsing/parser.ml"
+                
+              in
+              let _endpos__1_ = _endpos__4_ in
+              let _endpos = _endpos__1_ in
+              let _symbolstartpos = _startpos__1_ in
+              let _sloc = (_symbolstartpos, _endpos) in
+              
+# 2737 "parsing/parser.mly"
+    ( mkexp_jane_syntax ~loc:_sloc
+        (Jane_syntax.Comprehensions.expr_of ~loc:(make_loc _sloc) _1)
+    )
+# 43453 "parsing/parser.ml"
+              
+            in
+            let od =
+              let _1 =
+                let _endpos = _endpos__1_ in
+                let _symbolstartpos = _startpos__1_ in
+                let _sloc = (_symbolstartpos, _endpos) in
+                
+# 1105 "parsing/parser.mly"
+    ( mkrhs _1 _sloc )
+# 43464 "parsing/parser.ml"
+                
+              in
+              let _loc__1_ = (_startpos__1_, _endpos__1_) in
+              
+# 1816 "parsing/parser.mly"
+  ( let loc = make_loc _loc__1_ in
+    let me = Mod.ident ~loc _1 in
+    Opn.mk ~loc me )
+# 43473 "parsing/parser.ml"
+              
+            in
+            
+# 2831 "parsing/parser.mly"
+      ( Pexp_open(od, _3) )
+# 43479 "parsing/parser.ml"
+            
+          in
+          let _endpos__1_ = _endpos__4_ in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 1138 "parsing/parser.mly"
+    ( mkexp ~loc:_sloc _1 )
+# 43489 "parsing/parser.ml"
+          
+        in
+        
+# 2653 "parsing/parser.mly"
+      ( _1 )
+# 43495 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -43554,14 +57305,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 43560 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -43585,7 +57348,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43591 "parsing/parser.ml"
           
@@ -43650,7 +57419,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 43656 "parsing/parser.ml"
               
@@ -43662,14 +57437,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 43668 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -43688,7 +57475,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43694 "parsing/parser.ml"
           
@@ -43766,7 +57559,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43772 "parsing/parser.ml"
           
@@ -43896,14 +57695,26 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 43902 "parsing/parser.ml"
                 
               in
               let _loc__1_ = (_startpos__1_, _endpos__1_) in
               
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -43928,7 +57739,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 43934 "parsing/parser.ml"
           
@@ -44045,7 +57862,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1151 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1131 "parsing/parser.mly"
+=======
+# 1138 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkexp ~loc:_sloc _1 )
 # 44051 "parsing/parser.ml"
           
@@ -44316,14 +58139,26 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 44322 "parsing/parser.ml"
               
             in
             let _loc__1_ = (_startpos__1_, _endpos__1_) in
             
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -44404,14 +58239,26 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 44410 "parsing/parser.ml"
               
             in
             let _loc__1_ = (_startpos__1_, _endpos__1_) in
             
+<<<<<<< HEAD
 # 1829 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1809 "parsing/parser.mly"
+=======
+# 1816 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( let loc = make_loc _loc__1_ in
     let me = Mod.ident ~loc _1 in
     Opn.mk ~loc me )
@@ -44576,7 +58423,13 @@ module Tables = struct
 # 44577 "parsing/parser.ml"
                  in
                 
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 44582 "parsing/parser.ml"
                 
@@ -44608,6 +58461,7 @@ module Tables = struct
         
 # 2668 "parsing/parser.mly"
                        ( _1 )
+<<<<<<< HEAD
 # 44612 "parsing/parser.ml"
          in
         {
@@ -44779,6 +58633,181 @@ module Tables = struct
 # 2668 "parsing/parser.mly"
                        ( _1 )
 # 44782 "parsing/parser.ml"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 44600 "parsing/parser.ml"
+=======
+# 44612 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = xs;
+            MenhirLib.EngineTypes.startp = _startpos_xs_;
+            MenhirLib.EngineTypes.endp = _endpos_xs_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let xs : (Jane_syntax.Comprehensions.clause list) = Obj.magic xs in
+        let _2 : (Parsetree.expression) = Obj.magic _2 in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let _1 =
+              let _3 =
+                let xs = 
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 44662 "parsing/parser.ml"
+                 in
+                
+# 1207 "parsing/parser.mly"
+    ( xs )
+# 44667 "parsing/parser.ml"
+                
+              in
+              
+# 2723 "parsing/parser.mly"
+    ( Jane_syntax.Comprehensions.{ body = _2; clauses = _3 } )
+# 44673 "parsing/parser.ml"
+              
+            in
+            
+# 2730 "parsing/parser.mly"
+      ( Jane_syntax.Comprehensions.Cexp_array_comprehension (Mutable, _1) )
+# 44679 "parsing/parser.ml"
+            
+          in
+          let _endpos__1_ = _endpos__4_ in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 2737 "parsing/parser.mly"
+    ( mkexp_jane_syntax ~loc:_sloc
+        (Jane_syntax.Comprehensions.expr_of ~loc:(make_loc _sloc) _1)
+    )
+# 44691 "parsing/parser.ml"
+          
+        in
+        
+# 2668 "parsing/parser.mly"
+                       ( _1 )
+# 44697 "parsing/parser.ml"
+         in
+        {
+          MenhirLib.EngineTypes.state = _menhir_s;
+          MenhirLib.EngineTypes.semv = Obj.repr _v;
+          MenhirLib.EngineTypes.startp = _startpos;
+          MenhirLib.EngineTypes.endp = _endpos;
+          MenhirLib.EngineTypes.next = _menhir_stack;
+        });
+      (fun _menhir_env ->
+        let _menhir_stack = _menhir_env.MenhirLib.EngineTypes.stack in
+        let {
+          MenhirLib.EngineTypes.state = _;
+          MenhirLib.EngineTypes.semv = _4;
+          MenhirLib.EngineTypes.startp = _startpos__4_;
+          MenhirLib.EngineTypes.endp = _endpos__4_;
+          MenhirLib.EngineTypes.next = {
+            MenhirLib.EngineTypes.state = _;
+            MenhirLib.EngineTypes.semv = xs;
+            MenhirLib.EngineTypes.startp = _startpos_xs_;
+            MenhirLib.EngineTypes.endp = _endpos_xs_;
+            MenhirLib.EngineTypes.next = {
+              MenhirLib.EngineTypes.state = _;
+              MenhirLib.EngineTypes.semv = _2;
+              MenhirLib.EngineTypes.startp = _startpos__2_;
+              MenhirLib.EngineTypes.endp = _endpos__2_;
+              MenhirLib.EngineTypes.next = {
+                MenhirLib.EngineTypes.state = _menhir_s;
+                MenhirLib.EngineTypes.semv = _1;
+                MenhirLib.EngineTypes.startp = _startpos__1_;
+                MenhirLib.EngineTypes.endp = _endpos__1_;
+                MenhirLib.EngineTypes.next = _menhir_stack;
+              };
+            };
+          };
+        } = _menhir_stack in
+        let _4 : unit = Obj.magic _4 in
+        let xs : (Jane_syntax.Comprehensions.clause list) = Obj.magic xs in
+        let _2 : (Parsetree.expression) = Obj.magic _2 in
+        let _1 : unit = Obj.magic _1 in
+        let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
+        let _startpos = _startpos__1_ in
+        let _endpos = _endpos__4_ in
+        let _v : (Parsetree.expression) = let _1 =
+          let _1 =
+            let _1 =
+              let _3 =
+                let xs = 
+# 253 "<standard.mly>"
+    ( List.rev xs )
+# 44747 "parsing/parser.ml"
+                 in
+                
+# 1207 "parsing/parser.mly"
+    ( xs )
+# 44752 "parsing/parser.ml"
+                
+              in
+              
+# 2723 "parsing/parser.mly"
+    ( Jane_syntax.Comprehensions.{ body = _2; clauses = _3 } )
+# 44758 "parsing/parser.ml"
+              
+            in
+            
+# 2732 "parsing/parser.mly"
+      ( Jane_syntax.Comprehensions.Cexp_array_comprehension (Immutable, _1) )
+# 44764 "parsing/parser.ml"
+            
+          in
+          let _endpos__1_ = _endpos__4_ in
+          let _endpos = _endpos__1_ in
+          let _symbolstartpos = _startpos__1_ in
+          let _sloc = (_symbolstartpos, _endpos) in
+          
+# 2737 "parsing/parser.mly"
+    ( mkexp_jane_syntax ~loc:_sloc
+        (Jane_syntax.Comprehensions.expr_of ~loc:(make_loc _sloc) _1)
+    )
+# 44776 "parsing/parser.ml"
+          
+        in
+        
+# 2668 "parsing/parser.mly"
+                       ( _1 )
+# 44782 "parsing/parser.ml"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
          in
         {
           MenhirLib.EngineTypes.state = _menhir_s;
@@ -44807,7 +58836,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 44813 "parsing/parser.ml"
               
@@ -44822,7 +58857,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 44828 "parsing/parser.ml"
           
@@ -44985,7 +59026,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 44991 "parsing/parser.ml"
           
@@ -45102,7 +59149,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45108 "parsing/parser.ml"
           
@@ -45165,7 +59218,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45171 "parsing/parser.ml"
           
@@ -45205,7 +59264,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45211 "parsing/parser.ml"
           
@@ -45260,7 +59325,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45266 "parsing/parser.ml"
           
@@ -45297,7 +59368,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45303 "parsing/parser.ml"
               
@@ -45312,7 +59389,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45318 "parsing/parser.ml"
           
@@ -45352,7 +59435,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45358 "parsing/parser.ml"
           
@@ -45397,7 +59486,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45403 "parsing/parser.ml"
               
@@ -45413,7 +59508,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45419 "parsing/parser.ml"
           
@@ -45464,7 +59565,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45470 "parsing/parser.ml"
               
@@ -45480,7 +59587,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45486 "parsing/parser.ml"
           
@@ -45545,7 +59658,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45551 "parsing/parser.ml"
               
@@ -45556,7 +59675,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45562 "parsing/parser.ml"
               
@@ -45575,7 +59700,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45581 "parsing/parser.ml"
           
@@ -45640,7 +59771,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45646 "parsing/parser.ml"
               
@@ -45651,7 +59788,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45657 "parsing/parser.ml"
               
@@ -45670,7 +59813,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45676 "parsing/parser.ml"
           
@@ -45735,7 +59884,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 45741 "parsing/parser.ml"
               
@@ -45751,7 +59906,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45757 "parsing/parser.ml"
           
@@ -45824,7 +59985,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45830 "parsing/parser.ml"
           
@@ -45889,7 +60056,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45895 "parsing/parser.ml"
           
@@ -45948,7 +60121,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 45954 "parsing/parser.ml"
           
@@ -46017,7 +60196,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 46023 "parsing/parser.ml"
           
@@ -46090,7 +60275,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 46096 "parsing/parser.ml"
           
@@ -46155,7 +60346,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 46161 "parsing/parser.ml"
           
@@ -46278,7 +60475,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 46284 "parsing/parser.ml"
           
@@ -46318,7 +60521,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1153 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1133 "parsing/parser.mly"
+=======
+# 1140 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkpat ~loc:_sloc _1 )
 # 46324 "parsing/parser.ml"
           
@@ -46345,7 +60554,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 46351 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -46373,11 +60588,21 @@ module Tables = struct
           MenhirLib.EngineTypes.endp = _endpos__1_;
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
+<<<<<<< HEAD
         let _1 : (
 # 985 "parsing/parser.mly"
        (string)
 # 46380 "parsing/parser.ml"
         ) = Obj.magic _1 in
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+        let _1 : unit = Obj.magic _1 in
+=======
+        let _1 : (
+# 972 "parsing/parser.mly"
+       (string)
+# 46380 "parsing/parser.ml"
+        ) = Obj.magic _1 in
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         let _endpos__0_ = _menhir_stack.MenhirLib.EngineTypes.endp in
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
@@ -47778,7 +62003,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 47784 "parsing/parser.ml"
           
@@ -47789,7 +62020,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 47795 "parsing/parser.ml"
           
@@ -48025,7 +62262,13 @@ module Tables = struct
 # 48026 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 48031 "parsing/parser.ml"
                         
@@ -48047,7 +62290,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48053 "parsing/parser.ml"
                   
@@ -48060,7 +62309,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48066 "parsing/parser.ml"
               
@@ -48088,7 +62343,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48094 "parsing/parser.ml"
           
@@ -48149,7 +62410,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48155 "parsing/parser.ml"
               
@@ -48177,7 +62444,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48183 "parsing/parser.ml"
           
@@ -48278,7 +62551,13 @@ module Tables = struct
 # 48279 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 48284 "parsing/parser.ml"
                         
@@ -48300,7 +62579,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48306 "parsing/parser.ml"
                   
@@ -48313,7 +62598,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48319 "parsing/parser.ml"
               
@@ -48341,7 +62632,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48347 "parsing/parser.ml"
           
@@ -48409,7 +62706,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48415 "parsing/parser.ml"
               
@@ -48437,7 +62740,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48443 "parsing/parser.ml"
           
@@ -48520,7 +62829,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 48526 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -48541,7 +62856,13 @@ module Tables = struct
 # 48542 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 48547 "parsing/parser.ml"
                         
@@ -48563,7 +62884,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48569 "parsing/parser.ml"
                   
@@ -48576,7 +62903,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48582 "parsing/parser.ml"
               
@@ -48604,7 +62937,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48610 "parsing/parser.ml"
           
@@ -48659,7 +62998,13 @@ module Tables = struct
         let ty : (Parsetree.core_type) = Obj.magic ty in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 48665 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -48676,7 +63021,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48682 "parsing/parser.ml"
               
@@ -48704,7 +63055,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48710 "parsing/parser.ml"
           
@@ -48794,7 +63151,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 48800 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -48816,7 +63179,13 @@ module Tables = struct
 # 48817 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 48822 "parsing/parser.ml"
                         
@@ -48838,7 +63207,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48844 "parsing/parser.ml"
                   
@@ -48851,7 +63226,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48857 "parsing/parser.ml"
               
@@ -48879,7 +63260,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48885 "parsing/parser.ml"
           
@@ -48941,7 +63328,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 48947 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -48958,7 +63351,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 48964 "parsing/parser.ml"
               
@@ -48986,7 +63385,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 48992 "parsing/parser.ml"
           
@@ -49072,7 +63477,13 @@ module Tables = struct
 # 49073 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 49078 "parsing/parser.ml"
                         
@@ -49094,7 +63505,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49100 "parsing/parser.ml"
                   
@@ -49107,7 +63524,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49113 "parsing/parser.ml"
               
@@ -49135,7 +63558,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49141 "parsing/parser.ml"
           
@@ -49189,7 +63618,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49195 "parsing/parser.ml"
               
@@ -49217,7 +63652,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49223 "parsing/parser.ml"
           
@@ -49311,7 +63752,13 @@ module Tables = struct
 # 49312 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 49317 "parsing/parser.ml"
                         
@@ -49333,7 +63780,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49339 "parsing/parser.ml"
                   
@@ -49346,7 +63799,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49352 "parsing/parser.ml"
               
@@ -49374,7 +63833,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49380 "parsing/parser.ml"
           
@@ -49435,7 +63900,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49441 "parsing/parser.ml"
               
@@ -49463,7 +63934,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49469 "parsing/parser.ml"
           
@@ -49562,7 +64039,13 @@ module Tables = struct
 # 49563 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 49568 "parsing/parser.ml"
                         
@@ -49584,7 +64067,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49590 "parsing/parser.ml"
                   
@@ -49597,7 +64086,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49603 "parsing/parser.ml"
               
@@ -49630,7 +64125,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49636 "parsing/parser.ml"
           
@@ -49736,7 +64237,13 @@ module Tables = struct
 # 49737 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 49742 "parsing/parser.ml"
                         
@@ -49758,7 +64265,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49764 "parsing/parser.ml"
                   
@@ -49771,7 +64284,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49777 "parsing/parser.ml"
               
@@ -49804,7 +64323,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49810 "parsing/parser.ml"
           
@@ -49871,7 +64396,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49877 "parsing/parser.ml"
               
@@ -49904,7 +64435,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 49910 "parsing/parser.ml"
           
@@ -49978,7 +64515,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 49984 "parsing/parser.ml"
               
@@ -50011,7 +64554,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50017 "parsing/parser.ml"
           
@@ -50118,7 +64667,13 @@ module Tables = struct
 # 50119 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 50124 "parsing/parser.ml"
                         
@@ -50140,7 +64695,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50146 "parsing/parser.ml"
                   
@@ -50153,7 +64714,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50159 "parsing/parser.ml"
               
@@ -50186,7 +64753,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50192 "parsing/parser.ml"
           
@@ -50300,7 +64873,13 @@ module Tables = struct
 # 50301 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 50306 "parsing/parser.ml"
                         
@@ -50322,7 +64901,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50328 "parsing/parser.ml"
                   
@@ -50335,7 +64920,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50341 "parsing/parser.ml"
               
@@ -50368,7 +64959,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50374 "parsing/parser.ml"
           
@@ -50442,7 +65039,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50448 "parsing/parser.ml"
               
@@ -50475,7 +65078,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50481 "parsing/parser.ml"
           
@@ -50556,7 +65165,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50562 "parsing/parser.ml"
               
@@ -50589,7 +65204,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50595 "parsing/parser.ml"
           
@@ -50672,7 +65293,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 50678 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -50699,7 +65326,13 @@ module Tables = struct
 # 50700 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 50705 "parsing/parser.ml"
                         
@@ -50721,7 +65354,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50727 "parsing/parser.ml"
                   
@@ -50734,7 +65373,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50740 "parsing/parser.ml"
               
@@ -50767,7 +65412,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50773 "parsing/parser.ml"
           
@@ -50857,7 +65508,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 50863 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -50884,7 +65541,13 @@ module Tables = struct
 # 50885 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 50890 "parsing/parser.ml"
                         
@@ -50906,7 +65569,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50912 "parsing/parser.ml"
                   
@@ -50919,7 +65588,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 50925 "parsing/parser.ml"
               
@@ -50952,7 +65627,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 50958 "parsing/parser.ml"
           
@@ -51007,7 +65688,13 @@ module Tables = struct
         let ty : (Parsetree.core_type) = Obj.magic ty in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51013 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51030,7 +65717,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51036 "parsing/parser.ml"
               
@@ -51063,7 +65756,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51069 "parsing/parser.ml"
           
@@ -51125,7 +65824,13 @@ module Tables = struct
         let ty : (Parsetree.core_type) = Obj.magic ty in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51131 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51148,7 +65853,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51154 "parsing/parser.ml"
               
@@ -51181,7 +65892,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51187 "parsing/parser.ml"
           
@@ -51271,7 +65988,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51277 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51299,7 +66022,13 @@ module Tables = struct
 # 51300 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 51305 "parsing/parser.ml"
                         
@@ -51321,7 +66050,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51327 "parsing/parser.ml"
                   
@@ -51334,7 +66069,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51340 "parsing/parser.ml"
               
@@ -51367,7 +66108,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51373 "parsing/parser.ml"
           
@@ -51464,7 +66211,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51470 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51492,7 +66245,13 @@ module Tables = struct
 # 51493 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 51498 "parsing/parser.ml"
                         
@@ -51514,7 +66273,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51520 "parsing/parser.ml"
                   
@@ -51527,7 +66292,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51533 "parsing/parser.ml"
               
@@ -51560,7 +66331,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51566 "parsing/parser.ml"
           
@@ -51622,7 +66399,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51628 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51645,7 +66428,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51651 "parsing/parser.ml"
               
@@ -51678,7 +66467,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51684 "parsing/parser.ml"
           
@@ -51747,7 +66542,13 @@ module Tables = struct
         let _1 : unit = Obj.magic _1 in
         let _2 : unit = Obj.magic _2 in
         let label : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 51753 "parsing/parser.ml"
         ) = Obj.magic label in
@@ -51770,7 +66571,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51776 "parsing/parser.ml"
               
@@ -51803,7 +66610,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51809 "parsing/parser.ml"
           
@@ -51895,7 +66708,13 @@ module Tables = struct
 # 51896 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 51901 "parsing/parser.ml"
                         
@@ -51917,7 +66736,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51923 "parsing/parser.ml"
                   
@@ -51930,7 +66755,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 51936 "parsing/parser.ml"
               
@@ -51963,7 +66794,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 51969 "parsing/parser.ml"
           
@@ -52062,7 +66899,13 @@ module Tables = struct
 # 52063 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 52068 "parsing/parser.ml"
                         
@@ -52084,7 +66927,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52090 "parsing/parser.ml"
                   
@@ -52097,7 +66946,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52103 "parsing/parser.ml"
               
@@ -52130,7 +66985,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52136 "parsing/parser.ml"
           
@@ -52190,7 +67051,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52196 "parsing/parser.ml"
               
@@ -52223,7 +67090,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52229 "parsing/parser.ml"
           
@@ -52290,7 +67163,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52296 "parsing/parser.ml"
               
@@ -52323,7 +67202,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52329 "parsing/parser.ml"
           
@@ -52423,7 +67308,13 @@ module Tables = struct
 # 52424 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 52429 "parsing/parser.ml"
                         
@@ -52445,7 +67336,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52451 "parsing/parser.ml"
                   
@@ -52458,7 +67355,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52464 "parsing/parser.ml"
               
@@ -52491,7 +67394,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52497 "parsing/parser.ml"
           
@@ -52598,7 +67507,13 @@ module Tables = struct
 # 52599 "parsing/parser.ml"
                          in
                         
+<<<<<<< HEAD
 # 1220 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1200 "parsing/parser.mly"
+=======
+# 1207 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 52604 "parsing/parser.ml"
                         
@@ -52620,7 +67535,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52626 "parsing/parser.ml"
                   
@@ -52633,7 +67554,13 @@ module Tables = struct
               in
               let _endpos__1_ = _endpos__5_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52639 "parsing/parser.ml"
               
@@ -52666,7 +67593,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52672 "parsing/parser.ml"
           
@@ -52733,7 +67666,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52739 "parsing/parser.ml"
               
@@ -52766,7 +67705,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52772 "parsing/parser.ml"
           
@@ -52840,7 +67785,13 @@ module Tables = struct
                in
               let _endpos__1_ = _endpos_ty_ in
               
+<<<<<<< HEAD
 # 1116 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1096 "parsing/parser.mly"
+=======
+# 1103 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_rhs_core_type _1 ~pos:_endpos__1_ )
 # 52846 "parsing/parser.ml"
               
@@ -52873,7 +67824,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 52879 "parsing/parser.ml"
           
@@ -52912,12 +67869,24 @@ module Tables = struct
              in
             let xs =
               let items = 
+<<<<<<< HEAD
 # 1188 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1168 "parsing/parser.mly"
+=======
+# 1175 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [] )
 # 52918 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1617 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1597 "parsing/parser.mly"
+=======
+# 1604 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( items )
 # 52923 "parsing/parser.ml"
               
@@ -52932,13 +67901,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1110 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1090 "parsing/parser.mly"
+=======
+# 1097 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_str _startpos _endpos _1 )
 # 52938 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1610 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1590 "parsing/parser.mly"
+=======
+# 1597 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( _1 )
 # 52944 "parsing/parser.ml"
          in
@@ -52994,7 +67975,13 @@ module Tables = struct
 # 52995 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1624 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1604 "parsing/parser.mly"
+=======
+# 1611 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstrexp e attrs )
 # 53000 "parsing/parser.ml"
                       
@@ -53002,7 +67989,13 @@ module Tables = struct
                     let _startpos__1_ = _startpos_e_ in
                     let _startpos = _startpos__1_ in
                     
+<<<<<<< HEAD
 # 1122 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1102 "parsing/parser.mly"
+=======
+# 1109 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos @ [_1] )
 # 53008 "parsing/parser.ml"
                     
@@ -53011,20 +68004,38 @@ module Tables = struct
                   let _endpos = _endpos__1_ in
                   let _startpos = _startpos__1_ in
                   
+<<<<<<< HEAD
 # 1141 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1121 "parsing/parser.mly"
+=======
+# 1128 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( mark_rhs_docs _startpos _endpos;
     _1 )
 # 53018 "parsing/parser.ml"
                   
                 in
                 
+<<<<<<< HEAD
 # 1190 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1170 "parsing/parser.mly"
+=======
+# 1177 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x )
 # 53024 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 1617 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1597 "parsing/parser.mly"
+=======
+# 1604 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( items )
 # 53030 "parsing/parser.ml"
               
@@ -53039,13 +68050,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1110 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1090 "parsing/parser.mly"
+=======
+# 1097 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_str _startpos _endpos _1 )
 # 53045 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1610 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1590 "parsing/parser.mly"
+=======
+# 1597 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( _1 )
 # 53051 "parsing/parser.ml"
          in
@@ -53073,7 +68096,13 @@ module Tables = struct
         let _symbolstartpos = _startpos__1_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 1639 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1619 "parsing/parser.mly"
+=======
+# 1626 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( val_of_let_bindings ~loc:_sloc _1 )
 # 53079 "parsing/parser.ml"
          in
@@ -53119,7 +68148,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1642 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1622 "parsing/parser.mly"
+=======
+# 1629 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let docs = symbol_docs _sloc in
           Pstr_extension (_1, add_docs_attrs docs _2) )
 # 53126 "parsing/parser.ml"
@@ -53130,13 +68165,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1157 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1137 "parsing/parser.mly"
+=======
+# 1144 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstr ~loc:_sloc _1 )
 # 53136 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53142 "parsing/parser.ml"
          in
@@ -53162,7 +68209,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1645 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1625 "parsing/parser.mly"
+=======
+# 1632 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( Pstr_attribute _1 )
 # 53168 "parsing/parser.ml"
            in
@@ -53170,13 +68223,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1157 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1137 "parsing/parser.mly"
+=======
+# 1144 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstr ~loc:_sloc _1 )
 # 53176 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53182 "parsing/parser.ml"
          in
@@ -53202,7 +68267,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1649 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1629 "parsing/parser.mly"
+=======
+# 1636 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_primitive _1 )
 # 53208 "parsing/parser.ml"
            in
@@ -53210,13 +68281,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53216 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53222 "parsing/parser.ml"
          in
@@ -53242,7 +68325,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1651 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1631 "parsing/parser.mly"
+=======
+# 1638 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_primitive _1 )
 # 53248 "parsing/parser.ml"
            in
@@ -53250,13 +68339,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53256 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53262 "parsing/parser.ml"
          in
@@ -53293,7 +68394,13 @@ module Tables = struct
             let _1 =
               let _1 =
                 let _1 = 
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
 # 53299 "parsing/parser.ml"
                  in
@@ -53310,7 +68417,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1653 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1633 "parsing/parser.mly"
+=======
+# 1640 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_type _1 )
 # 53316 "parsing/parser.ml"
             
@@ -53320,13 +68433,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53326 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53332 "parsing/parser.ml"
          in
@@ -53420,7 +68545,13 @@ module Tables = struct
                 in
                 let _endpos_attrs2_ = _endpos__1_inlined3_ in
                 let cs = 
+<<<<<<< HEAD
 # 1341 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1321 "parsing/parser.mly"
+=======
+# 1328 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( List.rev xs )
 # 53426 "parsing/parser.ml"
                  in
@@ -53430,7 +68561,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 53436 "parsing/parser.ml"
                   
@@ -53467,7 +68604,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1655 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1635 "parsing/parser.mly"
+=======
+# 1642 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_typext _1 )
 # 53473 "parsing/parser.ml"
             
@@ -53477,13 +68620,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53483 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53489 "parsing/parser.ml"
          in
@@ -53584,7 +68739,13 @@ module Tables = struct
                 in
                 let _endpos_attrs2_ = _endpos__1_inlined4_ in
                 let cs = 
+<<<<<<< HEAD
 # 1341 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1321 "parsing/parser.mly"
+=======
+# 1328 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( List.rev xs )
 # 53590 "parsing/parser.ml"
                  in
@@ -53594,7 +68755,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 53600 "parsing/parser.ml"
                   
@@ -53637,7 +68804,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1655 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1635 "parsing/parser.mly"
+=======
+# 1642 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_typext _1 )
 # 53643 "parsing/parser.ml"
             
@@ -53647,13 +68820,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53653 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53659 "parsing/parser.ml"
          in
@@ -53679,7 +68864,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1657 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1637 "parsing/parser.mly"
+=======
+# 1644 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_exception _1 )
 # 53685 "parsing/parser.ml"
            in
@@ -53687,13 +68878,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53693 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53699 "parsing/parser.ml"
          in
@@ -53770,7 +68973,13 @@ module Tables = struct
                 let _symbolstartpos = _startpos__1_ in
                 let _sloc = (_symbolstartpos, _endpos) in
                 
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 53776 "parsing/parser.ml"
                 
@@ -53787,7 +68996,13 @@ module Tables = struct
               let _symbolstartpos = _startpos__1_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1686 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1666 "parsing/parser.mly"
+=======
+# 1673 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let docs = symbol_docs _sloc in
       let loc = make_loc _sloc in
       let attrs = attrs1 @ attrs2 in
@@ -53797,7 +69012,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1659 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1639 "parsing/parser.mly"
+=======
+# 1646 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( _1 )
 # 53803 "parsing/parser.ml"
             
@@ -53807,13 +69028,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53813 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53819 "parsing/parser.ml"
          in
@@ -53906,7 +69139,13 @@ module Tables = struct
                     let _symbolstartpos = _startpos__1_ in
                     let _sloc = (_symbolstartpos, _endpos) in
                     
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 53912 "parsing/parser.ml"
                     
@@ -53923,7 +69162,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 1721 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1701 "parsing/parser.mly"
+=======
+# 1708 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let loc = make_loc _sloc in
     let attrs = attrs1 @ attrs2 in
@@ -53935,19 +69180,37 @@ module Tables = struct
                   
                 in
                 
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
 # 53941 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 1709 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1689 "parsing/parser.mly"
+=======
+# 1696 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53947 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1661 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1641 "parsing/parser.mly"
+=======
+# 1648 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( pstr_recmodule _1 )
 # 53953 "parsing/parser.ml"
             
@@ -53957,13 +69220,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 53963 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 53969 "parsing/parser.ml"
          in
@@ -53989,7 +69264,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1663 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1643 "parsing/parser.mly"
+=======
+# 1650 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Pstr_modtype body, ext) )
 # 53995 "parsing/parser.ml"
            in
@@ -53997,13 +69278,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 54003 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54009 "parsing/parser.ml"
          in
@@ -54029,7 +69322,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1665 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1645 "parsing/parser.mly"
+=======
+# 1652 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (body, ext) = _1 in (Pstr_open body, ext) )
 # 54035 "parsing/parser.ml"
            in
@@ -54037,13 +69336,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 54043 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54049 "parsing/parser.ml"
          in
@@ -54115,7 +69426,13 @@ module Tables = struct
         let _1_inlined3 : (Parsetree.attributes) = Obj.magic _1_inlined3 in
         let body : (Parsetree.class_expr) = Obj.magic body in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 54121 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -54147,7 +69464,13 @@ module Tables = struct
                     let _symbolstartpos = _startpos__1_ in
                     let _sloc = (_symbolstartpos, _endpos) in
                     
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54153 "parsing/parser.ml"
                     
@@ -54164,7 +69487,13 @@ module Tables = struct
                   let _symbolstartpos = _startpos__1_ in
                   let _sloc = (_symbolstartpos, _endpos) in
                   
+<<<<<<< HEAD
 # 2074 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2054 "parsing/parser.mly"
+=======
+# 2061 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -54176,19 +69505,37 @@ module Tables = struct
                   
                 in
                 
+<<<<<<< HEAD
 # 1349 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1329 "parsing/parser.mly"
+=======
+# 1336 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( let (x, b) = a in x, b :: bs )
 # 54182 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 2063 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2043 "parsing/parser.mly"
+=======
+# 2050 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54188 "parsing/parser.ml"
               
             in
             
+<<<<<<< HEAD
 # 1667 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1647 "parsing/parser.mly"
+=======
+# 1654 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (ext, l) = _1 in (Pstr_class l, ext) )
 # 54194 "parsing/parser.ml"
             
@@ -54198,13 +69545,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 54204 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54210 "parsing/parser.ml"
          in
@@ -54230,7 +69589,13 @@ module Tables = struct
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.structure_item) = let _1 =
           let _1 = 
+<<<<<<< HEAD
 # 1669 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1649 "parsing/parser.mly"
+=======
+# 1656 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( let (ext, l) = _1 in (Pstr_class_type l, ext) )
 # 54236 "parsing/parser.ml"
            in
@@ -54238,13 +69603,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 54244 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54250 "parsing/parser.ml"
          in
@@ -54317,7 +69694,13 @@ module Tables = struct
               let _symbolstartpos = _startpos_is_functor_ in
               let _sloc = (_symbolstartpos, _endpos) in
               
+<<<<<<< HEAD
 # 1765 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1745 "parsing/parser.mly"
+=======
+# 1752 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   (
     let attrs = attrs1 @ attrs2 in
     let loc = make_loc _sloc in
@@ -54333,7 +69716,13 @@ module Tables = struct
               
             in
             
+<<<<<<< HEAD
 # 1671 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1651 "parsing/parser.mly"
+=======
+# 1658 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
         ( _1 pstr_include
              (fun ~loc incl ->
                 Jane_syntax.Include_functor.str_item_of ~loc
@@ -54346,13 +69735,25 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1174 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1154 "parsing/parser.mly"
+=======
+# 1161 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( wrap_mkstr_ext ~loc:_sloc _1 )
 # 54352 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1676 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1656 "parsing/parser.mly"
+=======
+# 1663 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 54358 "parsing/parser.ml"
          in
@@ -54471,7 +69872,13 @@ module Tables = struct
 # 54472 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 54477 "parsing/parser.ml"
             
@@ -54487,7 +69894,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54493 "parsing/parser.ml"
           
@@ -54543,7 +69956,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54549 "parsing/parser.ml"
           
@@ -54597,7 +70016,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54603 "parsing/parser.ml"
           
@@ -54639,7 +70064,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 972 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 952 "parsing/parser.mly"
+=======
+# 959 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * Location.t * string option)
 # 54645 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -54660,7 +70091,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 54666 "parsing/parser.ml"
             
@@ -54678,7 +70115,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54684 "parsing/parser.ml"
           
@@ -54720,7 +70163,13 @@ module Tables = struct
           };
         } = _menhir_stack in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 917 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 897 "parsing/parser.mly"
+=======
+# 904 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string * char option)
 # 54726 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -54741,7 +70190,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 54747 "parsing/parser.ml"
             
@@ -54759,7 +70214,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54765 "parsing/parser.ml"
           
@@ -54818,7 +70279,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 54824 "parsing/parser.ml"
             
@@ -54836,7 +70303,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54842 "parsing/parser.ml"
           
@@ -54895,7 +70368,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 54901 "parsing/parser.ml"
             
@@ -54913,7 +70392,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54919 "parsing/parser.ml"
           
@@ -54972,7 +70457,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 54978 "parsing/parser.ml"
             
@@ -54990,7 +70481,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 54996 "parsing/parser.ml"
           
@@ -55049,7 +70546,13 @@ module Tables = struct
             let _symbolstartpos = _startpos__1_ in
             let _sloc = (_symbolstartpos, _endpos) in
             
+<<<<<<< HEAD
 # 1179 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1159 "parsing/parser.mly"
+=======
+# 1166 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mk_directive_arg ~loc:_sloc _1 )
 # 55055 "parsing/parser.ml"
             
@@ -55067,7 +70570,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 55073 "parsing/parser.ml"
           
@@ -55123,7 +70632,13 @@ module Tables = struct
 # 55124 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1624 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1604 "parsing/parser.mly"
+=======
+# 1611 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstrexp e attrs )
 # 55129 "parsing/parser.ml"
               
@@ -55131,7 +70646,13 @@ module Tables = struct
             let _startpos__1_ = _startpos_e_ in
             let _startpos = _startpos__1_ in
             
+<<<<<<< HEAD
 # 1122 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1102 "parsing/parser.mly"
+=======
+# 1109 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_str _startpos @ [_1] )
 # 55137 "parsing/parser.ml"
             
@@ -55140,13 +70661,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1110 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1090 "parsing/parser.mly"
+=======
+# 1097 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_str _startpos _endpos _1 )
 # 55146 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1389 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1369 "parsing/parser.mly"
+=======
+# 1376 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( Ptop_def _1 )
 # 55152 "parsing/parser.ml"
          in
@@ -55187,13 +70720,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1110 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1090 "parsing/parser.mly"
+=======
+# 1097 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_str _startpos _endpos _1 )
 # 55193 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1393 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1373 "parsing/parser.mly"
+=======
+# 1380 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( Ptop_def _1 )
 # 55199 "parsing/parser.ml"
          in
@@ -55225,7 +70770,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__2_ in
         let _v : (Parsetree.toplevel_phrase) = 
+<<<<<<< HEAD
 # 1397 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1377 "parsing/parser.mly"
+=======
+# 1384 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 55231 "parsing/parser.ml"
          in
@@ -55250,7 +70801,13 @@ module Tables = struct
         let _startpos = _startpos__1_ in
         let _endpos = _endpos__1_ in
         let _v : (Parsetree.toplevel_phrase) = 
+<<<<<<< HEAD
 # 1400 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1380 "parsing/parser.mly"
+=======
+# 1387 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( raise End_of_file )
 # 55256 "parsing/parser.ml"
          in
@@ -55308,7 +70865,13 @@ module Tables = struct
 # 55309 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1280 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1260 "parsing/parser.mly"
+=======
+# 1267 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 55314 "parsing/parser.ml"
               
@@ -55324,7 +70887,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 55330 "parsing/parser.ml"
           
@@ -55714,7 +71283,13 @@ module Tables = struct
 # 55715 "parsing/parser.ml"
            in
           
+<<<<<<< HEAD
 # 1252 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1232 "parsing/parser.mly"
+=======
+# 1239 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 55720 "parsing/parser.ml"
           
@@ -55762,7 +71337,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 55768 "parsing/parser.ml"
           
@@ -55802,7 +71383,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1155 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1135 "parsing/parser.mly"
+=======
+# 1142 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mktyp ~loc:_sloc _1 )
 # 55808 "parsing/parser.ml"
           
@@ -56050,7 +71637,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 909 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 889 "parsing/parser.mly"
+=======
+# 896 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56056 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -56082,7 +71675,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 958 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 938 "parsing/parser.mly"
+=======
+# 945 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56088 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -56133,12 +71732,24 @@ module Tables = struct
              in
             let xs =
               let _1 = 
+<<<<<<< HEAD
 # 1188 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1168 "parsing/parser.mly"
+=======
+# 1175 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( [] )
 # 56139 "parsing/parser.ml"
                in
               
+<<<<<<< HEAD
 # 1420 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1400 "parsing/parser.mly"
+=======
+# 1407 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 56144 "parsing/parser.ml"
               
@@ -56153,13 +71764,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1114 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1094 "parsing/parser.mly"
+=======
+# 1101 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_def _startpos _endpos _1 )
 # 56159 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1413 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1393 "parsing/parser.mly"
+=======
+# 1400 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 56165 "parsing/parser.ml"
          in
@@ -56222,13 +71845,25 @@ module Tables = struct
 # 56223 "parsing/parser.ml"
                        in
                       
+<<<<<<< HEAD
 # 1624 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1604 "parsing/parser.mly"
+=======
+# 1611 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkstrexp e attrs )
 # 56228 "parsing/parser.ml"
                       
                     in
                     
+<<<<<<< HEAD
 # 1132 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1112 "parsing/parser.mly"
+=======
+# 1119 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( Ptop_def [_1] )
 # 56234 "parsing/parser.ml"
                     
@@ -56236,19 +71871,37 @@ module Tables = struct
                   let _startpos__1_ = _startpos_e_ in
                   let _startpos = _startpos__1_ in
                   
+<<<<<<< HEAD
 # 1130 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1110 "parsing/parser.mly"
+=======
+# 1117 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
   ( text_def _startpos @ [_1] )
 # 56242 "parsing/parser.ml"
                   
                 in
                 
+<<<<<<< HEAD
 # 1190 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1170 "parsing/parser.mly"
+=======
+# 1177 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( x )
 # 56248 "parsing/parser.ml"
                 
               in
               
+<<<<<<< HEAD
 # 1420 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1400 "parsing/parser.mly"
+=======
+# 1407 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 56254 "parsing/parser.ml"
               
@@ -56263,13 +71916,25 @@ module Tables = struct
           let _endpos = _endpos__1_ in
           let _startpos = _startpos__1_ in
           
+<<<<<<< HEAD
 # 1114 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1094 "parsing/parser.mly"
+=======
+# 1101 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
                               ( extra_def _startpos _endpos _1 )
 # 56269 "parsing/parser.ml"
           
         in
         
+<<<<<<< HEAD
 # 1413 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1393 "parsing/parser.mly"
+=======
+# 1400 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( _1 )
 # 56275 "parsing/parser.ml"
          in
@@ -56443,7 +72108,13 @@ module Tables = struct
           MenhirLib.EngineTypes.next = _menhir_stack;
         } = _menhir_stack in
         let _1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56449 "parsing/parser.ml"
         ) = Obj.magic _1 in
@@ -56548,7 +72219,13 @@ module Tables = struct
         let ty : (Parsetree.core_type) = Obj.magic ty in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56554 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -56570,7 +72247,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 56576 "parsing/parser.ml"
           
@@ -56586,7 +72269,13 @@ module Tables = struct
 # 56587 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2214 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2194 "parsing/parser.mly"
+=======
+# 2201 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (label, mutable_, Cfk_virtual ty), attrs )
 # 56592 "parsing/parser.ml"
          in
@@ -56633,7 +72322,13 @@ module Tables = struct
         let _6 : (Parsetree.expression) = Obj.magic _6 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56639 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -56655,7 +72350,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 56661 "parsing/parser.ml"
           
@@ -56671,7 +72372,13 @@ module Tables = struct
 # 56672 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2216 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2196 "parsing/parser.mly"
+=======
+# 2203 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_4, _3, Cfk_concrete (_1, _6)), _2 )
 # 56677 "parsing/parser.ml"
          in
@@ -56724,7 +72431,13 @@ module Tables = struct
         let _6 : (Parsetree.expression) = Obj.magic _6 in
         let _5 : unit = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56730 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -56747,7 +72460,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 56753 "parsing/parser.ml"
           
@@ -56766,7 +72485,13 @@ module Tables = struct
 # 56767 "parsing/parser.ml"
          in
         
+<<<<<<< HEAD
 # 2216 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2196 "parsing/parser.mly"
+=======
+# 2203 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( (_4, _3, Cfk_concrete (_1, _6)), _2 )
 # 56772 "parsing/parser.ml"
          in
@@ -56820,7 +72545,13 @@ module Tables = struct
         let _6 : unit = Obj.magic _6 in
         let _5 : (Parsetree.core_type option * Parsetree.core_type option) = Obj.magic _5 in
         let _1_inlined1 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56826 "parsing/parser.ml"
         ) = Obj.magic _1_inlined1 in
@@ -56842,7 +72573,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 56848 "parsing/parser.ml"
           
@@ -56873,7 +72610,13 @@ module Tables = struct
               _startpos__4_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2219 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2199 "parsing/parser.mly"
+=======
+# 2206 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let e = mkexp_constraint ~loc:_sloc _7 _5 in
         (_4, _3, Cfk_concrete (_1, e)), _2
       )
@@ -56935,7 +72678,13 @@ module Tables = struct
         let _6 : unit = Obj.magic _6 in
         let _5 : (Parsetree.core_type option * Parsetree.core_type option) = Obj.magic _5 in
         let _1_inlined2 : (
+<<<<<<< HEAD
 # 932 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 912 "parsing/parser.mly"
+=======
+# 919 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
        (string)
 # 56941 "parsing/parser.ml"
         ) = Obj.magic _1_inlined2 in
@@ -56958,7 +72707,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 56964 "parsing/parser.ml"
           
@@ -56991,7 +72746,13 @@ module Tables = struct
               _startpos__4_ in
         let _sloc = (_symbolstartpos, _endpos) in
         
+<<<<<<< HEAD
 # 2219 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 2199 "parsing/parser.mly"
+=======
+# 2206 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
       ( let e = mkexp_constraint ~loc:_sloc _7 _5 in
         (_4, _3, Cfk_concrete (_1, e)), _2
       )
@@ -57074,7 +72835,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57080 "parsing/parser.ml"
           
@@ -57383,7 +73150,13 @@ module Tables = struct
 # 57384 "parsing/parser.ml"
              in
             
+<<<<<<< HEAD
 # 1202 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1182 "parsing/parser.mly"
+=======
+# 1189 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( xs )
 # 57389 "parsing/parser.ml"
             
@@ -57409,7 +73182,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57415 "parsing/parser.ml"
           
@@ -57493,7 +73272,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57499 "parsing/parser.ml"
           
@@ -57559,7 +73344,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57565 "parsing/parser.ml"
           
@@ -57570,7 +73361,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57576 "parsing/parser.ml"
           
@@ -57627,7 +73424,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57633 "parsing/parser.ml"
           
@@ -57638,7 +73441,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57644 "parsing/parser.ml"
           
@@ -57702,7 +73511,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57708 "parsing/parser.ml"
           
@@ -57766,7 +73581,13 @@ module Tables = struct
           let _symbolstartpos = _startpos__1_ in
           let _sloc = (_symbolstartpos, _endpos) in
           
+<<<<<<< HEAD
 # 1118 "parsing/parser.mly"
+||||||| parent of 7be6cc0b (Parse labeled tuple terms (#1476))
+# 1098 "parsing/parser.mly"
+=======
+# 1105 "parsing/parser.mly"
+>>>>>>> 7be6cc0b (Parse labeled tuple terms (#1476))
     ( mkrhs _1 _sloc )
 # 57772 "parsing/parser.ml"
           

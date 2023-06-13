@@ -511,7 +511,7 @@ let expression sub exp =
           | [ arg ] -> Some (sub.expr sub arg)
           | args ->
               Some
-                (Exp.tuple ~loc (List.map (fun e -> None, sub.expr sub e) args))
+                (Exp.tuple ~loc (List.map (fun e -> None, fun e -> None, sub.expr sub e e) args))
           ))
     | Texp_variant (label, expo) ->
         Pexp_variant (label, Option.map (fun (e, _) -> sub.expr sub e) expo)
