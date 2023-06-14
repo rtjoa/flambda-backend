@@ -3271,9 +3271,8 @@ and unify3 env t1 t1' t2 t2' =
           | false, false -> link_commu ~inside:c1 c2
           | true, true -> ()
           end
-      | (Ttuple tl1, Ttuple tl2) ->
-        (* CR labeled tuples: safe to discard labels? *)
-          unify_list env (List.map snd tl1) (List.map snd tl2)
+      | (Ttuple labeled_tl1, Ttuple labeled_tl2) ->
+          unify_labeled_list env labeled_tl1 labeled_tl2
       | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _)) when Path.same p1 p2 ->
           if not (can_generate_equations ()) then
             unify_list env tl1 tl2
@@ -3411,6 +3410,13 @@ and unify3 env t1 t1' t2 t2' =
 
 and unify_list env tl1 tl2 =
   if List.length tl1 <> List.length tl2 then
+    raise_unexplained_for Unify;
+  List.iter2 (unify env) tl1 tl2
+
+and unify_labeled_list env labeled_tl1 labeled_tl2 =
+  let labels1, tl1 = List.split labeled_tl1 in
+  let labels2, tl2 = List.split labeled_tl2 in
+  if not (List.equal (Option.equal String.equal) labels1 labels2) then
     raise_unexplained_for Unify;
   List.iter2 (unify env) tl1 tl2
 
@@ -5270,15 +5276,16 @@ let rec build_subtype env (visited : transient_expr list)
       if c > Unchanged
       then (newty (Tarrow((l,a',r'), t1', t2', commu_ok)), c)
       else (t, Unchanged)
-  | Ttuple tlist ->
+  | Ttuple labeled_tlist ->
       let tt = Transient_expr.repr t in
       if memq_warn tt visited then (t, Unchanged) else
       let visited = tt :: visited in
+      let labels, tlist = List.split labeled_tlist in
       let tlist' =
-        List.map (build_subtype env visited loops posi level) (List.map snd tlist)
+        List.map (build_subtype env visited loops posi level) tlist
       in
       let c = collect tlist' in
-      if c > Unchanged then (newty (Ttuple (List.combine (List.map fst tlist) (List.map fst tlist'))), c)
+      if c > Unchanged then (newty (Ttuple (List.combine labels (List.map fst tlist'))), c)
       else (t, Unchanged)
   | Tconstr(p, tl, abbrev)
     when level > 0 && generic_abbrev env p && safe_abbrev env t
