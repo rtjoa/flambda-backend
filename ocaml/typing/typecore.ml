@@ -3618,19 +3618,16 @@ and type_approx_aux env sexp in_function ty_expected =
   | Pexp_match (_, {pc_rhs=e}::_) -> type_approx_aux env e None ty_expected
   | Pexp_try (e, _) -> type_approx_aux env e None ty_expected
   | Pexp_tuple l ->
-      let tys = List.map
-                  (fun _ -> newvar (Layout.value ~why:Tuple_element)) l
+      let labeled_tys = List.map
+                  (fun (label, _) -> label, newvar (Layout.value ~why:Tuple_element)) l
       in
-      let ty = newty (Ttuple (List.map (fun t -> None, t) tys)) in
+      let ty = newty (Ttuple labeled_tys) in
       begin try unify env ty ty_expected with Unify err ->
         raise(Error(sexp.pexp_loc, env, Expr_type_clash (err, None, None)))
       end;
       List.iter2
-        (function (None, e) -> type_approx_aux env e None
-                | (Some _, _) -> raise(Error(sexp.pexp_loc,
-                                             env,
-                                             Unsupported_labeled_tuple)))
-        l tys
+        (fun (_, e) (_, ty) -> type_approx_aux env e None ty)
+        l labeled_tys
   | Pexp_ifthenelse (_,e,_) -> type_approx_aux env e None ty_expected
   | Pexp_sequence (_,e) -> type_approx_aux env e None ty_expected
   | Pexp_constraint (e, sty) ->
@@ -4514,11 +4511,12 @@ and type_expect_
       assert (arity >= 2);
       let alloc_mode = register_allocation expected_mode in
       (* CR layouts v5: non-values in tuples *)
-      let subtypes =
-        List.map (fun _ -> newgenvar (Layout.value ~why:Tuple_element))
-          sexpl
+      let labeled_subtypes =
+        List.map (fun (label, _) -> label, newgenvar (Layout.value ~why:Tuple_element))
+        sexpl
       in
-      let to_unify = newgenty (Ttuple (List.map (fun t -> None, t) subtypes)) in
+      let subtypes = List.map snd labeled_subtypes in
+      let to_unify = newgenty (Ttuple labeled_subtypes) in
       with_explanation (fun () ->
         unify_exp_types loc env to_unify (generic_instance ty_expected));
       let argument_modes =
