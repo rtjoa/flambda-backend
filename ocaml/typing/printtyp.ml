@@ -522,9 +522,10 @@ let rec raw_type ppf ty =
       ty.scope raw_type_desc ty.desc
   end
 and labeled_type ppf (label, ty) =
-  match label with
-  | Some s -> fprintf ppf "%s: " s
-  | None -> ();
+  begin match label with
+    | Some s -> fprintf ppf "label=\"%s\" " s
+    | None -> ()
+  end;
   raw_type ppf ty
 
 and raw_type_list tl = raw_list raw_type tl
