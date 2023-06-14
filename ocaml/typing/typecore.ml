@@ -971,7 +971,7 @@ and build_as_type_aux ~refine ~mode (env : Env.t ref) p =
     Tpat_alias(p1,_, _, _) -> build_as_type_and_mode ~refine ~mode env p1
   | Tpat_tuple pl ->
       let tyl = List.map (build_as_type env) pl in
-      (* CR labeled tuple *)
+      (* CR labeled tuple: handle labeled tuple patterns appropriately *)
       newty (Ttuple (List.map (fun e -> None, e) tyl)), mode
   | Tpat_construct(_, cstr, pl, vto) ->
       let priv = (cstr.cstr_private = Private) in
@@ -1094,6 +1094,7 @@ let solve_Ppat_tuple (type a) ~refine ~alloc_mode loc env (args : a list) expect
                       simple_pat_mode mode))
       args arg_modes
   in
+    (* CR labeled tuple: handle labeled tuple patterns appropriately *)
   let ty = newgenty (Ttuple (List.map (fun t -> None, t) (List.map snd3 ann))) in
   let expected_ty = generic_instance expected_ty in
   unify_pat_types ~refine loc env ty expected_ty;
@@ -1128,6 +1129,7 @@ let solve_constructor_annotation tps env name_list sty ty_args ty_ex =
         unify_pat_types cty.ctyp_loc env ty1 ty_arg;
         [ty2]
     | _ ->
+        (* CR labeled tuple: handle labeled tuple patterns appropriately *)
         unify_pat_types cty.ctyp_loc env ty1 (newty (Ttuple (List.map (fun t -> None, t) ty_args)));
         match get_desc (expand_head !env ty2) with
           Ttuple tyl -> (List.map snd tyl)
@@ -2347,6 +2349,7 @@ and type_pat_aux
         rvp k {
         pat_desc = Tpat_tuple pl;
         pat_loc = loc; pat_extra=[];
+        (* CR labeled tuple: handle labeled tuple patterns appropriately *)
         pat_type = newty (Ttuple(List.map (fun p -> None, p.pat_type) pl));
         pat_attributes = sp.ppat_attributes;
         pat_env = !env })
@@ -3517,6 +3520,7 @@ let rec approx_type env sty =
       let mret = Alloc_mode.newvar () in
       newty (Tarrow ((p,marg,mret), newmono arg, ret, commu_ok))
   | Ptyp_tuple args ->
+      (* CR labeled tuple: handle labeled tuple type expressions appropriately *)
       newty (Ttuple (List.map (fun t -> None, approx_type env t) args))
   | Ptyp_constr (lid, ctl) ->
       let path, decl = Env.lookup_type ~use:false ~loc:lid.loc lid.txt env in

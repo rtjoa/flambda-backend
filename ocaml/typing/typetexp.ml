@@ -526,7 +526,7 @@ and transl_type_aux env policy mode styp =
         raise (Error(ctyp_loc, env,
                      Non_value {vloc = Tuple; err = e; typ = ctyp_type})))
       ctys;
-    (* CR labeled tuple *)
+    (* CR labeled tuples: handle labeled tuple type expressions *)
     let ty = newty (Ttuple (List.map (fun ctyp -> None, ctyp.ctyp_type) ctys)) in
     ctyp (Ttyp_tuple ctys) ty
   | Ptyp_constr(lid, stl) ->
