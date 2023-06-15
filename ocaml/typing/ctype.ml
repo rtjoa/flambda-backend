@@ -5869,7 +5869,8 @@ let rec normalize_type_rec visited ty =
         begin match !nm with
         | None -> ()
         | Some (n, v :: l) ->
-            if List.exists (deep_occur ty) l then
+            let fake_ttuple = newgenty (Ttuple (List.map (fun ty -> None, ty) l)) in
+            if deep_occur ty fake_ttuple then
               (* The abbreviation may be hiding something, so remove it *)
               set_name nm None
             else
