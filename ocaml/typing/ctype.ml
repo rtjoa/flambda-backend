@@ -581,19 +581,21 @@ let rec free_vars_rec real ty =
     | _    ->
         iter_type_expr (free_vars_rec true) ty
 
-let free_vars ?env ty =
+let free_vars_list ?env tyl =
   free_variables := [];
   really_closed := env;
-  free_vars_rec true ty;
+  List.iter (free_vars_rec true) tyl;
   let res = !free_variables in
   free_variables := [];
   really_closed := None;
   res
 
-let free_variables ?env ty =
-  let tl = List.map fst (free_vars ?env ty) in
-  unmark_type ty;
+let free_variables_list ?env tyl =
+  let tl = List.map fst (free_vars_list ?env ty_list) in
+  List.iter unmark_type tyl;
   tl
+
+let free_variables ?env ty = free_variables ?env [ty]
 
 let closed_type ty =
   remove_mode_and_layout_variables ty;
