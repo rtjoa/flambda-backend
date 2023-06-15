@@ -99,7 +99,7 @@ val a : x: int * y: int = (~x: 1, ~y: 2)
 let a = choose_pt true (~~(~y: 6, ~x: 5))
 [%%expect{|
 Line 1, characters 23-41:
-1 | let a = choose_pt true (~~(~y: 1, ~x: 2))
+1 | let a = choose_pt true (~~(~y: 6, ~x: 5))
                            ^^^^^^^^^^^^^^^^^^
 Error: This expression has type y: 'a * x: 'b
        but an expression was expected of type x: int * y: int
