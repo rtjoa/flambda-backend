@@ -37,7 +37,7 @@ else
 val foo : bool -> a: string * int * c: string = <fun>
 |}]
 
-(* Missing label (the type vars in the error is ugly, but the same thing happens when
+(* Missing label (the type vars in the error aren't ideal, but the same thing happens when
    unifying normal tuples of different lengths) *)
 let foo b = if b then
    ~~(~a: "s", 10, "hi")
