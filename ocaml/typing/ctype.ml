@@ -4338,8 +4338,8 @@ let rec moregen inst_nongen variance type_pairs env t1 t2 =
               moregen inst_nongen variance type_pairs env u1 u2;
               moregen_alloc_mode (neg_variance variance) a1 a2;
               moregen_alloc_mode variance r1 r2
-          | (Ttuple tl1, Ttuple tl2) ->
-              moregen_labeled_list inst_nongen variance type_pairs env tl1 tl2
+          | (Ttuple labeled_tl1, Ttuple labeled_tl2) ->
+              moregen_labeled_list inst_nongen variance type_pairs env labeled_tl1 labeled_tl2
           | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _))
                 when Path.same p1 p2 -> begin
               match variance with
@@ -4716,8 +4716,8 @@ let rec eqtype rename type_pairs subst env t1 t2 =
               eqtype rename type_pairs subst env u1 u2;
               eqtype_alloc_mode a1 a2;
               eqtype_alloc_mode r1 r2
-          | (Ttuple tl1, Ttuple tl2) ->
-              eqtype_labeled_list rename type_pairs subst env tl1 tl2
+          | (Ttuple labeled_tl1, Ttuple labeled_tl2) ->
+              eqtype_labeled_list rename type_pairs subst env labeled_tl1 labeled_tl2
           | (Tconstr (p1, tl1, _), Tconstr (p2, tl2, _))
                 when Path.same p1 p2 ->
               eqtype_list rename type_pairs subst env tl1 tl2
@@ -5869,7 +5869,7 @@ let rec normalize_type_rec visited ty =
         begin match !nm with
         | None -> ()
         | Some (n, v :: l) ->
-            if deep_occur ty (newgenty (Ttuple (List.map (fun t -> None, t) l))) then
+            if List.exists (deep_occur ty) l then
               (* The abbreviation may be hiding something, so remove it *)
               set_name nm None
             else
