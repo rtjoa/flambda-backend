@@ -348,7 +348,7 @@ let pattern : type k . _ -> k T.general_pattern -> _ = fun sub pat ->
         Ppat_alias (sub.pat sub pat, name)
     | Tpat_constant cst -> Ppat_constant (constant cst)
     | Tpat_tuple list ->
-        Ppat_tuple (List.map (sub.pat sub) list)
+        Ppat_tuple (List.map (fun p -> None,(sub.pat sub p)) list)
     | Tpat_construct (lid, _, args, vto) ->
         let tyo =
           match vto with
@@ -363,7 +363,7 @@ let pattern : type k . _ -> k T.general_pattern -> _ = fun sub pat ->
           match args with
             []    -> None
           | [arg] -> Some (sub.pat sub arg)
-          | args  -> Some (Pat.tuple ~loc (List.map (sub.pat sub) args))
+          | args  -> Some (Pat.tuple ~loc (List.map (fun arg -> None, sub.pat sub arg) args))
         in
         Ppat_construct (map_loc sub lid,
           match tyo, arg with

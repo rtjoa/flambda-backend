@@ -235,10 +235,12 @@ and pattern_desc =
 
            Other forms of interval are recognized by the parser
            but rejected by the type-checker. *)
-  | Ppat_tuple of pattern list
+  | Ppat_tuple of (string option * pattern) list
       (** Patterns [(P1, ..., Pn)].
 
            Invariant: [n >= 2]
+
+           CR labeled tuples: update this comment
         *)
   | Ppat_construct of Longident.t loc * (string loc list * pattern) option
       (** [Ppat_construct(C, args)] represents:

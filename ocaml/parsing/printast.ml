@@ -224,7 +224,7 @@ and pattern i ppf x =
       line i ppf "Ppat_interval %a..%a\n" fmt_constant c1 fmt_constant c2;
   | Ppat_tuple (l) ->
       line i ppf "Ppat_tuple\n";
-      list i pattern ppf l;
+      list i labeled_pattern ppf l;
   | Ppat_construct (li, po) ->
       line i ppf "Ppat_construct %a\n" fmt_longident_loc li;
       option i
@@ -266,6 +266,10 @@ and pattern i ppf x =
   | Ppat_extension (s, arg) ->
       line i ppf "Ppat_extension \"%s\"\n" s.txt;
       payload i ppf arg
+
+and labeled_pattern i ppf (label, p) =
+  tuple_component_label i ppf label;
+  pattern i ppf p
 
 and expression i ppf x =
   line i ppf "expression %a\n" fmt_location x.pexp_loc;

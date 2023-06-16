@@ -1901,7 +1901,8 @@ let rec has_literal_pattern p =
   | Ppat_lazy p
   | Ppat_open (_, p) ->
      has_literal_pattern p
-  | Ppat_tuple ps
+  | Ppat_tuple labeled_ps ->
+     List.exists (fun (_, p) -> has_literal_pattern p) labeled_ps
   | Ppat_array ps ->
      List.exists has_literal_pattern ps
   | Ppat_record (ps, _) ->
@@ -2341,6 +2342,8 @@ and type_pat_aux
   | Ppat_interval _ ->
       raise (Error (loc, !env, Invalid_interval))
   | Ppat_tuple spl ->
+      (* CR labeled tuples: don't just erase *)
+      let spl = List.map snd spl in 
       let spl_ann = solve_Ppat_tuple ~refine ~alloc_mode loc env spl expected_ty in
       map_fold_cont
         (fun (p,t,alloc_mode) -> type_pat tps Value ~alloc_mode p t)
@@ -2404,7 +2407,7 @@ and type_pat_aux
         | Some {ppat_desc = Ppat_tuple spl} when
             constr.cstr_arity > 1 ||
             Builtin_attributes.explicit_arity sp.ppat_attributes
-          -> spl
+          -> List.map snd spl  (* CR labeled tuples: don't just erase *)
         | Some({ppat_desc = Ppat_any} as sp) when
             constr.cstr_arity = 0 && existential_styp = None
           ->
@@ -3882,7 +3885,7 @@ let shallow_iter_ppat f p =
   | Ppat_array pats -> List.iter f pats
   | Ppat_or (p1,p2) -> f p1; f p2
   | Ppat_variant (_, arg) -> Option.iter f arg
-  | Ppat_tuple lst ->  List.iter f lst
+  | Ppat_tuple lst ->  List.iter (fun (_,p) -> f p) lst
   | Ppat_construct (_, Some (_, p))
   | Ppat_exception p | Ppat_alias (p,_)
   | Ppat_open (_,p)
@@ -5444,7 +5447,7 @@ and type_expect_
             (* CR layouts v5: eliminate value requirement *)
             let ty = newvar (Layout.value ~why:Tuple_element) in
             let loc = Location.ghostify slet.pbop_op.loc in
-            let spat_acc = Ast_helper.Pat.tuple ~loc [spat_acc; spat] in
+            let spat_acc = Ast_helper.Pat.tuple ~loc [None, spat_acc; None, spat] in
             let ty_acc = newty (Ttuple [None, ty_acc; None, ty]) in
             loop spat_acc ty_acc rest
       in
