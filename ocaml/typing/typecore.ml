@@ -3523,8 +3523,7 @@ let rec approx_type env sty =
       let mret = Alloc_mode.newvar () in
       newty (Tarrow ((p,marg,mret), newmono arg, ret, commu_ok))
   | Ptyp_tuple args ->
-      (* CR labeled tuple: handle labeled tuple type expressions appropriately *)
-      newty (Ttuple (List.map (fun t -> None, approx_type env t) args))
+      newty (Ttuple (List.map (fun (label, t) -> label, approx_type env t) args))
   | Ptyp_constr (lid, ctl) ->
       let path, decl = Env.lookup_type ~use:false ~loc:lid.loc lid.txt env in
       if List.length ctl <> decl.type_arity

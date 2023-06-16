@@ -103,7 +103,7 @@ let rec add_type bv ty =
     Ptyp_any -> ()
   | Ptyp_var _ -> ()
   | Ptyp_arrow(_, t1, t2) -> add_type bv t1; add_type bv t2
-  | Ptyp_tuple tl -> List.iter (add_type bv) tl
+  | Ptyp_tuple tl -> List.iter (fun (_,ty) -> add_type bv ty) tl
   | Ptyp_constr(c, tl) -> add bv c; List.iter (add_type bv) tl
   | Ptyp_object (fl, _) ->
       List.iter

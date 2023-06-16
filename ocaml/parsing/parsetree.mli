@@ -96,7 +96,7 @@ and core_type_desc =
             - [?l:T1 -> T2] when [lbl] is
                                      {{!Asttypes.arg_label.Optional}[Optional]}.
          *)
-  | Ptyp_tuple of core_type list
+  | Ptyp_tuple of (string option * core_type) list
       (** [Ptyp_tuple([T1 ; ... ; Tn])]
           represents a product type [T1 * ... * Tn].
 

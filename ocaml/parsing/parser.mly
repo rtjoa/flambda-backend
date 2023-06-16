@@ -3853,9 +3853,21 @@ tuple_type:
       { ty }
   | mktyp(
       tys = separated_nontrivial_llist(STAR, atomic_type)
-        { Ptyp_tuple tys }
+        { Ptyp_tuple (List.map (fun ty -> None, ty) tys) }
     )
-    { $1 }
+      { $1 }
+  | TILDETILDELPAREN mktyp(
+      labeled_tys = separated_nontrivial_llist(STAR, labeled_atomic_type)
+        { Ptyp_tuple labeled_tys }
+  ) RPAREN
+      { $2 }
+;
+
+labeled_atomic_type:
+  atomic_type
+      { None, $1 }
+  | label = LIDENT COLON ty = atomic_type
+      { Some label, ty }
 ;
 
 (* Atomic types are the most basic level in the syntax of types.

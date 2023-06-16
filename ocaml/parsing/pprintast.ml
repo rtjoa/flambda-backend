@@ -354,7 +354,7 @@ and core_type1 ctxt f x =
     match x.ptyp_desc with
     | Ptyp_any -> pp f "_";
     | Ptyp_var s -> tyvar f  s;
-    | Ptyp_tuple l ->  pp f "(%a)" (list (core_type1 ctxt) ~sep:"@;*@;") l
+    | Ptyp_tuple l ->  pp f "(%a)" (list (labeled_core_type1 ctxt) ~sep:"@;*@;") l
     | Ptyp_constr (li, l) ->
         pp f (* "%a%a@;" *) "%a%a"
           (fun f l -> match l with
@@ -426,6 +426,13 @@ and core_type1 ctxt f x =
                (list aux  ~sep:"@ and@ ")  cstrs)
     | Ptyp_extension e -> extension ctxt f e
     | _ -> paren true (core_type ctxt) f x
+
+and labeled_core_type1 ctxt f (label, ty) =
+  begin match label with
+  | None   -> core_type1 ctxt f ty
+  | Some s -> pp f "Label: \"%s\"" s
+  end;
+  core_type1 ctxt f ty
 
 and core_type1_jane_syntax _ctxt _attrs _f : Jane_syntax.Core_type.t -> _ =
   function
