@@ -4527,11 +4527,52 @@ and type_expect_
          type *)
       let arity = List.length sexpl in
       assert (arity >= 2);
+      let rec extract_component_aux hd l = function
+      | [] -> None
+      | (l', t as p) :: ls ->
+          if Option.equal String.equal l l' then
+            Some (t, List.rev_append hd ls)
+          else
+            extract_component_aux (p::hd) l ls
+      in
+      (* I'm sure this exists. CR labeled tuples: use lib *)
+      (* let rec option_map : ('a -> 'b option) -> 'a list -> 'b list option =
+          fun f -> function
+          | [] -> Some []
+          | hd :: tl ->
+              Option.bind (f hd)
+                (fun b_hd -> Option.map (List.cons b_hd) (option_map f tl)) *)
+
+      let extract_component l (ls : (label option * Parsetree.expression) list) = extract_component_aux [] l ls in
+      let sexpl = match (get_desc ty_expected) with
+        | Ttuple tll
+        when is_principal ty_expected 
+        ->
+          let canon_labels = List.map fst tll in
+          let combine
+                  (opt_rem_sexpl_components : ((label option * Parsetree.expression) list * (label option * Parsetree.expression) list) option)
+                  (lbl : label option) =
+              Option.bind opt_rem_sexpl_components (
+                fun (rem_sexpl, components) ->
+                let rem_sexpl = rem_sexpl in
+                Option.bind (extract_component lbl rem_sexpl) (
+                  fun (sexp, rem_sexpl) ->
+                    let rem_sexpl = rem_sexpl in
+                    Some (rem_sexpl, ((lbl, sexp) :: components)) 
+                  )
+              )
+            in
+          begin match (List.fold_left combine (Some (sexpl, [])) canon_labels) with
+          | Some ([], sexpl) -> List.rev sexpl
+          | _ -> sexpl
+          end
+        | _ -> sexpl
+      in
       let alloc_mode = register_allocation expected_mode in
       (* CR layouts v5: non-values in tuples *)
       let labeled_subtypes =
         List.map (fun (label, _) -> label,
-                                    newgenvar (Layout.value ~why:Tuple_element))
+        newgenvar (Layout.value ~why:Tuple_element))
         sexpl
       in
       let to_unify = newgenty (Ttuple labeled_subtypes) in
