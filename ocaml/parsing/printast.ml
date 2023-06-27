@@ -229,7 +229,8 @@ and pattern i ppf x =
   | Ppat_constant (c) -> line i ppf "Ppat_constant %a\n" fmt_constant c;
   | Ppat_interval (c1, c2) ->
       line i ppf "Ppat_interval %a..%a\n" fmt_constant c1 fmt_constant c2;
-  | Ppat_tuple (l) ->
+  | Ppat_tuple (l, _) ->
+      (* CR labeled tuples: consider closedness *)
       line i ppf "Ppat_tuple\n";
       list i labeled_pattern ppf l;
   | Ppat_construct (li, po) ->

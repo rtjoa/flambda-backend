@@ -531,11 +531,7 @@ Error: This pattern matches values of type x:'a * 'b
 (* CR labeled tuples: this should work once reordering is supported *)
 let f ((~~(~x;y)) : ~~(int * x:int)) : int = x + y
 [%%expect{|
-Line 1, characters 7-17:
-1 | let f ((~~(~x;y)) : ~~(int * x:int)) : int = x + y
-           ^^^^^^^^^^
-Error: This pattern matches values of type x:'a * 'b
-       but a pattern was expected which matches values of type int * x:int
+val f : int * x:int -> int = <fun>
 |}]
 
 (* Annotation within pattern *)
@@ -741,19 +737,256 @@ val tree_abcde : Tree.t =
 - : string list = ["a"; "b"; "c"; "d"; "e"]
 |}]
 
-(* CR labeled tuples: Upon supporting reordering, consider & test the following.
-   Given:
-      type xy = x:int * y:int
-      type yx = y:int * x:int
-      let xy_id (pt : xy) = pt
-      let yx_id (pt : yx) = pt
+(* Reordering in functions *)
+type xy = ~~(x:int * y:int)
+type yx = ~~(y:int * x:int)
+let xy_id (pt : xy) = pt
+let yx_id (pt : yx) = pt
 
-   Which of the following implementations of [swap] are allowed?
-      let swap (~x, ~y) = (~y, ~x)
-      let swap ((~y, ~x) : xy) = (~y, ~x)
-      let swap (~x, ~y) = ((~x, ~y) : yx)
-      let swap (pt : xy) : yx = pt
-      let swap : xy -> yx = Fun.id  
-      let swap : xy -> yx = xy_id  
-      let swap : xy -> yx = yx_id  
-*)
+
+let swap (~~(~x; ~y)) = ~~(~y, ~x)
+[%%expect{|
+type xy = x:int * y:int
+type yx = y:int * x:int
+val xy_id : xy -> xy = <fun>
+val yx_id : yx -> yx = <fun>
+val swap : x:'a * y:'b -> y:'b * x:'a = <fun>
+|}]
+
+let swap (~~(~y; ~x) : xy) = ~~(~y, ~x)
+[%%expect{|
+Line 1, characters 10-20:
+1 | let swap (~~(~y; ~x) : xy) = ~~(~y, ~x)
+              ^^^^^^^^^^
+Error: This pattern matches values of type y:'a * x:'b
+       but a pattern was expected which matches values of type
+         xy = x:int * y:int
+|}]
+
+let swap (~~(~x; ~y)) = (~~(~x, ~y) : yx)
+[%%expect{|
+Line 1, characters 25-35:
+1 | let swap (~~(~x; ~y)) = (~~(~x, ~y) : yx)
+                             ^^^^^^^^^^
+Error: This expression has type x:'a * y:'b
+       but an expression was expected of type yx = y:int * x:int
+|}]
+
+let swap (pt : xy) : yx = pt
+[%%expect{|
+Line 1, characters 26-28:
+1 | let swap (pt : xy) : yx = pt
+                              ^^
+Error: This expression has type xy = x:int * y:int
+       but an expression was expected of type yx = y:int * x:int
+|}]
+
+let swap : xy -> yx = Fun.id  
+[%%expect{|
+Line 1, characters 22-28:
+1 | let swap : xy -> yx = Fun.id
+                          ^^^^^^
+Error: This expression has type xy -> xy
+       but an expression was expected of type xy -> yx
+       Type xy = x:int * y:int is not compatible with type yx = y:int * x:int
+|}]
+
+let swap : xy -> yx = xy_id  
+[%%expect{|
+Line 1, characters 22-27:
+1 | let swap : xy -> yx = xy_id
+                          ^^^^^
+Error: This expression has type xy -> xy
+       but an expression was expected of type xy -> yx
+       Type xy = x:int * y:int is not compatible with type yx = y:int * x:int
+|}]
+
+let swap : xy -> yx = yx_id  
+[%%expect{|
+Line 1, characters 22-27:
+1 | let swap : xy -> yx = yx_id
+                          ^^^^^
+Error: This expression has type yx -> yx
+       but an expression was expected of type xy -> yx
+       Type yx = y:int * x:int is not compatible with type xy = x:int * y:int
+|}]
+
+(* Reordering and partial matches *)
+let lt = (~~(~x:1, ~y:2, ~x:3, 4)) 
+
+(* Full match, in order *)
+let matches =
+  let (~~(~x; ~y; ~x=x2; z)) = lt in
+  (x, y, x2, z)
+[%%expect{|
+val lt : x:int * y:int * x:int * int = (~x:1, ~y:2, ~x:3, 4)
+val matches : int * int * int * int = (1, 2, 3, 4)
+|}]
+
+(* Full match, over-bound *)
+let matches =
+  let (~~(~x; ~y; ~x; z)) = lt in
+  (x, y, z)
+[%%expect{|
+Line 2, characters 19-20:
+2 |   let (~~(~x; ~y; ~x; z)) = lt in
+                       ^
+Error: Variable x is bound several times in this matching
+|}]
+
+(* Full match, missing label *)
+let matches =
+  let (~~(~x; ~y; z)) = lt in
+  (x, y, z)
+[%%expect{|
+Line 2, characters 6-21:
+2 |   let (~~(~x; ~y; z)) = lt in
+          ^^^^^^^^^^^^^^^
+Error: This pattern matches values of type x:'a * y:'b * 'c
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+(* Full match, wrong label *)
+let matches =
+  let (~~(~x; ~y; ~w; z)) = lt in
+  (x, y, z)
+[%%expect{|
+Line 2, characters 6-25:
+2 |   let (~~(~x; ~y; ~w; z)) = lt in
+          ^^^^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type x:int * y:int * w:'a * 'b
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+(* Full match, extra label *)
+let matches =
+  let (~~(~x; ~y; ~x; ~y; z)) = lt in
+  (x, y, z)
+[%%expect{|
+Line 2, characters 6-29:
+2 |   let (~~(~x; ~y; ~x; ~y; z)) = lt in
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type x:'a * y:'b * x:'c * y:'d * 'e
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+(* Full match, extra unlabeled label *)
+let matches =
+  let (~~(~x; ~y; ~x; z; w)) = lt in
+  (x, y, z)
+[%%expect{|
+Line 2, characters 6-28:
+2 |   let (~~(~x; ~y; ~x; z; w)) = lt in
+          ^^^^^^^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type x:'a * y:'b * x:'c * 'd * 'e
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+
+(* Partial match *)
+let matches =
+  let (~~(~x; ~y; .. )) = lt in
+  (x, y)
+[%%expect{|
+val matches : int * int = (1, 2)
+|}]
+
+(* Partial match, reordered *)
+let matches =
+  let (~~(~y; ~x; .. )) = lt in
+  (x, y)
+[%%expect{|
+val matches : int * int = (1, 2)
+|}]
+
+(* Partial match, reordered, over-bound *)
+let matches =
+  let (~~(~y=x; ~x; .. )) = lt in
+  x
+[%%expect{|
+Line 2, characters 13-14:
+2 |   let (~~(~y=x; ~x; .. )) = lt in
+                 ^
+Error: Variable x is bound several times in this matching
+|}]
+
+(* Partial match one *)
+let matches =
+  let (~~(~x; .. )) = lt in
+  x
+[%%expect{|
+val matches : int = 1
+|}]
+
+(* Partial match none *)
+(* CR labeled tuples: fix this!! *)
+let matches =
+  let (~~( .. )) = lt in
+  ()
+[%%expect{|
+Line 2, characters 6-16:
+2 |   let (~~( .. )) = lt in
+          ^^^^^^^^^^
+Error: The type of a partial tuple pattern must be principally known.
+|}]
+ 
+(* Partial match all *)
+let matches =
+   let (~~( ~x; ~y; ~x=x2; z; .. )) = lt in
+   (x, y, x2, z)
+[%%expect{|
+val matches : int * int * int * int = (1, 2, 3, 4)
+|}]
+ 
+(* Partial match too many of a name *)
+let matches =
+   let (~~( ~y; ~y=y2; ~x; .. )) = lt in
+   (x, y)
+[%%expect{|
+Line 2, characters 7-32:
+2 |    let (~~( ~y; ~y=y2; ~x; .. )) = lt in
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type y:'a * y:'b * x:'c
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+(* Partial match bad name *)
+let matches =
+   let (~~( ~w; ~y; ~x; .. )) = lt in
+   (x, y, x2, z)
+[%%expect{|
+Line 2, characters 7-29:
+2 |    let (~~( ~w; ~y; ~x; .. )) = lt in
+           ^^^^^^^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type w:'a * y:'b * x:'c
+       but a pattern was expected which matches values of type
+         x:int * y:int * x:int * int
+|}]
+
+(* Nested pattern *)
+let f (z, (~~(~y; ~x))) = x, y, z
+[%%expect{|
+val f : 'a * (y:'b * x:'c) -> 'c * 'b * 'a = <fun>
+|}]
+
+let f (z, (~~(~y; ~x; ..))) = x, y, z
+[%%expect{|
+Line 1, characters 10-26:
+1 | let f (z, (~~(~y; ~x; ..))) = x, y, z
+              ^^^^^^^^^^^^^^^^
+Error: The type of a partial tuple pattern must be principally known.
+|}]
+
+let f (~~(~x; ~y; ..)) = x, y
+[%%expect{|
+Line 1, characters 6-22:
+1 | let f (~~(~x; ~y; ..)) = x, y
+          ^^^^^^^^^^^^^^^^
+Error: The type of a partial tuple pattern must be principally known.
+|}]
+(* CR labeled tuples: test all of the above with top-level lets *)
