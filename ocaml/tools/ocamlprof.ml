@@ -218,7 +218,7 @@ and rw_exp iflag sexp =
     rewrite_exp_list iflag (List.map snd sargs)
 
   | Pexp_tuple sexpl ->
-    rewrite_exp_list iflag (List.map snd sexpl)
+    rewrite_exp_list iflag sexpl
 
   | Pexp_construct(_, None) -> ()
   | Pexp_construct(_, Some sarg) ->
@@ -312,6 +312,7 @@ and rw_exp iflag sexp =
 and rewrite_exp_jane_syntax iflag : Jane_syntax.Expression.t -> _ = function
   | Jexp_comprehension cexp -> rewrite_comprehension_exp iflag cexp
   | Jexp_immutable_array iaexp -> rewrite_immutable_array_exp iflag iaexp
+  | Jexp_tuple ltexp -> rewrite_labeled_tuple_exp iflag ltexp
 
 and rewrite_comprehension_exp iflag :
   Jane_syntax.Comprehensions.expression -> _ = function
@@ -342,6 +343,12 @@ and rewrite_immutable_array_exp iflag :
   function
   | Iaexp_immutable_array exprs ->
     rewrite_exp_list iflag exprs
+
+and rewrite_labeled_tuple_exp iflag :
+  Jane_syntax.Labeled_tuples.expression -> _ =
+  function
+  | Ltexp_tuple sexpl ->
+    rewrite_exp_list iflag (List.map snd sexpl)
 
 and rewrite_ifbody iflag ghost sifbody =
   if !instr_if && not ghost then

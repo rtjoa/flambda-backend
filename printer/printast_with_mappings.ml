@@ -237,9 +237,9 @@ and pattern i ppf x =
   | Ppat_constant (c) -> line i ppf "Ppat_constant %a\n" fmt_constant c;
   | Ppat_interval (c1, c2) ->
       line i ppf "Ppat_interval %a..%a\n" fmt_constant c1 fmt_constant c2;
-  | Ppat_tuple (l, closed) ->
-      line i ppf "Ppat_tuple closed=%a\n" fmt_closed_flag closed;
-      list i labeled_pattern ppf l;
+  | Ppat_tuple l ->
+      line i ppf "Ppat_tuple\n";
+      list i pattern ppf l;
   | Ppat_construct (li, po) ->
       line i ppf "Ppat_construct %a\n" fmt_longident_loc li;
       option i
@@ -322,7 +322,7 @@ and expression i ppf x =
       list i case ppf l;
   | Pexp_tuple (l) ->
       line i ppf "Pexp_tuple\n";
-      list i tuple_component ppf l;
+      list i expression ppf l;
   | Pexp_construct (li, eo) ->
       line i ppf "Pexp_construct %a\n" fmt_longident_loc li;
       option i expression ppf eo;

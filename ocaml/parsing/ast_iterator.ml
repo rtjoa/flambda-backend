@@ -395,6 +395,7 @@ module E = struct
 
   module C = Jane_syntax.Comprehensions
   module IA = Jane_syntax.Immutable_arrays
+  module LT = Jane_syntax.Labeled_tuples
 
   let iter_iterator sub : C.iterator -> _ = function
     | Range { start; stop; direction = _ } ->
@@ -425,10 +426,14 @@ module E = struct
   let iter_iarr_exp sub : IA.expression -> _ = function
     | Iaexp_immutable_array elts ->
       List.iter (sub.expr sub) elts
+  
+  let iter_lt_exp sub : LT.expression -> _ = function
+    | Ltexp_tuple el -> List.iter (iter_snd (sub.expr sub)) el
 
   let iter_jst sub : Jane_syntax.Expression.t -> _ = function
     | Jexp_comprehension comp_exp -> iter_comp_exp sub comp_exp
     | Jexp_immutable_array iarr_exp -> iter_iarr_exp sub iarr_exp
+    | Jexp_tuple lt_exp -> iter_lt_exp sub lt_exp
 
   let iter sub
         ({pexp_loc = loc; pexp_desc = desc; pexp_attributes = attrs} as expr)=
@@ -455,7 +460,7 @@ module E = struct
     | Pexp_match (e, pel) ->
         sub.expr sub e; sub.cases sub pel
     | Pexp_try (e, pel) -> sub.expr sub e; sub.cases sub pel
-    | Pexp_tuple el -> List.iter (iter_snd (sub.expr sub)) el
+    | Pexp_tuple el -> List.iter (sub.expr sub) el
     | Pexp_construct (lid, arg) ->
         iter_loc sub lid; iter_opt (sub.expr sub) arg
     | Pexp_variant (_lab, eo) ->
@@ -524,13 +529,19 @@ module P = struct
   (* Patterns *)
 
   module IA = Jane_syntax.Immutable_arrays
+  module LT = Jane_syntax.Labeled_tuples
 
   let iter_iapat sub : IA.pattern -> _ = function
     | Iapat_immutable_array elts ->
       List.iter (sub.pat sub) elts
+  
+  let iter_ltpat sub : LT.pattern -> _ = function
+    | Ltpat_tuple (pl, _) ->
+      List.iter (fun (_, p) -> sub.pat sub p) pl
 
   let iter_jst sub : Jane_syntax.Pattern.t -> _ = function
     | Jpat_immutable_array iapat -> iter_iapat sub iapat
+    | Jpat_tuple ltpat -> iter_ltpat sub ltpat
 
   let iter sub
         ({ppat_desc = desc; ppat_loc = loc; ppat_attributes = attrs} as pat) =
@@ -547,7 +558,7 @@ module P = struct
     | Ppat_alias (p, s) -> sub.pat sub p; iter_loc sub s
     | Ppat_constant _ -> ()
     | Ppat_interval _ -> ()
-    | Ppat_tuple (pl, _) -> List.iter (fun (_, p) -> sub.pat sub p) pl
+    | Ppat_tuple pl -> List.iter (sub.pat sub) pl
     | Ppat_construct (l, p) ->
         iter_loc sub l;
         iter_opt

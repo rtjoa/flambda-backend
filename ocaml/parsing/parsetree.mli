@@ -237,8 +237,9 @@ and pattern_desc =
 
            Other forms of interval are recognized by the parser
            but rejected by the type-checker. *)
-  | Ppat_tuple of (string option * pattern) list * closed_flag
+  | Ppat_tuple of pattern list
       (** [Ppat_tuple(pl, Closed)] represents
+      CR labeled tuples: move to jpat revert
            - [(P1, ..., Pn)]       when [pl] is [(None, P1);...;(None, Pn)]
            - [(L1:P1, ..., Ln:Pn)] when [pl] is
                                                [(Some L1, P1);...;(Some Ln, Pn)]
@@ -356,8 +357,9 @@ and expression_desc =
       (** [match E0 with P1 -> E1 | ... | Pn -> En] *)
   | Pexp_try of expression * case list
       (** [try E0 with P1 -> E1 | ... | Pn -> En] *)
-  | Pexp_tuple of (string option * expression) list
+  | Pexp_tuple of expression list
       (** [Pexp_tuple(el)] represents
+            CR: labeled tuples revert this comment, update Jexp_tuple
            - [(E1, ..., En)]
                when [el] is [(None, E1);...;(None, En)]
            - [(~L1:E1, ..., ~Ln:En)]
