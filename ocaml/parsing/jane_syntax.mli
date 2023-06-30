@@ -86,6 +86,27 @@ module Immutable_arrays : sig
     pattern -> Parsetree.pattern
 end
 
+(** The ASTs for labeled tuples.  When we merge this upstream, we'll merge
+    these into the existing [P{exp,pat}_tuple] constructors by adding a
+    [string option *] to each list element and a [closed_flag] to patterns. *)
+module Labeled_tuples : sig
+  type expression =
+    | Ltexp_tuple of (string option * Parsetree.expression) list
+    (** L1:E1, ..., Ln:En CR labeled tuples: update all these*)
+
+  type pattern =
+    | Ltpat_tuple of
+      (string option * Parsetree.pattern) list * Asttypes.closed_flag
+    (** L1,P1); ...; (Ln,Pn)), Closed/Open :] **)
+
+  val expr_of :
+    loc:Location.t -> attrs:Parsetree.attributes ->
+    expression -> Parsetree.expression
+  val pat_of :
+    loc:Location.t -> attrs:Parsetree.attributes ->
+    pattern -> Parsetree.pattern
+end
+
 (** The ASTs for [include functor].  When we merge this upstream, we'll merge
     these into the existing [P{sig,str}_include] constructors (similar to what
     we did with [T{sig,str}_include], but without depending on typechecking). *)
@@ -229,6 +250,7 @@ module Expression : sig
     | Jexp_comprehension    of Comprehensions.expression
     | Jexp_immutable_array  of Immutable_arrays.expression
     | Jexp_unboxed_constant of Unboxed_constants.expression
+    | Jexp_tuple           of Labeled_tuples.expression 
 
   include AST
     with type t := t * Parsetree.attributes
@@ -243,6 +265,7 @@ module Pattern : sig
   type t =
     | Jpat_immutable_array of Immutable_arrays.pattern
     | Jpat_unboxed_constant of Unboxed_constants.pattern
+    | Jpat_tuple           of Labeled_tuples.pattern
 
   include AST
     with type t := t * Parsetree.attributes

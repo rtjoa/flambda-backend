@@ -486,6 +486,7 @@ module E = struct
   module C = Jane_syntax.Comprehensions
   module IA = Jane_syntax.Immutable_arrays
   module UC = Jane_syntax.Unboxed_constants
+  module LT = Jane_syntax.Labeled_tuples
 
   let map_iterator sub : C.iterator -> C.iterator = function
     | Range { start; stop; direction } ->
@@ -524,12 +525,21 @@ module E = struct
     *)
     | Float _ | Integer _ as x -> x
 
+  let map_ltexp sub : LT.expression -> LT.expression = function
+    | Ltexp_tuple el ->
+      (* CR labeled tuples: Eventually we'll want mappers to be able to see the
+         labels. *)
+      Ltexp_tuple (List.map (map_snd (sub.expr sub)) el)
+
   let map_jst sub : Jane_syntax.Expression.t -> Jane_syntax.Expression.t =
     function
     | Jexp_comprehension x -> Jexp_comprehension (map_cexp sub x)
     | Jexp_immutable_array x -> Jexp_immutable_array (map_iaexp sub x)
     | Jexp_unboxed_constant x ->
         Jexp_unboxed_constant (map_unboxed_constant_exp sub x)
+    (* CR labeled tuples: Eventually we'll want mappers to be able to see the
+       labels. *)
+    | Jexp_tuple ltexp -> Jexp_tuple (map_ltexp sub ltexp)
 
   let map sub
         ({pexp_loc = loc; pexp_desc = desc; pexp_attributes = attrs} as exp) =
@@ -558,8 +568,7 @@ module E = struct
     | Pexp_match (e, pel) ->
         match_ ~loc ~attrs (sub.expr sub e) (sub.cases sub pel)
     | Pexp_try (e, pel) -> try_ ~loc ~attrs (sub.expr sub e) (sub.cases sub pel)
-    (* CR labeled tuples: Eventually we'll want mappers to be able to see the labels. *)
-    | Pexp_tuple el -> tuple ~loc ~attrs (List.map (map_snd (sub.expr sub)) el)
+    | Pexp_tuple el -> tuple ~loc ~attrs (List.map (sub.expr sub) el)
     | Pexp_construct (lid, arg) ->
         construct ~loc ~attrs (map_loc sub lid) (map_opt (sub.expr sub) arg)
     | Pexp_variant (lab, eo) ->
@@ -634,6 +643,7 @@ module P = struct
 
   module IA = Jane_syntax.Immutable_arrays
   module UC = Jane_syntax.Unboxed_constants
+  module LT = Jane_syntax.Labeled_tuples
 
   let map_iapat sub : IA.pattern -> IA.pattern = function
     | Iapat_immutable_array elts ->
@@ -645,10 +655,16 @@ module P = struct
     *)
     | Float _ | Integer _ as x -> x
 
+  let map_ltpat sub : LT.pattern -> LT.pattern = function
+    | Ltpat_tuple (pl, closed) ->
+      Ltpat_tuple
+        ((List.map (fun (label, p) -> label, sub.pat sub p) pl), closed)
+
   let map_jst sub : Jane_syntax.Pattern.t -> Jane_syntax.Pattern.t = function
     | Jpat_immutable_array x -> Jpat_immutable_array (map_iapat sub x)
     | Jpat_unboxed_constant x ->
         Jpat_unboxed_constant (map_unboxed_constant_pat sub x)
+    | Jpat_tuple ltpat -> Jpat_tuple (map_ltpat sub ltpat)
 
   let map sub
         ({ppat_desc = desc; ppat_loc = loc; ppat_attributes = attrs} as pat) =
@@ -668,10 +684,7 @@ module P = struct
     | Ppat_constant c -> constant ~loc ~attrs (sub.constant sub c)
     | Ppat_interval (c1, c2) ->
         interval ~loc ~attrs (sub.constant sub c1) (sub.constant sub c2)
-    | Ppat_tuple (pl, closed) ->
-        tuple ~loc ~attrs
-          (List.map (fun (label, p) -> label, sub.pat sub p) pl)
-          closed
+    | Ppat_tuple pl -> tuple ~loc ~attrs (List.map (sub.pat sub) pl)
     | Ppat_construct (l, p) ->
         construct ~loc ~attrs (map_loc sub l)
           (map_opt
@@ -996,12 +1009,12 @@ module PpxContext = struct
   let rec make_list f lst =
     match lst with
     | x :: rest ->
-      Exp.construct (lid "::") (Some (Exp.tuple [None, f x; None, make_list f rest]))
+      Exp.construct (lid "::") (Some (Exp.tuple [f x; make_list f rest]))
     | [] ->
       Exp.construct (lid "[]") None
 
   let make_pair f1 f2 (x1, x2) =
-    Exp.tuple [None, f1 x1; None, f2 x2]
+    Exp.tuple [f1 x1; f2 x2]
 
   let make_option f opt =
     match opt with
@@ -1067,7 +1080,7 @@ module PpxContext = struct
       and get_list elem = function
         | {pexp_desc =
              Pexp_construct ({txt = Longident.Lident "::"},
-                             Some {pexp_desc = Pexp_tuple [None, exp; None, rest]}) } ->
+                             Some {pexp_desc = Pexp_tuple [exp; rest]}) } ->
             elem exp :: get_list elem rest
         | {pexp_desc =
              Pexp_construct ({txt = Longident.Lident "[]"}, None)} ->
@@ -1075,7 +1088,7 @@ module PpxContext = struct
         | _ -> raise_errorf "Internal error: invalid [@@@ocaml.ppx.context \
                              { %s }] list syntax" name
       and get_pair f1 f2 = function
-        | {pexp_desc = Pexp_tuple [None, e1; None, e2]} ->
+        | {pexp_desc = Pexp_tuple [e1; e2]} ->
             (f1 e1, f2 e2)
         | _ -> raise_errorf "Internal error: invalid [@@@ocaml.ppx.context \
                              { %s }] pair syntax" name

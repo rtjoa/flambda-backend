@@ -192,8 +192,7 @@ let rec add_pattern bv pat =
   | Ppat_alias(p, _) -> add_pattern bv p
   | Ppat_interval _
   | Ppat_constant _ -> ()
-  | Ppat_tuple (labeled_pl, _) ->
-      List.iter (fun (_, p) -> add_pattern bv p) labeled_pl
+  | Ppat_tuple pl -> List.iter (add_pattern bv) pl
   | Ppat_construct(c, opt) ->
       add bv c;
       add_opt
@@ -217,6 +216,8 @@ and add_pattern_jane_syntax bv : Jane_syntax.Pattern.t -> _ = function
   | Jpat_immutable_array (Iapat_immutable_array pl) ->
       List.iter (add_pattern bv) pl
   | Jpat_unboxed_constant _ -> add_constant
+  | Jpat_tuple (Ltpat_tuple (labeled_pl, _)) ->
+      List.iter (fun (_, p) -> add_pattern bv p) labeled_pl
 
 let add_pattern bv pat =
   pattern_bv := bv;
@@ -240,7 +241,7 @@ let rec add_expr bv exp =
       add_expr bv e; List.iter (fun (_,e) -> add_expr bv e) el
   | Pexp_match(e, pel) -> add_expr bv e; add_cases bv pel
   | Pexp_try(e, pel) -> add_expr bv e; add_cases bv pel
-  | Pexp_tuple el -> List.iter (add_expr bv) (List.map snd el)
+  | Pexp_tuple el -> List.iter (add_expr bv) el
   | Pexp_construct(c, opte) -> add bv c; add_opt add_expr bv opte
   | Pexp_variant(_, opte) -> add_opt add_expr bv opte
   | Pexp_record(lblel, opte) ->
@@ -303,6 +304,7 @@ and add_expr_jane_syntax bv : Jane_syntax.Expression.t -> _ = function
   | Jexp_comprehension x -> add_comprehension_expr bv x
   | Jexp_immutable_array x -> add_immutable_array_expr bv x
   | Jexp_unboxed_constant _ -> add_constant
+  | Jexp_tuple ltexp -> add_labeled_tuple_expr bv ltexp
 
 and add_comprehension_expr bv : Jane_syntax.Comprehensions.expression -> _ =
   function
@@ -340,6 +342,10 @@ and add_comprehension_iterator bv : Jane_syntax.Comprehensions.iterator -> _ =
 and add_immutable_array_expr bv : Jane_syntax.Immutable_arrays.expression -> _ =
   function
   | Iaexp_immutable_array exprs -> List.iter (add_expr bv) exprs
+
+and add_labeled_tuple_expr bv : Jane_syntax.Labeled_tuples.expression -> _ =
+  function
+  | Ltexp_tuple el -> List.iter (add_expr bv) (List.map snd el)
 
 and add_cases bv cases =
   List.iter (add_case bv) cases

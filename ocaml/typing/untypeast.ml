@@ -350,8 +350,14 @@ let pattern : type k . _ -> k T.general_pattern -> _ = fun sub pat ->
         Ppat_alias (sub.pat sub pat, name)
     | Tpat_constant cst -> Ppat_constant (constant cst)
     | Tpat_tuple list ->
-        Ppat_tuple 
-          ((List.map (fun (label, p) -> label, (sub.pat sub p)) list), Closed)
+        if List.for_all (fun (label, _) -> Option.is_none label) list then
+          Ppat_tuple (List.map (fun (_, p) -> sub.pat sub p) list)
+        else
+          Jane_syntax.Labeled_tuples.pat_of
+            ~loc ~attrs:[]
+            (Ltpat_tuple
+              (List.map (fun (label, p) -> label, sub.pat sub p) list, Closed))
+          |> add_jane_syntax_attributes
     | Tpat_construct (lid, _, args, vto) ->
         let tyo =
           match vto with
@@ -366,12 +372,7 @@ let pattern : type k . _ -> k T.general_pattern -> _ = fun sub pat ->
           match args with
             []    -> None
           | [arg] -> Some (sub.pat sub arg)
-          | args  ->
-            Some
-              (Pat.tuple
-                ~loc
-                (List.map (fun arg -> None, sub.pat sub arg) args)
-                Closed)
+          | args  -> Some (Pat.tuple ~loc (List.map (sub.pat sub) args))
         in
         Ppat_construct (map_loc sub lid,
           match tyo, arg with
@@ -508,7 +509,12 @@ let expression sub exp =
     | Texp_try (exp, cases) ->
         Pexp_try (sub.expr sub exp, List.map (sub.case sub) cases)
     | Texp_tuple (list, _) ->
-        Pexp_tuple (List.map (fun (label, e) -> label, sub.expr sub e) list)
+        if (List.for_all Option.is_none (List.map fst list)) then
+          Pexp_tuple (List.map (fun (_, e) -> (sub.expr sub e)) list)
+        else
+          Jane_syntax.Labeled_tuples.expr_of ~loc ~attrs:[]
+            (Ltexp_tuple (List.map (fun (lbl, e) -> lbl, sub.expr sub e) list))
+          |> add_jane_syntax_attributes
     | Texp_construct (lid, _, args, _) ->
         Pexp_construct (map_loc sub lid,
           (match args with
@@ -516,7 +522,7 @@ let expression sub exp =
           | [ arg ] -> Some (sub.expr sub arg)
           | args ->
               Some
-                (Exp.tuple ~loc (List.map (fun e -> None, sub.expr sub e) args))
+                (Exp.tuple ~loc (List.map (sub.expr sub) args))
           ))
     | Texp_variant (label, expo) ->
         Pexp_variant (label, Option.map (fun (e, _) -> sub.expr sub e) expo)
