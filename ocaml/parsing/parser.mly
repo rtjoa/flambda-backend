@@ -3894,12 +3894,17 @@ tuple_type:
         { Ptyp_tuple (List.map (fun ty -> None, ty) tys) }
     )
       { $1 }
-  | TILDETILDELPAREN mktyp(
-      labeled_tys = separated_nontrivial_llist(STAR, labeled_atomic_type)
-        { Ptyp_tuple labeled_tys }
-    ) RPAREN
-      { $2 }
+  | mktyp(
+      arg_label
+      strict_tuple_type_no_leading_label
+        { assert false }
+    )
+      { $1 }
 ;
+
+%inline strict_tuple_type_no_leading_label:
+  | atomic_type STAR separated_nonempty_llist(STAR, labeled_atomic_type)
+    { $1, $3 }
 
 labeled_atomic_type:
   atomic_type
