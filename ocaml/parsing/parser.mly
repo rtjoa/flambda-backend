@@ -396,6 +396,10 @@ let arg_to_tuple_component loc (arg_label, body) =
 let args_to_tuple_components loc args =
   List.map (arg_to_tuple_component loc) args
 
+type label_tree =
+  | AtomicNode of core_type
+  | LabelledNode of string * label_tree
+
 (* Helper functions for desugaring array indexing operators *)
 type paren_kind = Paren | Brace | Bracket
 
@@ -1086,6 +1090,7 @@ The precedences must be listed from low to high.
 %nonassoc LBRACKETAT
 %right    COLONCOLON                    /* expr (e :: e :: e) */
 %left     INFIXOP2 PLUS PLUSDOT MINUS MINUSDOT PLUSEQ /* expr (e OP e OP e) */
+%nonassoc below_STAR
 %left     PERCENT INFIXOP3 STAR                 /* expr (e OP e OP e) */
 %right    INFIXOP4                      /* expr (e OP e OP e) */
 %nonassoc prec_unary_minus prec_unary_plus /* unary - */
@@ -2306,11 +2311,14 @@ class_type:
     class_signature
       { $1 }
   | mkcty(
-      label = arg_label
-      domain = tuple_type
+      // label = arg_label
+      // domain =
+        tuple_type
       MINUSGREATER
-      codomain = class_type
-        { Pcty_arrow(label, domain, codomain) }
+      // codomain =
+        class_type
+        // { Pcty_arrow(label, domain, codomain) }
+        { assert false }
     ) { $1 }
  ;
 class_signature:
@@ -3934,27 +3942,38 @@ tuple_type:
   | ty = atomic_type
     %prec below_HASH
       { ty }
-  | mktyp(
-      tys = separated_nontrivial_llist(STAR, atomic_type)
-        { Ptyp_tuple tys }
-    )
-      { $1 }
-  | TILDETILDELPAREN
-      tys = separated_nontrivial_llist(STAR, labeled_atomic_type)
-    RPAREN
-      { 
-        if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
-          mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
-        else 
-          ptyp_lttuple $sloc tys
-      }
+  // | mktyp(
+  //     tys = separated_nontrivial_llist(STAR, atomic_type)
+  //       { Ptyp_tuple tys }
+  //   )
+  //     { $1 }
+    // TILDETILDELPAREN
+  | 
+  // tys = 
+  separated_nontrivial_llist(STAR, labeled_atomic_type)
+    
+    { assert false }
+    // RPAREN
+      // { 
+        
+      //   if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
+      //     mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
+      //   else 
+      //     ptyp_lttuple $sloc tys
+      // }
 ;
 
 labeled_atomic_type:
-  atomic_type
-      { None, $1 }
-  | label = LIDENT COLON ty = atomic_type
-      { Some label, ty }
+  atomic_type %prec below_HASH
+      { AtomicNode $1 }
+  | 
+    label =
+    LIDENT COLON
+    ty =
+    labeled_atomic_type
+    %prec below_STAR
+      // { assert false }
+      { LabelledNode (label, ty) }
 ;
 
 (* Atomic types are the most basic level in the syntax of types.
