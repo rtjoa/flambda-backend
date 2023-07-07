@@ -1086,7 +1086,9 @@ The precedences must be listed from low to high.
 %nonassoc LBRACKETAT
 %right    COLONCOLON                    /* expr (e :: e :: e) */
 %left     INFIXOP2 PLUS PLUSDOT MINUS MINUSDOT PLUSEQ /* expr (e OP e OP e) */
+// %nonassoc below_STAR
 %left     PERCENT INFIXOP3 STAR                 /* expr (e OP e OP e) */
+// %nonassoc above_STAR
 %right    INFIXOP4                      /* expr (e OP e OP e) */
 %nonassoc prec_unary_minus prec_unary_plus /* unary - */
 %nonassoc prec_constant_constructor     /* cf. simple_expr (C versus C x) */
@@ -3939,23 +3941,30 @@ tuple_type:
         { Ptyp_tuple tys }
     )
       { $1 }
-  | TILDETILDELPAREN
-      tys = separated_nontrivial_llist(STAR, labeled_atomic_type)
-    RPAREN
-      { 
-        if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
-          mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
-        else 
-          ptyp_lttuple $sloc tys
-      }
 ;
+
+%inline strict_labeled_atomic_type:
+  | label = LIDENT COLON ty = atomic_type
+      { Some label, ty }
 
 labeled_atomic_type:
   atomic_type
       { None, $1 }
-  | label = LIDENT COLON ty = atomic_type
-      { Some label, ty }
+  | strict_labeled_atomic_type
+      { $1 }
 ;
+
+reversed_atll:
+  strict_labeled_atomic_type %prec below_HASH
+      { [$1] }
+  | atomic_type STAR strict_labeled_atomic_type
+      { [$3; None, $1]}
+  | separated_nontrivial_llist(STAR, atomic_type) STAR strict_labeled_atomic_type
+      { $3 :: List.map (fun x -> None, x) $1 }
+  | reversed_atll STAR labeled_atomic_type { $3 :: $1 }
+
+%inline atll:
+  reversed_atll { List.rev $1 }
 
 (* Atomic types are the most basic level in the syntax of types.
    Atomic types include:
@@ -3970,6 +3979,15 @@ atomic_type:
       { $2 }
   | LPAREN MODULE ext_attributes package_type RPAREN
       { wrap_typ_attrs ~loc:$sloc (reloc_typ ~loc:$sloc $4) $3 }
+  | LPAREN
+      tys = atll
+    RPAREN
+      { 
+        if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
+          mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
+        else 
+          ptyp_lttuple $sloc tys
+      }
   | mktyp( /* begin mktyp group */
       QUOTE ident
         { Ptyp_var $2 }
