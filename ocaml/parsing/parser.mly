@@ -3089,10 +3089,6 @@ fun_def:
   es = separated_nontrivial_llist(COMMA, expr)
     { es }
 ;
-// %inline labeled_simple_expr_comma_list:
-//   es = separated_nontrivial_llist(COMMA, labeled_simple_expr)
-//     { es }
-// ;
 
 %inline strict_labeled_expr:
   | LABEL simple_expr
@@ -3113,15 +3109,16 @@ fun_def:
       { $1 }
 ;
 
+// Length >= 2, at least one label
 reversed_labeled_expression_comma_list:
-  // Base case: length 2
+  // Base case: the next three rules are the ways to produce a list of length 2
   | strict_labeled_expr COMMA strict_labeled_expr
       { [$3; $1] }
   | expr COMMA strict_labeled_expr
       { [$3; None, $1]}
   | strict_labeled_expr COMMA expr
       { [None, $3; $1]}
-  // First label for length > 2
+  // One label, length > 2
   | separated_nontrivial_llist(COMMA, expr) COMMA strict_labeled_expr 
       { $3 :: List.map (fun x -> None, x) $1 }
   // Recursive case
@@ -3130,7 +3127,7 @@ reversed_labeled_expression_comma_list:
 ;
 
 %inline labeled_expression_comma_list:
-  | reversed_labeled_expression_comma_list { List.rev $1 }
+  | rev(reversed_labeled_expression_comma_list) { $1 }
 ;
 
 
@@ -3377,15 +3374,16 @@ strict_labeled_pattern:
       { $1 }
 ;
 
+// Length >= 2, at least one label
 reversed_labeled_pattern_comma_list:
-  // Base case: length 2
+  // Base case: the next three rules are the ways to produce a list of length 2
   | strict_labeled_pattern COMMA strict_labeled_pattern
       { [$3; $1] }
   | pattern COMMA strict_labeled_pattern
       { [$3; None, $1]}
   | strict_labeled_pattern COMMA pattern %prec below_COMMA
       { [None, $3; $1]}
-  // First label for length > 2
+  // One label, length > 2
   | pattern_comma_list(pattern) COMMA strict_labeled_pattern
       { $3 :: List.rev_map (fun x -> None, x) $1 }
   // Recursive case
@@ -3393,7 +3391,7 @@ reversed_labeled_pattern_comma_list:
       { $3 :: $1 }
 ;
 
-%inline labeled_tuple_pattern:
+labeled_tuple_pattern:
   | rev(reversed_labeled_pattern_comma_list)
       { $1, Closed }
   | rev(reversed_labeled_pattern_comma_list) COMMA DOTDOT
