@@ -3350,7 +3350,7 @@ simple_delimited_pattern:
 pattern_comma_list(self):
     pattern_comma_list(self) COMMA pattern      { $3 :: $1 }
   | self COMMA pattern                          { [$3; $1] }
-  // | self COMMA error                            { expecting $loc($3) "pattern" }
+  | self COMMA error                            { expecting $loc($3) "pattern" }
 ;
 
 strict_labeled_pattern:
@@ -3381,13 +3381,13 @@ reversed_labeled_pattern_comma_list:
       { [$3; $1] }
   | pattern COMMA strict_labeled_pattern
       { [$3; None, $1]}
-  | strict_labeled_pattern COMMA pattern %prec below_COMMA
+  | strict_labeled_pattern COMMA pattern %prec below_HASH
       { [None, $3; $1]}
   // One label, length > 2
   | pattern_comma_list(pattern) COMMA strict_labeled_pattern
       { $3 :: List.rev_map (fun x -> None, x) $1 }
   // Recursive case
-  | reversed_labeled_pattern_comma_list COMMA labeled_pattern %prec below_COMMA
+  | reversed_labeled_pattern_comma_list COMMA labeled_pattern %prec below_HASH
       { $3 :: $1 }
 ;
 
@@ -3396,7 +3396,7 @@ labeled_tuple_pattern:
       { $1, Closed }
   | rev(reversed_labeled_pattern_comma_list) COMMA DOTDOT
       { $1, Open }
-    // Partial patterns are allowed to be length-one
+  // Partial patterns are allowed to be length-one
   | labeled_pattern COMMA DOTDOT
       { [$1], Open }
 
