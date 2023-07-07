@@ -1046,6 +1046,8 @@ conflicts.
 The precedences must be listed from low to high.
 */
 
+%nonassoc below_DOTDOT
+%nonassoc DOTDOT
 %nonassoc IN
 %nonassoc below_SEMI
 %nonassoc SEMI                          /* below EQUAL ({lbl=...; lbl=...}) */
@@ -1060,6 +1062,7 @@ The precedences must be listed from low to high.
 %nonassoc AS
 %left     BAR                           /* pattern (p|p|p) */
 %nonassoc below_COMMA
+// %nonassoc above_below_COMMA
 %left     COMMA                         /* expr/expr_comma_list (e,e,e) */
 %nonassoc below_FUNCTOR                 /* include M */
 %nonassoc FUNCTOR                       /* include functor M */
@@ -3279,7 +3282,7 @@ simple_pattern_not_ident:
           $3 }
   | mkpat(simple_pattern_not_ident_)
       { $1 }
-  | signed_constant { Constant.to_pattern $1 ~loc:$sloc }
+  | signed_constant %prec below_DOTDOT { Constant.to_pattern $1 ~loc:$sloc }
 ;
 %inline simple_pattern_not_ident_:
   | UNDERSCORE
@@ -3375,30 +3378,22 @@ strict_labeled_pattern:
 ;
 
 // Length >= 2, at least one label
-reversed_labeled_pattern_comma_list:
-  // Base case: the next three rules are the ways to produce a list of length 2
-  | strict_labeled_pattern COMMA strict_labeled_pattern
-      { [$3; $1] }
-  | pattern COMMA strict_labeled_pattern
-      { [$3; None, $1]}
-  | strict_labeled_pattern COMMA pattern %prec below_COMMA
-      { [None, $3; $1]}
-  // One label, length > 2
-  | pattern_comma_list(pattern) COMMA strict_labeled_pattern
-      { $3 :: List.rev_map (fun x -> None, x) $1 }
-  // Recursive case
-  | reversed_labeled_pattern_comma_list COMMA labeled_pattern %prec below_COMMA
-      { $3 :: $1 }
-;
-
+// EXCEPT for the case of a strict labeled pattern an followed by 1 or more unlabeled patterns
 labeled_tuple_pattern:
-  | rev(reversed_labeled_pattern_comma_list)
-      { $1, Closed }
-  | rev(reversed_labeled_pattern_comma_list) COMMA DOTDOT
-      { $1, Open }
-    // Partial patterns are allowed to be length-one
-  | labeled_pattern COMMA DOTDOT
+  // Base case: the next three rules are the ways to produce a list of length 2
+  | labeled_pattern DOTDOT
       { [$1], Open }
+  | strict_labeled_pattern COMMA strict_labeled_pattern
+      { [$1; $3], Closed }
+  | pattern COMMA strict_labeled_pattern
+      { [None, $1; $3], Closed}
+  | strict_labeled_pattern COMMA pattern_comma_list(pattern)
+      { $1 :: List.rev_map (fun x -> None, x) $3, Closed }
+  // Recursive case
+  | labeled_pattern COMMA labeled_tuple_pattern
+      { let l, closed = $3 in
+        $1 :: l, closed }
+;
 
 %inline pattern_semi_list:
   ps = separated_or_terminated_nonempty_list(SEMI, pattern)
