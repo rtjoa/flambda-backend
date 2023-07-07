@@ -1073,6 +1073,7 @@ The precedences must be listed from low to high.
 %nonassoc LBRACKETAT
 %right    COLONCOLON                    /* expr (e :: e :: e) */
 %left     INFIXOP2 PLUS PLUSDOT MINUS MINUSDOT PLUSEQ /* expr (e OP e OP e) */
+// %nonassoc below_STAR
 %left     PERCENT INFIXOP3 STAR                 /* expr (e OP e OP e) */
 %right    INFIXOP4                      /* expr (e OP e OP e) */
 %nonassoc prec_unary_minus prec_unary_plus /* unary - */
@@ -3946,6 +3947,33 @@ strict_function_type:
               $loc(ret_local)) }
     )
     { $1 }
+  | mktyp(
+      label_local_domain = labeled_function_type_lhs
+      MINUSGREATER
+      codomain = strict_function_type
+        { 
+          let label, local, domain, _label_loc, local_loc, domain_end =
+            label_local_domain in
+          let domain = extra_rhs_core_type domain ~pos:domain_end in
+          Ptyp_arrow(label, mktyp_local_if local domain local_loc, codomain) }
+    )
+    { $1 }
+  | mktyp(
+      label_local_domain = labeled_function_type_lhs
+      MINUSGREATER
+      ret_local = optional_local
+      codomain = tuple_type
+      %prec MINUSGREATER
+        { 
+          let label, arg_local, domain, _label_loc, arg_local_loc, domain_end =
+            label_local_domain in
+          let domain = extra_rhs_core_type domain ~pos:domain_end in
+          Ptyp_arrow(label,
+            mktyp_local_if arg_local domain arg_local_loc,
+            mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
+              $loc(ret_local)) }
+    )
+    { $1 }
 ;
 %inline arg_label:
   | label = optlabel
@@ -3981,7 +4009,7 @@ tuple_type:
     %prec below_HASH
       { ty }
   | mktyp(
-      tys = separated_nontrivial_llist(STAR, atomic_type)
+      tys = separated_nontrivial_rlist(STAR, atomic_type)
         { Ptyp_tuple tys }
     )
       { $1 }
@@ -3996,11 +4024,68 @@ tuple_type:
       }
 ;
 
-labeled_atomic_type:
+separated_nontrivial_rlist(separator, X):
+  | X separator X { [$1; $3] }
+  | X separator separated_nontrivial_rlist(separator, X) {$1 :: $3}
+
+
+%inline strict_labeled_atomic_type:
+  | label = LIDENT COLON ty = atomic_type
+      { Some label, ty }
+
+%inline labeled_atomic_type:
   atomic_type
       { None, $1 }
   | label = LIDENT COLON ty = atomic_type
       { Some label, ty }
+;
+
+// At least one label, NOT starting with a label
+reversed_type_atll:
+  // Base case: length 2
+  // | strict_labeled_atomic_type STAR strict_labeled_atomic_type
+  //     { [$3; $1] }
+  | atomic_type STAR strict_labeled_atomic_type
+      { [$3; None, $1]}
+  // | strict_labeled_atomic_type STAR atomic_type %prec below_HASH
+  //     { [None, $3; $1]}
+  // First label for length > 2
+  | separated_nontrivial_llist(STAR, atomic_type) STAR
+        strict_labeled_atomic_type
+      { $3 :: (List.map (fun x -> None, x) $1) }
+  // Recursive case
+  | reversed_type_atll STAR labeled_atomic_type { $3 :: $1 }
+
+extra_labeled_types:
+  | STAR labeled_atomic_type extra_labeled_types
+    {
+      $2 :: $3
+    }
+  | STAR labeled_atomic_type
+    { [$2] }
+
+%inline opt_extra_labeled_types:
+  | /* empty */
+    { [] }
+  | extra_labeled_types
+    { $1 }
+
+%inline type_atll:
+  // Covers (no label) 
+  | reversed_type_atll
+      { List.rev $1 }
+
+  // One label total, starting with a label
+  // | labeled_function_type_lhs
+  //     { labeled_function_type_lhs_to_tuple $1 }
+  
+  // Two labels total, starting and ending with a label
+  // | labeled_function_type_lhs STAR strict_labeled_atomic_type 
+  //     { (labeled_function_type_lhs_to_tuple $1) @ [$3] }
+
+  // Covers both (2 labels total, starting with but not ending) and (> 2 labels)
+  | labeled_function_type_lhs STAR strict_labeled_atomic_type opt_extra_labeled_types
+      { (labeled_function_type_lhs_to_tuple $1) @ [$3] @ $4 }
 ;
 
 (* Atomic types are the most basic level in the syntax of types.
