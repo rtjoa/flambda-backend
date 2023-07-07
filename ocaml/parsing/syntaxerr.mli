@@ -30,6 +30,7 @@ type error =
   | Ill_formed_ast of Location.t * string
   | Labeled_bigarray_index of Location.t
   | Optional_tuple_component of Location.t
+  | Singleton_labeled_tuple_type of Location.t
   | Invalid_package_type of Location.t * string
 
 exception Error of error

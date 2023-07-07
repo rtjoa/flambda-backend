@@ -144,6 +144,9 @@ let prepare_error err =
   | Optional_tuple_component loc ->
       Location.errorf ~loc
         "Tuple components cannot be optional"
+  | Singleton_labeled_tuple_type loc ->
+      Location.errorf ~loc
+        "Labeled tuple types must have length 2 or greater"
   | Invalid_package_type (loc, s) ->
       Location.errorf ~loc "invalid package type: %s" s
 
