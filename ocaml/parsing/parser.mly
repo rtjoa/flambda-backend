@@ -383,18 +383,31 @@ let expecting loc nonterm =
 let not_expecting loc nonterm =
     raise Syntaxerr.(Error(Not_expecting(make_loc loc, nonterm)))
 
-let arg_to_tuple_component loc (arg_label, body) =
-  let label =
-    match arg_label with
-    | Nolabel -> None
-    | Optional _ ->
-        raise Syntaxerr.(Error(Optional_tuple_component(make_loc loc)))
-    | Labelled s -> Some s
-  in
-  label, body
+let get_labeled_tl label_loc typ =
+  match Jane_syntax.Core_type.of_ast typ with
+  | Some (Jtyp_tuple (Lttyp_tuple tl), _attrs) -> tl
+  | Some _ -> . (* not_expecting label_loc "CR labeled tuples: better erro" *)
+  | None ->
+  match typ.ptyp_desc with
+  | Ptyp_tuple tl -> List.map (fun x -> None, x) tl
+  | _ -> not_expecting label_loc "CR labeled tuples: better erro"
 
-let args_to_tuple_components loc args =
-  List.map (arg_to_tuple_component loc) args
+let labeled_function_type_lhs_to_tuple
+  (label, local, domain, label_loc, local_loc, _domain_end)
+  : (string option * Parsetree.core_type) list =
+  match local with
+  | true -> not_expecting local_loc "local"
+  | false ->
+  match label with
+  | Nolabel -> assert false
+  | Optional _ -> not_expecting label_loc "optional label"
+  | Labelled label ->
+  (* CR labeled tuples: better loc *)
+  let labeled_tl = get_labeled_tl label_loc domain in
+  match labeled_tl with
+  | [_] | [] -> assert false
+  | (Some _, _) :: _ -> not_expecting local_loc "CR labeled tuples: extra label"
+  | (None, x) :: xs -> (Some label, x) :: xs
 
 (* Helper functions for desugaring array indexing operators *)
 type paren_kind = Paren | Brace | Bracket
@@ -1086,7 +1099,7 @@ The precedences must be listed from low to high.
 %nonassoc LBRACKETAT
 %right    COLONCOLON                    /* expr (e :: e :: e) */
 %left     INFIXOP2 PLUS PLUSDOT MINUS MINUSDOT PLUSEQ /* expr (e OP e OP e) */
-// %nonassoc below_STAR
+%nonassoc below_STAR
 %left     PERCENT INFIXOP3 STAR                 /* expr (e OP e OP e) */
 // %nonassoc above_STAR
 %right    INFIXOP4                      /* expr (e OP e OP e) */
@@ -2596,16 +2609,15 @@ expr:
   | mkexp(expr_)
       { $1 }
   (* CR labeled tuples: Merge the below two cases *)
-  | TILDETILDELPAREN args = labeled_simple_expr_comma_list RPAREN
+  | LPAREN args = expr_atll RPAREN
       { 
         let labels, components = List.split args in
-        if (List.for_all (fun lbl -> lbl = Nolabel) labels) then
-          mkexp ~loc:$sloc
-            (Pexp_tuple(components))
+        if (List.for_all (Option.is_none) labels) then
+          mkexp ~loc:$sloc (Pexp_tuple(components))
         else
           Jane_syntax.Labeled_tuples.expr_of
             ~loc:(make_loc $sloc) ~attrs:[]
-            (Ltexp_tuple(args_to_tuple_components $loc(args) args))
+            (Ltexp_tuple(args))
       }
   | expr_comma_list %prec below_COMMA
       { mkexp ~loc:$sloc (Pexp_tuple $1) }
@@ -3105,9 +3117,44 @@ fun_def:
   es = separated_nontrivial_llist(COMMA, expr)
     { es }
 ;
-%inline labeled_simple_expr_comma_list:
-  es = separated_nontrivial_llist(COMMA, labeled_simple_expr)
-    { es }
+
+%inline strict_labeled_expr:
+  | LABEL simple_expr
+      { Some $1, $2 }
+  | TILDE label = LIDENT
+      { let loc = $loc(label) in
+        Some label, mkexpvar ~loc label }
+  | TILDE LPAREN label = LIDENT ty = type_constraint RPAREN
+      { Some label,
+        mkexp_constraint
+          ~loc:($startpos($2), $endpos) (mkexpvar ~loc:$loc(label) label) ty }
+;
+
+%inline labeled_expr:
+  | expr
+      { None, $1 }
+  | strict_labeled_expr
+      { $1 }
+;
+
+reversed_expr_atll:
+  // Base case: length 2
+  | strict_labeled_expr COMMA strict_labeled_expr
+      { [$3; $1] }
+  | expr COMMA strict_labeled_expr
+      { [$3; None, $1]}
+  | strict_labeled_expr COMMA expr
+      { [None, $3; $1]}
+  // First label for length > 2
+  | separated_nontrivial_llist(COMMA, expr) COMMA strict_labeled_expr 
+      { $3 :: List.map (fun x -> None, x) $1 }
+  // Recursive case
+  | reversed_expr_atll COMMA labeled_expr
+      { $3 :: $1 }
+;
+
+%inline expr_atll:
+  | reversed_expr_atll { List.rev $1 }
 ;
 
 record_expr_content:
@@ -3878,39 +3925,78 @@ function_type:
       { ty }
 ;
 
+labeled_function_type_lhs:
+  | label = strict_arg_label
+    local = optional_local
+    domain = param_type
+      { label, local, domain, $loc(label), $loc(local), $endpos(domain) }
+;
+
 strict_function_type:
   | mktyp(
-      label = arg_label
+      // label = arg_label
       local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       codomain = strict_function_type
-        { Ptyp_arrow(label, mktyp_local_if local domain $loc(local), codomain) }
+        { Ptyp_arrow(Nolabel, mktyp_local_if local domain $loc(local), codomain) }
     )
     { $1 }
   | mktyp(
-      label = arg_label
+      // label = arg_label
       arg_local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       ret_local = optional_local
       codomain = tuple_type
       %prec MINUSGREATER
-        { Ptyp_arrow(label,
+        { Ptyp_arrow(Nolabel,
             mktyp_local_if arg_local domain $loc(arg_local),
             mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
               $loc(ret_local)) }
     )
     { $1 }
+  | mktyp(
+      label_local_domain = labeled_function_type_lhs
+      MINUSGREATER
+      codomain = strict_function_type
+        { 
+          let label, local, domain, _label_loc, local_loc, domain_end =
+            label_local_domain in
+          let domain = extra_rhs_core_type domain ~pos:domain_end in
+          Ptyp_arrow(label, mktyp_local_if local domain local_loc, codomain) }
+    )
+    { $1 }
+  // | mktyp(
+  //     label = arg_label
+  //     arg_local = optional_local
+  //     domain = extra_rhs(param_type)
+  //     MINUSGREATER
+  //     ret_local = optional_local
+  //     codomain = tuple_type
+  //     %prec MINUSGREATER
+  //       { Ptyp_arrow(label,
+  //           mktyp_local_if arg_local domain $loc(arg_local),
+  //           mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
+  //             $loc(ret_local)) }
+  //   )
+  //   { $1 }
 ;
-%inline arg_label:
+
+%inline strict_arg_label:
   | label = optlabel
       { Optional label }
   | label = LIDENT COLON
       { Labelled label }
+;
+
+%inline arg_label:
+  | strict_arg_label
+      { $1 }
   | /* empty */
       { Nolabel }
 ;
+
 %inline optional_local:
   | /* empty */
     { false }
@@ -3939,7 +4025,7 @@ tuple_type:
   | mktyp(
       tys = separated_nontrivial_llist(STAR, atomic_type)
         { Ptyp_tuple tys }
-    )
+    ) // %prec below_STAR
       { $1 }
 ;
 
@@ -3947,25 +4033,40 @@ tuple_type:
   | label = LIDENT COLON ty = atomic_type
       { Some label, ty }
 
-labeled_atomic_type:
+%inline labeled_atomic_type:
   atomic_type
       { None, $1 }
   | strict_labeled_atomic_type
       { $1 }
 ;
 
-reversed_atll:
-  strict_labeled_atomic_type %prec below_HASH
-      { [$1] }
+// At least one label, NOT starting with a label
+reversed_type_atll:
+  // Base case: length 2
+  // | strict_labeled_atomic_type STAR strict_labeled_atomic_type
+  //     { [$3; $1] }
   | atomic_type STAR strict_labeled_atomic_type
       { [$3; None, $1]}
+  // | strict_labeled_atomic_type STAR atomic_type %prec below_HASH
+  //     { [None, $3; $1]}
+  // First label for length > 2
   | separated_nontrivial_llist(STAR, atomic_type) STAR strict_labeled_atomic_type
-      { $3 :: List.map (fun x -> None, x) $1 }
-  | reversed_atll STAR labeled_atomic_type { $3 :: $1 }
+      { $3 :: (List.map (fun x -> None, x) $1) }
+  // Recursive case
+  | reversed_type_atll STAR labeled_atomic_type { $3 :: $1 }
 
-%inline atll:
-  reversed_atll { List.rev $1 }
+%inline type_atll:
+  | reversed_type_atll
+      { List.rev $1 }
+  //  One label total, starting with a label
+  | labeled_function_type_lhs
+      { labeled_function_type_lhs_to_tuple $1 }
+  
+  | labeled_function_type_lhs STAR strict_labeled_atomic_type 
+      { (labeled_function_type_lhs_to_tuple $1) @ [$3] }
 
+  | labeled_function_type_lhs STAR strict_labeled_atomic_type STAR separated_nonempty_list(STAR, labeled_atomic_type)
+      { (labeled_function_type_lhs_to_tuple $1) @ [$3] @ $5 }
 (* Atomic types are the most basic level in the syntax of types.
    Atomic types include:
    - types between parentheses:           (int -> int)
@@ -3980,7 +4081,7 @@ atomic_type:
   | LPAREN MODULE ext_attributes package_type RPAREN
       { wrap_typ_attrs ~loc:$sloc (reloc_typ ~loc:$sloc $4) $3 }
   | LPAREN
-      tys = atll
+      tys = type_atll
     RPAREN
       { 
         if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
