@@ -78,9 +78,9 @@ val f : foo:int * bar:int -> int = <fun>
 
 let f = fun (~foo, ~bar:bar) : (foo:int * bar:int) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 58-72:
-1 | let f = fun (~foo, ~bar:bar) : (~~(foo:int * bar:int)) -> foo * 10 + bar
-                                                              ^^^^^^^^^^^^^^
+Line 1, characters 54-68:
+1 | let f = fun (~foo, ~bar:bar) : (foo:int * bar:int) -> foo * 10 + bar
+                                                          ^^^^^^^^^^^^^^
 Error: This expression has type int but an expression was expected of type
          foo:int * bar:int
 |}]
@@ -88,9 +88,9 @@ Error: This expression has type int but an expression was expected of type
 (* Missing label *)
 let f : (int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 39-55:
-1 | let f : ~~(int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
-                                           ^^^^^^^^^^^^^^^^
+Line 1, characters 37-53:
+1 | let f : (int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
+                                         ^^^^^^^^^^^^^^^^
 Error: This pattern was expected to match values of type int * bar:int,
        but it is missing a unlabeled component.
        Hint: use .. to ignore some components.
@@ -98,9 +98,9 @@ Error: This pattern was expected to match values of type int * bar:int,
 
 let f = fun (~foo, ~bar:bar) : (foo:int * int) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 54-68:
-1 | let f = fun (~foo, ~bar:bar) : (~~(foo:int * int)) -> foo * 10 + bar
-                                                          ^^^^^^^^^^^^^^
+Line 1, characters 50-64:
+1 | let f = fun (~foo, ~bar:bar) : (foo:int * int) -> foo * 10 + bar
+                                                      ^^^^^^^^^^^^^^
 Error: This expression has type int but an expression was expected of type
          foo:int * int
 |}]
@@ -109,9 +109,9 @@ Error: This expression has type int but an expression was expected of type
 let f : (foo:int * foo:int) -> int =
    fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
-Line 2, characters 7-25:
-2 |    fun ((~foo, ~bar:bar)) -> foo * 10 + bar
-           ^^^^^^^^^^^^^^^^^^
+Line 2, characters 7-23:
+2 |    fun (~foo, ~bar:bar) -> foo * 10 + bar
+           ^^^^^^^^^^^^^^^^
 Error: This pattern was expected to match values of type foo:int * foo:int,
        but it is missing a component with label foo.
        Hint: use .. to ignore some components.
@@ -139,7 +139,7 @@ val f : x:int * int -> int = <fun>
 let f ((~x,y) : (int * int)) : int = x + y
 [%%expect{|
 Line 1, characters 7-13:
-1 | let f ((~x,y) : ~~(int * int)) : int = x + y
+1 | let f ((~x,y) : (int * int)) : int = x + y
            ^^^^^^
 Error: This pattern was expected to match values of type int * int,
        but it is missing a unlabeled component.

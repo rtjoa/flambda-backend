@@ -33,27 +33,27 @@ val x : x:int * int = (~x:1, 2)
 (* Incorrect annotations *)
 let (x : (int * int)) = (~x:1, 2)
 [%%expect{|
-Line 1, characters 26-35:
+Line 1, characters 24-33:
 1 | let (x : (int * int)) = (~x:1, 2)
-                              ^^^^^^^^^
+                            ^^^^^^^^^
 Error: This expression has type x:'a * 'b
        but an expression was expected of type int * int
 |}]
 
 let (x : (x:string * int)) = (~x:1, 2)
 [%%expect{|
-Line 1, characters 35-36:
+Line 1, characters 33-34:
 1 | let (x : (x:string * int)) = (~x:1, 2)
-                                       ^
+                                     ^
 Error: This expression has type int but an expression was expected of type
          string
 |}]
 
 let (x : (int * y:int)) = (~x:1, 2)
 [%%expect{|
-Line 1, characters 28-37:
+Line 1, characters 26-35:
 1 | let (x : (int * y:int)) = (~x:1, 2)
-                                ^^^^^^^^^
+                              ^^^^^^^^^
 Error: This expression has type x:'a * 'b
        but an expression was expected of type int * y:int
 |}]
@@ -217,9 +217,9 @@ val barfoo : swapped:(a:string * b:string) * same:bool =
 (* Bad type *)
 let x: (string * a:int * int) = (~lbl:5, "hi")
 [%%expect{|
-Line 1, characters 34-48:
+Line 1, characters 32-46:
 1 | let x: (string * a:int * int) = (~lbl:5, "hi")
-                                      ^^^^^^^^^^^^^^
+                                    ^^^^^^^^^^^^^^
 Error: This expression has type lbl:'a * 'b
        but an expression was expected of type string * a:int * int
 |}]
