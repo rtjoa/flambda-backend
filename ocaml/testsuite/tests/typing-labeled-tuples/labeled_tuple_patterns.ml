@@ -76,7 +76,7 @@ let f : (foo:int * bar:int) -> int =
 val f : foo:int * bar:int -> int = <fun>
 |}]
 
-let f = fun (~foo, ~bar:bar) : (foo:int * bar:int)) -> foo * 10 + bar
+let f = fun (~foo, ~bar:bar) : (foo:int * bar:int) -> foo * 10 + bar
 [%%expect{|
 Line 1, characters 58-72:
 1 | let f = fun (~foo, ~bar:bar) : (~~(foo:int * bar:int)) -> foo * 10 + bar
