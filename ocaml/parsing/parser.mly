@@ -3932,23 +3932,21 @@ labeled_function_type_lhs:
 
 strict_function_type:
   | mktyp(
-      label = arg_label
       local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       codomain = strict_function_type
-        { Ptyp_arrow(label, mktyp_local_if local domain $loc(local), codomain) }
+        { Ptyp_arrow(Nolabel, mktyp_local_if local domain $loc(local), codomain) }
     )
     { $1 }
   | mktyp(
-      label = arg_label
       arg_local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       ret_local = optional_local
       codomain = tuple_type
       %prec MINUSGREATER
-        { Ptyp_arrow(label,
+        { Ptyp_arrow(Nolabel,
             mktyp_local_if arg_local domain $loc(arg_local),
             mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
               $loc(ret_local)) }
