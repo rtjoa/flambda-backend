@@ -4020,15 +4020,15 @@ tuple_type:
     %prec below_HASH
       { ty }
   | mktyp(
-      tys = separated_nontrivial_rlist(STAR, atomic_type)
+      tys = separated_nontrivial_llist(STAR, atomic_type)
         { Ptyp_tuple tys }
     )
       { $1 }
 ;
 
-separated_nontrivial_rlist(separator, X):
-  | X separator X { [$1; $3] }
-  | X separator separated_nontrivial_rlist(separator, X) {$1 :: $3}
+/* separated_nontrivial_rlist(separator, X): */
+/*   | X separator X { [$1; $3] } */
+/*   | X separator separated_nontrivial_rlist(separator, X) {$1 :: $3} */
 
 %inline strict_labeled_atomic_type:
   | label = LIDENT COLON ty = atomic_type
