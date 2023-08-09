@@ -885,7 +885,6 @@ let unboxed_float_type sloc tys =
    string that will not trigger a syntax error; see how [not_expecting]
    is used in the definition of [type_variance]. */
 
-%token TILDETILDELPAREN       "~~(" (* CR labeled tuples: remove *)
 %token AMPERAMPER             "&&"
 %token AMPERSAND              "&"
 %token AND                    "and"
@@ -3924,6 +3923,13 @@ function_type:
       { ty }
 ;
 
+labeled_function_type_lhs:
+  | label = strict_arg_label
+    local = optional_local
+    domain = param_type
+    { label, local, domain, $loc(label), $loc(local), $endpos(domain) }
+;
+
 strict_function_type:
   | mktyp(
       label = arg_label
@@ -3976,14 +3982,20 @@ strict_function_type:
     )
     { $1 }
 ;
-%inline arg_label:
+%inline strict_arg_label:
   | label = optlabel
-      { Optional label }
+    { Optional label }
   | label = LIDENT COLON
-      { Labelled label }
-  | /* empty */
-      { Nolabel }
+    { Labelled label }
 ;
+
+%inline arg_label:
+  | strict_arg_label
+    { $1 }
+  | /* empty */
+    { Nolabel }
+;
+
 %inline optional_local:
   | /* empty */
     { false }
@@ -4015,6 +4027,10 @@ tuple_type:
     )
       { $1 }
 ;
+
+separated_nontrivial_rlist(separator, X):
+  | X separator X { [$1; $3] }
+  | X separator separated_nontrivial_rlist(separator, X) {$1 :: $3}
 
 %inline strict_labeled_atomic_type:
   | label = LIDENT COLON ty = atomic_type
