@@ -1072,9 +1072,7 @@ The precedences must be listed from low to high.
 %nonassoc LBRACKETAT
 %right    COLONCOLON                    /* expr (e :: e :: e) */
 %left     INFIXOP2 PLUS PLUSDOT MINUS MINUSDOT PLUSEQ /* expr (e OP e OP e) */
-// %nonassoc below_STAR
 %left     PERCENT INFIXOP3 STAR                 /* expr (e OP e OP e) */
-// %nonassoc above_STAR
 %right    INFIXOP4                      /* expr (e OP e OP e) */
 %nonassoc prec_unary_minus prec_unary_plus /* unary - */
 %nonassoc prec_constant_constructor     /* cf. simple_expr (C versus C x) */
@@ -4025,10 +4023,6 @@ tuple_type:
     )
       { $1 }
 ;
-
-/* separated_nontrivial_rlist(separator, X): */
-/*   | X separator X { [$1; $3] } */
-/*   | X separator separated_nontrivial_rlist(separator, X) {$1 :: $3} */
 
 %inline strict_labeled_atomic_type:
   | label = LIDENT COLON ty = atomic_type
