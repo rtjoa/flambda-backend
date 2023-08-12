@@ -3921,63 +3921,33 @@ function_type:
       { ty }
 ;
 
-labeled_function_type_lhs:
-  | label = strict_arg_label
-    local = optional_local
-    domain = param_type
-    { label, local, domain, $loc(label), $loc(local), $endpos(domain) }
-;
 
 strict_function_type:
   | mktyp(
+      label = arg_label
       local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       codomain = strict_function_type
-        { Ptyp_arrow(Nolabel, mktyp_local_if local domain $loc(local), codomain) }
+        { Ptyp_arrow(label, mktyp_local_if local domain $loc(local), codomain) }
     )
     { $1 }
   | mktyp(
+      label = arg_label
       arg_local = optional_local
       domain = extra_rhs(param_type)
       MINUSGREATER
       ret_local = optional_local
       codomain = tuple_type
       %prec MINUSGREATER
-        { Ptyp_arrow(Nolabel,
+        { Ptyp_arrow(label,
             mktyp_local_if arg_local domain $loc(arg_local),
             mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
               $loc(ret_local)) }
     )
     { $1 }
-  | mktyp(
-      label_local_domain = labeled_function_type_lhs
-      MINUSGREATER
-      codomain = strict_function_type
-        { 
-          let label, local, domain, _label_loc, local_loc, domain_end =
-            label_local_domain in
-          let domain = extra_rhs_core_type domain ~pos:domain_end in
-          Ptyp_arrow(label, mktyp_local_if local domain local_loc, codomain) }
-    )
-    { $1 }
-  | mktyp(
-      label_local_domain = labeled_function_type_lhs
-      MINUSGREATER
-      ret_local = optional_local
-      codomain = tuple_type
-      %prec MINUSGREATER
-        { 
-          let label, arg_local, domain, _label_loc, arg_local_loc, domain_end =
-            label_local_domain in
-          let domain = extra_rhs_core_type domain ~pos:domain_end in
-          Ptyp_arrow(label,
-            mktyp_local_if arg_local domain arg_local_loc,
-            mktyp_local_if ret_local (maybe_curry_typ codomain $loc(codomain))
-              $loc(ret_local)) }
-    )
-    { $1 }
 ;
+
 %inline strict_arg_label:
   | label = optlabel
     { Optional label }
@@ -4035,17 +4005,23 @@ labeled_atomic_type:
       { $1 }
 ;
 
-reversed_atll:
-  strict_labeled_atomic_type %prec below_HASH
+reversed_labeled_type_list:
+  (* 0 unlabeled types before the first label *)
+  | strict_labeled_atomic_type %prec below_HASH
       { [$1] }
+  (* 1 unlabeled type before the first label *)
   | atomic_type STAR strict_labeled_atomic_type
       { [$3; None, $1]}
+  (* 2+ unlabeled types before the first label *)
   | separated_nontrivial_llist(STAR, atomic_type) STAR strict_labeled_atomic_type
       { $3 :: List.map (fun x -> None, x) $1 }
-  | reversed_atll STAR labeled_atomic_type { $3 :: $1 }
+  (* Once we have a label, we can append either *)
+  | reversed_labeled_type_list STAR labeled_atomic_type
+      { $3 :: $1 }
 
-%inline atll:
-  reversed_atll { List.rev $1 }
+%inline labeled_type_list:
+  | rev(reversed_labeled_type_list)
+      { $1 }
 
 (* Atomic types are the most basic level in the syntax of types.
    Atomic types include:
@@ -4061,12 +4037,12 @@ atomic_type:
   | LPAREN MODULE ext_attributes package_type RPAREN
       { wrap_typ_attrs ~loc:$sloc (reloc_typ ~loc:$sloc $4) $3 }
   | LPAREN
-      tys = atll
+      tys = labeled_type_list
     RPAREN
-      { 
+      {
         if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
           mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
-        else 
+        else
           ptyp_lttuple $sloc tys
       }
   | mktyp( /* begin mktyp group */
