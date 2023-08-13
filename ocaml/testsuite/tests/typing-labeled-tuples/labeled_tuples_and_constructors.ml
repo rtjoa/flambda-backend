@@ -38,7 +38,7 @@ val f : (x:int * int) option -> bool = <fun>
 |}]
 
 
-type t = Foo of (~~(x:int * int))
+type t = Foo of (x:int * int)
 let f = function
 | Foo (~x:5, 2) -> true
 | _ -> false

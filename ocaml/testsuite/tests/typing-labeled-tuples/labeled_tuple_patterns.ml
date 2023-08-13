@@ -70,55 +70,55 @@ val bar : int = 5
 |}]
 
 (* Correct annotation *)
-let f : ~~(foo:int * bar:int) -> int =
+let f : (foo:int * bar:int) -> int =
    fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
 val f : foo:int * bar:int -> int = <fun>
 |}]
 
-let f = fun (~foo, ~bar:bar) : (~~(foo:int * bar:int)) -> foo * 10 + bar
+let f = fun (~foo, ~bar:bar) : (foo:int * bar:int) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 58-72:
-1 | let f = fun (~foo, ~bar:bar) : (~~(foo:int * bar:int)) -> foo * 10 + bar
-                                                              ^^^^^^^^^^^^^^
+Line 1, characters 54-68:
+1 | let f = fun (~foo, ~bar:bar) : (foo:int * bar:int) -> foo * 10 + bar
+                                                          ^^^^^^^^^^^^^^
 Error: This expression has type int but an expression was expected of type
          foo:int * bar:int
 |}]
 
 (* Missing label *)
-let f : ~~(int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
+let f : (int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 39-55:
-1 | let f : ~~(int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
-                                           ^^^^^^^^^^^^^^^^
+Line 1, characters 37-53:
+1 | let f : (int * bar:int) -> int = fun (~foo, ~bar:bar) -> foo * 10 + bar
+                                         ^^^^^^^^^^^^^^^^
 Error: This pattern was expected to match values of type int * bar:int,
        but it is missing a unlabeled component.
        Hint: use .. to ignore some components.
 |}]
 
-let f = fun (~foo, ~bar:bar) : (~~(foo:int * int)) -> foo * 10 + bar
+let f = fun (~foo, ~bar:bar) : (foo:int * int) -> foo * 10 + bar
 [%%expect{|
-Line 1, characters 54-68:
-1 | let f = fun (~foo, ~bar:bar) : (~~(foo:int * int)) -> foo * 10 + bar
-                                                          ^^^^^^^^^^^^^^
+Line 1, characters 50-64:
+1 | let f = fun (~foo, ~bar:bar) : (foo:int * int) -> foo * 10 + bar
+                                                      ^^^^^^^^^^^^^^
 Error: This expression has type int but an expression was expected of type
          foo:int * int
 |}]
 
 (* Wrong label *)
-let f : ~~(foo:int * foo:int) -> int =
-   fun ((~foo, ~bar:bar)) -> foo * 10 + bar
+let f : (foo:int * foo:int) -> int =
+   fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
-Line 2, characters 7-25:
-2 |    fun ((~foo, ~bar:bar)) -> foo * 10 + bar
-           ^^^^^^^^^^^^^^^^^^
+Line 2, characters 7-23:
+2 |    fun (~foo, ~bar:bar) -> foo * 10 + bar
+           ^^^^^^^^^^^^^^^^
 Error: This pattern was expected to match values of type foo:int * foo:int,
        but it is missing a component with label foo.
        Hint: use .. to ignore some components.
 |}]
 
 (* Wrong type *)
-let f : ~~(foo:float * foo:int) -> int =
+let f : (foo:float * foo:int) -> int =
    fun (~foo, ~bar:bar) -> foo * 10 + bar
 [%%expect{|
 Line 2, characters 7-23:
@@ -130,29 +130,29 @@ Error: This pattern was expected to match values of type foo:float * foo:int,
 |}]
 
 (* Annotated pattern *)
-let f ((~x,y) : ~~(x:int * int)) : int = x + y
+let f ((~x,y) : (x:int * int)) : int = x + y
 [%%expect{|
 val f : x:int * int -> int = <fun>
 |}]
 
 (* Misannotated pattern *)
-let f ((~x,y) : ~~(int * int)) : int = x + y
+let f ((~x,y) : (int * int)) : int = x + y
 [%%expect{|
 Line 1, characters 7-13:
-1 | let f ((~x,y) : ~~(int * int)) : int = x + y
+1 | let f ((~x,y) : (int * int)) : int = x + y
            ^^^^^^
 Error: This pattern was expected to match values of type int * int,
        but it is missing a unlabeled component.
        Hint: use .. to ignore some components.
 |}]
 
-let f ((~x,y) : ~~(int * x:int)) : int = x + y
+let f ((~x,y) : (int * x:int)) : int = x + y
 [%%expect{|
 val f : int * x:int -> int = <fun>
 |}]
 
 (* Annotation within pattern *)
-let f ((~(x:int),y) : ~~(x:int * int)) : int = x + y
+let f ((~(x:int),y) : (x:int * int)) : int = x + y
 [%%expect{|
 val f : x:int * int -> int = <fun>
 |}]
@@ -177,8 +177,8 @@ Error: This expression has type float but an expression was expected of type
          int
 |}]
 (* Reordering in functions *)
-type xy = ~~(x:int * y:int)
-type yx = ~~(y:int * x:int)
+type xy = (x:int * y:int)
+type yx = (y:int * x:int)
 let xy_id (pt : xy) = pt
 let yx_id (pt : yx) = pt
 [%%expect{|
@@ -526,7 +526,7 @@ Error: This pattern was expected to match values of type
 
 (* Behavior w.r.t whether types are principally known *)
 
-let f (z : ~~(x:_ * y:_)) =
+let f (z : (x:_ * y:_)) =
   match z with
   | (~y, ~x) -> x + y
 [%%expect{|
