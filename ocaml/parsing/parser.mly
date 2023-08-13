@@ -4005,6 +4005,7 @@ labeled_atomic_type:
       { $1 }
 ;
 
+(* Star-separated of >= 1 type(s) with at least one label total*)
 reversed_labeled_type_list:
   (* 0 unlabeled types before the first label *)
   | strict_labeled_atomic_type %prec below_HASH
@@ -4013,15 +4014,19 @@ reversed_labeled_type_list:
   | atomic_type STAR strict_labeled_atomic_type
       { [$3; None, $1]}
   (* 2+ unlabeled types before the first label *)
-  | separated_nontrivial_llist(STAR, atomic_type) STAR strict_labeled_atomic_type
+  | separated_nontrivial_llist(STAR, atomic_type)
+    STAR strict_labeled_atomic_type
       { $3 :: List.map (fun x -> None, x) $1 }
   (* Once we have a label, we can append either *)
   | reversed_labeled_type_list STAR labeled_atomic_type
       { $3 :: $1 }
 
-%inline labeled_type_list:
+%inline nontrivial_labeled_type_list:
   | rev(reversed_labeled_type_list)
-      { $1 }
+      { if List.length $1 == 1 then
+          raise
+            Syntaxerr.(Error(Singleton_labeled_tuple_type (make_loc $loc($1))));
+        $1 }
 
 (* Atomic types are the most basic level in the syntax of types.
    Atomic types include:
@@ -4037,7 +4042,7 @@ atomic_type:
   | LPAREN MODULE ext_attributes package_type RPAREN
       { wrap_typ_attrs ~loc:$sloc (reloc_typ ~loc:$sloc $4) $3 }
   | LPAREN
-      tys = labeled_type_list
+      tys = nontrivial_labeled_type_list
     RPAREN
       {
         if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
