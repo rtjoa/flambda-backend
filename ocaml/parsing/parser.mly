@@ -353,6 +353,34 @@ let ppat_iarray loc elts =
     ~loc:(make_loc loc) ~attrs:[]
     (Iapat_immutable_array elts)
 
+let ppat_lttuple loc elts closed =
+  Jane_syntax.Labeled_tuples.pat_of
+    ~loc:(make_loc loc) ~attrs:[]
+    (Ltpat_tuple (elts, closed))
+
+let ptyp_lttuple loc tl =
+  Jane_syntax.Labeled_tuples.typ_of
+    ~loc:(make_loc loc) ~attrs:[]
+    (Lttyp_tuple tl)
+
+let arg_to_tuple_component (arg_label, body) =
+  let label =
+    match arg_label with
+    | Nolabel -> None
+    | Optional _ ->
+        raise Syntaxerr.(Error(Optional_tuple_component(body.pexp_loc)))
+    | Labelled s -> Some s
+  in
+  label, body
+
+let args_to_tuple_components args =
+  List.map arg_to_tuple_component args
+
+let pexp_lttuple loc args =
+  Jane_syntax.Labeled_tuples.expr_of
+    ~loc:(make_loc loc) ~attrs:[]
+    (Ltexp_tuple(args_to_tuple_components args))
+
 let expecting loc nonterm =
     raise Syntaxerr.(Error(Expecting(make_loc loc, nonterm)))
 
@@ -421,8 +449,11 @@ type ('dot,'index) array_family = {
 
 }
 
-let bigarray_untuplify = function
-    { pexp_desc = Pexp_tuple explist; pexp_loc = _ } -> explist
+let bigarray_untuplify exp =
+  match Jane_syntax.Expression.of_ast exp with
+  | Some _ -> [exp]
+  | None -> match exp with
+  | { pexp_desc = Pexp_tuple explist; pexp_loc = _ } -> explist
   | exp -> [exp]
 
 (* Immutable array indexing is a regular operator, so it doesn't need a special
@@ -859,6 +890,7 @@ let unboxed_float_type sloc tys =
    string that will not trigger a syntax error; see how [not_expecting]
    is used in the definition of [type_variance]. */
 
+%token TILDETILDELPAREN       "~~(" (* CR labeled tuples: remove *)
 %token AMPERAMPER             "&&"
 %token AMPERSAND              "&"
 %token AND                    "and"
@@ -2553,6 +2585,18 @@ expr:
         mkexp_attrs ~loc:$sloc desc attrs }
   | mkexp(expr_)
       { $1 }
+  (* CR labeled tuples: Merge the below two cases *)
+  | TILDETILDELPAREN args = labeled_simple_expr_comma_list RPAREN
+      {
+        let labels, components = List.split args in
+        if (List.for_all (fun lbl -> lbl = Nolabel) labels) then
+          mkexp ~loc:$sloc
+            (Pexp_tuple(components))
+        else
+          pexp_lttuple $sloc args
+      }
+  | expr_comma_list %prec below_COMMA
+      { mkexp ~loc:$sloc (Pexp_tuple $1) }
   | let_bindings(ext) IN seq_expr
       { expr_of_let_bindings ~loc:$sloc $1 $3 }
   | pbop_op = mkrhs(LETOP) bindings = letop_bindings IN body = seq_expr
@@ -2621,8 +2665,6 @@ expr:
 %inline expr_:
   | simple_expr nonempty_llist(labeled_simple_expr)
       { Pexp_apply($1, $2) }
-  | expr_comma_list %prec below_COMMA
-      { Pexp_tuple($1) }
   | mkrhs(constr_longident) simple_expr %prec below_HASH
       { Pexp_construct($1, Some $2) }
   | name_tag simple_expr %prec below_HASH
@@ -3049,6 +3091,11 @@ fun_def:
   es = separated_nontrivial_llist(COMMA, expr)
     { es }
 ;
+%inline labeled_simple_expr_comma_list:
+  es = separated_nontrivial_llist(COMMA, labeled_simple_expr)
+    { es }
+;
+
 record_expr_content:
   eo = ioption(terminated(simple_expr, WITH))
   fields = separated_or_terminated_nonempty_list(SEMI, record_expr_field)
@@ -3137,11 +3184,20 @@ pattern_no_exn:
       { Pat.attr $1 $2 }
   | pattern_gen
       { $1 }
+  | TILDETILDELPAREN args = labeled_pattern_comma_list RPAREN
+      { let l, closed = args in
+        if (closed = Closed)
+            && (List.for_all Option.is_none (List.map fst l)) then
+          mkpat ~loc:$sloc (Ppat_tuple(List.map snd l))
+        else
+          ppat_lttuple $sloc l closed
+        }
   | mkpat(
       self AS mkrhs(val_ident)
         { Ppat_alias($1, $3) }
     | self AS error
         { expecting $loc($3) "identifier" }
+    (* CR labeled tuples: delete once labeled case has normal syntax *)
     | pattern_comma_list(self) %prec below_COMMA
         { Ppat_tuple(List.rev $1) }
     | self COLONCOLON error
@@ -3260,6 +3316,30 @@ pattern_comma_list(self):
     pattern_comma_list(self) COMMA pattern      { $3 :: $1 }
   | self COMMA pattern                          { [$3; $1] }
   | self COMMA error                            { expecting $loc($3) "pattern" }
+;
+%inline labeled_pattern:
+    pattern { None, $1 }
+  | TILDE label = LIDENT EQUAL pat = pattern
+      { Some label, pat }
+  (* Punning *)
+  | TILDE label = LIDENT
+      { let loc = $loc(label) in
+        Some label, mkpatvar ~loc label }
+  (* Punning + type annotation *)
+  | TILDE LPAREN label = LIDENT COLON cty = core_type RPAREN
+      { let loc = $loc(label) in
+        let pat = mkpatvar ~loc label in
+        Some label, mkpat_opt_constraint ~loc pat (Some cty) }
+;
+
+labeled_pattern_comma_list:
+    labeled_pattern SEMI DOTDOT
+      { [$1], Open }
+  | labeled_pattern SEMI labeled_pattern
+      { [$1; $3], Closed }
+  | labeled_pattern SEMI labeled_pattern_comma_list
+      { let l, closed = $3 in
+        $1 :: l, closed }
 ;
 %inline pattern_semi_list:
   ps = separated_or_terminated_nonempty_list(SEMI, pattern)
@@ -3835,6 +3915,7 @@ strict_function_type:
    - atomic types (see below);
    - proper tuple types:                  int * int * int list
    A proper tuple type is a star-separated list of at least two atomic types.
+   Tuple components can also be labeled, as an [x:int * int list * y:bool].
  *)
 tuple_type:
   | ty = atomic_type
@@ -3844,7 +3925,23 @@ tuple_type:
       tys = separated_nontrivial_llist(STAR, atomic_type)
         { Ptyp_tuple tys }
     )
-    { $1 }
+      { $1 }
+  | TILDETILDELPAREN
+      tys = separated_nontrivial_llist(STAR, labeled_atomic_type)
+    RPAREN
+      {
+        if List.for_all (fun (lbl, _) -> Option.is_none lbl) tys then
+          mktyp ~loc:$sloc (Ptyp_tuple (List.map snd tys))
+        else
+          ptyp_lttuple $sloc tys
+      }
+;
+
+labeled_atomic_type:
+  atomic_type
+      { None, $1 }
+  | label = LIDENT COLON ty = atomic_type
+      { Some label, ty }
 ;
 
 (* Atomic types are the most basic level in the syntax of types.
